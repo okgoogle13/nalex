@@ -20,10 +20,10 @@
 
 These were verified against the inputs during this pass. Four of them change what can honestly be drawn.
 
-**0.1 — `genuine_unanswered` disagrees between the CSV and JSON exports.**
-`conflict_questions_annotated.csv` flags **7 of 17** questions `yes`; `conflict_questions_annotated.json` and `conflict_questions_summary.json` (byte-identical message arrays) flag **3 of 17** `true`. All four disagreements are Naomi rows where the CSV says yes and the JSON says false. Every other annotated field (`answered`, `defensive`, `accusatory`, `rhetorical`, `logistical`, `intent`, `loop_tag`, `heat`, `risk`) agrees across all 17 rows — the drift is isolated to this one field.
+**0.1 — RESOLVED. `genuine_unanswered` disagreed between the CSV and JSON exports; the CSV has been regenerated from the canonical JSON.**
+`conflict_questions_annotated.csv` previously flagged **7 of 17** questions `yes` against `conflict_questions_annotated.json`/`conflict_questions_summary.json`'s **3 of 17** `true`. `refactor_questions_v2.py` — the live annotation generator per `index.md` §7.1 — writes the JSON and summary files directly and hardcodes `genuine_unanswered=True` for exactly 3 substring matches; it never touches the CSV. The CSV was a stale export from an earlier hand-annotation pass that predated this script and was never regenerated. Both files were added in the same squashed commit, so git history couldn't disambiguate — the generator logic did.
 
-Per `index.md` §5 the JSON is canonical, so **3/17 stands** and the figure in `nalex_viz_schema.json` is correct. But the two exports imply materially different headlines (18% genuine vs 41% genuine), and the difference falls entirely on one speaker. Any Q4 variation touching this field must name its source file on the artifact face.
+The CSV has been regenerated from the JSON (2026-08-06): all 17 rows now agree at **3/17** across every field, including `genuine_unanswered`. The figure in `nalex_viz_schema.json` (3/17) was correct throughout. The Q4 render restriction below no longer applies.
 
 **0.2 — There is no per-event reply-latency series anywhere in the input set.**
 - `events.jsonl → gap` is a **string** label, not seconds: 206 of 217 non-null values are `'0m'`, one is `'start'`, and only 10 carry real durations (`'3d07h40m'`, `'1h25m'`, …). It marks session boundaries; it is not a latency field.
@@ -206,4 +206,4 @@ Rationale:
 
 **Safe alternative if a strictly neutral first render is required:** **1A**, which needs no schema work at all and renders directly from `artifact_1_volume_asymmetry.records`.
 
-**Do not render first:** 2B (normative parity line over three points), and any Q4 variation until the §0.1 CSV/JSON discrepancy is resolved in the source files.
+**Do not render first:** 2B (normative parity line over three points). The §0.1 CSV/JSON discrepancy that previously blocked Q4 renders is now resolved (see §0.1).
