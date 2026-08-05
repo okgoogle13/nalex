@@ -1,0 +1,182 @@
+{
+  "source_hash": "7949de4fc3057c366658d7ad8078a386d9c67d2cecdbf6192541f3b297062b19",
+  "source_file": "events.final.jsonl",
+  "generated": "2026-08-01T22:00:00Z",
+  "rule": "Mechanical extraction",
+  "coverage": {
+    "events_in_scope": 26,
+    "events_examined": 26,
+    "words_in_scope": 1606,
+    "items_emitted": 26,
+    "items_per_1000_words": 16.19
+  },
+  "known_limits": [
+    "D/E/F are audio-only (all 75 text/call/media events belong to A/B/C)",
+    "3 Aftermath events have speaker 'Unknown'",
+    "claim densities are not comparable across phases (A/B/C ~29/1000, Aftermath ~51/1000, Prequel ~37/1000)"
+  ],
+  "items": [
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "915f36ff83cd1c7932134f90e5ade2c682f56e9f6656f764b3dace79d126ab48",
+      "quote": "Erm, is there a chance we can do you yet?"
+    },
+    {
+      "asker": "Alex",
+      "responded": false,
+      "sha256": "18299ebd211d42cc12ee13b52590b242a6c4aac9e11d27dd170d116eda5eb6a6",
+      "quote": "What does this have to do with the price of fish though?"
+    },
+    {
+      "asker": "Alex",
+      "responded": true,
+      "response_event_id": "D013",
+      "sha256": "f4b4333ee0ca173170f801e36052e58e50fffae1ee44f33e17609db82745e258",
+      "quote": "You asked me if Nishant had called me and I said no they have not"
+    },
+    {
+      "asker": "Alex",
+      "responded": false,
+      "sha256": "f293b3e18cb5cbbffa06470e32433fe4e06786c4d947fa88d0e60fd120846ec8",
+      "quote": "Yeah, I get that. But what does that have to do with what I'm talking"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "f3d0377a909f020e2e7dbd4c9bba1244009ba8c7cfaae164eadfd80d16aeb564",
+      "quote": "What am I acknowledging? If you want to do this over the phone, let's do"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "1d8b1681fa1e66ab4befc773d9a088c6a7a355cfd85f4333f7933b0dc8e85979",
+      "quote": "No, that's what you're looking for. I don't want to do this on the phone."
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "279fd58972cef667dc23b04759a4c14ec65564820e4b0e5a053e0cfe5c22d442",
+      "quote": "You scared of me or something little old Naomi little gnomes"
+    },
+    {
+      "asker": "Alex",
+      "responded": false,
+      "sha256": "c1082268270565926315190ea92c0d1a199697c544667d92a7be4c6d5cce9ba1",
+      "quote": "Why don't you come here?"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "bb567c045e702f6e1903aff7d052f0d9f9a458fb7d98fe37ac9c2f16d220947b",
+      "quote": "Okay, that's not fair. That's not what happened. You're mischaracterizing that situation. If you want"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "0ff58bb914945cb7de8fbb7844ebe77ca6744d2a3ad7a2929a68ce1eb0a1ce88",
+      "quote": "I'm angry at you, and I've been saying mean things to you because you've been"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "e81dacafa68267edb478f7d0708c5b3884cb506dec7a11858d9b927c257749f8",
+      "quote": "Like, in that situation, am I supposed to make you wait at the gate while"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "1cb6b762e393ee8237ef34f25b6df0f1860de79bc1a4493b5541c3f75563a4cc",
+      "quote": "So you didn't read my messages is what you're telling me right now Cool it's"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "4ab375748da0fa42fa68f7153ed6838e76784cf2930e1f23421eb5a5ef099374",
+      "quote": "Why are you still responding to me then you seem to care a lot and"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "2821a1f96e6eea9814249e1e608568c971673addac430cfa44e31d85a7f15555",
+      "quote": "Well, what am I apologizing for like I'm apologizing because I don't you know, obviously"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "2f81e9e64851ffdf5bb85d42eab3c43220f93ca79584e76b606c76c3ce6002b4",
+      "quote": "Um, it's not about a list. It's not about things I did wrong. Um, it's"
+    },
+    {
+      "asker": "Alex",
+      "responded": true,
+      "response_event_id": "E019",
+      "sha256": "5a1d8570570c8b34d8245629a5370e81e8e59725b4b1d657504bb51cea30ed8b",
+      "quote": "i mean at the end of the day none of it really hurt me because"
+    },
+    {
+      "asker": "Alex",
+      "responded": false,
+      "sha256": "753e72619d8c0181556c84ec82de4f5f61828e4840a4e2b2114682579d855898",
+      "quote": "How much did you win this week?"
+    },
+    {
+      "asker": "Alex",
+      "responded": false,
+      "sha256": "2da57c9fafaa6ba05fe82db93a5b7d3f35c0229569683d4ef5ea98b0a540f00c",
+      "quote": "And speaking of synthesizers, do you want your cork back? Because I'm going to go"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "4fd4cf7294788ce73ebd8c5a46f7e1d84122e6339ea49ba1c345ea769ad2642e",
+      "quote": "My phone ran out of battery and I didn't notice. Have I made a mistake?"
+    },
+    {
+      "asker": "Alex",
+      "responded": true,
+      "response_event_id": "F009",
+      "sha256": "1799a2a7ffa953487ccd0733c02d87f345b6d80470ed84c7035644a369891706",
+      "quote": "What do you mean your phone ran out of battery? I didn't hear the last"
+    },
+    {
+      "asker": "Naomi",
+      "responded": true,
+      "response_event_id": "F010",
+      "sha256": "207f8b7eabf77d8d9240ba299c079b6d40e78eca5e4dbcb71fdc563eebbb3619",
+      "quote": "Um, aren't you coming over or something? Is that why I'm staying awake? I don't"
+    },
+    {
+      "asker": "Naomi",
+      "responded": true,
+      "response_event_id": "F018",
+      "sha256": "c786862ef291f9b2f896f2e38632b3b8f7b781f4ef1a16ac5042f6f457744690",
+      "quote": "How do you know so much about Jews if you're not a Jew?"
+    },
+    {
+      "asker": "Alex",
+      "responded": false,
+      "sha256": "80903654055bde212da3dd7b8ef9bac9cdd1c5a83039e896cfad263f374bf938",
+      "quote": "Are you starting this up again? Is that what I'm hearing?"
+    },
+    {
+      "asker": "Naomi",
+      "responded": true,
+      "response_event_id": "F023",
+      "sha256": "aa702a9544ec261a8a7fa416fdfda2bafde148afebb323953703ddc6f772b3d4",
+      "quote": "Why do you disagree with me about You saying that you would pay for dinner"
+    },
+    {
+      "asker": "Alex",
+      "responded": false,
+      "sha256": "053084169de81ff9f30b8beca3253265049a38b7b45529bd25bd28a826a4a506",
+      "quote": "Why even bring it up is what I'm saying What is this gonna achieve?"
+    },
+    {
+      "asker": "Naomi",
+      "responded": false,
+      "sha256": "a524bd650ddf20962f75f3e754a72f692bac6d659efd1c12e204f38ed98f136a",
+      "quote": "And there's nothing... I don't understand what we would be agreeing to disagree on. Like,"
+    }
+  ]
+}

@@ -1,0 +1,371 @@
+{
+  "project": "Nalex",
+  "artifact": "NALex_PHASE_PROFILE",
+  "revision": 4,
+  "generated": "2026-08-02",
+  "generated_by": "Claude Opus behavioural-analysis pass (Rev 4)",
+  "source_of_truth": "events.jsonl (378 events); all numeric fields independently recomputed",
+  "join_key": "sha256 where present; see known_limits.sha256_coverage",
+  "notes": [
+    "Rev 4 creates this bundle. index.md described NALex_PHASE_PROFILE as already embedded in CURRENT_STATE_CLEAN.md; it was not present in the delivered artifact set.",
+    "problematic_tags and emotional_tags are Claude-assigned analytic labels, not measured quantities. emotional_tags are INTERPRETATION.",
+    "Word counts differ from baseline_comparison_audit.json by <0.3% due to tokenizer choice; all other integer metrics reproduce exactly.",
+    "Medians are reported unrounded; on even-length samples they fall on .5 (Baseline Alex 31.5, Conflict Naomi 39.5)."
+  ],
+  "tag_vocabulary": {
+    "problematic_tags": {
+      "naomi_volume_dominance": "Naomi out-words Alex by a wide margin in the phase",
+      "naomi_wpm_escalation": "Naomi's per-turn length rises sharply relative to prior phase",
+      "naomi_high_question_load": "Naomi carries >=35 questions per 100 turns",
+      "naomi_unanswered_bid_rate_high": "~50% of Naomi's questions get no other-party turn within 10 min in-session",
+      "naomi_unreciprocated_sessions": "Sessions containing only Naomi turns",
+      "naomi_post_exit_continuation": "Substantial output after the other party has left the session",
+      "naomi_unilateral_initiation": "Naomi opens all sessions in the phase",
+      "naomi_never_closes_verbally": "Zero explicit sign-off moves in the phase",
+      "alex_low_content_initiation": "Alex's session opens are mostly single-turn drops that generate no exchange",
+      "alex_terse_turn_floor": "Alex's median turn length is roughly half Naomi's or lower",
+      "alex_bimodal_turn_length": "Low median with rare very long turns; mean masks the floor",
+      "alex_question_burst_pressure": "Runs of >=3 consecutive Alex turns each carrying a question",
+      "alex_bare_punctuation_prompting": "Content-free '?' turns used as prompts",
+      "alex_explicit_termination_moves": "Verbal sign-offs used to end live exchanges",
+      "alex_zero_initiation": "Alex opens no sessions in the phase",
+      "alex_topic_contingent_availability": "Engages readily on neutral topics, exits soon after grievance topics are raised",
+      "dyad_question_crossfire": "Both parties above 35 questions per 100 turns simultaneously",
+      "dyad_mutual_non_answering": "Both parties' questions go unaddressed at comparable rates",
+      "dyad_low_contact_high_burst": "Few contact days, very high events per contact day",
+      "dyad_no_closure_event": "Phase ends without a mutual termination or repair turn"
+    },
+    "emotional_tags": {
+      "naomi_chronic_unanswered_bids": "INTERPRETATION: sustained experience of questions not landing",
+      "naomi_unwitnessed": "INTERPRETATION: posture of speaking without confirmation of being heard",
+      "naomi_pursuing": "INTERPRETATION: initiation and volume consistent with pursuit",
+      "naomi_escalating_elaboration": "INTERPRETATION: adding length in response to non-response",
+      "naomi_seeking_acknowledgement": "INTERPRETATION: explicit and repeated demand for acknowledgement over resolution",
+      "naomi_anticipatory_vigilance": "INTERPRETATION: sharply reduced latency consistent with monitoring",
+      "alex_constrained_engagement": "INTERPRETATION: present but rationing contribution",
+      "alex_withdrawal_by_exit": "INTERPRETATION: managing load by ending exchanges rather than escalating",
+      "alex_over_vigilant_pursuit": "INTERPRETATION: high-frequency questioning consistent with alarm-seeking",
+      "alex_feeling_ambushed": "INTERPRETATION: stated experience of being blamed or attacked without warning",
+      "alex_defended_invulnerability": "INTERPRETATION: asserted imperviousness to harm as a protective stance",
+      "dyad_asymmetric_repair_expectation": "INTERPRETATION: each waits for the other to perform the first repair move"
+    }
+  },
+  "phases": {
+    "Baseline": {
+      "phase_name": "Baseline",
+      "window": "2026-04-01..2026-06-22",
+      "calendar_days": 83,
+      "events": 52,
+      "sessions_60min": 10,
+      "contact_days": 10,
+      "events_per_contact_day": 5.2,
+      "speakers": {
+        "Naomi": {
+          "messages": 32,
+          "words": 1697,
+          "mean_words_per_turn": 53.0,
+          "median_words_per_turn": 44.5,
+          "longest_turn_words": 218,
+          "questions": 12,
+          "questions_per_100_turns": 37.5,
+          "unanswered_documented": 6,
+          "unanswered_reproducible_10min_in_session": 6,
+          "unanswered_rate_reproducible": 50,
+          "median_reply_seconds": 484,
+          "session_opens": 5,
+          "session_closes": 4,
+          "max_consecutive_turns": 16,
+          "explicit_signoff_turns": 0,
+          "solo_session_turns": 16,
+          "solo_session_words": 1082,
+          "post_exit_tail_turns": 1,
+          "post_exit_tail_words": 78
+        },
+        "Alex": {
+          "messages": 20,
+          "words": 928,
+          "mean_words_per_turn": 46.4,
+          "median_words_per_turn": 31.5,
+          "longest_turn_words": 138,
+          "questions": 4,
+          "questions_per_100_turns": 20.0,
+          "unanswered_documented": 1,
+          "unanswered_reproducible_10min_in_session": 2,
+          "unanswered_rate_reproducible": 50,
+          "median_reply_seconds": 101,
+          "session_opens": 5,
+          "session_closes": 6,
+          "max_consecutive_turns": 4,
+          "explicit_signoff_turns": 0,
+          "solo_session_turns": 5,
+          "solo_session_words": 335,
+          "post_exit_tail_turns": 5,
+          "post_exit_tail_words": 102
+        }
+      },
+      "asymmetry": {
+        "word_ratio_N_over_A": 1.83,
+        "median_turn_len_ratio_N_over_A": 1.41,
+        "latency_ratio_N_over_A": 4.79,
+        "session_opens_N_to_A": "5:5",
+        "session_closes_N_to_A": "4:6",
+        "explicit_signoffs_N_to_A": "0:0"
+      },
+      "flags": [
+        "baseline_chronic_asymmetry"
+      ],
+      "problematic_tags": [
+        "naomi_volume_dominance",
+        "naomi_high_question_load",
+        "naomi_unanswered_bid_rate_high",
+        "naomi_unreciprocated_sessions",
+        "naomi_never_closes_verbally",
+        "alex_low_content_initiation",
+        "alex_terse_turn_floor"
+      ],
+      "emotional_tags": [
+        "naomi_chronic_unanswered_bids",
+        "naomi_unwitnessed",
+        "alex_constrained_engagement"
+      ],
+      "notes": [
+        "4 of Alex's 5 session opens are 1-2 turn drops that produce no exchange.",
+        "5 of Naomi's 12 questions occur in sessions Alex never joins; her unanswered rate is largely structural absence, not selective refusal.",
+        "Latency medians rest on 7 (Naomi) and 8 (Alex) observations."
+      ]
+    },
+    "Conflict": {
+      "phase_name": "Conflict",
+      "window": "2026-06-23..2026-07-05",
+      "calendar_days": 13,
+      "events": 221,
+      "sessions_60min": 10,
+      "contact_days": 6,
+      "events_per_contact_day": 36.8,
+      "speakers": {
+        "Naomi": {
+          "messages": 94,
+          "words": 5873,
+          "mean_words_per_turn": 62.5,
+          "median_words_per_turn": 39.5,
+          "longest_turn_words": 381,
+          "questions": 39,
+          "questions_per_100_turns": 41.5,
+          "unanswered_documented": 8,
+          "unanswered_reproducible_10min_in_session": 7,
+          "unanswered_rate_reproducible": 18,
+          "median_reply_seconds": "112-120",
+          "session_opens": 5,
+          "session_closes": 3,
+          "max_consecutive_turns": 11,
+          "explicit_signoff_turns": 0,
+          "solo_session_turns": 2,
+          "solo_session_words": 18,
+          "post_exit_tail_turns": 10,
+          "post_exit_tail_words": 414
+        },
+        "Alex": {
+          "messages": 124,
+          "words": 5227,
+          "mean_words_per_turn": 42.2,
+          "median_words_per_turn": 21,
+          "longest_turn_words": 435,
+          "questions": 44,
+          "questions_per_100_turns": 35.5,
+          "unanswered_documented": 15,
+          "unanswered_reproducible_10min_in_session": 7,
+          "unanswered_rate_reproducible": 16,
+          "median_reply_seconds": "70-94",
+          "session_opens": 5,
+          "session_closes": 7,
+          "max_consecutive_turns": 7,
+          "explicit_signoff_turns": 11,
+          "solo_session_turns": 6,
+          "solo_session_words": 56,
+          "post_exit_tail_turns": 12,
+          "post_exit_tail_words": 843
+        }
+      },
+      "asymmetry": {
+        "word_ratio_N_over_A": 1.12,
+        "median_turn_len_ratio_N_over_A": 1.88,
+        "latency_ratio_N_over_A": "1.2-1.7 (see notes: timestamp precision)",
+        "session_opens_N_to_A": "5:5",
+        "session_closes_N_to_A": "3:7",
+        "explicit_signoffs_N_to_A": "0:11"
+      },
+      "flags": [
+        "conflict_question_inversion"
+      ],
+      "problematic_tags": [
+        "dyad_question_crossfire",
+        "dyad_mutual_non_answering",
+        "dyad_low_contact_high_burst",
+        "naomi_high_question_load",
+        "alex_question_burst_pressure",
+        "alex_bare_punctuation_prompting",
+        "alex_explicit_termination_moves",
+        "alex_terse_turn_floor",
+        "alex_bimodal_turn_length"
+      ],
+      "emotional_tags": [
+        "alex_over_vigilant_pursuit",
+        "alex_feeling_ambushed",
+        "alex_withdrawal_by_exit",
+        "naomi_seeking_acknowledgement",
+        "dyad_asymmetric_repair_expectation"
+      ],
+      "notes": [
+        "148 of 218 conversational events (68%) fall in two sessions: 26-27 Jun (77 ev / 276 min) and 4-5 Jul (71 ev / 332 min).",
+        "36 events carry approximate or minute-only timestamps; Conflict latency medians move with how these are handled.",
+        "The documented Alex unanswered figure (15/44) is roughly double any mechanical timing rule (7/44). It is a content-level judgment and is not reproducible from events.jsonl."
+      ]
+    },
+    "Silence": {
+      "phase_name": "Silence",
+      "window": "2026-07-06..2026-07-10",
+      "calendar_days": 5,
+      "events": 0,
+      "sessions_60min": 0,
+      "contact_days": 0,
+      "speakers": {
+        "Naomi": null,
+        "Alex": null
+      },
+      "asymmetry": null,
+      "flags": [
+        "no_contact"
+      ],
+      "problematic_tags": [],
+      "emotional_tags": [],
+      "notes": [
+        "6.8-day gap measured event-to-event (5 Jul 00:53 -> 11 Jul 20:07). Broken by Naomi."
+      ]
+    },
+    "Aftermath": {
+      "phase_name": "Aftermath",
+      "window": "2026-07-11..2026-07-21",
+      "calendar_days": 11,
+      "events": 105,
+      "sessions_60min": 5,
+      "contact_days": 4,
+      "events_per_contact_day": 26.2,
+      "speakers": {
+        "Naomi": {
+          "messages": 61,
+          "words": 6860,
+          "mean_words_per_turn": 112.5,
+          "median_words_per_turn": 66,
+          "longest_turn_words": 928,
+          "questions": 31,
+          "questions_per_100_turns": 50.8,
+          "unanswered_documented": 16,
+          "unanswered_reproducible_10min_in_session": 16,
+          "unanswered_rate_reproducible": 52,
+          "median_reply_seconds": 169,
+          "session_opens": 5,
+          "session_closes": 5,
+          "max_consecutive_turns": 12,
+          "explicit_signoff_turns": 0,
+          "solo_session_turns": 8,
+          "solo_session_words": 793,
+          "post_exit_tail_turns": 11,
+          "post_exit_tail_words": 1792
+        },
+        "Alex": {
+          "messages": 44,
+          "words": 2187,
+          "mean_words_per_turn": 49.7,
+          "median_words_per_turn": 26,
+          "longest_turn_words": 357,
+          "questions": 14,
+          "questions_per_100_turns": 31.8,
+          "unanswered_documented": 3,
+          "unanswered_reproducible_10min_in_session": 4,
+          "unanswered_rate_reproducible": 29,
+          "median_reply_seconds": 122,
+          "session_opens": 0,
+          "session_closes": 0,
+          "max_consecutive_turns": 7,
+          "explicit_signoff_turns": 4,
+          "solo_session_turns": 0,
+          "solo_session_words": 0,
+          "post_exit_tail_turns": 0,
+          "post_exit_tail_words": 0
+        }
+      },
+      "asymmetry": {
+        "word_ratio_N_over_A": 3.14,
+        "median_turn_len_ratio_N_over_A": 2.54,
+        "latency_ratio_N_over_A": 1.39,
+        "session_opens_N_to_A": "5:0",
+        "session_closes_N_to_A": "5:0",
+        "explicit_signoffs_N_to_A": "0:4"
+      },
+      "flags": [
+        "aftermath_unilateral_initiation",
+        "aftermath_volume_amplification",
+        "aftermath_initiation_shift"
+      ],
+      "problematic_tags": [
+        "naomi_volume_dominance",
+        "naomi_wpm_escalation",
+        "naomi_high_question_load",
+        "naomi_unanswered_bid_rate_high",
+        "naomi_unreciprocated_sessions",
+        "naomi_post_exit_continuation",
+        "naomi_unilateral_initiation",
+        "naomi_never_closes_verbally",
+        "alex_zero_initiation",
+        "alex_terse_turn_floor",
+        "alex_bimodal_turn_length",
+        "alex_explicit_termination_moves",
+        "alex_topic_contingent_availability",
+        "dyad_no_closure_event"
+      ],
+      "emotional_tags": [
+        "naomi_pursuing",
+        "naomi_escalating_elaboration",
+        "naomi_seeking_acknowledgement",
+        "naomi_anticipatory_vigilance",
+        "naomi_unwitnessed",
+        "naomi_chronic_unanswered_bids",
+        "alex_constrained_engagement",
+        "alex_withdrawal_by_exit",
+        "alex_defended_invulnerability",
+        "dyad_asymmetric_repair_expectation"
+      ],
+      "notes": [
+        "Naomi opens 5/5 and closes 5/5 sessions; Alex opens 0 and closes 0. In Baseline and Conflict Alex closed the majority (6/10 and 7/10).",
+        "2,585 of Naomi's 6,860 words (37.7%) are produced after Alex has left the session or in sessions he never joins.",
+        "Alex issues 4 explicit sign-offs; Naomi issues 0 in the entire corpus.",
+        "CAVEAT: the Aftermath window is 100% audio (105/105). The Conflict phase contained 69 text events (38 Alex / 31 Naomi). If Alex replied by text in July, those turns are absent by construction, and initiation/unanswered figures are upper bounds on the asymmetry. Naomi's turns in the two 'Naomi-only' sessions visibly respond to live Alex input."
+      ]
+    }
+  },
+  "corpus_wide": {
+    "events": 378,
+    "speakers": {
+      "Alex": 188,
+      "Naomi": 187,
+      "System": 3
+    },
+    "first_event": "2026-04-01 23:34:40",
+    "last_event": "2026-07-21 21:48:45 (Naomi)",
+    "explicit_signoffs_total": {
+      "Alex": 15,
+      "Naomi": 0
+    },
+    "sha256_coverage": {
+      "present": 301,
+      "absent": 77,
+      "absent_breakdown": {
+        "text": 69,
+        "call": 3,
+        "audio": 3,
+        "media": 2
+      },
+      "note": "All 77 sha256-less events are in the Conflict phase. The 'always join on sha256' invariant cannot be applied to the Conflict text thread."
+    }
+  }
+}

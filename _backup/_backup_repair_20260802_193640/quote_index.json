@@ -1,0 +1,125 @@
+[
+  {
+    "quoting_event_id": "A014",
+    "quoted_speaker": "Alex",
+    "quote_type": "paraphrase",
+    "quoted_text": "least clear thing you've said",
+    "referenced_event_ids": [
+      "A013"
+    ]
+  },
+  {
+    "quoting_event_id": "A020",
+    "quoted_speaker": "Alex",
+    "quote_type": "paraphrase",
+    "quoted_text": "this isn't clear?",
+    "referenced_event_ids": [
+      "A001+A002"
+    ]
+  },
+  {
+    "quoting_event_id": "A021",
+    "quoted_speaker": "Alex",
+    "quote_type": "paraphrase",
+    "quoted_text": "this wasn't clear?",
+    "referenced_event_ids": [
+      "A010"
+    ]
+  },
+  {
+    "quoting_event_id": "A022",
+    "quoted_speaker": "Naomi",
+    "quote_type": "paraphrase",
+    "quoted_text": "this isn't clear...",
+    "referenced_event_ids": [
+      "A017"
+    ]
+  },
+  {
+    "quoting_event_id": "B055",
+    "quoted_speaker": "Alex",
+    "quote_type": "verbatim",
+    "quoted_text": "early days",
+    "referenced_event_ids": [
+      "B050+B051+B052"
+    ]
+  },
+  {
+    "quoting_event_id": "B055",
+    "quoted_speaker": "Alex",
+    "quote_type": "verbatim",
+    "quoted_text": "needed to be addressed",
+    "referenced_event_ids": [
+      "B050+B051+B052"
+    ]
+  },
+  {
+    "quoting_event_id": "B057+B058+B059",
+    "quoted_speaker": "Alex",
+    "quote_type": "verbatim",
+    "quoted_text": "But there's a big step between like a romance, I don't know, more than thing, yeah",
+    "referenced_event_ids": [
+      "B045"
+    ]
+  },
+  {
+    "quoting_event_id": "B073",
+    "quoted_speaker": "Alex",
+    "quote_type": "paraphrase",
+    "quoted_text": "originally, thought you thought I didn't like Ned that's what I said to you",
+    "referenced_event_ids": [
+      "A001+A002"
+    ]
+  },
+  {
+    "quoting_event_id": "B105",
+    "quoted_speaker": "Alex",
+    "quote_type": "paraphrase",
+    "quoted_text": "didn't want to have a meaningless sexual relationship with me",
+    "referenced_event_ids": [
+      "B044"
+    ]
+  },
+  {
+    "quoting_event_id": "B115",
+    "quoted_speaker": "Naomi",
+    "quote_type": "paraphrase",
+    "quoted_text": "the comment about me avoiding Ned",
+    "referenced_event_ids": [
+      "A001+A002"
+    ]
+  },
+  {
+    "quoting_event_id": "C059",
+    "quoted_speaker": "Alex",
+    "quote_type": "paraphrase",
+    "quoted_text": "You said, do you want to hang out? You didn't say, I want to hang out.",
+    "referenced_event_ids": [
+      "C040+C041"
+    ]
+  },
+  {
+    "quoting_event_id": "C060",
+    "quoted_speaker": "Alex",
+    "quote_type": "verbatim",
+    "quoted_text": "I said, do y'all",
+    "referenced_event_ids": [
+      "C040+C041"
+    ]
+  },
+  {
+    "quoting_event_id": "C063",
+    "quoted_speaker": "Alex",
+    "quote_type": "verbatim",
+    "quoted_text": "I was hoping to kick it for a bit, but if you're out till late, maybe next time... it's out of our way... I'd appreciate if you all want to hang. I can also ride my bike... do you want to hang?... yes, like good old times. We can discuss whatever happened the other night if you'd like... do you want to discuss what happened the other night?",
+    "referenced_event_ids": [
+      "C031",
+      "C035+C036",
+      "C037",
+      "C040+C041",
+      "C042",
+      "C043+C044+C045",
+      "C046"
+    ]
+  }
+]

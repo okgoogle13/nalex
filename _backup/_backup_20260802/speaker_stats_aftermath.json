@@ -1,0 +1,61 @@
+{
+  "source_hash": "7949de4fc3057c366658d7ad8078a386d9c67d2cecdbf6192541f3b297062b19",
+  "source_file": "events.final.jsonl",
+  "generated": "2026-08-01T22:00:00Z",
+  "rule": "Mechanical extraction",
+  "coverage": {
+    "events_in_scope": 107,
+    "events_examined": 107,
+    "words_in_scope": 9044,
+    "items_emitted": 1,
+    "items_per_1000_words": 0.11
+  },
+  "known_limits": [
+    "D/E/F are audio-only (all 75 text/call/media events belong to A/B/C)",
+    "3 Aftermath events have speaker 'Unknown'",
+    "claim densities are not comparable across phases (A/B/C ~29/1000, Aftermath ~51/1000, Prequel ~37/1000)"
+  ],
+  "items": [
+    {
+      "overall": {
+        "events": 107,
+        "words": 9044,
+        "questions": 71
+      },
+      "sessions": {
+        "D": {
+          "events": 49,
+          "words": 2728,
+          "questions": 24
+        },
+        "E": {
+          "events": 27,
+          "words": 4844,
+          "questions": 19
+        },
+        "F": {
+          "events": 31,
+          "words": 1472,
+          "questions": 28
+        }
+      },
+      "speakers": {
+        "Alex": {
+          "events": 44,
+          "words": 2181,
+          "questions": 17
+        },
+        "Naomi": {
+          "events": 60,
+          "words": 6840,
+          "questions": 54
+        },
+        "Unknown": {
+          "events": 3,
+          "words": 23,
+          "questions": 0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+tag,definition
+genuine_unanswered,"A real information-seeking question that has not yet been concretely answered and would change the next move."
+rhetorical,"A question used to accuse, corner, signal emotion, or force a defense rather than get information."
+answered,"Whether the underlying question received a direct answer, even if the answer was rejected."
+defensive,"The speaker is protecting themselves, justifying, or deflecting."

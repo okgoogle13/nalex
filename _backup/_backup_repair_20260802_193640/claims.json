@@ -1,0 +1,5078 @@
+[
+  {
+    "event_ids": [
+      "A001+A002"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Hey dude I just wanted to touch base real quick about the me avoiding Ned thing..",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A001+A002"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Did you think I was avoiding coming around because you guys have your little thing going on?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A001+A002"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "/ Because I definitely wasn't and wouldn't do that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A001+A002"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Cuz like, we are just friends right",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A004"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Okay Coolio I was just getting some super weird vibes from you today and still don't understand the bed thing",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A008"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If you don't wanna talk about it that's fine it just confused me why you thought I'd be avoiding him \ud83e\udd37\u200d\u2642\ufe0f",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A010"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You said you thought I was avoiding coming around because Ned was staying with you but I like Ned I still don't understand where ...",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "A013"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't think I could be clearer",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A014"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I thought you might feel awkward coming over while Ned was here.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A015"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Yes but why would I feel awkward about that?",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "A017"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I just figured it might feel strange given what we talked about before.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A018+A019"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "/ I feel like I've been pretty straight up but okay",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "A020"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "\u21b3A001+A002 this isn't clear?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A021"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "\u21b3A010 this wasn't clear?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A022"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "\u21b3A017 this isn't clear...",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I feel like I'm being gaslite right now",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "A024"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'm not questioning your clarity about Ned, I was referring to a different conversation we had, I think this isn't worth getting into over text",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A025"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We have had a thousand conversation Naomi....",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A025"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Your the other not being clear but okay I get the not hashing this out via text",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "We have had a thousand conversations, but I think you know which one I'm referring to.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A027"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Omg I obviously do not can you be clearer?!",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "A028"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Anyways g'night Mr Magoo I need to sleep 3 hours ago",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B001"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Is it kind of fucked up that I can like eat one or two and then just function normally throughout my day?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B002"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You still with the Irish lad",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B005+B006"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Het / So sorry I slept the whole day",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B007"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "\u21b3B002 Nah he left forever ago",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B008"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "This motherfucker right here.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B009+B010+B011+B012+B013"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Ive seen like 40 ppl in the last two days / Ned randomly came over this morning he just left, he basically came for the day while I slept the entire day then left and went home / Aa I woke up / Wanna come over?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B014"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "That's why I was hitting you up before, because I was going to come over this morning.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B015"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Also, we've got to talk about this thing because it's frustrating me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B016+B017+B018"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You know what I'm saying?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B016+B017+B018"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "/ also where Nishant / he wanted to help with this wood work",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B019"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I didn't realize, you were gonna be so long.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B019"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I was kind of hoping, like, when you, I just sort of thought, I don't know, but I'm a goose, so don't worry.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B019"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I know what you're saying.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B019"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'm sorry that you're feeling frustrated.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B019"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Nishant snuck off with the Irish goodbye last night.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B019"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I imagine that they are next door.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B020"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I just feel like there's been some major miscommunications between yourself and myself.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B020"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I just want to clear that up before we end up in a weirder place somehow, if that was possible.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B021"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I do also kind of feel like I was a bit gaslit the other night",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B021"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We talked about this in person because you're right, we should not do it over text or even voice message.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B021"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm halfway through sanding this table and I can't stop now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B022"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Are we in a weird place?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B022"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I feel like maybe we are weird, actually.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B022"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It's not that weird, is it?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B022"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I thought it was a bit weird that you wouldn't acknowledge what conversation I was talking about.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "How can I acknowledge a conversation that you won't tell me what it is?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Like, how many fucking conversations have we had?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We literally talk shit all the time.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "He was saying the other night that I was being, like, indirect and vague and shit, but I wasn't.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was being very straightforward.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then you returned with, like, absolute fucking vagueness.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B023"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was just like, what the fuck conversation are you talking about?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B025"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'll start packing down my shit here and head around to you.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B025"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If Nishant is in the land of the living and wants to do this sanding and stuff, that'd be good.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B025"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I will not bring a tabletop.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "So, I was having a bit of a day that day.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Nothing necessarily, like, not on you, I think",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Also, I just don't like, like, I've sort of just made a bit of a resolution to not, I don't know, I don't even know, like, I feel like, like, all this is, like, even, like, going against my resolution, you know?",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Know, to explain to you and to like say anything.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It's like, fuck, what do I do?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Do I like break my new, my new rule?",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "This is a real truth.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "The conversation, I mean, like if I was to refer to, you know, a conversation that we've had in the past that is like, you know, mostly unspoken, what conversation would that be?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Might I ask you?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B026"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'll just say, it's a conversation where we were talking about the, you know, that, that we weren't going to act on whatever was going on between us obviously like you know that I know that you know you knew that you just didn't want to like be the one to say it or whatever I guess and neither did I so relatable",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B027"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Nishant will be awake later.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B027"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "If they are awake now, they're just sort of starting to wake up probably.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B027"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I haven't heard them banging around or anything.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B027"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Maybe you should just come over and skip the table and then you can do that another day with him.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B027"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Oh, I don't know.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B027"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I just want you to come around, but it's okay.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B027"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I want to finish this conversation once and for all.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We had a conversation about sexual tension when we first met, which was, like, fucking quite a while or so.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Since then, it hasn't really come up since",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I feel like things have changed pretty significantly, at least in the dynamics of the relationship.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't really feel sexual tension anymore.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "That was ages ago.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It's not like it was last week.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then the whole Ned thing kind of feels like you've, like, I don't know, Throwing me into some sort of love triangle thing that I'm not a part of.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Like, I love hanging out with you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I like the fact that I've actually got a friend with common ground.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B028"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It's easy to talk to, but I'm sorry, it's kind of just where it ends for me.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B029"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "What is this skip the table shit?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B029"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I got like, not even halfway through it, I got like a third through it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B029"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It wasn't even sandpaper.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B030"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know what I'm doing with my life, to be honest.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B030"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "And, I think I'll be alone forever.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Okay, that is a ridiculous notion to think that you will be alone forever.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Just kill that shit here and now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm sorry that you're alone there.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm sorry you don't know what you're doing with your life.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't know if this brings you any comfort, but nobody knows what they're doing with their lives.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Everybody is just faking it until they're making it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Loneliness is something that I think will always be with you until you learn to enjoy your own company.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You shouldn't draw happiness from other people and then how other people feel about you because you should like be confident that you're a fucking cool person with lots to offer which you are and acting out of like loneliness and fear essentially is not going to help it's going to keep getting you into relationships with like people like Freya who I know you love but it's not right for you because she's mentally unwell and you're definitely the sort of person who just Sort of gives it all and just allows themselves to sort of be treated like shit because they're lonely and stuff.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B032"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Sorry about that one.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We can discuss this further.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I think I'm not wrong.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't think I'm wrong.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We come into this world alone we leave alone the only sustainable real happiness that we've got in this world comes from us, from within like yeah, I don't know we'll discuss more in person I think, ultimately, fear and love are, like, same thing.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It's like love and hate, you know what I mean?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It's all part of the same fucking coin really, there's different sides of it",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "The other thing that separates that coin is a thin piece of metal.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B034"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Also, I just found out that the little monitors that I bought, which are also fucking really good, are Bluetooth.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B036"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Also, I kind of want to ride my bike over, but I've low-key got, like, pretty fucking gnarly hemorrhoids.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B036"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I feel like it's a bad idea.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B036"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "The idea is I haven't got it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B037"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't know what that means.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B038"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I've been through all of that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B038"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'm not talking about, like, you don't understand.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B038"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You don't need to understand.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B039"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Nope, I don't know what you mean.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B039"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I mean, I do know what you mean if you're saying love and hate are the most transmissible emotions.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B039"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You can only hate someone that you love.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B039"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I do know that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B039"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You do not love something you're afraid of, and you're not afraid of something you love.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B040"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I think there's plenty of people that are in love with the things that they're afraid of.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B040"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I think fear and hate are one and the same.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B042"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I do get it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B042"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I think I get it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B042"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You locked yourself in a room for 10 years and made all your friends online and probably a bit of an outcast most of your life.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B042"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Also while you might like you've got more people around you these days that want to spend time with you and hang out with you and fucking do stuff but I feel like you're locking yourself in the room again even though there's people out there going like fucking don't do it don't do it and I get that fucking dealing and being home is definitely helpful",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B042"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It shouldn't be the be-all end-all.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B043"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I guess my major confusion came from the whole me avoiding Ned thing.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B043"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I still don't really understand where that came from.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B043"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was hoping I could park in the car, in the car house because I got all my shit in the back and there's like laptops and shit in here and I've seen the riffraff that hang at the back of that fucking place.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I, like, as fucking lame as this is to say, I do like you as a friend.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "There was definitely some, like, sexual tension when we first started hanging out.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm just not in that sort of environment or headspace or, like, I'm so detached from that whole idea of things.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It's, yeah, it's a bit fucking, it's my own shit there to unpack, which I don't really feel the need to unpack at the moment.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I see you've got heaps of potential, and I know you're not going to be alone forever, because you are a cool person.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Not in that way at least.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Plus I'm pretty sure I said this pretty like early on as well.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I really don't like how hard it is to make friends and most of the time when I make friends it's usually with queer people or women because they kind of just want to fuck me or you know like they want more than just that and it's fucking tiring and I know you know exactly what I'm talking about because I didn't know what like a chaser was until you explained it to me and that is something I can relate to because I don't actually get along with most men like I can but I don't fucking like them the majority of them are cunts fucking just dumb pigs but yeah yeah it's a bit like it gets a bit fucking disappointing when I've been hanging out with someone and it turns out they just kind of like want to fuck you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B044"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've also told you so many times that I thought you and Ned were like a cute couple and like was rooting for it because I think you are.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B045"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You make people fucking comfortable very quickly.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B045"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You know, there's plenty to like there.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B045"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "There's a big step between like a romance, I don't know, more than thing, like, yeah.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B046"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I am turning onto High Street from Separation Street now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B046"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We can talk about this more in the flesh, but do you reckon you could let me in the garage?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B049"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I have a question.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B049"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Maybe you can talk about it when you get back, but I need to say it now.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B049"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why did you ever, like, even mention the sexual tension?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B050+B051+B052"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It needed to be addressed / I don't like having the elephant in the room / but also once again that was early days",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B055"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Alex, I've only just met you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B055"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I barely know you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B055"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, I haven't known you for that long.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B055"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Also, what do you mean it needed to be addressed?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B055"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What part of it needed to be addressed?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, the only thing that makes sense to me is that you've been gaslighting me this whole time.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It's the only thing that makes sense right now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know why.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B057+B058+B059"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "\"But there's a big step between like a romance, I don't know, more than thing, yeah\" > What does that even mean / Why is it - you're a lovely person, but",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B060"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I suppose I'll go fuck myself then",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B061"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Why has this come up after I leave when we had so many opportunities to talk about this in person.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B062"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I brought it up because I was looking at moving into Nishant's place.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B062"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If we didn't discuss this, that could have been a really fucking uncomfortable scenario.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B062"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Things needed to be sorted out because you obviously have one thing in your mind and I've got a different thing in my mind.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B062"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If there was going to be a chance where this living arrangement was going to work, it needed to be addressed rather than going in there with some aloof idea that fucking there's more going on here than there is.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B062"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I didn't create this.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B062"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If you can't see that, then I don't know what the fuck the point of me continuing this conversation is.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B062"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "So, I'll speak to you later.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I didn't want to sound like a conceited dick, alright?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I wasn't the only one that had fucking concerns.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Maybe I fucking withheld some stuff.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm done talking about this.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "To do it when we were hanging out just moments ago, I asked you multiple times, what's up, are you okay",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then the second I leave, you're a fucking keyboard warrior, so, yeah, I'm fucking, I'm right, I'm good, I'll speak to you later.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B064"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What do you mean?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B064"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What do you mean?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B064"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I did not create this, dude.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B064"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You are not chill right now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B064"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You are not cool.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B065"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You want to talk about gaslighting.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B065"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You've been gaslighting me this whole fucking time.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B065"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Saying, I'm not being clear, I'm not doing this, ba-ba-ba-ba-ba.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B065"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "So, thank you, but no thank you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B066"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I needed time to think about it",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B066"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I needed to listen to your fucking voice messages, which you didn't give me a chance to listen to.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B066"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You literally sent me three two-minute voice messages and then called me on the phone and asked me to open the gate for you, while I'm, like, got other shit going on.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B066"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You're expecting me to, like, be like, oh, like, oh, I'm just, I'm prepared to, you know, now talk about this, like, really hectic shit that I'm being, like, fully, like, you know, had the rug pulled out from underneath me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B067"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "How has the rug been pulled out from underneath you?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B067"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "How is this fully hectic shit?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B067"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It's not that complicated.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B068"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "How am I gaslighting you?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B068"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I need to have the feedback.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Can you just answer my questions from earlier?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, you literally haven't answered a single fucking one of my questions.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You don't do that to people.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B070"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It begins with the other night when you were like, you're not being clear, you're not being clear when I was being fucking very clear.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B070"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then when you were referencing this conversation that we had, you weren't being clear.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B071"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm not going to continue to argue about this tonight, alright?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B071"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'll speak to you later on.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I was trying to protect myself from being hurt.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "That's why I wasn't being clear.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Also, you started that conversation.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You started that conversation knowing what was going on, asking me what it's about, acting dumb",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You wanted to play the fool the whole time.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You just wanted to be like, oh, I had no idea this was going, which is exactly what you're doing right now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You actually knew the whole time and you just, you, you never addressed it directly and you should have addressed it directly.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You should not have, I'm a direct communicator, Alex.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You need to actually respect that when I say that and directly communicate with me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "If you don't want to do something, you have to say that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "If you're not interested in me, you have to say that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You can't say, oh, there's sexual tension, but I would rather have you as a friend.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You know like tell me you're not interested in me don't tell me i'd rather have you as a friend because that's bullshit you're just not interested in me that's the truth that's the reality so yeah honestly i'm really angry at you and really hurt you hurt me more by trying to be a people pleaser",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B073"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I didn't know things.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B073"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I had suspicions, alright?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B073"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I had suspicions because of fucking external factors.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B073"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "They needed to be addressed.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B073"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm not going to come up and be like, oh, you fucking want something more from me that I'm not going to give to you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B073"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I didn't know what the fuck was going on.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B073"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Cause originally, thought you thought I didn't like Ned that's what I said to you I don't know if you remember that but that's what I said to you and then afterwards the only other thing I could think of was that but we'd already spoken about that and it not happening so I didn't go in fucking stupid and ignorant playing dumb thank you very much",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B074"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You still haven't answered a single one of my questions.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B074"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Also, getting upset at me and saying it's a problem that I'm sending you voice messages about this thing that you can only speak about in voice.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B074"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, I've at least made attempts to talk about it in person, but you don't want to speak about it in person.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B074"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You're just using any fucking excuse you can right now to get out of this because you don't like full-on emotional conversations.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B074"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It hurts everyone involved.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B075"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What do you mean, suspicions because of external factors?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B075"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What the fuck does that even mean, dude?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B076"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "So, by that logic, then, everyone that you meet should be like, no, I'm not into you, right?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B077"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Someone who tells me, like, when we're talking about sexual tension between us, it says, Oh, I'm interested in you",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B077"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I only want you as a friend.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B077"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "That like, you should probably not say that I'm interested in you part, you know, just leave that part off.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B077"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Maybe just say, No, there's actually no sexual tension, and I'm not interested in you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B078"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've asked you, I don't know how many times tonight alone, what's going on?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B078"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "What do we need to talk about?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B078"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You just fucking stare at your feet or the wall and go, no, nothing.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B079"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Turn around and blame that on me?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B080"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You don't really know me that well if you think I don't like full-on emotional conversations because I fucking have them all the time.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B080"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I want to hurt your fucking feelings over something that could have just been completely incorrect.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B081"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Dude, I was not going to have a conversation in that moment.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B081"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I was about to fucking cry, okay?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B081"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You're, like, making me like you more, you know?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B082+B083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "They don't go hand in hand.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B082+B083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Maybe you should figure that out.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B084"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "The fuck is wrong with you, dude?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B085"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "If you want to be respectful, do that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B085"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You haven't been respectful to me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B085"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You haven't been respectful to my heart.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B085"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You haven't been respectful to my needs.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B085"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You act like you are, but you're fucking not.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B086"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Respect is a two-way street and you haven't shown me fucking any either, so I guess that's where we stand.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B087"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You still haven't answered any of my questions.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B087"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Are you a coward?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B087"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Since I'm not respectful towards you, I guess like, you know, I just call it how I like to see it.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B087"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "That's what you are.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B088"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I see someone that's a narcissist that's never fucking wrong.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B089"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I think by your standards, everyone is a narcissist compared to you because you're like so selfless and so giving and so charitable.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B089"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Since I'm a narcissist, you know, you know, Since everyone is a narcissist compared to that kind of person who meets those standards, definitely everyone's a narcissist.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B089"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "This has become a really, really, really cruel, mean fight.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B089"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know why all i wanted was like information i just wanted to understand so that i could know what the world is you know like i need to know the truth about things because if i don't know the truth about things then like i just end up in this position where i think the world is one way and then i find out it's actually a different way because i've been lied to you know so that's why the truth is really really important to me because i want to know what reality is i don't want to know what somebody tells me reality is",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B091"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I think that you're a chaser.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B091"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I think that you're only interested in trans women for sex.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B091"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I think that you were never attracted to me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B091"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I think that you were too afraid to tell me how you felt.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B091"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You let me believe what you saw at the time to be a lesser hurt.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B091"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I wish you didn't try to do that.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B091"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I wish you were honest with me.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B092"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was actually dating a trans girl when we met, with all hopes that that was going to lead into something more.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B092"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "But, unfortunately, I'm a drug addict and she works in the government.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B092"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If I was such a trans chaser, then why the fuck didn't we hook up?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B092"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Why didn't I come on to you?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B092"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "So, would you mind telling me what your questions were?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B092"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Like, you've said so many times, I won't answer your questions.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B092"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I won't answer your questions.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B093"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You're just throwing whatever the fuck you can at me to make me the bad guy so you don't feel shit.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B094"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm sorry if I don't like fucking my friends.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B094"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Like, it's not a fucking line I like to cross.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B094"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "That's when you became a friend.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B094"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "At least I fucking thought so.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B095"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You can just go have a look, dude.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B095"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know why you want me to type them out again.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B095"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, do you want me to do that labor for you?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B095"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "So, you know, like you, the one who just kept going on and on and on and on about irrelevant things.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B095"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Mate, you made this into a fucking shit argument where we're now we're fighting.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B095"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You know, now I'm angry at you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B095"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Now I hate you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B097"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I did this, I did this, I did this.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B097"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'll speak to you another time.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B098"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why are you sending me messages while you're driving?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B098"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why are you sending me messages at all?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B098"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why are you not here?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B098"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Face to face, like you said you wanted.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B098"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, I didn't want to do this over voice either, but you've given me no option.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B098"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You know, I'll take it how I can get it.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B099"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What did I do?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B099"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You don't even know what is going on right now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B099"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You don't even know why you're mad.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B099"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I will take some accountability.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B099"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "If I can promise myself this one, this time, ever let myself get hurt again.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B100"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You had every fucking opportunity.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B100"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We were just hung out for like three hours, face to face, and you just fucking stared at your feet.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B101"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Oh, like, I explained this to you already",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B101"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "The whole reason why I messaged you at all while you were gone, for how long you were gone for, by the way, your pizza's here, that, yeah, thanks for that one, oh, fuck me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B102"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've told you everything you need to know.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B103"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You did lead me on, hecticly, obviously.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B103"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I think you should take some accountability for that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B103"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Big time, this is a weird one, I've got to say, I don't know what is going on that is as real as I can get fuck bye",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B104"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't really understand how telling you that nothing more was going to happen is leading you on.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B104"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'll speak to you later.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You didn't say that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You said you, like, almost couldn't stop yourself.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You said that you didn't want to have, you said, this is exactly what you said, in fact, that you didn't want to have a meaningless sexual relationship with me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I didn't want that either.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I've got plenty of that in my life already.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I know that you like traditional relationships.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I wasn't expecting anything different, but, I wasn't really expecting anything at all, to be honest.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B105"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I mean, I didn't, I knew this might not work out and maybe not, but, you know, I was protecting myself until you force the point you know and you made it weird tonight i'm not gonna lie you made it really fucking weird especially not answering my questions is and then like me blowing it into this like really hectic argument just to avoid being honest with me like about like the things i'm asking you you know why Could be something to think about Something to ponder on Maybe",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B107"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I didn't make this weird.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B107"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You made this weird when you made this about me avoiding you and Ned because apparently I'm in love with you and I can't stand to see you with other guys or some shit.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B107"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I told you I don't sleep with friends?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B107"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "And, like, how can you fucking even recall, like, the exact details?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B107"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Like, just fucking probably put it into chat to TTP and got it to fucking answer all the questions for you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B107"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You can't just get it to answer all these things for you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B107"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've been fucking respectful I've been trying to like increasingly lay out the fact that I don't and have not wanted anything more than your friendship for a while now and from someone that was moments ago taking accountability all of a sudden it's all my fault again so that's all I'm going to say tonight I will speak to you later I will not be responding to any more messages you can send me a list of questions you've got and I'll get to it when I get to it goodnight Naomi",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B108"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know why I thought you were in love with me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B108"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What such a narcissist I am.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B108"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "By the way, I never thought you were in love with me, but apparently I do now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B108"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Let me listen to the rest of your message so I'll see what else I can change my reality to fit.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B109"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You don't and have not wanted anything more than my friendship for a while now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B109"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Since when did that change?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B109"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You're saying that it was different at one point, and now it's not.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B109"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why the fuck are you, like, coming around in the middle of the night, like, hanging out all night, being flirtatious with me?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B109"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, what is all that about?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B109"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why are you still messaging me?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B109"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why don't you just tell me to fuck off like i don't understand i'm so fucking confused still at this moment",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Although, I'm not using ChatGPT to talk about any of this shit, you fucking dipstick.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I haven't chatted to ChatGPT like a single time about this.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I talk about concepts with ChatGPT.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't, like, you know, put singular words in.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, what does this word mean?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What did it mean?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, oh, let's understand all of this person's consciousness based on this singular word.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B110"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What do you think's going on dude you're inventing problems that aren't problems i have you don't know me if that's what you think i do you don't know me i didn't want to do this over the phone i didn't want to ever do this in text i didn't want to do it in voice message i would have rather never spoken about it to be honest if you're not interested i'd rather just let it go as i would have done, but, you know, you wanted to, you wanted to feel wanted, that's what I think, I get it, I want to be wanted to, it's a nice feeling, it doesn't feel so nice it ends up like this.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B111"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I wanted to feel like if I did move into Nishant's place, which is probably just not going to happen, that it wasn't going to be awkward between us or uncomfortable between us.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B111"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "That's what I wanted.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B112"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I wanted to continue to build a friendship with you that's not aligned with fucking a relationship or sexual conduct.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B113"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Like, I'm as flirtatious with you as I am with fucking Jamie or Nishant or pretty much anyone else.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B113"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Don't mistake kindness and someone enjoying your company for flirtation and, like, anything more than that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B113"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "The nature of what we do, we hang out at night.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B113"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Just because it might be something you do with others doesn't mean that that's how I'm seeing it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B113"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Once again, I don't sleep with my friends.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why would it be awkward between us?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why would it be uncomfortable?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, you said you had no idea.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You said, like, that I've been gaslighting you about this thing this whole time.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You know, I didn't, you know, you're acting as if there was no awkwardness before, except you were completely aware of exactly what was going on",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You just didn't have the fucking guts to confront me about it till I was going to force the issue.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Then you could just kind of sense that I was like maybe sort of edging towards that and you stuffed up my flow by forcing me to be put myself in a vulnerable position where you know I could get hurt and you know it's like that's kind of like the story of my life, like, no one else ever wants to be vulnerable, you know, it's always me who has to do that work for them, I guess, take that, bear that load, as one might say, always, yes, oh well, It's good to know at least that we didn't even try to go down that road.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'm glad we didn't, because you would not have been careful with my heart, is the truth.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B114"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "At least we can know in a short, quick amount of time that that would be true.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B115"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was not aware until you made the comment about me avoiding Ned.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B115"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "That's when my ears pricked up to it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B115"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I didn't start that conversation.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B115"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You started that conversation.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B115"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You were worried that I couldn't stand to see you with other guys.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B115"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "This is what you told me today.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B115"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Or am I making that up?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B116"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I did tell you that today.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B116"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I wasn't going to take it any further than where I left it last week.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B116"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "In fact, I had made a decision.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B116"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I made a decision to not.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B116"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I was like, no, Alex isn't interested in me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B116"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'm not going to make myself vulnerable and explain it any further than needs to be because I don't want to get hurt.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B116"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Here I am, hiding myself yet again.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B117"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I just wish you could see your responsibility in this, that's all.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B117"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I know you don't want to hurt me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B117"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I want to hurt you right now though, I'm not going to lie.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "B118"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Doesn't happen often, but when it happens, it's usually worse than this.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B119"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I am going to put my phone away.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "B119"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If you want to talk about this, talk about it another day.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B119"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You can talk to Nishant or you can talk to whoever.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B119"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I am done for tonight.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B120"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I do just want to put it out there that I answered every single one of your questions tonight that you asked me",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B120"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You didn't answer a single one.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B120"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "For me, being vulnerable, putting myself out there, letting you, protecting your ego, doing all those things for you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B121"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Also, why were you fucking flirting with Freya?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B121"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I know what was happening.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B121"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You are not careful with my heart.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B121"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't think you ever would be.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B124+B125+B126"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I did respect you tonight, by being vulnerable and replying to every single question you asked.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B124+B125+B126"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "/ Not that you listened to the replies / Neways cya",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why did you mutter 'it's not fair' two weeks ago while I was getting changed?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "While I was preparing for Kyle to arrive.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You made me feel guilty that night, I thought I had done something wrong, this is what sparked me thinking I was wrong about the way you felt about me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "> Immediately proceeding that you had a hectic from the sounds of it problematic weekend by your own admission.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You took Xanax which you've said is a self destructive thing you don't want to do anymore, you also called me after a hookup while you should have known I was already chilling with Ned, proceeded to speak to me flirtatiously up until the point you heard Ned was here, then you back peddled about coming over and said you were going home.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "How can you not see the way you've been interacting with me the way you've been talking with me is not okay?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "If tonight is the way you feel and the way you are going to speak to me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B129"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It made my other connections with people more difficult.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B130"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why did you keep me up for 5 fucking hours on Monday night acting dumb like you didnt know what was going on after I gave you every opportunity to be honest.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "B131"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You have been doing everything you can to protect yourself and nothing to protect me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C002"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I am not feeling fantastic.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C002"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I feel like I've got the flu.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C003"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Cunts rippin you off is deserved conflict",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C004"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You wanna catch up or at you busy",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C007"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Holy miss messages, I got a fucking, got a whole fucking, I need a receptionist or something.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C007"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "What are you doing?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C008"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Would you be interested in giving me a lift to Fisher's house?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C009"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "No stress if not, I'd get it if you're already drunk or whatever you're worried about, by the way.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C011"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Me and Nishant are gonna go right now.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C012"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was keen to hang out, but I'm just fucking covering cold bloods.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C013"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Why are you covered in cobwebs?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C014"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I just woke up, I'm just a bit dazed and confused.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C015"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Mmmmm rhbn I have)",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C016+C017"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Wot / Why you in the attic",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C020"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If you want to kick it, let me know.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C022"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I will keep myself preoccupied here at home.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C031"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Okay well I was hoping to kick it for a bit but if your out till late maybe next time",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C032"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "We are heading back to my place now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C033"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Any chance you want to pick us up?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C040+C041"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I mean I'd appreciate it if yall wanna hang / Incan also ride my bike",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C042"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Do you want to hang?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C043+C044+C045"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Yes / like good ol times / we can discuss whatever's happened the other night if you'd like",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C046"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Do you want to discuss what happened the other night?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C047"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I mean, like, I'm not eager to discuss it",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C047"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It clearly needs to be discussed to, like, clear the air and make sure we're all on the same page.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C047"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Because, yeah, I don't want to lose you as a friend, but I also don't want it to be uncomfortable and awkward for you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C047"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "The other night you seemed pretty adamant that we need to discuss what happened.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C047"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "So, what do you want to do?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C049"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Sorry just sitting down for a second got customers and things to do rn I'll respond when I can",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C051"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I might just ride my bike",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C053"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I got Jamie coming, I got Brass coming, and I got your mates coming.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C053"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'm just trying to organise everything and I need to clean up my room and I need to breathe and wake up because I just woke up like a couple hours ago and then I had to rush off to go sort out this gear that I got underweight about and then you're messaging me and you know, any chance driving me and giving you a hundred bucks and you know like there's a lot going on in my life sorry i just like so fucking busy right now",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C055"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "But, I guess I can live with that, and if that's the case, then, I don't know, you probably won't see me for a while.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C055"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "So, enjoy the custies, have fun with Jamie, enjoy cleaning your room, sounds like a lot to do, and I'll speak to you later.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Is that a signing off message?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't understand what's going on right now.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I literally saw Jamie for two seconds.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I will enjoy the customers.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C056"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know you don't need to be so hectic it's just like like when you're messaging me question marks and and like it's hard for me like there's other stuff going on in my life and it's hard for me to manage everything you know like literally like i'm not good at managing this stuff already and you know it's what night is it i think it's saturday or friday night you know potentially one of the busiest nights of the week for me and organizing like i want to hang out i literally want to see you i haven't heard you actually say that you want to hang out with me yet you keep asking me if i want to hang out or if i want to have a conversation you never say hey i want to hang out with you i want to have this conversation i want to have it i want to have this conversation with you i want to hang out with you but it doesn't seem like you want to do that with me so it's like it just goes to the bottom of my list because it doesn't seem like you even want to do it",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C057"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Dude, I'm pretty sure I'm the one that reached out saying, hey, hey, do you want to hang out?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C057"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I might have worded it slightly off, saying, do y'all want to hang out?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C057"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "That's still me saying, I want to hang out.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C057"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It doesn't take that long to just be like, hey, I'm just swamped on a head over whenever you want.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C057"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Instead, I now just feel like I'm badgering you and a burden.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C057"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Once again, this is all my fault.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C058"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Definitely been around many times when you've had custodies coming in and out, in and out, when you've had a messy room, all that sort of stuff.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C058"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've been around all of that, but for some reason it's different this time, and I don't quite know why.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C059"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You said, do you want to hang out?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C059"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You didn't say, I want to hang out.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C060"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I said, do y'all, because you were with Nishan, and I meant like, do y'all all want to hang out?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C060"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Meaning, yes, I want to hang out.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C060"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Why would I reach out to you and be like, do you want to hang out?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C060"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then you turn around and say, yes, and I'm like, oh, no, I actually don't want to, sorry.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, you are badgering me a bit, I'm not gonna lie.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, and I've tried to say to you a few times, like, I got shit going on.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It's not, like, and, like, I don't think you can just head around at any time, like, is the reality.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, if you come over, are you gonna, like, blow a pipe in here?",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "And, like, you know, like, what's gonna happen?",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, is it really gonna be that enjoyable to hang out with you?",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Stuff we need to talk about, stuff I need to say to you.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Maybe I should just do it over text.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C061"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Maybe it would be better.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C062"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Okay, if it's ridiculous, that's fine, but it would be appreciated if you would just be direct, because this is what we're talking about.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C062"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Instead of like saying, do you, you know, asking me if I want to hang out without having stated your intentions, say, hey, I'm feeling a bit lonely, or like, I'd like to see you tonight, I miss you, or something, you know what I mean?",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C062"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, you know, state your intentions.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C062"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "State what you want.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I think if you read the messages from like 9.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was like, I was hoping to kick it for a bit",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "If you're out till late, maybe next time, then I was like, wouldn't mind a lift.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "When you asked me my address, I told you the address.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You said, it's out of our way.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I was like, it's my other face.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then I said, I'd appreciate if you all want to hang.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I can also ride my bike.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You said, do you want to hang?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "When I said, yes, like good old times.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "We can discuss whatever happened the other night if you'd like.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You said, do you want to discuss what happened the other night?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "There was a voice note, which I don't remember exactly what I said.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then 45 minutes later, I was like, I can just ride my bike.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Half an hour after that, I said, question mark.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Then this conversation unfolded.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I did say that I wanted to hang out.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C063"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "That definitely implied that I'm aware we need to talk about whatever the fuck happened but he just kind of ghosted me so if that's hassling you then yeah I guess that's hassling",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C064"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I think you should just maybe reread the messages from tonight and tell me what you think you see.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C065"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I did, I mean, you read them yourself.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C065"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You said, like, just don't argue about it with phrasing, dude.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C065"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You literally said, do you want to hang out?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C065"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Do you, would you like to have a conversation?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C065"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I know, look, I'll be, I'll be direct right now.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C065"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Things are going to have to change because I can't, like, at least for, like, the way that I'm saying.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C065"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Were before like because a lot of that felt like you know maybe it's on me i don't know but a lot of that felt like you were flirting with me and i thought you were i believe you were and if you weren't then you know i'm i might have to set some boundaries about you know how our friendship can look because it's otherwise gonna be too confusing for me you know, which not saying I really want to do, but, I feel like it's necessary to preserve, like, you know, to preserve our friendship.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C066"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "May I ask you what things I did to make you feel like I was flirting with you more so than anyone else?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C067"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "May I also ask why or what actions or things I said led you to believe that I was a chaser?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C068"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Also, can I inquire as to why you thought I was flirting with Freya?",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I will give you some specific and direct examples, but I'm busy right now.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I can't keep doing this voice conversation at this very moment.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I still got to sort out where I'm going to meet these people.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Okay, I got to go.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C069"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'll speak to you soon.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C070"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm starting to feel like this friendship was only based off the fact that you were hoping for more.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C070"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "When I don't feel like I was putting any more effort into flirting with you than I would with someone like Nishant or anyone else.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C071"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Regardless, I did want to hang out",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C071"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I did want to talk about this",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C071"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Right now I want to think about it all",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C071"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't know if I do anymore.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Okay, this is so fucking dumb that we're doing this over voice again, I'm just gonna say.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I think you should just chill and, yeah, yeah, definitely, if you want some time to think, then think",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Maybe just give it a day or two till I'm not busy.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C072"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Till we can organize the time you know i've got a lot going on right now it's definitely not the case that i was trying to befriend you to seek something more that's how you feel then i'm not gonna deny you your feelings i'm sorry that you feel that way that would feel pretty i don't know rough like you know like a bit shallow or something maybe yeah this is so confusing to be honest like i don't know what you want do you want my friendship because i'm willing to offer it i want to be your friend i wanted to be your friend before i wanted to be your friend when i first met you i wanted to be your friend when i spoke to you on grinder i will always want to be your friend you're a cool person but like i might have to like if you're like this do you i don't understand you don't understand like that when i say like if i was perceiving you as flirting and you say that you weren't that means i might have to draw boundaries to protect myself like around how our friendship can look right how is that me then like i'm just protecting myself and i'm not saying that's your fault i'm saying that's my fault like because obviously i'm misinterpreting things right and like sure you should want me to protect myself right like i'm so confused utterly confused it's like you say you can't do friendship and fucking and that's fine but it seems like that's what you're trying to do like i'm so fucking confused it's like if you can't have my friendship in the way you want to have it you don't want any friendship with me which is sad i don't like that it upsets me it hurts me",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C073"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I haven't even had a shower, or brushed my teeth, or eaten dinner, or anything.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C073"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "So, that's why, like, you know, I wanted to hang out with you tonight",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C073"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Maybe I should have been more realistic with myself and just said to you early on, sorry, I'm too busy, got too much going on.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C073"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I just didn't even really know that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C073"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It just creeps up on you, because people don't message me until the last minute.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C073"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You know at this moment i know it's not going to be a good time for us to talk about it because i'm too busy otherwise my mind is elsewhere i'm too divided so we should just put a stop to it for now and we'll you know touch back you know tomorrow or whatever just keep in touch dude don't be a stranger don't be weird please look i get you're emotional and sad and it's fair enough you know because your friendship means a lot to me too I don't want to lose you either okay please",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't know how me hanging around when you're busy could be misleading towards you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "But, you're busy, so you can't hang around.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "All I've ever wanted was your friendship, so anything more that you've read into has definitely been misconstrued.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'd still like to know how I've led you on in that way, because you've never made that clear.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You've also not really addressed the whole how I'm a chaser or how I was flirting with Freya.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It actually kind of feels like quite the opposite.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It kind of feels like if you can't have the friendship that you want from me, then that's it.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You know, the friendship's going to change completely.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Which means that unless you've got you know all this free time we won't hang out cause you're always fucking slinging shit you've always got people popping in and out and you've always got multiple people popping in and out but god forbid I'd be one of those people that pops in and out just to kick it and say what's up to my friend I think I have a pretty good idea where I stand on this whole thing and shitty shitty to think about losing a friend someone that you felt was kin and like minded with similar interests and all of that sort of stuff but The second it seems like it didn't go the way that you thought it was going, or hoping it was going, you know, it's all changed, like, instantly.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You also called me a whole bunch of shit that day that was unreasonable you had hours with me where we could have spoken about it but then the second that I left to go pick up you started sending me pretty hectos messages to the point where I got shitty and I responded in a way that I don't usually like to respond and even now when you've gone to pick up it was like all good to come around all good to come around until no no I'm too busy now I'm too busy for you so you tell me who's changed because I don't think I've changed my attitude towards you I'm still going to be who I am.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't understand what I've done that's flirting.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I feel like you might possibly misconstrue kindness for flirtation.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C074"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I don't know I was fine before I'll be fine after",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C075"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm sorry if you felt led on, and I'm sorry if you felt rejected afterwards.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C075"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I still don't really understand how I led you on, or led you to believe that what I saw as friendship was anything more than friendship.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C075"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Struggled to see how bringing up things like me flirting with Freya, which is nonsense, or me being a chaser, had anything to do with the argument that we were having.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C075"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It just seemed like you were upset and felt rejected and wanted to throw everything in the kitchen sink at me.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C075"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Which is kind of understandable, but also not something that friends do.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C075"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "As far as putting up boundaries, yeah, I want you to protect yourself, obviously",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C075"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I still have no idea how I was any more flirtatious with you than I was with anyone else.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C076"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I haven't listened to your voice messages yet",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C076"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Now I can take a breather and relax a little bit, maybe clear up my room a bit",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C076"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It's not pretty filthy actually it's completely covered in shit right now because although i have many people over i'm the only one that cleans up yeah",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C077"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It's different tonight, you big dummy, because we need to have a chat.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C077"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "We need to give that chat more energy than just, like, lazy hanging out, like, where you're blowing pipes and I'm seeing Custies, like, it means more to me than that.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C078"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You, you're being an absolute fuckwit right now, Alex.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C078"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You need to stop.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C078"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know why you want to be this way.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C078"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, we can be cool.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C078"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't know how like don't be so like like what is this like oh god it's so infuriating i'm not saying that you blowing pipes and me being busy is you flirting with me fuck me dude like you miss you're willfully misinterpreting me willfully that's being a fuckhead don't do that don't do that",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C079"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Okay, look, I'm listening to your voice message, I'm about 30 seconds in, I don't like what I'm hearing, I'm about to end this friendship myself.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C079"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, I don't know if I even should listen to the rest of these messages",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C079"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I don't want to lose you as a friend.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C079"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I'm gonna, in fact, you know what, I'm gonna save these messages, and we'll come back to this conversation tomorrow.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C079"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "I need some time to myself, sorry.",
+    "claim_type": "subjective_feeling"
+  },
+  {
+    "event_ids": [
+      "C080"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I'm gonna save you the effort, because I think I am done with this friendship myself.",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C080"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I think when you go back and listen to it, you'll realise I never said that I thought me blowing pipes was flirting.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C080"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I encourage you to save these conversations, just like I saved the last argument.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C080"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "It's a shame that it ended this way, but I had fun when we had fun.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C081"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Just in case that was not, like, direct enough for you, that was me ending the friendship.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C082"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "It's not fair for you to do this emotional, like, fucking blackmail, basically.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C082"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "Like, I haven't done anything wrong.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C082"
+    ],
+    "speaker": "Naomi",
+    "target": "Alex",
+    "claim_text": "You've treated me very poorly you've not respected my time and you've not respected that I might be busy or have other shit going on not cool be better, please and don't make me have to be the one that tells you what you've done wrong I have to do so much labour just for you to even like possibly understand me like for one little bit and it's like what labor have you done for me you know what labor have you done for my emotions and my needs you know nothing you don't care you don't even think that you've done anything wrong like not cool dude it's fucking cooked please be kinder to me as a friend i just don't know i don't know what else to say dude like i'm gonna go and spend a bunch of time now thinking about how i can talk to you and like have you spent a single second thinking about how you're gonna talk to me about this like what's gonna or are you just gonna wing it like i've spent hours and hours and hours thinking about how i can explain myself to you because you clearly don't understand me have you spent a single second thinking about what you're going to say to me like I don't think you actually care like it's hard to tell but it feels like you don't actually care like to put much effort into this friendship like you know for you it's like oh well if it doesn't work out it's not my fault whereas for me if it doesn't work out no matter what it's my fault even if it's your fault I still blame myself like what could I have done better what would I do better next time how would I do it differently I don't know I just don't think I don't want to send this voice message but I'm going to anyways because although not all of it is well said I think you need to hear some of this",
+    "claim_type": "commitment_or_plan"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "Of course I've thought about how I was going to approach this situation.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You want to talk about this sort of stuff.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've not really insulted you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've not sworn at you.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've not called you a fuckwit.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I've not made this all about your fault, your fault, your fault.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I said, I've saved all of the voice messages from the other night.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "I can play them all too, if you want.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "You can tell me who you think is being unreasonable.",
+    "claim_type": "factual_assertion"
+  },
+  {
+    "event_ids": [
+      "C083"
+    ],
+    "speaker": "Alex",
+    "target": "Naomi",
+    "claim_text": "This is not much more to say.",
+    "claim_type": "factual_assertion"
+  }
+]

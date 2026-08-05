@@ -1,0 +1,18 @@
+[
+  {
+    "type": "resolving_prior",
+    "events_a": [
+      "B062",
+      "B073"
+    ],
+    "events_b": [
+      "B115",
+      "F029"
+    ],
+    "description": "In phase B, Alex contradicted himself on who started the conversation (first implying he brought it up in B062/B073, then claiming Naomi started it in B115). In F029, Naomi states Alex 'brought it up when I was not going to', resolving the contradiction in favor of Alex's earlier statements.",
+    "events_b_sha": [
+      "UNRESOLVED",
+      "7701d76651a605c72103d33ac18ed30e4e53b14ec6d22ae4c8322d7442bbc816"
+    ]
+  }
+]

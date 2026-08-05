@@ -1,0 +1,58 @@
+{
+  "caveat": "SPEAKER ATTRIBUTION IS UNRELIABLE IN THE PREQUEL (OUT-OF-DOMAIN AUDIO SKEW).",
+  "counts": {
+    "Alex": 20,
+    "Naomi": 61,
+    "Unknown": 20
+  },
+  "by_format": {
+    ".m4a": {
+      "Alex": 0,
+      "Naomi": 2,
+      "Unknown": 9
+    },
+    ".aac": {
+      "Alex": 20,
+      "Naomi": 59,
+      "Unknown": 11
+    },
+    "unknown_ext": {
+      "Alex": 0,
+      "Naomi": 0,
+      "Unknown": 0
+    }
+  },
+  "by_month": {
+    "2025-12": {
+      "Alex": 0,
+      "Naomi": 2,
+      "Unknown": 0
+    },
+    "2026-02": {
+      "Alex": 0,
+      "Naomi": 10,
+      "Unknown": 17
+    },
+    "2026-03": {
+      "Alex": 0,
+      "Naomi": 17,
+      "Unknown": 3
+    },
+    "2026-04": {
+      "Alex": 14,
+      "Naomi": 29,
+      "Unknown": 0
+    },
+    "2026-05": {
+      "Alex": 1,
+      "Naomi": 1,
+      "Unknown": 0
+    },
+    "2026-06": {
+      "Alex": 5,
+      "Naomi": 2,
+      "Unknown": 0
+    }
+  },
+  "flagged_anomalies": []
+}

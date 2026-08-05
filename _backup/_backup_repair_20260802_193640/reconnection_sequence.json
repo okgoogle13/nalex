@@ -1,0 +1,170 @@
+{
+  "source_hash": "7949de4fc3057c366658d7ad8078a386d9c67d2cecdbf6192541f3b297062b19",
+  "source_file": "events.final.jsonl",
+  "generated": "2026-08-01T22:00:00Z",
+  "rule": "Reconnection sequence generation",
+  "coverage": {
+    "events_in_scope": 15,
+    "events_examined": 15,
+    "words_in_scope": 923,
+    "items_emitted": 15,
+    "items_per_1000_words": 16.25
+  },
+  "known_limits": [
+    "D/E/F are audio-only (all 75 text/call/media events belong to A/B/C)",
+    "3 Aftermath events have speaker 'Unknown'",
+    "claim densities are not comparable across phases (A/B/C ~29/1000, Aftermath ~51/1000, Prequel ~37/1000)"
+  ],
+  "items": [
+    {
+      "sha256": "a526df63b1a62d8201c214f0ac4d88a1a2dcb685570ecc6c24862584d0a5083a",
+      "eid": "C079",
+      "timestamp": "2026-07-05 00:16:40",
+      "speaker": "Naomi",
+      "speaker_conf": null,
+      "txt": "Okay, look, I'm listening to your voice message, I'm about 30 seconds in, I don't like what I'm hearing, I'm about to end this friendship myself. Like, I don't know if I even should listen to the rest of these messages, because you're being such a fuckwit, and I don't want to lose you as a friend. But you're really annoying me right now. I'm gonna, in fact, you know what, I'm gonna save these messages, and we'll come back to this conversation tomorrow. When I've had a bit of time to chill, a bit of time to myself. Yeah, I need some time to myself, sorry.",
+      "quote": "Okay, look, I'm listening to your voice message, I'm about 30 seconds in, I don't like what I'm hearing, I'm about to end this friendship myself. Like, I don't know if I even should listen to the rest of these messages, because you're being such a fuckwit, and I don't want to lose you as a friend. But you're really annoying me right now. I'm gonna, in fact, you know what, I'm gonna save these messages, and we'll come back to this conversation tomorrow. When I've had a bit of time to chill, a bit of time to myself. Yeah, I need some time to myself, sorry.",
+      "seconds_since_previous": null
+    },
+    {
+      "sha256": "fd3a81c724db6fe07e333f8005c3f3508059af7979c4f09b0f318a3e168916c1",
+      "eid": "C080",
+      "timestamp": "2026-07-05 00:46:33",
+      "speaker": "Alex",
+      "speaker_conf": null,
+      "txt": "I'm gonna save you the effort, because I think I am done with this friendship myself. I think when you go back and listen to it, you'll realise I never said that I thought me blowing pipes was flirting. But yeah, I encourage you to save these conversations, just like I saved the last argument. So, have a good one. It's been real. It's a shame that it ended this way, but I had fun when we had fun. And all these things come to an end sooner or later. So, good luck. See you later.",
+      "quote": "I'm gonna save you the effort, because I think I am done with this friendship myself. I think when you go back and listen to it, you'll realise I never said that I thought me blowing pipes was flirting. But yeah, I encourage you to save these conversations, just like I saved the last argument. So, have a good one. It's been real. It's a shame that it ended this way, but I had fun when we had fun. And all these things come to an end sooner or later. So, good luck. See you later.",
+      "seconds_since_previous": 1793.0
+    },
+    {
+      "sha256": "a985607806daa51ed91c72bf3d11ee06508b2a07cb47fd42c83decc489261dcd",
+      "eid": "C081",
+      "timestamp": "2026-07-05 00:46:58",
+      "speaker": "Alex",
+      "speaker_conf": null,
+      "txt": "And just in case that was not, like, direct enough for you, that was me ending the friendship.",
+      "quote": "And just in case that was not, like, direct enough for you, that was me ending the friendship.",
+      "seconds_since_previous": 25.0
+    },
+    {
+      "sha256": "9f77c1ff78403cff65f72fc3fd57dd8b79740e325273722d2655f17875fe54ee",
+      "eid": "C082",
+      "timestamp": "2026-07-05 00:49:18",
+      "speaker": "Naomi",
+      "speaker_conf": null,
+      "txt": "It's not fair for you to do this emotional, like, fucking blackmail, basically. Like, I haven't done anything wrong. If anything, you're the one who's done the wrong thing here, and who needs to hear the feedback. You've treated me very poorly you've not respected my time and you've not respected that I might be busy or have other shit going on not cool be better, please and don't make me have to be the one that tells you what you've done wrong I have to do so much labour just for you to even like possibly understand me like for one little bit and it's like what labor have you done for me you know what labor have you done for my emotions and my needs you know nothing you don't care you don't even think that you've done anything wrong like not cool dude it's fucking cooked please be kinder to me as a friend i just don't know i don't know what else to say dude like i'm gonna go and spend a bunch of time now thinking about how i can talk to you and like have you spent a single second thinking about how you're gonna talk to me about this like what's gonna or are you just gonna wing it like i've spent hours and hours and hours thinking about how i can explain myself to you because you clearly don't understand me have you spent a single second thinking about what you're going to say to me like I don't think you actually care like it's hard to tell but it feels like you don't actually care like to put much effort into this friendship like you know for you it's like oh well if it doesn't work out it's not my fault whereas for me if it doesn't work out no matter what it's my fault even if it's your fault I still blame myself like what could I have done better what would I do better next time how would I do it differently I don't know I just don't think I don't want to send this voice message but I'm going to anyways because although not all of it is well said I think you need to hear some of this",
+      "quote": "It's not fair for you to do this emotional, like, fucking blackmail, basically. Like, I haven't done anything wrong. If anything, you're the one who's done the wrong thing here, and who needs to hear the feedback. You've treated me very poorly you've not respected my time and you've not respected that I might be busy or have other shit going on not cool be better, please and don't make me have to be the one that tells you what you've done wrong I have to do so much labour just for you to even like possibly understand me like for one little bit and it's like what labor have you done for me you know what labor have you done for my emotions and my needs you know nothing you don't care you don't even think that you've done anything wrong like not cool dude it's fucking cooked please be kinder to me as a friend i just don't know i don't know what else to say dude like i'm gonna go and spend a bunch of time now thinking about how i can talk to you and like have you spent a single second thinking about how you're gonna talk to me about this like what's gonna or are you just gonna wing it like i've spent hours and hours and hours thinking about how i can explain myself to you because you clearly don't understand me have you spent a single second thinking about what you're going to say to me like I don't think you actually care like it's hard to tell but it feels like you don't actually care like to put much effort into this friendship like you know for you it's like oh well if it doesn't work out it's not my fault whereas for me if it doesn't work out no matter what it's my fault even if it's your fault I still blame myself like what could I have done better what would I do better next time how would I do it differently I don't know I just don't think I don't want to send this voice message but I'm going to anyways because although not all of it is well said I think you need to hear some of this",
+      "seconds_since_previous": 140.0
+    },
+    {
+      "sha256": "42c26078a3cb8429106cfca048218e3e8dc87b0fd3d5607f2ee1fa8b30b47a59",
+      "eid": "C083",
+      "timestamp": "2026-07-05 00:53:54",
+      "speaker": "Alex",
+      "speaker_conf": null,
+      "txt": "Of course I've thought about how I was going to approach this situation. But you want to talk about this sort of stuff. I've not really insulted you. I've not sworn at you. I've not called you a fuckwit. I've not made this all about your fault, your fault, your fault. And like I said, I've saved all of the voice messages from the other night. I've saved all of these voice messages. I can play them all too, if you want. You can tell me who you think is being unreasonable. Yeah, this is not much more to say.",
+      "quote": "Of course I've thought about how I was going to approach this situation. But you want to talk about this sort of stuff. I've not really insulted you. I've not sworn at you. I've not called you a fuckwit. I've not made this all about your fault, your fault, your fault. And like I said, I've saved all of the voice messages from the other night. I've saved all of these voice messages. I can play them all too, if you want. You can tell me who you think is being unreasonable. Yeah, this is not much more to say.",
+      "seconds_since_previous": 276.0
+    },
+    {
+      "sha256": "47d9cab369282b670518a6bcfcf67b260fd82f1e33bb9267b086f7b3f7d9f99e",
+      "eid": "G212",
+      "timestamp": "2026-07-11 20:07:12",
+      "speaker": "Unknown",
+      "speaker_conf": 0.10458624362945557,
+      "txt": "Sorry, I've been asleep all day Whatever you want to do, dude",
+      "quote": "Sorry, I've been asleep all day Whatever you want to do, dude",
+      "seconds_since_previous": 587598.0
+    },
+    {
+      "sha256": "3adcb980a64826d513c0389d688c7129cad51526bdca07ceaf58f812b21b1019",
+      "eid": "G170",
+      "timestamp": "2026-07-11 20:15:20",
+      "speaker": "Alex",
+      "speaker_conf": 0.48916155099868774,
+      "txt": "um, I would have came past earlier, but I've started drinking, so I cannot get in the car, and it's piercing down with rain, so I can't get on the bike, well, I shouldn't get on the bike.",
+      "quote": "um, I would have came past earlier, but I've started drinking, so I cannot get in the car, and it's piercing down with rain, so I can't get on the bike, well, I shouldn't get on the bike.",
+      "seconds_since_previous": 488.0
+    },
+    {
+      "sha256": "4f9549de1274124a372eb55bfcef3824a0f5c4e87a2cd253fe8a1b2b7bc7fb21",
+      "eid": "G171",
+      "timestamp": "2026-07-11 20:16:07",
+      "speaker": "Alex",
+      "speaker_conf": 0.482902467250824,
+      "txt": "And I asked you if you wanted to sell your glass because I figured your rent's going up and you need more cash. So if you want to make money off what's kind of essentially garbage to most people, I will pay you money for it.",
+      "quote": "And I asked you if you wanted to sell your glass because I figured your rent's going up and you need more cash. So if you want to make money off what's kind of essentially garbage to most people, I will pay you money for it.",
+      "seconds_since_previous": 47.0
+    },
+    {
+      "sha256": "0e489ed73c288a3c72b3d9a11467c2bc9a073d4c45c73356e0ed1aa0e366454a",
+      "eid": "G172",
+      "timestamp": "2026-07-11 20:21:50",
+      "speaker": "Naomi",
+      "speaker_conf": 0.20255142450332642,
+      "txt": "Interesting. Um, I've been, uh, I don't know. Um, I'm scared I need money, help with money. Don't worry, I'm all good.",
+      "quote": "Interesting. Um, I've been, uh, I don't know. Um, I'm scared I need money, help with money. Don't worry, I'm all good.",
+      "seconds_since_previous": 343.0
+    },
+    {
+      "sha256": "cdd4bbf1f63808b967a82e91911bf10481b83dcd4d97b5c15b71bc0b01cefd46",
+      "eid": "G173",
+      "timestamp": "2026-07-11 20:26:51",
+      "speaker": "Alex",
+      "speaker_conf": 0.5093387365341187,
+      "txt": "okie dokie um I don't know about you but I wouldn't mind having my friend back just think some uh acknowledgement would be good is all",
+      "quote": "okie dokie um I don't know about you but I wouldn't mind having my friend back just think some uh acknowledgement would be good is all",
+      "seconds_since_previous": 301.0
+    },
+    {
+      "sha256": "d4ef2c4e1a9d36022d56534eb95f7c8a134928a4501f80f710d9304166c8733d",
+      "eid": "G174",
+      "timestamp": "2026-07-11 20:27:06",
+      "speaker": "Alex",
+      "speaker_conf": 0.5261112451553345,
+      "txt": "But I also don't wish to end in another argument.",
+      "quote": "But I also don't wish to end in another argument.",
+      "seconds_since_previous": 15.0
+    },
+    {
+      "sha256": "20e2be91e8d5290856254422a0158c3e2993cd14d5314e266d3b4b48c5ca327a",
+      "eid": "G019",
+      "timestamp": "2026-07-11 20:27:26",
+      "speaker": "Alex",
+      "speaker_conf": 0.43364018201828003,
+      "txt": "So if this is going to create another argument just just forget it and move on",
+      "quote": "So if this is going to create another argument just just forget it and move on",
+      "seconds_since_previous": 20.0
+    },
+    {
+      "sha256": "915f36ff83cd1c7932134f90e5ade2c682f56e9f6656f764b3dace79d126ab48",
+      "eid": "G097",
+      "timestamp": "2026-07-11 20:30:43",
+      "speaker": "Naomi",
+      "speaker_conf": 0.22746548056602478,
+      "txt": "Erm, is there a chance we can do you yet?",
+      "quote": "Erm, is there a chance we can do you yet?",
+      "seconds_since_previous": 197.0
+    },
+    {
+      "sha256": "5e290b9b1fabe7438f8591a45b8996f844f1816823d408a3bed202e720ffd3b9",
+      "eid": "G175",
+      "timestamp": "2026-07-11 20:31:32",
+      "speaker": "Alex",
+      "speaker_conf": 0.44864940643310547,
+      "txt": "No, no one has spoken to me. I've had radio silence and it's been a little bit hurtful, but I've endured worse and I will keep on keeping on.",
+      "quote": "No, no one has spoken to me. I've had radio silence and it's been a little bit hurtful, but I've endured worse and I will keep on keeping on.",
+      "seconds_since_previous": 49.0
+    },
+    {
+      "sha256": "18299ebd211d42cc12ee13b52590b242a6c4aac9e11d27dd170d116eda5eb6a6",
+      "eid": "G096",
+      "timestamp": "2026-07-11 20:48:49",
+      "speaker": "Alex",
+      "speaker_conf": 0.3225286602973938,
+      "txt": "What does this have to do with the price of fish though?",
+      "quote": "What does this have to do with the price of fish though?",
+      "seconds_since_previous": 1037.0
+    }
+  ]
+}
