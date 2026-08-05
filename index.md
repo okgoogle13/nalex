@@ -87,7 +87,7 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 *   **Root `.md`**: `CURRENT_STATE_CLEAN.md`, `NALEX_EVIDENCE_BRIEF_headline_patterns.md`, `index.md`, `claude.md`, `AGENTS.md`.
 *   **Root data**: `events.jsonl` (canonical event stream) and the four derived summaries in §4.
 *   **Root scripts**: `recompute_harness.py` (metric validation) and `refactor_questions_v2.py` (live annotation generator).
-*   `research_prompt_modes/`: the canonical 2-pass + repair-layer prompt architecture and its outputs (§10).
+*   `research_prompt_modes/`: the canonical 2-pass + repair-layer + visualization-pipeline prompt architecture and its outputs (§10), including the required visualization stack `visualization_pipeline.md`, `viz_schema_template.md`, and `nalex_gemini_viz_corrective_prompt.md` (§11).
 
 ### 7.2 Archive-only (never use as source data)
 
@@ -147,17 +147,13 @@ Where `claude.md` and `AGENTS.md` conflict, `claude.md` wins for project analysi
 
 ## 11. Visualization Rule
 
-**Visualization inputs must be flattened into a strict schema before rendering.**
-Use canonical sources to extract evidence, then convert into a strict schema with:
-- theme or pattern
-- phase
-- speaker
-- metric or value
-- evidence quote
-- confidence
-- linked theme or relation
+**Visualization inputs must be flattened into a strict schema before rendering.** This is not optional scratch work — it is a required, three-file pipeline in `research_prompt_modes/`, and all three files must be read before producing a visualization:
 
-Rendering models must not infer new themes, rewrite evidence, or add analysis.
+- `visualization_pipeline.md`: the workflow itself — extract evidence from canonical sources, flatten it, then render. Defines the analysis/rendering separation.
+- `viz_schema_template.md`: the flattened schema every visualization input must conform to before rendering (theme/pattern, phase, speaker, metric/value, evidence quote, confidence, linked theme/relation, visual hint).
+- `nalex_gemini_viz_corrective_prompt.md`: the corrective prompt to hand a rendering model (e.g. Gemini) so it behaves as a "dumb layout engine" — no inferred themes, no rewritten evidence, no added analysis.
+
+Use canonical sources (§1–§5) to extract evidence, convert into the schema in `viz_schema_template.md`, then render per `visualization_pipeline.md`. Rendering models must not infer new themes, rewrite evidence, or add analysis.
 
 ---
 
