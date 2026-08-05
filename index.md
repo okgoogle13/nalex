@@ -116,7 +116,7 @@ Where `claude.md` and `AGENTS.md` conflict, `claude.md` wins for project analysi
 - Center structural patterns (volume and latency asymmetries, question and answer patterns).
 - Respect phase definitions and the data purge constraints.
 - Separate observation from interpretation; keep analysis distinct from visualization rendering (§11).
-- Use only active files as source data. Archive-only artifacts (§12) must not be treated as evidence.
+- Use only active files as source data. Archive-only artifacts (§7.2) must not be treated as evidence.
 
 ---
 
