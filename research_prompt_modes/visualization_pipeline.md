@@ -46,6 +46,8 @@ Use a strict table or JSON/YAML structure with fields like:
 The rendering model should behave like a dumb layout engine.
 It should only render what is provided and must not invent new structure.
 
+Treat `visual_hint` as a literal rendering instruction. Use only values permitted by `viz_schema_template.md`. Follow the defined semantics for each hint exactly. A schema value may select a primitive within a larger artifact layout, but it must not be replaced with a different visual encoding or used to derive additional data.
+
 ### Final Verification Requirements
 8. Canonical phase records are grouped using only the valid canonical phase enum.
 9. Records marked `scope: "corpus"` or another template-defined non-phase scope are rendered only as defined by the schema and are not misrepresented as phase data.

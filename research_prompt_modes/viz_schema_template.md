@@ -8,6 +8,7 @@
   "phase": "Baseline | Conflict | Silence | Aftermath | null",
   "scope": "phase | session | gap | corpus",
   "detail_label": "string | null",
+  "display_instance": "number | null",
   "speaker": "Naomi | Alex | both | mixed",
   "metric": {
     "name": "string",
@@ -18,7 +19,7 @@
   "confidence": "low | medium | high",
   "linked_theme": "string|null",
   "relation_type": "supports | contrasts | repeats | escalates | repairs | diverges",
-  "visual_hint": "timeline | bar | heatmap | network | cards | table",
+  "visual_hint": "timeline | bar | bar_segment | heatmap | network | cards | table | dot | scatter_point | gap_line | overlay | strip",
   "forward_looking_evaluation": "string"
 }
 ```
@@ -31,6 +32,30 @@
 - Do not mix long narrative interpretation into the rendering payload.
 - Add interpretation only when the artifact is explicitly meant to visualize interpretation.
 
+### visual_hint
+`visual_hint` is a literal rendering instruction. Allowed values:
+- `timeline`
+- `bar`
+- `bar_segment`
+- `heatmap`
+- `network`
+- `cards`
+- `table`
+- `dot`
+- `scatter_point`
+- `gap_line`
+- `overlay`
+- `strip`
+
+Renderer semantics:
+- `bar`: bar-based representation.
+- `bar_segment`: a labelled segment within a bar-based representation.
+- `dot`: a single plotted marker.
+- `scatter_point`: a point in a scatter-based representation.
+- `gap_line`: a line or marked separation representing a temporal/contact gap.
+- `overlay`: an overlaid comparison layer; it must not independently calculate a value.
+- `strip`: a compact strip/row-based representation.
+
 ## Examples
 
 ### Phase asymmetry record
@@ -40,6 +65,7 @@
   "phase": "Aftermath",
   "scope": "phase",
   "detail_label": null,
+  "display_instance": null,
   "speaker": "Naomi",
   "metric": {
     "name": "sessions_initiated",
@@ -62,6 +88,7 @@
   "phase": "Conflict",
   "scope": "phase",
   "detail_label": null,
+  "display_instance": null,
   "speaker": "both",
   "metric": {
     "name": "genuine_unanswered_questions",
