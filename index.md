@@ -95,7 +95,7 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 
 ### 7.3 Special-purpose (not evidence)
 
-*   `visualisations/`: rendered presentation artifacts (`nalex_playbook_dark_m3.html`, `nalex_patterns_flashcards.html`). For review and demo only — outputs, not sources.
+*   `visualisations/`: rendered presentation artifacts (`nalex_playbook_dark_m3.html`, `nalex_patterns_flashcards.html`) plus the viz-pipeline planning docs that feed them (`nalex_viz_ideation.md`, `nalex_viz_canonical_render_spec.md`, `visualization_input_manifest.txt`). For review and demo only — outputs, not sources.
 *   `_provenance/`: upstream provenance index over the raw audio pool. Covers purged files by design.
 *   `_backup/`: pre-repair backups for forensic recovery only.
 
