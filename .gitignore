@@ -1,0 +1,6 @@
+# Google Drive upload cache — ~46,000 transient files.
+# Never scan or stage: it hangs `git status` on the full tree.
+.tmp.driveupload/
+
+# macOS
+.DS_Store
