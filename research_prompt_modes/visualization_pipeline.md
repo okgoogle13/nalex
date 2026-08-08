@@ -20,6 +20,8 @@ Prefer these sources:
 Use a strict table or JSON/YAML structure with fields like:
 - theme or pattern
 - phase
+- scope
+- detail_label
 - speaker
 - metric or value
 - evidence quote
@@ -43,3 +45,14 @@ Use a strict table or JSON/YAML structure with fields like:
 ## Rendering prompt rule
 The rendering model should behave like a dumb layout engine.
 It should only render what is provided and must not invent new structure.
+
+### Final Verification Requirements
+8. Canonical phase records are grouped using only the valid canonical phase enum.
+9. Records marked `scope: "corpus"` or another template-defined non-phase scope are rendered only as defined by the schema and are not misrepresented as phase data.
+10. Where a canonical phase has no applicable schema record for an artifact, it is shown as absent/not applicable only if the schema explicitly encodes that status; otherwise it is omitted and listed in the render audit.
+
+### Validation Checklist
+- every `phase` value is either a valid canonical phase or `null` when `scope` is a template-defined non-phase scope;
+- every record has a valid `scope`;
+- session, gap, and corpus identifiers are stored in their designated detail field;
+- phase applicability or non-applicability is explicit where required by the artifact.
