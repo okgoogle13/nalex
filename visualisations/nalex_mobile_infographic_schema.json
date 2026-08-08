@@ -1,0 +1,167 @@
+{
+  "artifact": "nalex_mobile_infographic",
+  "generated": "2026-08-06",
+  "pipeline": "research_prompt_modes/visualization_pipeline.md",
+  "schema": "research_prompt_modes/viz_schema_template.md",
+  "form_factor": "vertical mobile infographic, single column, Pixel 10 Pro (412 x 917 dp viewport)",
+  "rendering_contract": "Render only these records. Do not infer new themes, rewrite evidence, add analysis, or compute new metrics. Caveat strings marked render_on_face MUST appear in the artifact body, not in comments or footnotes.",
+
+  "sources": {
+    "volume": "baseline_comparison_audit.json (single source for Q1; phase_profile.json differs <0.3% by tokenizer)",
+    "latency": "phase_profile.json (authoritative, carries Conflict ranges); baseline_comparison_audit.json for point values",
+    "initiation_closure": "phase_profile.json phases.*.speakers.*.{session_opens,session_closes,explicit_signoff_turns}; corpus_wide.explicit_signoffs_total",
+    "questions_population": "baseline_comparison_audit.json {Baseline,Conflict}.{N_q,A_q,N_unans,A_unans}",
+    "questions_sample": "conflict_questions_annotated.json (17 records); conflict_questions_summary.json conversation_summary"
+  },
+
+  "masthead": {
+    "title": "Nalex",
+    "subtitle": "Structural patterns across four phases",
+    "corpus": { "events": 378, "first_event": "2026-04-01", "last_event": "2026-07-21", "speakers": { "Alex": 188, "Naomi": 187, "System": 3 } },
+    "phases": [
+      { "phase": "Baseline",  "window": "1 Apr – 22 Jun", "calendar_days": 83, "events": 52,  "sessions": 10, "flag": "baseline_chronic_asymmetry" },
+      { "phase": "Conflict",  "window": "23 Jun – 5 Jul", "calendar_days": 13, "events": 221, "sessions": 10, "flag": "conflict_question_inversion" },
+      { "phase": "Silence",   "window": "6 – 10 Jul",     "calendar_days": 5,  "events": 0,   "sessions": 0,  "flag": "no_contact" },
+      { "phase": "Aftermath", "window": "11 – 21 Jul",    "calendar_days": 11, "events": 105, "sessions": 5,  "flag": "aftermath_unilateral_initiation" }
+    ]
+  },
+
+  "artifact_1_volume": {
+    "visual_question": "How does the word-volume gap between Naomi and Alex change across phases?",
+    "visual_hint": "bar",
+    "headline_metric": { "name": "word_ratio_N_over_A", "series": [1.83, 1.12, 3.14], "unit": "ratio" },
+    "records": [
+      { "theme": "volume_dominance", "phase": "Baseline",  "speaker": "Naomi", "metric": { "name": "words", "value": 1693, "unit": "words" }, "evidence_quote": "Naomi 32 msg / 1,693 w", "confidence": "high", "linked_theme": "turn_shape", "relation_type": "supports", "visual_hint": "bar" },
+      { "theme": "volume_dominance", "phase": "Baseline",  "speaker": "Alex",  "metric": { "name": "words", "value": 927,  "unit": "words" }, "evidence_quote": "Alex 20 msg / 927 w",   "confidence": "high", "linked_theme": "turn_shape", "relation_type": "supports", "visual_hint": "bar" },
+      { "theme": "volume_dominance", "phase": "Conflict",  "speaker": "Naomi", "metric": { "name": "words", "value": 5888, "unit": "words" }, "evidence_quote": "Naomi 94 msg / 5,888 w", "confidence": "high", "linked_theme": "turn_shape", "relation_type": "supports", "visual_hint": "bar" },
+      { "theme": "volume_dominance", "phase": "Conflict",  "speaker": "Alex",  "metric": { "name": "words", "value": 5233, "unit": "words" }, "evidence_quote": "Alex 124 msg / 5,233 w", "confidence": "high", "linked_theme": "turn_shape", "relation_type": "supports", "visual_hint": "bar" },
+      { "theme": "volume_dominance", "phase": "Aftermath", "speaker": "Naomi", "metric": { "name": "words", "value": 6852, "unit": "words" }, "evidence_quote": "Naomi 61 msg / 6,852 w", "confidence": "high", "linked_theme": "turn_shape", "relation_type": "escalates", "visual_hint": "bar" },
+      { "theme": "volume_dominance", "phase": "Aftermath", "speaker": "Alex",  "metric": { "name": "words", "value": 2181, "unit": "words" }, "evidence_quote": "Alex 44 msg / 2,181 w",  "confidence": "high", "linked_theme": "turn_shape", "relation_type": "supports", "visual_hint": "bar" }
+    ],
+    "supporting_records": [
+      { "theme": "turn_shape", "phase": "Conflict",  "speaker": "both", "metric": { "name": "median_words_per_turn", "value": "39.5 / 21", "unit": "words (Naomi / Alex)" }, "evidence_quote": "Conflict median turn length 39.5 vs 21 words.", "confidence": "high", "linked_theme": "volume_dominance", "relation_type": "contrasts", "visual_hint": "bar" },
+      { "theme": "turn_shape", "phase": "Aftermath", "speaker": "both", "metric": { "name": "median_words_per_turn", "value": "66 / 26",   "unit": "words (Naomi / Alex)" }, "evidence_quote": "Aftermath median turn length 66 vs 26 words.",  "confidence": "high", "linked_theme": "volume_dominance", "relation_type": "escalates", "visual_hint": "bar" }
+    ],
+    "caveats": [
+      { "text": "Totals, not rates — the phases span 83, 13 and 11 calendar days.", "render_on_face": true }
+    ]
+  },
+
+  "artifact_2_latency": {
+    "visual_question": "How does median reply latency for each speaker change across phases?",
+    "visual_hint": "bar",
+    "records": [
+      { "theme": "latency_shift", "phase": "Baseline",  "speaker": "Naomi", "metric": { "name": "median_reply_seconds", "value": 484,       "unit": "seconds" }, "evidence_quote": "Naomi 484s (n=7)",   "confidence": "medium", "linked_theme": "volume_dominance", "relation_type": "contrasts", "visual_hint": "bar" },
+      { "theme": "latency_shift", "phase": "Baseline",  "speaker": "Alex",  "metric": { "name": "median_reply_seconds", "value": 101,       "unit": "seconds" }, "evidence_quote": "Alex 101s (n=8)",    "confidence": "medium", "linked_theme": "volume_dominance", "relation_type": "contrasts", "visual_hint": "bar" },
+      { "theme": "latency_shift", "phase": "Conflict",  "speaker": "Naomi", "metric": { "name": "median_reply_seconds", "value": "112-120", "unit": "seconds" }, "evidence_quote": "Naomi 112–120s band", "confidence": "low",    "linked_theme": "volume_dominance", "relation_type": "contrasts", "visual_hint": "bar" },
+      { "theme": "latency_shift", "phase": "Conflict",  "speaker": "Alex",  "metric": { "name": "median_reply_seconds", "value": "70-94",   "unit": "seconds" }, "evidence_quote": "Alex 70–94s band",   "confidence": "low",    "linked_theme": "volume_dominance", "relation_type": "contrasts", "visual_hint": "bar" },
+      { "theme": "latency_shift", "phase": "Aftermath", "speaker": "Naomi", "metric": { "name": "median_reply_seconds", "value": 169,       "unit": "seconds" }, "evidence_quote": "Naomi 169s",         "confidence": "high",   "linked_theme": "volume_dominance", "relation_type": "contrasts", "visual_hint": "bar" },
+      { "theme": "latency_shift", "phase": "Aftermath", "speaker": "Alex",  "metric": { "name": "median_reply_seconds", "value": 122,       "unit": "seconds" }, "evidence_quote": "Alex 122s",          "confidence": "high",   "linked_theme": "volume_dominance", "relation_type": "contrasts", "visual_hint": "bar" }
+    ],
+    "caveats": [
+      { "text": "Conflict is a band, not a point — 36 Conflict events carry inferred timestamps.", "render_on_face": true },
+      { "text": "Baseline medians rest on 7 (Naomi) and 8 (Alex) observations.", "render_on_face": true },
+      { "text": "Three points per line is not a trend. No per-event latency series exists in the inputs.", "render_on_face": true }
+    ]
+  },
+
+  "artifact_3_initiation_closure": {
+    "visual_question": "Who opens sessions, who closes them, and who actually says goodbye?",
+    "visual_hint": "table",
+    "definitions": [
+      { "term": "session close", "text": "the last turn before a 60-minute gap — a mechanical artifact, not a communicative act", "render_on_face": true },
+      { "term": "explicit sign-off", "text": "a verbal termination move", "render_on_face": true }
+    ],
+    "records": [
+      { "theme": "initiation_closure_asymmetry", "phase": "Baseline",  "speaker": "both", "metric": { "name": "session_opens_N_to_A",  "value": "5:5", "unit": "of 10 sessions" }, "evidence_quote": "Baseline opens 5:5",  "confidence": "high", "linked_theme": "unilateral_initiation", "relation_type": "supports",  "visual_hint": "table" },
+      { "theme": "initiation_closure_asymmetry", "phase": "Conflict",  "speaker": "both", "metric": { "name": "session_opens_N_to_A",  "value": "5:5", "unit": "of 10 sessions" }, "evidence_quote": "Conflict opens 5:5",  "confidence": "high", "linked_theme": "unilateral_initiation", "relation_type": "repeats",   "visual_hint": "table" },
+      { "theme": "initiation_closure_asymmetry", "phase": "Aftermath", "speaker": "both", "metric": { "name": "session_opens_N_to_A",  "value": "5:0", "unit": "of 5 sessions" },  "evidence_quote": "Aftermath opens 5:0", "confidence": "high", "linked_theme": "unilateral_initiation", "relation_type": "diverges",  "visual_hint": "table" },
+      { "theme": "initiation_closure_asymmetry", "phase": "Baseline",  "speaker": "both", "metric": { "name": "session_closes_N_to_A", "value": "4:6", "unit": "of 10 sessions" }, "evidence_quote": "Baseline closes 4:6", "confidence": "high", "linked_theme": "unilateral_initiation", "relation_type": "contrasts", "visual_hint": "table" },
+      { "theme": "initiation_closure_asymmetry", "phase": "Conflict",  "speaker": "both", "metric": { "name": "session_closes_N_to_A", "value": "3:7", "unit": "of 10 sessions" }, "evidence_quote": "Conflict closes 3:7", "confidence": "high", "linked_theme": "unilateral_initiation", "relation_type": "contrasts", "visual_hint": "table" },
+      { "theme": "initiation_closure_asymmetry", "phase": "Aftermath", "speaker": "both", "metric": { "name": "session_closes_N_to_A", "value": "5:0", "unit": "of 5 sessions" },  "evidence_quote": "Aftermath closes 5:0", "confidence": "high", "linked_theme": "unilateral_initiation", "relation_type": "diverges", "visual_hint": "table" },
+      { "theme": "closure_function", "phase": "Baseline",  "speaker": "both", "metric": { "name": "explicit_signoffs_N_to_A", "value": "0:0",  "unit": "turns" }, "evidence_quote": "Baseline sign-offs 0:0",  "confidence": "high", "linked_theme": "initiation_closure_asymmetry", "relation_type": "supports",  "visual_hint": "table" },
+      { "theme": "closure_function", "phase": "Conflict",  "speaker": "both", "metric": { "name": "explicit_signoffs_N_to_A", "value": "0:11", "unit": "turns" }, "evidence_quote": "Conflict sign-offs 0:11",  "confidence": "high", "linked_theme": "initiation_closure_asymmetry", "relation_type": "contrasts", "visual_hint": "table" },
+      { "theme": "closure_function", "phase": "Aftermath", "speaker": "both", "metric": { "name": "explicit_signoffs_N_to_A", "value": "0:4",  "unit": "turns" }, "evidence_quote": "Aftermath sign-offs 0:4",  "confidence": "high", "linked_theme": "initiation_closure_asymmetry", "relation_type": "contrasts", "visual_hint": "table" },
+      { "theme": "closure_function", "phase": "corpus", "speaker": "both", "metric": { "name": "explicit_signoffs_total", "value": "Alex 15 / Naomi 0", "unit": "turns across 378 events" }, "evidence_quote": "Explicit sign-offs corpus-wide: Alex 15, Naomi 0.", "confidence": "high", "linked_theme": "initiation_closure_asymmetry", "relation_type": "contrasts", "visual_hint": "table" },
+      { "theme": "post_exit_continuation", "phase": "Aftermath", "speaker": "Naomi", "metric": { "name": "words_with_no_other_party_present", "value": 2585, "unit": "words (37.7% of 6,860)" }, "evidence_quote": "2,585 of Naomi's 6,860 Aftermath words are produced after Alex has left the session or in sessions he never joins — 1,792 words in 11 post-exit turns plus 793 words in 8 Naomi-only turns.", "confidence": "high", "linked_theme": "closure_function", "relation_type": "supports", "visual_hint": "bar" },
+      { "theme": "post_exit_continuation", "phase": "Aftermath", "speaker": "Alex", "metric": { "name": "words_with_no_other_party_present", "value": 0, "unit": "words" }, "evidence_quote": "Alex post-exit tail 0 words, solo-session 0 words.", "confidence": "high", "linked_theme": "closure_function", "relation_type": "contrasts", "visual_hint": "bar" }
+    ],
+    "interpretation_records": [
+      { "tag": "alex_withdrawal_by_exit", "text": "INTERPRETATION: managing load by ending exchanges rather than escalating", "source": "phase_profile.json tag_vocabulary.emotional_tags" },
+      { "tag": "naomi_never_closes_verbally", "text": "STRUCTURAL TAG: zero explicit sign-off moves in the phase", "source": "phase_profile.json tag_vocabulary.problematic_tags" },
+      { "tag": "dyad_asymmetric_repair_expectation", "text": "INTERPRETATION: each waits for the other to perform the first repair move", "source": "phase_profile.json tag_vocabulary.emotional_tags" }
+    ],
+    "caveats": [
+      { "text": "Naomi's 5 Aftermath closes overlap her 11 post-exit turns — the metric partly counts talking after he left as closing.", "render_on_face": true },
+      { "text": "Aftermath denominator is 5 sessions. One session is 20% of the bar.", "render_on_face": true }
+    ]
+  },
+
+  "artifact_4_questions": {
+    "visual_question": "In the Conflict phase, what do the questions actually do?",
+    "visual_hint": "cards",
+    "panel_population": {
+      "label": "Population — all literal-'?' questions",
+      "denominator_note": "Conflict phase, 83 questions",
+      "records": [
+        { "theme": "question_inversion", "phase": "Conflict", "speaker": "Naomi", "metric": { "name": "questions_asked", "value": 39, "unit": "count" }, "evidence_quote": "Conflict: Naomi 39 questions, 8 documented unanswered.", "confidence": "high", "linked_theme": "unanswered_bids", "relation_type": "contrasts", "visual_hint": "bar" },
+        { "theme": "question_inversion", "phase": "Conflict", "speaker": "Alex",  "metric": { "name": "questions_asked", "value": 44, "unit": "count" }, "evidence_quote": "Conflict: Alex 44 questions, 15 documented unanswered.", "confidence": "high", "linked_theme": "unanswered_bids", "relation_type": "escalates", "visual_hint": "bar" },
+        { "theme": "unanswered_bids", "phase": "Conflict", "speaker": "Naomi", "metric": { "name": "unanswered_documented", "value": 8,  "unit": "of 39" }, "evidence_quote": "Naomi 8/39 documented unanswered.", "confidence": "medium", "linked_theme": "question_inversion", "relation_type": "supports", "visual_hint": "bar" },
+        { "theme": "unanswered_bids", "phase": "Conflict", "speaker": "Alex",  "metric": { "name": "unanswered_documented", "value": 15, "unit": "of 44" }, "evidence_quote": "Alex 15/44 documented unanswered.", "confidence": "low", "linked_theme": "question_inversion", "relation_type": "supports", "visual_hint": "bar" },
+        { "theme": "unanswered_bids", "phase": "Baseline", "speaker": "Naomi", "metric": { "name": "questions_and_unanswered", "value": "12 / 6",  "unit": "asked / unanswered" }, "evidence_quote": "Baseline: Naomi 12 asked, 6 unanswered.", "confidence": "high", "linked_theme": "question_inversion", "relation_type": "contrasts", "visual_hint": "bar" },
+        { "theme": "unanswered_bids", "phase": "Baseline", "speaker": "Alex",  "metric": { "name": "questions_and_unanswered", "value": "4 / 1",   "unit": "asked / unanswered" }, "evidence_quote": "Baseline: Alex 4 asked, 1 unanswered.", "confidence": "high", "linked_theme": "question_inversion", "relation_type": "contrasts", "visual_hint": "bar" }
+      ]
+    },
+    "divider_label": "20% annotated sample — NOT drawn from the panel above. Its speaker skew inverts the population's.",
+    "panel_sample": {
+      "label": "Sample — 17 hand-annotated questions",
+      "denominator_note": "Naomi 11 / Alex 6 · 26–27 Jun (12) and 4 Jul (5)",
+      "records": [
+        { "theme": "question_function", "phase": "Conflict", "speaker": "both", "metric": { "name": "answered", "value": "Partial 10 / No 7 / Yes 0", "unit": "of 17" }, "evidence_quote": "Not one of the 17 annotated questions is recorded as fully answered.", "confidence": "high", "linked_theme": "retrieval_vs_proof_deadlock", "relation_type": "supports", "visual_hint": "cards" },
+        { "theme": "question_function", "phase": "Conflict", "speaker": "both", "metric": { "name": "genuine_unanswered", "value": "3", "unit": "of 17" }, "evidence_quote": "3 of 17 flagged genuine_unanswered.", "confidence": "high", "linked_theme": "retrieval_vs_proof_deadlock", "relation_type": "supports", "visual_hint": "cards" },
+        { "theme": "question_function", "phase": "Conflict", "speaker": "both", "metric": { "name": "intent", "value": "challenge 5 / boundary 5 / clarify 4 / justify 1 / deflect 1 / repair 1", "unit": "of 17" }, "evidence_quote": "Intent distribution across the 17 annotated questions.", "confidence": "high", "linked_theme": "retrieval_vs_proof_deadlock", "relation_type": "supports", "visual_hint": "cards" },
+        { "theme": "question_function", "phase": "Conflict", "speaker": "both", "metric": { "name": "heat", "value": "hot 9 / tense 7 / explosive 1", "unit": "of 17" }, "evidence_quote": "Heat distribution across the 17 annotated questions.", "confidence": "high", "linked_theme": "retrieval_vs_proof_deadlock", "relation_type": "escalates", "visual_hint": "cards" },
+        { "theme": "retrieval_vs_proof_deadlock", "phase": "Conflict", "speaker": "both", "metric": { "name": "dominant_loop", "value": "proof-loop", "unit": "6 of 17" }, "evidence_quote": "Retrieval vs. Proof Deadlock", "confidence": "high", "linked_theme": "question_function", "relation_type": "supports", "visual_hint": "cards" }
+      ],
+      "core_problem_verbatim": "One party repeatedly demands specific proof of intent (e.g. regarding flirting and avoidance) and the other refuses to supply or restate it, leading to character attacks. Accusatory questions are weaponized as pressure, while requests for concrete examples go unanswered."
+    },
+    "caveats": [
+      { "text": "Alex's 15/44 is an analyst-assigned content judgement, not reproducible from events.jsonl — a mechanical 10-minute rule yields ≈16% vs ≈18%, with no inversion.", "render_on_face": true },
+      { "text": "The 17 annotated questions are a ~20% sample whose speaker skew (11:6 Naomi) inverts the population's (39:44 Alex). The sample panel is not evidence about the population panel.", "render_on_face": true }
+    ]
+  },
+
+  "artifact_5_limits": {
+    "visual_question": "What can these numbers not say?",
+    "visual_hint": "cards",
+    "records": [
+      { "theme": "channel_limit", "phase": "Aftermath", "speaker": "both", "metric": { "name": "audio_share", "value": "105 / 105", "unit": "events" }, "evidence_quote": "The Aftermath window is 100% audio. The Conflict phase contained 69 text events (38 Alex / 31 Naomi). If Alex replied by text in July, those turns are absent by construction, and initiation/unanswered figures are upper bounds on the asymmetry.", "confidence": "high", "linked_theme": null, "relation_type": "contrasts", "visual_hint": "cards" },
+      { "theme": "join_key_limit", "phase": "Conflict", "speaker": "both", "metric": { "name": "events_without_sha256", "value": 77, "unit": "of 378" }, "evidence_quote": "All 77 sha256-less events are in the Conflict phase. The 'always join on sha256' invariant cannot be applied to the Conflict text thread.", "confidence": "high", "linked_theme": null, "relation_type": "contrasts", "visual_hint": "cards" },
+      { "theme": "sample_limit", "phase": "Baseline", "speaker": "both", "metric": { "name": "latency_observations", "value": "7 / 8", "unit": "observations (Naomi / Alex)" }, "evidence_quote": "Latency medians rest on 7 (Naomi) and 8 (Alex) observations.", "confidence": "high", "linked_theme": null, "relation_type": "contrasts", "visual_hint": "cards" },
+      { "theme": "interpretation_status", "phase": "corpus", "speaker": "both", "metric": { "name": "tag_status", "value": "INTERPRETATION", "unit": "label" }, "evidence_quote": "problematic_tags and emotional_tags are assigned analytic labels, not measured quantities. emotional_tags are INTERPRETATION.", "confidence": "high", "linked_theme": null, "relation_type": "contrasts", "visual_hint": "cards" }
+    ]
+  },
+
+  "render_directives": {
+    "device": "Pixel 10 Pro",
+    "viewport_css_px": { "width": 412, "height": 917 },
+    "design_system": "Material 3 Expressive, dark theme",
+    "atmosphere": "neon Tokyo night",
+    "speaker_color_roles": { "Naomi": "neon magenta", "Alex": "neon cyan", "shared": "violet", "caveat": "amber" },
+    "rules": [
+      "Single column. No horizontal page scroll; wide content scrolls inside its own container.",
+      "Minimum touch target 48 x 48 dp. Primary controls inside the bottom thumb zone.",
+      "Body text minimum 15px; label text minimum 12px with increased letter-spacing.",
+      "Numerals use tabular-nums.",
+      "Caveats with render_on_face:true appear in the visible body of their own section.",
+      "Interpretation strings keep their INTERPRETATION: / STRUCTURAL TAG: prefix.",
+      "Motion respects prefers-reduced-motion.",
+      "Fully self-contained: no external fonts, scripts, or images."
+    ],
+    "variants": [
+      { "id": "v1_playful",  "direction": "higher chroma, springier motion, chunky asymmetric shapes, chip-heavy" },
+      { "id": "v2_polished", "direction": "restrained neon, deeper surface hierarchy, editorial typography, generous whitespace" },
+      { "id": "v3_dramatic", "direction": "cinematic contrast, oversized display numerals, full-bleed gradient fields, scroll-driven emphasis" }
+    ]
+  }
+}

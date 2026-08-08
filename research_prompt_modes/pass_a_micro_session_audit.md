@@ -34,3 +34,4 @@ Produce a chronological Markdown report for the session:
   - *Trajectory:* [Repair attempt, avoidance, or unresolved]
 - **Stance/Mirroring (Optional):** [Notable shifts in pronoun/stance]
 - **Link to Canonical Findings:** [e.g., "This withdrawal precipitates the 6.8-day silence"]
+- **Forward-Looking Evaluation:** [Constructive insight synthesizing how the dyad can constructively overcome these specific observed deadlocks or rigidities moving forward]

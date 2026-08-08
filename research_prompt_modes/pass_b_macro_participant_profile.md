@@ -37,5 +37,7 @@ For each participant, use the following structure:
 - **Unresolved Tensions**:
   - [Tension 1] 
   - [Tension 2] 
+- **Forward-Looking Evaluation**:
+  - [Constructive, behavior-focused recommendation synthesizing a path forward for this specific participant's structural patterns]
 
 *Constraint: Ensure all claims are explicitly anchored in phase-level metrics, quotes, or qualitative annotations.*
