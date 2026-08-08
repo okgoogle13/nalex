@@ -26,11 +26,12 @@
 
 ## Notes
 - `phase` must be `null` only for valid non-phase records (e.g. `scope: "corpus"`).
-- `detail_label` must contain the exact literal identifier (e.g. "Aftermath_Session_1") when applicable, otherwise `null`.
+- `detail_label` must be `null` when `scope` is `phase`. For `scope: "session"`, `"gap"`, or `"corpus"`, `detail_label` may carry the exact literal identifier (e.g. "Aftermath_Session_1", "Corpus") when applicable, otherwise `null`.
 - Keep each record small and auditable.
 - Prefer one visual question per artifact.
 - Do not mix long narrative interpretation into the rendering payload.
 - Add interpretation only when the artifact is explicitly meant to visualize interpretation.
+- `heat`, `loop_tag`, and `intent` are optional annotation metadata fields that may appear on individual annotated records (no fixed enum; free-form short labels). They are supplementary context only and must not be used by the renderer to select or alter visual encoding.
 
 ### visual_hint
 `visual_hint` is a literal rendering instruction. Allowed values:

@@ -600,7 +600,7 @@
       {
         "theme": "latency_shift",
         "phase": "Aftermath",
-        "speaker": "Both",
+        "speaker": "both",
         "metric": {
           "name": "inter_contact_gap",
           "value": 676768,
@@ -619,7 +619,7 @@
       {
         "theme": "latency_shift",
         "phase": "Silence",
-        "speaker": "Both",
+        "speaker": "both",
         "metric": {
           "name": "inter_contact_gap",
           "value": 587598,
@@ -1200,7 +1200,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 1
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1222,7 +1222,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 2
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1244,7 +1244,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": 1
+        "display_instance": 3
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1266,7 +1266,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 4
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1288,7 +1288,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 5
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1310,7 +1310,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 6
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1332,7 +1332,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 7
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1354,7 +1354,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 8
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1376,7 +1376,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 9
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1398,7 +1398,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 10
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1420,7 +1420,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 11
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1442,7 +1442,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": 2
+        "display_instance": 12
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1464,7 +1464,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 13
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1486,7 +1486,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": 1
+        "display_instance": 14
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1508,7 +1508,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": 2
+        "display_instance": 15
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1530,7 +1530,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 16
       },
       {
         "theme": "genuine_vs_rhetorical_question_share",
@@ -1552,7 +1552,7 @@
         "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
         "scope": "phase",
         "detail_label": null,
-        "display_instance": null
+        "display_instance": 17
       }
     ],
     "source": "conflict_questions_summary.json (messages array); CURRENT_STATE_CLEAN.md \u00a72 Finding 3"

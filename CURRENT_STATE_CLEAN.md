@@ -208,6 +208,8 @@ Consequence: Finding 4 (5:0 initiation) and Naomi's 52% unanswered rate are **up
 
 **G. Small figure mismatch in §6.** Rev 2's log gives "122s/140s ... for 5 July onward." `aftermath_stats.json` reports 140s (Naomi) / **124s** (Alex) for that window; 122s is the Alex figure for the canonical 11–21 July window. Cosmetic, but it conflates two scopes in a log entry written to distinguish them.
 
+**H. Aftermath word-count reconciliation (Finding 1 vs §13.3).** §2 Finding 1 reports the primary visualization totals: Naomi 6,852 words / Alex 2,181 words for the Aftermath (11–21 Jul). §13.3's independent Rev 4 event-log recomputation reports Naomi 6,860 / Alex 2,187 for the same window. The difference (8 words / 0.12% Naomi, 6 words / 0.28% Alex) is within the tokenizer/counting-method variance already documented in §7.1 ("Word counts differ by <0.3% ... tokenizer choice, not an error") and is not treated as an error. **Downstream visualization and extraction must use the §2 Finding 1 figures — Naomi 6,852, Alex 2,181 — as the canonical totals for this metric.** §13.3's 6,860/2,187 remain valid as the independent recomputation check and are not to be substituted.
+
 ### 7.3 Summary
 
 The structural backbone is sound and independently verified. Two load-bearing claims are weaker than their presentation suggests: the Conflict question inversion (unverifiable annotation) and the magnitude of the Aftermath initiation asymmetry (single-channel capture). Nothing found contradicts the phase windows, the purge, or Findings 1, 2 and 4 in direction.
