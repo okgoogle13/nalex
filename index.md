@@ -96,7 +96,8 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 
 ### 7.3 Special-purpose (not evidence)
 
-*   `visualisations/`: rendered presentation artifacts (`nalex_playbook_dark_m3.html`, `nalex_patterns_flashcards.html`) plus the viz-pipeline planning docs that feed them (`nalex_viz_ideation.md`, `nalex_viz_canonical_render_spec.md`, `visualization_input_manifest.txt`). For review and demo only — outputs, not sources.
+*   `visualisations/`: rendered presentation artifacts (`nalex_playbook_dark_m3.html`, `nalex_patterns_flashcards.html`, `nalex_initiation_closure_m3_expressive.html`) plus the viz-pipeline planning docs that feed them (`nalex_viz_ideation.md`, `nalex_viz_canonical_render_spec.md`, `visualization_input_manifest.txt`). For review and demo only — outputs, not sources.
+    *   `nalex_initiation_closure_m3_expressive.html` — single-visual-question artifact ("Who opens and who closes sessions, per phase?"), built 2026-08-09 from `_canonical_strong/` (§13). Renders `artifact_3_initiation_closure` only; the 20 records are embedded verbatim and honour `visual_hint` literally (`table` → phase × speaker grid, `overlay` → sign-off badge layer, `strip` → corpus totals). Forward-looking copy comes from each record's `forward_looking_evaluation`.
 *   `_provenance/`: upstream provenance index over the raw audio pool. Covers purged files by design.
 *   `_backup/`: pre-repair backups for forensic recovery only.
 
@@ -167,7 +168,16 @@ Keep `_backup/` for recovery only and `_provenance/` for forensic lineage.
 
 ## 13. Canonical Triage Set (`_canonical_strong/`)
 
+The `_canonical_strong/` directory contains the triaged, canonical source files for visualization builds as of 2026-08-09.
+
 Several visualization-pipeline inputs existed as duplicate copies across the repo (e.g. one in `visualisations/`, another in `research_prompt_modes/` or `research_prompt_modes/analysis_outputs/`). On 2026-08-09 these were triaged and the winning copy of each was placed in `_canonical_strong/` with a provenance note (`CANONICAL TRIAGE NOTE` comment/header/JSON key) recording the original path and why it was kept. Underlying content is unchanged from the source copy — only provenance metadata and, for JSON, unicode-escape normalization were added.
+
+Selection criteria:
+- Strongest M3 Expressive realization (HTML shell),
+- `index.md`-mandated schema contract (template),
+- Richest `forward_looking_evaluation` coverage (JSON).
+
+For visualization builds, use files in `_canonical_strong/` as the canonical base unless otherwise noted.
 
 - `_canonical_strong/nalex_mobile_v1_playful.html`: base layout/interaction shell for new visualization builds (strongest mobile-first M3 Expressive dark-mode realization; schema-locked rendering with prefixed `INTERPRETATION` tags).
 - `_canonical_strong/viz_schema_template.md`: the §11 schema contract — identical to `research_prompt_modes/viz_schema_template.md` plus the triage note.
