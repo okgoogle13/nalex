@@ -88,6 +88,7 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 *   **Root data**: `events.jsonl` (canonical event stream) and the four derived summaries in §4.
 *   **Root scripts**: `recompute_harness.py` (metric validation) and `refactor_questions_v2.py` (live annotation generator).
 *   `research_prompt_modes/`: the canonical 2-pass + repair-layer + visualization-pipeline prompt architecture and its outputs (§10), including the required visualization stack `visualization_pipeline.md`, `viz_schema_template.md`, and `nalex_gemini_viz_corrective_prompt.md` (§11).
+*   `_canonical_strong/`: triaged, single-copy source set for visualization builds — resolves duplicate copies of viz inputs found elsewhere in the repo (§13).
 
 ### 7.2 Archive-only (never use as source data)
 
@@ -161,3 +162,15 @@ Use canonical sources (§1–§5) to extract evidence, convert into the schema i
 
 Move legacy, superseded, or one-off artifacts to `_archive/`.
 Keep `_backup/` for recovery only and `_provenance/` for forensic lineage.
+
+---
+
+## 13. Canonical Triage Set (`_canonical_strong/`)
+
+Several visualization-pipeline inputs existed as duplicate copies across the repo (e.g. one in `visualisations/`, another in `research_prompt_modes/` or `research_prompt_modes/analysis_outputs/`). On 2026-08-09 these were triaged and the winning copy of each was placed in `_canonical_strong/` with a provenance note (`CANONICAL TRIAGE NOTE` comment/header/JSON key) recording the original path and why it was kept. Underlying content is unchanged from the source copy — only provenance metadata and, for JSON, unicode-escape normalization were added.
+
+- `_canonical_strong/nalex_mobile_v1_playful.html`: base layout/interaction shell for new visualization builds (strongest mobile-first M3 Expressive dark-mode realization; schema-locked rendering with prefixed `INTERPRETATION` tags).
+- `_canonical_strong/viz_schema_template.md`: the §11 schema contract — identical to `research_prompt_modes/viz_schema_template.md` plus the triage note.
+- `_canonical_strong/nalex_viz_schema.json`: flattened record set with `forward_looking_evaluation` populated on every record — the primary source of ready-to-use, forward-focused coaching text for rendering.
+
+**Rule:** when building or refining a visualization artifact, read the `_canonical_strong/` copy of each file, not the duplicates in `visualisations/` or `research_prompt_modes/`. Treat non-`_canonical_strong/` copies of these three files as superseded — do not edit them; edit `_canonical_strong/` and, if needed, re-run triage to fold changes back.
