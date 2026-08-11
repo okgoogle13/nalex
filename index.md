@@ -87,8 +87,8 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 *   **Root `.md`**: `CURRENT_STATE_CLEAN.md`, `NALEX_EVIDENCE_BRIEF_headline_patterns.md`, `index.md`, `claude.md`, `AGENTS.md`.
 *   **Root data**: `events.jsonl` (canonical event stream) and the four derived summaries in §4.
 *   **Root scripts**: `recompute_harness.py` (metric validation) and `refactor_questions_v2.py` (live annotation generator).
-*   `research_prompt_modes/`: the canonical 2-pass + repair-layer + visualization-pipeline prompt architecture and its outputs (§10), including the required visualization stack `visualization_pipeline.md`, `viz_schema_template.md`, and `nalex_gemini_viz_corrective_prompt.md` (§11).
-*   `_canonical_strong/`: triaged, single-copy source set for visualization builds — resolves duplicate copies of viz inputs found elsewhere in the repo (§13).
+*   `research_prompt_modes/`: the canonical 2-pass + repair-layer prompt architecture and its outputs (§10).
+*   `_canonical_strong/`: triaged, single-copy source set for visualization builds — resolves duplicate copies of viz inputs found elsewhere in the repo (§13). Contains the required visualization stack `visualization_pipeline.md` and `viz_schema_template.md` (§11).
 
 ### 7.2 Archive-only (never use as source data)
 
@@ -98,6 +98,7 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 
 *   `visualisations/`: rendered presentation artifacts (`nalex_playbook_dark_m3.html`, `nalex_patterns_flashcards.html`, `nalex_initiation_closure_m3_expressive.html`) plus the viz-pipeline planning docs that feed them (`nalex_viz_ideation.md`, `nalex_viz_canonical_render_spec.md`, `visualization_input_manifest.txt`). For review and demo only — outputs, not sources.
     *   `nalex_initiation_closure_m3_expressive.html` — single-visual-question artifact ("Who opens and who closes sessions, per phase?"), built 2026-08-09 from `_canonical_strong/` (§13). Renders `artifact_3_initiation_closure` only; the 20 records are embedded verbatim and honour `visual_hint` literally (`table` → phase × speaker grid, `overlay` → sign-off badge layer, `strip` → corpus totals). Forward-looking copy comes from each record's `forward_looking_evaluation`.
+    *   `nalex_alex_evidence_view_m3.html` + `nalex_naomi_evidence_view_m3.html` — matched per-person evidence pair, built 2026-08-11 from `_canonical_strong/nalex_viz_schema.json` (artifacts 1–3), cross-checked against `phase_profile.json` rev 4 and `baseline_comparison_audit.json`. Each carries three measured observations with per-record `confidence`, a named-uncertainty section, and exactly one reflection block that is visually separated and labelled *not evidence*. Silence is rendered as an explicit unmeasured state, never as zero. Series palette `#3F8AD8` (Alex) / `#CC7F30` (Naomi) is fixed across both files and passes all six dark-mode colour checks (worst adjacent CVD ΔE 23.8, normal ΔE 27.4); the older `#87719d`/`#5f7f96` pair in `generate_charts.py` fails them (deutan ΔE 0.9). **Supersedes** `nalex_alex_feedback_view_m3.html` and `nalex_naomi_feedback_view_m3.html`, which state motive as fact, use banned wording, and cite `CURRENT_STATE_CLEAN.md` rather than the schema — those two are retained pending a routing decision, not endorsed.
 *   `_provenance/`: upstream provenance index over the raw audio pool. Covers purged files by design.
 *   `_backup/`: pre-repair backups for forensic recovery only.
 
@@ -139,9 +140,6 @@ Where `claude.md` and `AGENTS.md` conflict, `claude.md` wins for project analysi
   - `pass_a_micro_session_audit.md`: (Pass 1) Micro-session audit.
   - `pass_b_macro_participant_profile.md`: (Pass 2) Macro participant profile.
   - `layer_c_repair_protocol.md`: (Layer C) Two-Lane Repair Protocol.
-  - `visualization_pipeline.md`: Strict evidence-to-visualization workflow.
-  - `viz_schema_template.md`: Flattened schema template for rendering inputs.
-  - `nalex_gemini_viz_corrective_prompt.md`: Reusable corrective prompt for Gemini visualization planning.
 - Outputs:
   - Located in `research_prompt_modes/analysis_outputs/` (`pass_a_output.md`, `pass_b_output.md`, `layer_c_output.md`).
 
@@ -149,13 +147,14 @@ Where `claude.md` and `AGENTS.md` conflict, `claude.md` wins for project analysi
 
 ## 11. Visualization Rule
 
-**Visualization inputs must be flattened into a strict schema before rendering.** This is not optional scratch work — it is a required, three-file pipeline in `research_prompt_modes/`, and all three files must be read before producing a visualization:
+**Visualization inputs must be flattened into a strict schema before rendering.** This is not optional scratch work — it is a required pipeline using files in `_canonical_strong/`, and these files must be read before producing a visualization:
 
 - `visualization_pipeline.md`: the workflow itself — extract evidence from canonical sources, flatten it, then render. Defines the analysis/rendering separation.
 - `viz_schema_template.md`: the flattened schema every visualization input must conform to before rendering (theme/pattern, phase, speaker, metric/value, evidence quote, confidence, linked theme/relation, visual hint).
-- `nalex_gemini_viz_corrective_prompt.md`: the corrective prompt to hand a rendering model (e.g. Gemini) so it behaves as a "dumb layout engine" — no inferred themes, no rewritten evidence, no added analysis.
 
-Use canonical sources (§1–§5) to extract evidence, convert into the schema in `viz_schema_template.md`, then render per `visualization_pipeline.md`. Rendering models must not infer new themes, rewrite evidence, or add analysis.
+*(Note: The legacy `nalex_gemini_viz_corrective_prompt.md` is now in `_archive/`.)*
+
+Use canonical sources (§1–§5) to extract evidence, convert into the schema in `_canonical_strong/viz_schema_template.md`, then render per `_canonical_strong/visualization_pipeline.md`. Rendering models must not infer new themes, rewrite evidence, or add analysis.
 
 ---
 
@@ -180,7 +179,7 @@ Selection criteria:
 For visualization builds, use files in `_canonical_strong/` as the canonical base unless otherwise noted.
 
 - `_canonical_strong/nalex_mobile_v1_playful.html`: base layout/interaction shell for new visualization builds (strongest mobile-first M3 Expressive dark-mode realization; schema-locked rendering with prefixed `INTERPRETATION` tags).
-- `_canonical_strong/viz_schema_template.md`: the §11 schema contract — identical to `research_prompt_modes/viz_schema_template.md` plus the triage note.
+- `_canonical_strong/viz_schema_template.md`: the §11 schema contract.
 - `_canonical_strong/nalex_viz_schema.json`: flattened record set with `forward_looking_evaluation` populated on every record — the primary source of ready-to-use, forward-focused coaching text for rendering.
 
-**Rule:** when building or refining a visualization artifact, read the `_canonical_strong/` copy of each file, not the duplicates in `visualisations/` or `research_prompt_modes/`. Treat non-`_canonical_strong/` copies of these three files as superseded — do not edit them; edit `_canonical_strong/` and, if needed, re-run triage to fold changes back.
+**Rule:** when building or refining a visualization artifact, read the `_canonical_strong/` copy of each file. The duplicate copies formerly in `visualisations/` or `research_prompt_modes/` have been moved to `_archive/superseded/`.

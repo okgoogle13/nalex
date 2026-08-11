@@ -1,0 +1,1565 @@
+{
+    "_canonical_triage_note": {
+        "original_path": "research_prompt_modes/analysis_outputs/nalex_viz_schema.json",
+        "kept_because": "Fully schema-compliant record set that also carries a forward_looking_evaluation string on every record -- the single richest source of ready-to-reuse, forward-focused, non-diagnostic coaching lines tied directly to specific evidence records.",
+        "triage_date": "2026-08-09"
+    },
+    "artifact_1_volume_asymmetry": {
+        "visual_question": "How does the word-volume gap between Naomi and Alex change across phases?",
+        "records": [
+            {
+                "theme": "volume_dominance",
+                "phase": "Baseline",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "words",
+                    "value": 1693,
+                    "unit": "words"
+                },
+                "evidence_quote": "Naomi 32 msg / 1,693 w",
+                "confidence": "high",
+                "linked_theme": "turn_shape",
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Baseline",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "words",
+                    "value": 927,
+                    "unit": "words"
+                },
+                "evidence_quote": "Alex 20 msg / 927 w",
+                "confidence": "high",
+                "linked_theme": "turn_shape",
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "words",
+                    "value": 5888,
+                    "unit": "words"
+                },
+                "evidence_quote": "Naomi 94 msg / 5,888 w",
+                "confidence": "high",
+                "linked_theme": "turn_shape",
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "words",
+                    "value": 5233,
+                    "unit": "words"
+                },
+                "evidence_quote": "Alex 124 msg / 5,233 w",
+                "confidence": "high",
+                "linked_theme": "turn_shape",
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "words",
+                    "value": 6852,
+                    "unit": "words"
+                },
+                "evidence_quote": "Naomi sent 6,852 words across 61 messages to Alex's 2,181 across 44 \u2014 a 3.14\u00d7 word ratio.",
+                "confidence": "high",
+                "linked_theme": "turn_shape",
+                "relation_type": "escalates",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "words",
+                    "value": 2181,
+                    "unit": "words"
+                },
+                "evidence_quote": "Alex 44 msg / 2,181 w",
+                "confidence": "high",
+                "linked_theme": "turn_shape",
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Baseline",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "solo_session_words",
+                    "value": 1082,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed solo_session_words for Naomi in Baseline",
+                "confidence": "high",
+                "linked_theme": "unwitnessed",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Baseline",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "post_exit_tail_words",
+                    "value": 78,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed post_exit_tail_words for Naomi in Baseline",
+                "confidence": "high",
+                "linked_theme": "post_exit_continuation",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Baseline",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "solo_session_words",
+                    "value": 335,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed solo_session_words for Alex in Baseline",
+                "confidence": "high",
+                "linked_theme": "unwitnessed",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Baseline",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "post_exit_tail_words",
+                    "value": 102,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed post_exit_tail_words for Alex in Baseline",
+                "confidence": "high",
+                "linked_theme": "post_exit_continuation",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "solo_session_words",
+                    "value": 18,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed solo_session_words for Naomi in Conflict",
+                "confidence": "high",
+                "linked_theme": "unwitnessed",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "post_exit_tail_words",
+                    "value": 414,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed post_exit_tail_words for Naomi in Conflict",
+                "confidence": "high",
+                "linked_theme": "post_exit_continuation",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "solo_session_words",
+                    "value": 56,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed solo_session_words for Alex in Conflict",
+                "confidence": "high",
+                "linked_theme": "unwitnessed",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "post_exit_tail_words",
+                    "value": 843,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed post_exit_tail_words for Alex in Conflict",
+                "confidence": "high",
+                "linked_theme": "post_exit_continuation",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "solo_session_words",
+                    "value": 793,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed solo_session_words for Naomi in Aftermath",
+                "confidence": "high",
+                "linked_theme": "unwitnessed",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "post_exit_tail_words",
+                    "value": 1792,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed post_exit_tail_words for Naomi in Aftermath",
+                "confidence": "high",
+                "linked_theme": "post_exit_continuation",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Channeling this immense drive for clarity into bounded, structured check-ins could preserve connection while preventing listener overwhelm.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "solo_session_words",
+                    "value": 0,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed solo_session_words for Alex in Aftermath",
+                "confidence": "high",
+                "linked_theme": "unwitnessed",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "post_exit_tail_words",
+                    "value": 0,
+                    "unit": "words"
+                },
+                "evidence_quote": "Computed post_exit_tail_words for Alex in Aftermath",
+                "confidence": "high",
+                "linked_theme": "post_exit_continuation",
+                "relation_type": "supports",
+                "visual_hint": "bar_segment",
+                "forward_looking_evaluation": "Finding a sustainable way to increase communicative volume (e.g. written letters or scheduled topics) could help meet the partner's need for data without burning out.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "volume_dominance",
+                "phase": "Silence",
+                "scope": "phase",
+                "detail_label": null,
+                "speaker": "both",
+                "metric": {
+                    "name": "words",
+                    "value": 0,
+                    "unit": "words"
+                },
+                "evidence_quote": "Silence | Jul 6 \u2013 Jul 10 | 0",
+                "confidence": "high",
+                "linked_theme": null,
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Maintaining periods of zero contact can be a healthy regulatory mechanism.",
+                "display_instance": null
+            }
+        ],
+        "source": "CURRENT_STATE_CLEAN.md \u00a71, \u00a72 Finding 1"
+    },
+    "artifact_2_latency_convergence": {
+        "visual_question": "How does median reply latency for each speaker change across phases?",
+        "records": [
+            {
+                "theme": "latency_shift",
+                "phase": "Baseline",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 484,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Naomi 484s",
+                "confidence": "medium",
+                "linked_theme": "volume_dominance",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Pacing responses to match the partner's baseline rhythm could reduce the feeling of anticipatory vigilance and restore conversational balance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Baseline",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 101,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Alex 101s",
+                "confidence": "medium",
+                "linked_theme": "volume_dominance",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": "112-120",
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Naomi 120s",
+                "confidence": "medium",
+                "linked_theme": "volume_dominance",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Pacing responses to match the partner's baseline rhythm could reduce the feeling of anticipatory vigilance and restore conversational balance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": "70-94",
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Alex 94s",
+                "confidence": "medium",
+                "linked_theme": "volume_dominance",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 169,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Naomi's latency fell nearly 3\u00d7 from Baseline to Aftermath",
+                "confidence": "high",
+                "linked_theme": "volume_dominance",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Pacing responses to match the partner's baseline rhythm could reduce the feeling of anticipatory vigilance and restore conversational balance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 122,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Alex 122s",
+                "confidence": "high",
+                "linked_theme": "volume_dominance",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 73,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Session 1 latency for Naomi",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "supports",
+                "visual_hint": "dot",
+                "forward_looking_evaluation": "Pacing responses to match the partner's baseline rhythm could reduce the feeling of anticipatory vigilance and restore conversational balance.",
+                "scope": "session",
+                "detail_label": "Aftermath_Session_1",
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 109,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Session 1 latency for Alex",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "supports",
+                "visual_hint": "dot",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "session",
+                "detail_label": "Aftermath_Session_1",
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 583,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Session 4 latency for Naomi",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "supports",
+                "visual_hint": "dot",
+                "forward_looking_evaluation": "Pacing responses to match the partner's baseline rhythm could reduce the feeling of anticipatory vigilance and restore conversational balance.",
+                "scope": "session",
+                "detail_label": "Aftermath_Session_4",
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 343,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Session 4 latency for Alex",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "supports",
+                "visual_hint": "dot",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "session",
+                "detail_label": "Aftermath_Session_4",
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 206,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Session 5 latency for Naomi",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "supports",
+                "visual_hint": "dot",
+                "forward_looking_evaluation": "Pacing responses to match the partner's baseline rhythm could reduce the feeling of anticipatory vigilance and restore conversational balance.",
+                "scope": "session",
+                "detail_label": "Aftermath_Session_5",
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "median_reply_latency",
+                    "value": 124,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Session 5 latency for Alex",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "supports",
+                "visual_hint": "dot",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "session",
+                "detail_label": "Aftermath_Session_5",
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Aftermath",
+                "speaker": "both",
+                "metric": {
+                    "name": "inter_contact_gap",
+                    "value": 676768,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Inter-contact gap 676768s",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "contrasts",
+                "visual_hint": "gap_line",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "gap",
+                "detail_label": "Aftermath_Gap",
+                "display_instance": null
+            },
+            {
+                "theme": "latency_shift",
+                "phase": "Silence",
+                "speaker": "both",
+                "metric": {
+                    "name": "inter_contact_gap",
+                    "value": 587598,
+                    "unit": "seconds"
+                },
+                "evidence_quote": "Inter-contact gap 587598s",
+                "confidence": "high",
+                "linked_theme": "anticipatory_vigilance",
+                "relation_type": "contrasts",
+                "visual_hint": "gap_line",
+                "forward_looking_evaluation": "Maintaining this consistent latency even during high-conflict phases is a strength that can be leveraged to establish a reliable 'safe' response window.",
+                "scope": "gap",
+                "detail_label": "Silence_Gap",
+                "display_instance": null
+            }
+        ],
+        "source": "CURRENT_STATE_CLEAN.md \u00a72 Finding 2"
+    },
+    "artifact_3_initiation_closure": {
+        "visual_question": "Who opens and who closes sessions, per phase?",
+        "records": [
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Baseline",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "session_opens",
+                    "value": 5,
+                    "unit": "count"
+                },
+                "evidence_quote": "5:5 opens at Baseline",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "supports",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Baseline",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "session_opens",
+                    "value": 5,
+                    "unit": "count"
+                },
+                "evidence_quote": "5:5 opens at Baseline",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "supports",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Baseline",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "session_closes",
+                    "value": 4,
+                    "unit": "count"
+                },
+                "evidence_quote": "Baseline closes: Alex 6, Naomi 4",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "contrasts",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Baseline",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "session_closes",
+                    "value": 6,
+                    "unit": "count"
+                },
+                "evidence_quote": "Baseline closes: Alex 6, Naomi 4",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "contrasts",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "session_opens",
+                    "value": 5,
+                    "unit": "count"
+                },
+                "evidence_quote": "5:5 opens in Conflict",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "supports",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "session_opens",
+                    "value": 5,
+                    "unit": "count"
+                },
+                "evidence_quote": "5:5 opens in Conflict",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "supports",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "session_closes",
+                    "value": 3,
+                    "unit": "count"
+                },
+                "evidence_quote": "Conflict closes: Alex 7, Naomi 3",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "contrasts",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "session_closes",
+                    "value": 7,
+                    "unit": "count"
+                },
+                "evidence_quote": "Conflict closes: Alex 7, Naomi 3",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "contrasts",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "session_opens",
+                    "value": 5,
+                    "unit": "count"
+                },
+                "evidence_quote": "Naomi opens 5 of 5 Aftermath sessions; Alex opens 0.",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "escalates",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "session_opens",
+                    "value": 0,
+                    "unit": "count"
+                },
+                "evidence_quote": "Naomi opens 5 of 5 Aftermath sessions; Alex opens 0.",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "escalates",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "session_closes",
+                    "value": 5,
+                    "unit": "count"
+                },
+                "evidence_quote": "Aftermath closes: Naomi 5, Alex 0",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "escalates",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "session_closes",
+                    "value": 0,
+                    "unit": "count"
+                },
+                "evidence_quote": "Aftermath closes: Naomi 5, Alex 0",
+                "confidence": "high",
+                "linked_theme": "unilateral_initiation",
+                "relation_type": "escalates",
+                "visual_hint": "table",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Baseline",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "explicit_signoff_turns",
+                    "value": 0,
+                    "unit": "count"
+                },
+                "evidence_quote": "Explicit signoffs for Naomi in Baseline",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "overlay",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Baseline",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "explicit_signoff_turns",
+                    "value": 0,
+                    "unit": "count"
+                },
+                "evidence_quote": "Explicit signoffs for Alex in Baseline",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "overlay",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "explicit_signoff_turns",
+                    "value": 0,
+                    "unit": "count"
+                },
+                "evidence_quote": "Explicit signoffs for Naomi in Conflict",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "overlay",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "explicit_signoff_turns",
+                    "value": 11,
+                    "unit": "count"
+                },
+                "evidence_quote": "Explicit signoffs for Alex in Conflict",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "overlay",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Aftermath",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "explicit_signoff_turns",
+                    "value": 0,
+                    "unit": "count"
+                },
+                "evidence_quote": "Explicit signoffs for Naomi in Aftermath",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "overlay",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": "Aftermath",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "explicit_signoff_turns",
+                    "value": 4,
+                    "unit": "count"
+                },
+                "evidence_quote": "Explicit signoffs for Alex in Aftermath",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "overlay",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": null,
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "explicit_signoffs_total",
+                    "value": 0,
+                    "unit": "count"
+                },
+                "evidence_quote": "Corpus total explicit signoffs",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "strip",
+                "forward_looking_evaluation": "Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.",
+                "scope": "corpus",
+                "detail_label": "Corpus",
+                "display_instance": null
+            },
+            {
+                "theme": "initiation_closure_asymmetry",
+                "phase": null,
+                "speaker": "Alex",
+                "metric": {
+                    "name": "explicit_signoffs_total",
+                    "value": 15,
+                    "unit": "count"
+                },
+                "evidence_quote": "Corpus total explicit signoffs",
+                "confidence": "high",
+                "linked_theme": "withdrawal_by_exit",
+                "relation_type": "supports",
+                "visual_hint": "strip",
+                "forward_looking_evaluation": "Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.",
+                "scope": "corpus",
+                "detail_label": "Corpus",
+                "display_instance": null
+            }
+        ],
+        "source": "CURRENT_STATE_CLEAN.md \u00a72 Finding 4, \u00a713.0; NALEX_EVIDENCE_BRIEF_headline_patterns.md \u00a72.4"
+    },
+    "artifact_4_conflict_question_function": {
+        "visual_question": "Within the Conflict-phase annotated question sample, what share is genuinely unanswered vs. serving another rhetorical function?",
+        "sample_caveat": "conflict_questions_summary.json contains 17 fully message-level-annotated questions (11 Naomi, 6 Alex), a sample of the 83 total literal-'?' questions documented for the Conflict phase (39 Naomi, 44 Alex) in CURRENT_STATE_CLEAN.md. Counts below describe the annotated sample only, not the full Conflict-phase question set.",
+        "records": [
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "intent_challenge",
+                    "value": 5,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "You still haven't answered any of my questions. Are you a coward?",
+                "confidence": "medium",
+                "linked_theme": "retrieval_vs_proof_deadlock",
+                "relation_type": "escalates",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "intent_boundary",
+                    "value": 5,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "...state your intentions. State what you want.",
+                "confidence": "medium",
+                "linked_theme": "retrieval_vs_proof_deadlock",
+                "relation_type": "repairs",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "intent_clarify",
+                    "value": 4,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "What things I did to make you feel like I was flirting with you more so than anyone else?",
+                "confidence": "medium",
+                "linked_theme": "retrieval_vs_proof_deadlock",
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "intent_justify",
+                    "value": 1,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "why the fuck didn't we hook up?",
+                "confidence": "medium",
+                "linked_theme": "retrieval_vs_proof_deadlock",
+                "relation_type": "supports",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "intent_deflect",
+                    "value": 1,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "Well, the questions are written in the chat. You can just go have a look, dude.",
+                "confidence": "medium",
+                "linked_theme": "retrieval_vs_proof_deadlock",
+                "relation_type": "diverges",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "intent_repair",
+                    "value": 1,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "I don't want to lose you as a friend, but I also don't want it to be uncomfortable and awkward for you.",
+                "confidence": "medium",
+                "linked_theme": "retrieval_vs_proof_deadlock",
+                "relation_type": "repairs",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "genuine_unanswered_true",
+                    "value": 3,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "3 of 17 annotated questions are flagged genuine_unanswered=true.",
+                "confidence": "medium",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "both",
+                "metric": {
+                    "name": "genuine_unanswered_false",
+                    "value": 14,
+                    "unit": "count of 17 annotated"
+                },
+                "evidence_quote": "14 of 17 annotated questions are rhetorical, defensive, or repetitive rather than genuine information requests.",
+                "confidence": "medium",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "contrasts",
+                "visual_hint": "bar",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": null
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "tense",
+                "loop_tag": "directness-loop",
+                "intent": "clarify",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 1
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "tense",
+                "loop_tag": "proof-loop",
+                "intent": "clarify",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 2
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "flirting-ambiguity-loop",
+                "intent": "challenge",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 3
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "proof-loop",
+                "intent": "challenge",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 4
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "repair-loop",
+                "intent": "boundary",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 5
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "proof-loop",
+                "intent": "clarify",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 6
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "flirting-ambiguity-loop",
+                "intent": "boundary",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 7
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "explosive",
+                "loop_tag": "blame-loop",
+                "intent": "challenge",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 8
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "proof-loop",
+                "intent": "justify",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 9
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "proof-loop",
+                "intent": "deflect",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 10
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "avoidance-loop",
+                "intent": "challenge",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 11
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "hot",
+                "loop_tag": "flirting-ambiguity-loop",
+                "intent": "challenge",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 12
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "tense",
+                "loop_tag": "repair-loop",
+                "intent": "repair",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 13
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "tense",
+                "loop_tag": "directness-loop",
+                "intent": "boundary",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 14
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "tense",
+                "loop_tag": "directness-loop",
+                "intent": "boundary",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 15
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Naomi",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "tense",
+                "loop_tag": "boundary-loop",
+                "intent": "boundary",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 16
+            },
+            {
+                "theme": "genuine_vs_rhetorical_question_share",
+                "phase": "Conflict",
+                "speaker": "Alex",
+                "metric": {
+                    "name": "annotated_question",
+                    "value": 1,
+                    "unit": "count"
+                },
+                "heat": "tense",
+                "loop_tag": "proof-loop",
+                "intent": "clarify",
+                "evidence_quote": "Annotated question from sample",
+                "confidence": "high",
+                "linked_theme": "conflict_question_inversion",
+                "relation_type": "supports",
+                "visual_hint": "scatter_point",
+                "forward_looking_evaluation": "Separating genuine requests for information from defensive boundary setting is required to break the deadlock and de-escalate the crossfire.",
+                "scope": "phase",
+                "detail_label": null,
+                "display_instance": 17
+            }
+        ],
+        "source": "conflict_questions_summary.json (messages array); CURRENT_STATE_CLEAN.md \u00a72 Finding 3"
+    }
+}

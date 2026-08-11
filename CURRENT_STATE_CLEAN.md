@@ -446,8 +446,25 @@ So the demand is symmetrical in frequency and asymmetrical in satisfaction. Both
 
 **Assessment.** Section 8 Part I's designation of this as the critical incident is correct and now has a measured basis: a 5× within-session escalation at the exact timestamp, 51% of the Conflict phase concentrated in one day, and first instances of six patterns that persist to the end of the corpus. The night does not merely contain the rupture — it is where both parties acquire the moves they use on each other for the next three weeks.
 
+## 9. Critical Context: Neurodivergence, Boundaries & Fatigue
 
-*Sections 9–12 are intentionally unused, so that the `## 13.` anchor specified for downstream agents remains stable.*
+This section documents critical contextual events that reframe the relational dynamics, specifically countering the "Cost Controller" hypothesis.
+
+### 9.1 The Flooding Hypothesis (July 13)
+On July 13 (`G006`, `G193`), Alex explicitly identifies as a "sponge" for other people's emotions and cites a need to guard his space and energy to prevent draining/flooding. This self-reported trauma and neurodivergent response (ADHD) provides a physiological basis for his sudden withdrawals. Rather than strategic control (as posited by the retired "Cost Controller" label), his exits are better understood as nervous system regulation in the face of overstimulation.
+
+### 9.2 Environmental Boundaries (July 11)
+During the July 11 session (`G046`, `G178`), Naomi sets a firm environmental boundary regarding "map gas" noise in the background, refusing to continue the conversation while it is running. Alex clarifies it is an air filter for a prototype. This highlights how sensory and environmental factors contribute to the conflict environment.
+
+### 9.3 Conflict Fatigue (July 21)
+On July 21 (`G012`, `G059`), when Naomi brings up the dinner bill from a previous encounter, Alex's response ("What is this gonna achieve?") demonstrates profound conflict fatigue. He perceives the re-litigation of past debts as pointless escalation rather than an opportunity for repair, precipitating his final exit from the corpus.
+
+### 9.4 Explicitly Stated Needs (Corpus-Wide)
+Both participants explicitly stated their needs, though their methods of securing them were structurally incompatible:
+- **Naomi's Stated Needs:** Direct communication without mixed signals ("I'm a direct communicator... If you don't want to do something, you have to say that"), truthful information for safety ("I just wanted to understand so that I could know what the world is"), and clear intentions ("State your intentions").
+- **Alex's Stated Needs:** Acknowledgment of his feelings ("I just wanted some fucking acknowledgement"), a low-stakes friendship ("All I've ever wanted was your friendship"), and space to guard his energy ("I like my alone time and I like to guard my space and my energy because I'm fucking kind of a sponge").
+
+*Sections 10–12 are intentionally unused, so that the `## 13.` anchor specified for downstream agents remains stable.*
 
 ---
 

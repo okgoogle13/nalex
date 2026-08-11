@@ -279,6 +279,12 @@ Sourcing note:
 
 - Interpretation – Engagement is available for neutral/friendly topics and sharply limited for grievance/repair; capacity exists but appears tightly rationed.
 
+- Evidence – Explicitly Stated Needs (Corpus-wide explicitly flagged statements):
+  - Naomi: "I'm a direct communicator... If you don't want to do something, you have to say that", "all i wanted was like information i just wanted to understand", "State your intentions. State what you want."
+  - Alex: "I just wanted some fucking acknowledgement", "All I've ever wanted was your friendship", "I like my alone time and I like to guard my space and my energy because I'm fucking kind of a sponge".
+  
+- Interpretation – Their explicitly stated needs are clear, but structurally incompatible. Naomi seeks directness, truth-finding, and clear intentions to establish safety. Alex seeks acknowledgment, a low-stakes relationship, and space to prevent sensory flooding as a "sponge." The incompatibility causes a deadlock where Naomi pursues for truth and Alex withdraws to guard his energy.
+
 ---
 
 ## 5. Caveats and limits

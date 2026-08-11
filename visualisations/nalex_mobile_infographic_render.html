@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Nalex: The Structural Shift</title>
+    <style>
+        :root {
+            --surface-charcoal: #121212;
+            --surface-elevated: #1e1e1e;
+            --surface-badge: #2c2c2c;
+            
+            /* Neon Tokyo Accents */
+            --magenta-primary: #ff007f;
+            --magenta-glow: rgba(255, 0, 127, 0.4);
+            
+            --cyan-primary: #00e5ff;
+            --cyan-glow: rgba(0, 229, 255, 0.4);
+            
+            --lime-action: #b2ff05;
+            
+            /* Typography */
+            --text-primary: #ffffff;
+            --text-secondary: #aaaaaa;
+            --font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--surface-charcoal);
+            color: var(--text-primary);
+            font-family: var(--font-family);
+            line-height: 1.5;
+            padding: 16px;
+            padding-bottom: 100px; /* Space for FAB */
+        }
+
+        /* Container */
+        .mobile-container {
+            max-width: 420px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* Typography */
+        h1 { font-size: 1.5rem; font-weight: 700; margin-bottom: 8px; letter-spacing: -0.5px; }
+        h2 { font-size: 1.1rem; font-weight: 600; margin-bottom: 12px; color: var(--text-secondary); }
+        .bottom-line {
+            font-size: 1.25rem;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 32px;
+        }
+
+        /* Cards & Containment (Evidence vs Interpretation) */
+        .card {
+            background: var(--surface-elevated);
+            border-radius: 24px;
+            padding: 20px;
+            margin-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 16px;
+        }
+
+        .badge-evidence {
+            background: #ffffff;
+            color: #000000;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+
+        .badge-interpretation {
+            background: transparent;
+            color: var(--text-secondary);
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid var(--text-secondary);
+            padding: 4px 10px;
+            border-radius: 8px; /* Different shape for interpretation */
+            font-style: italic;
+        }
+
+        /* Diverging Bar Chart (Evidence) */
+        .chart-container {
+            margin-top: 16px;
+        }
+        
+        .chart-row {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .chart-label {
+            width: 60px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+
+        .bar-track {
+            flex: 1;
+            height: 24px;
+            background: var(--surface-badge);
+            border-radius: 12px;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .bar-segment {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .bar-i { background: #ffffff; }
+        .bar-you.naomi { background: var(--magenta-primary); box-shadow: 0 0 10px var(--magenta-glow); }
+        .bar-you.alex { background: var(--cyan-primary); box-shadow: 0 0 10px var(--cyan-glow); }
+
+        /* Interpretive Roles */
+        .role-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        .role-card {
+            background: var(--surface-badge);
+            padding: 16px;
+            border-radius: 16px;
+            border-top: 2px solid transparent;
+        }
+
+        .role-card.naomi { border-color: var(--magenta-primary); }
+        .role-card.alex { border-color: var(--cyan-primary); }
+
+        .role-title {
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+
+        .role-desc {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+
+        /* Carousel for Competing Explanations */
+        .carousel {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 16px;
+            padding-bottom: 16px;
+            margin-left: -16px;
+            margin-right: -16px;
+            padding-left: 16px;
+            padding-right: 16px;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .carousel::-webkit-scrollbar { display: none; }
+
+        .carousel-item {
+            flex: 0 0 85%;
+            scroll-snap-align: center;
+            background: var(--surface-badge);
+            border-radius: 20px;
+            padding: 20px;
+        }
+
+        .carousel-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .explanation-row {
+            display: flex;
+            gap: 12px;
+            margin-top: 12px;
+        }
+
+        .exp-box {
+            flex: 1;
+            padding: 10px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            background: var(--surface-charcoal);
+        }
+
+        .exp-box.support { border-left: 3px solid #00ff00; }
+        .exp-box.counter { border-left: 3px solid #ff0000; }
+
+        /* FAB Action */
+        .fab {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--lime-action);
+            color: #000;
+            padding: 16px 32px;
+            border-radius: 32px;
+            font-weight: 700;
+            font-size: 1rem;
+            box-shadow: 0 4px 20px rgba(178, 255, 5, 0.3);
+            text-align: center;
+            text-decoration: none;
+            width: calc(100% - 32px);
+            max-width: 380px;
+            z-index: 100;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="mobile-container">
+    
+    <h1>The Structural Shift</h1>
+    <p class="bottom-line">The dyad is locked in a pursuer-withdrawer cycle triggered by an unresolved rupture and simultaneous accountability failures.</p>
+
+    <!-- Evidence Card -->
+    <div class="card">
+        <div class="card-header">
+            <h2>Pronoun Asymmetry (Aftermath Phase)</h2>
+            <span class="badge-evidence">Fact</span>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--text-secondary);">Word choice reveals a massive imbalance in structural focus during the Aftermath.</p>
+        
+        <div class="chart-container">
+            <div class="chart-row">
+                <div class="chart-label">Naomi</div>
+                <div class="bar-track">
+                    <div class="bar-segment bar-you naomi" style="width: 51%;">You (486)</div>
+                    <div class="bar-segment bar-i" style="width: 49%;">I (455)</div>
+                </div>
+            </div>
+            <div class="chart-row">
+                <div class="chart-label">Alex</div>
+                <div class="bar-track">
+                    <div class="bar-segment bar-you alex" style="width: 36%;">You (85)</div>
+                    <div class="bar-segment bar-i" style="width: 64%;">I (146)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interpretation Card -->
+    <div class="card" style="box-shadow: 0 0 40px rgba(0,0,0,0.5);">
+        <div class="card-header">
+            <h2>Relational Roles</h2>
+            <span class="badge-interpretation">Hypothesis</span>
+        </div>
+        
+        <div class="role-grid">
+            <div class="role-card naomi">
+                <div class="role-title" style="color: var(--magenta-primary);">Exhaustive Processor</div>
+                <div class="role-desc">Over-functions to prevent erasure, externalizing the conflict to secure repair.</div>
+            </div>
+            <div class="role-card alex">
+                <div class="role-title" style="color: var(--cyan-primary);">The Sponge</div>
+                <div class="role-desc">Strictly rations emotional availability via withdrawal to prevent nervous system flooding.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Competing Explanations Carousel -->
+    <h2 style="margin-top: 32px;">Competing Explanations <span class="badge-interpretation" style="margin-left: 8px;">Uncertain</span></h2>
+    <div class="carousel">
+        
+        <div class="carousel-item">
+            <div class="carousel-title">Alex's Withdrawal</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Is his exit trauma/neurodivergent flooding or a control mechanism?</p>
+            <div class="explanation-row">
+                <div class="exp-box support">
+                    <strong>Flooding</strong><br>
+                    Identifies as a 'sponge'; exhibits sensory boundaries.
+                </div>
+                <div class="exp-box counter">
+                    <strong>Control</strong><br>
+                    Exits are abrupt, unilateral, and weaponized.
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <div class="carousel-title">Naomi's Pursuit</div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Is her high volume genuine repair or attempted control?</p>
+            <div class="explanation-row">
+                <div class="exp-box support">
+                    <strong>Support</strong><br>
+                    Transparent emotional statements ("I'm lonely").
+                </div>
+                <div class="exp-box counter">
+                    <strong>Counter</strong><br>
+                    Pursues heavily even after explicit boundaries are set.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Interventions Section -->
+    <h2 style="margin-top: 32px;">Actionable Interventions <span class="badge-evidence" style="margin-left: 8px; background: var(--lime-action);">Protocol</span></h2>
+    
+    <div class="card" style="border-left: 4px solid var(--magenta-primary);">
+        <h3 style="font-size: 1rem; margin-bottom: 8px; color: var(--magenta-primary);">For Naomi: Pacing & Structure</h3>
+        <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>Write It Out First:</strong> Write 110+ word thoughts in a private doc. Distill to one feeling and one request before sending.</li>
+            <li style="margin-bottom: 8px;"><strong>Match the Length:</strong> If Alex replies with 20 words, reply with max 40 words. If asymmetry exceeds 2:1, pause.</li>
+            <li><strong>Stick to One Topic:</strong> Discuss only one incident at a time (e.g., June 26). Do not litigate the past.</li>
+        </ul>
+    </div>
+
+    <div class="card" style="border-left: 4px solid var(--cyan-primary);">
+        <h3 style="font-size: 1rem; margin-bottom: 8px; color: var(--cyan-primary);">For Alex: Engagement & Regulation</h3>
+        <ul style="font-size: 0.85rem; color: var(--text-secondary); padding-left: 20px;">
+            <li style="margin-bottom: 8px;"><strong>Structured Pause:</strong> Replace abrupt exits with a committed return time (e.g., "I need a 24-hour break, but I will return to this").</li>
+            <li><strong>The "Truth" Trap:</strong> Pivot away from rigid intellectual debates over objective truth and validate the subjective emotional experience instead.</li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- Action FAB -->
+<a href="#" class="fab">Initiate Two-Lane Repair</a>
+
+</body>
+</html>

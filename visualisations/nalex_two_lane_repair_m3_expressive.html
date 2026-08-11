@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#111318">
+<title>Nalex — The Two-Lane Repair</title>
+<!--
+  ============================================================================
+  NALEX VISUALIZATION ARTIFACT
+  Visual question : "How did the grievances collide, and how can they be separated?"
+  Concept         : The Simultaneous Accountability Failure / Two-Lane Repair Protocol
+  Schema contract : _canonical_strong/viz_schema_template.md
+  Render target   : Pixel 10 Pro class — 412px wide, ~20:9, 120Hz, dark.
+  ============================================================================
+-->
+<style>
+:root{
+  /* ---- M3 Expressive · tonal dark surfaces ---- */
+  --surface:#111318;
+  --surface-container-lowest:#0C0E13;
+  --surface-container-low:#181B21;
+  --surface-container:#1C2027;
+  --surface-container-high:#242A32;
+  --surface-container-highest:#2C323C;
+  --outline:#3B434F;
+  --outline-variant:#272D36;
+
+  --on-surface:#E2E2E9;
+  --on-surface-variant:#C3C7D3;
+  --on-surface-dim:#8E94A2;
+
+  /* ---- dynamic high-chroma accents mapped to M3 roles ---- */
+  --primary:#90CDFF;                 /* Alex — electric baseline accent */
+  --primary-container:#123A5C;
+  --on-primary-container:#CDE6FF;
+  --primary-glow:rgba(144,205,255,.34);
+
+  --tertiary:#C9A8FF;                /* Naomi */
+  --tertiary-container:#5B37B7;      
+  --on-tertiary-container:#F1E8FF;   
+  --tertiary-glow:rgba(201,168,255,.34);
+
+  --error:#FFB4AB;
+  --error-container:#93000A;
+  --on-error-container:#FFDAD6;
+
+  /* ---- shape: varied + asymmetric ---- */
+  --r-xl:32px;
+  --r-lg:24px;
+  --r-md:18px;
+  --r-sm:12px;
+  --r-pill:999px;
+
+  --pad:16px;
+  --gap:14px;
+  --tap:48px;
+
+  --spring:520ms cubic-bezier(.2,.9,.24,1.06);
+  --morph:640ms cubic-bezier(.16,1,.3,1);
+  --quick:180ms cubic-bezier(.3,0,.2,1);
+
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{overflow-x:hidden;scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--surface);
+  color:var(--on-surface);
+  font-family:var(--font);
+  font-size:15px;
+  line-height:1.55;
+  overflow-x:hidden;
+  padding:0 0 60px;
+  -webkit-font-smoothing:antialiased;
+}
+/* ambient tonal field */
+body::before{
+  content:"";position:fixed;inset:-16% -34% auto -34%;height:62vh;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(46% 40% at 20% 10%, rgba(91,55,183,.20), transparent 70%),
+    radial-gradient(48% 42% at 84% 24%, rgba(144,205,255,.10), transparent 72%);
+  filter:blur(4px);
+}
+.wrap{max-width:520px;margin:0 auto;padding:0 var(--pad)}
+
+/* ================= top bar ================= */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  display:flex;align-items:center;gap:10px;
+  padding:8px var(--pad);
+  background:linear-gradient(180deg,rgba(17,19,24,.96),rgba(17,19,24,.66) 72%,transparent);
+  backdrop-filter:blur(14px);
+}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--error);box-shadow:0 0 12px rgba(255,180,171,.34);flex:none}
+.topbar b{font-size:.92rem;font-weight:700;letter-spacing:-.01em}
+.topbar .sp{margin-left:auto}
+
+/* ================= masthead ================= */
+.mast{padding:8px 0 4px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--on-error-container);
+  background:var(--error-container);
+  padding:8px 15px;border-radius:var(--r-pill);
+}
+.mast h1{
+  margin:11px 0 7px;
+  font-size:clamp(1.95rem,9.6vw,2.55rem);line-height:.96;
+  font-weight:800;letter-spacing:-.045em;
+  color:var(--on-surface);
+}
+.mast h1 em{font-style:normal;color:var(--error)}
+.mast p{margin:0;color:var(--on-surface-variant);font-size:.88rem;max-width:34ch}
+
+/* ================= section heads ================= */
+section{margin:28px 0 0}
+.qhead{display:flex;align-items:center;gap:11px;margin:0 0 14px}
+.qnum{
+  display:inline-grid;place-items:center;width:36px;height:36px;
+  border-radius:14px 14px 14px 5px;
+  font-weight:800;font-size:.92rem;
+  background:var(--surface-container-high);color:var(--on-surface-variant);
+  border:1px solid var(--outline);flex:none;
+}
+.qhead h2{margin:0;font-size:1.24rem;font-weight:800;letter-spacing:-.028em;line-height:1.18}
+
+/* ================= lane layout ================= */
+.lanes{
+  display:flex;
+  gap:12px;
+  position:relative;
+  margin-bottom:20px;
+}
+.lane{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.lane-head{
+  font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+  text-align:center;padding:8px 0;
+  border-radius:var(--r-pill);
+}
+.lane.n .lane-head{background:var(--tertiary-container);color:var(--on-tertiary-container)}
+.lane.a .lane-head{background:var(--primary-container);color:var(--on-primary-container)}
+
+.node{
+  background:var(--surface-container-low);
+  border:1px solid var(--outline-variant);
+  padding:16px;
+  position:relative;
+  animation: expressiveWobble 4s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  will-change: border-radius, transform;
+  transition: border-radius 640ms cubic-bezier(.16, 1, .3, 1), transform 180ms ease-out;
+}
+.node:active{
+  border-radius: 0px 60px 0px 60px !important;
+  transform: scale(0.92) !important;
+}
+
+@keyframes expressiveWobble {
+  0% { border-radius: 16px 80px 16px 32px; transform: scaleY(1); }
+  50% { border-radius: 64px 16px 64px 32px; transform: scaleY(1.02); }
+  100% { border-radius: 16px 80px 16px 32px; transform: scaleY(1); }
+}
+
+.lane.n .node{border-color:rgba(201,168,255,.2)}
+.lane.a .node{border-color:rgba(144,205,255,.2)}
+
+.node-title{
+  font-size:.85rem;font-weight:800;letter-spacing:-.01em;
+  margin:0 0 6px;
+}
+.lane.n .node-title{color:var(--tertiary)}
+.lane.a .node-title{color:var(--primary)}
+
+.node-desc{
+  font-size:.8rem;color:var(--on-surface-variant);
+  margin:0;
+}
+
+/* collision area */
+.collision{
+  background:var(--error-container);
+  border:1px solid rgba(255,180,171,.3);
+  padding:20px;
+  text-align:center;
+  margin:20px 0;
+  position:relative;
+  animation: expressiveWobble 4.5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite reverse;
+  will-change: border-radius, transform;
+  transition: border-radius 640ms cubic-bezier(.16, 1, .3, 1), transform 180ms ease-out;
+}
+.collision:active{
+  border-radius: 60px 0px 60px 0px !important;
+  transform: scale(0.92) !important;
+}
+
+.collision::before, .collision::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  width: 2px;
+  height: 20px;
+  background: var(--outline-variant);
+}
+.collision::before{left:25%}
+.collision::after{right:25%}
+
+.collision-title{
+  color:var(--error);font-size:1.1rem;font-weight:800;letter-spacing:-.02em;margin:0 0 8px;
+}
+.collision-desc{
+  color:var(--on-error-container);font-size:.85rem;margin:0;
+}
+
+/* protocol area */
+.protocol{
+  background:linear-gradient(180deg, var(--surface-container), var(--surface-container-low));
+  border:1px solid var(--outline);
+  border-radius:var(--r-xl) var(--r-xl) 14px 14px;
+  padding:24px 20px;
+}
+.p-step{
+  display:flex;gap:16px;align-items:flex-start;
+  margin-bottom:20px;
+}
+.p-step:last-child{margin-bottom:0}
+.p-num{
+  display:inline-grid;place-items:center;width:32px;height:32px;
+  border-radius:50%;background:var(--surface-container-highest);
+  color:var(--on-surface);font-weight:800;font-size:.85rem;flex:none;
+}
+.p-content h3{
+  margin:0 0 6px;font-size:1rem;font-weight:800;color:var(--on-surface);
+}
+.p-content p{
+  margin:0 0 10px;font-size:.85rem;color:var(--on-surface-variant);
+}
+.script-box{
+  background:var(--surface-container-lowest);
+  border-left:3px solid var(--tertiary);
+  padding:12px 14px;border-radius:0 8px 8px 0;
+  font-size:.85rem;color:var(--on-surface);font-style:italic;
+}
+
+footer{padding:40px 0 20px;color:var(--on-surface-dim);font-size:.72rem;line-height:1.65;text-align:center}
+footer b{color:var(--on-surface-variant)}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="dot" aria-hidden="true"></span><b>Nalex</b>
+  <span class="sp"></span>
+</div>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="eyebrow">Simultaneous Accountability</div>
+    <h1>The Two-Lane<br><em>Repair Protocol</em></h1>
+    <p>Attempting to resolve two separate grievances simultaneously guarantees failure through mutual invalidation. Here is the structure of the collision, and the protocol to untangle it.</p>
+  </header>
+
+  <section>
+    <div class="qhead"><span class="qnum">01</span><h2>The Collision (June 26)</h2></div>
+    
+    <div class="lanes">
+      <!-- Lane A: Naomi -->
+      <div class="lane n">
+        <div class="lane-head">Lane A (Naomi)</div>
+        <div class="node">
+          <h3 class="node-title">The "Housekeeping"</h3>
+          <p class="node-desc">Alex bringing up sexual tension just to establish platonic boundaries, making Naomi feel gaslit and rejected.</p>
+        </div>
+      </div>
+      
+      <!-- Lane B: Alex -->
+      <div class="lane a">
+        <div class="lane-head">Lane B (Alex)</div>
+        <div class="node">
+          <h3 class="node-title">The "Keyboard Warrior"</h3>
+          <p class="node-desc">Naomi being quiet during the in-person hangout, only to unleash heavy emotional questions via voice notes immediately after.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="collision">
+      <h3 class="collision-title">Simultaneous Accountability Failure</h3>
+      <p class="collision-desc">At 23:56 on June 26, the lanes collided. Alex's "keyboard warrior" comment served as the catalyst that shifted the disagreement into a deeply personal, bridge-burning argument, where vulnerabilities were weaponized rather than resolved.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="qhead"><span class="qnum">02</span><h2>The Protocol</h2></div>
+    
+    <div class="protocol">
+      <div class="p-step">
+        <div class="p-num">1</div>
+        <div class="p-content">
+          <h3>Test Lane A Isolation</h3>
+          <p>Address Naomi's feeling of being led on independently. Avoid simultaneous accountability; Alex must not deploy complaints about her texting habits until her grievance is resolved.</p>
+          <div class="script-box">
+            "I need us to clear the air about the conversation we had this afternoon before we talk about anything else. Can we focus just on that right now?"
+          </div>
+        </div>
+      </div>
+
+      <div class="p-step">
+        <div class="p-num">2</div>
+        <div class="p-content">
+          <h3>Implement the Pause Protocol</h3>
+          <p>When frustration peaks (like it did at 23:56), replace abrupt exits ("I'm done talking about this") with a structured pause. This reduces the anxious-avoidant pursuit cycle.</p>
+          <div class="script-box" style="border-left-color: var(--primary)">
+            "I'm feeling flooded and need a 24-hour break, but I promise I will return to finish this conversation."
+          </div>
+        </div>
+      </div>
+
+      <div class="p-step">
+        <div class="p-num">3</div>
+        <div class="p-content">
+          <h3>Address Lane B (Subsequent)</h3>
+          <p>Only after Lane A is acknowledged and resolved, open Lane B to address Alex's need for direct, face-to-face communication without resorting to insulting labels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <b>Nalex · The Two-Lane Repair Protocol.</b><br>
+    Synthesised from CURRENT_STATE_CLEAN.md (Section 8: June 26-27 Conflict).
+  </footer>
+</div>
+
+<script>
+  document.addEventListener("click", function(e){
+    if(e.target.closest(".node") || e.target.closest(".collision")) {
+      if (navigator.vibrate) navigator.vibrate([15]);
+    }
+  });
+</script>
+</body>
+</html>

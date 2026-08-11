@@ -227,7 +227,16 @@ section{margin:18px 0 0}
   transition:border-radius var(--morph),background var(--spring),
              border-color var(--spring),transform var(--quick);
 }
-.cell:active{transform:scale(.975)}
+.cell:active{
+  border-radius:0px 60px 0px 60px !important;
+  transform:scale(0.90) !important;
+}
+
+@keyframes expressiveWobble {
+  0% { border-radius: 8px 26px 8px 26px; transform: scaleY(1); }
+  50% { border-radius: 26px 8px 26px 8px; transform: scaleY(1.04); }
+  100% { border-radius: 8px 26px 8px 26px; transform: scaleY(1); }
+}
 .cell .bar{
   position:absolute;left:0;bottom:0;height:5px;width:0;
   border-radius:var(--r-pill);
@@ -250,7 +259,12 @@ section{margin:18px 0 0}
 .cell.zero .bar{background:var(--outline)}
 
 /* selected cell morphs: asymmetric radii flip + saturated container */
-.cell.sel{border-radius:8px 26px 8px 26px;transform:none}
+.cell.sel{
+  border-radius:8px 26px 8px 26px;
+  transform:none;
+  animation: expressiveWobble 4s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  will-change: border-radius, transform;
+}
 .cell.n.sel{background:var(--tertiary-container);border-color:var(--tertiary)}
 .cell.n.sel .v,.cell.n.sel .u{color:var(--on-tertiary-container)}
 .cell.a.sel{background:var(--primary-container);border-color:var(--primary)}
@@ -772,6 +786,7 @@ var PHASE_ORDER = ["Baseline","Conflict","Aftermath"];
   tbl.addEventListener("click", function(e){
     var btn = e.target.closest(".cell");
     if (!btn) return;
+    if (navigator.vibrate) navigator.vibrate([15]);
     var phase = btn.dataset.phase, speaker = btn.dataset.speaker;
     var same  = state.sel && state.sel.phase === phase && state.sel.speaker === speaker;
 
@@ -794,6 +809,7 @@ var PHASE_ORDER = ["Baseline","Conflict","Aftermath"];
   /* ---------------- deck controls ---------------- */
   document.querySelectorAll(".pill[data-metric]").forEach(function(p){
     p.addEventListener("click", function(){
+      if (navigator.vibrate) navigator.vibrate([10]);
       document.querySelectorAll(".pill[data-metric]").forEach(function(o){
         o.setAttribute("aria-pressed", String(o === p));
       });

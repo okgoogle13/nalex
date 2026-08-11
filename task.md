@@ -1,0 +1,11 @@
+- [ ] Create HTML file for Concept 2 Minimal Variant in `visualisations/`
+- [ ] Implement Material 3 Expressive base styles (Charcoal #121212, typography, cyan/magenta neon accents)
+- [ ] Build the structural layout for mobile Pixel 10 Pro (portrait, one-handed use)
+- [ ] Implement "The Relational Deadlock" summary header (above the fold)
+- [ ] Implement the Diverging Bar Chart for pronoun asymmetry (evidence layer)
+- [ ] Implement layered elevation cards for role interpretations (Exhaustive Processor vs Cost Controller)
+- [ ] Implement the swipeable carousel for "Competing Explanations"
+- [ ] Add the "Two-Lane Repair Protocol" call to action (FAB or sticky footer)
+- [ ] Ensure strict visual separation between evidence (facts) and interpretation (hypotheses)
+- [ ] Final visual polish (glow, gradients, contrast checks)
+- [ ] Create `walkthrough.md` presentation

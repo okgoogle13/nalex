@@ -1,3 +1,5 @@
+> **Canonical triage note** — Original path: `research_prompt_modes/viz_schema_template.md` · Kept because: Canonical flattened-record schema contract, explicitly designated by index.md Section 11 as required reading before any visualization is rendered; defines the forward_looking_evaluation field that carries constructive framing. · Triage date: 2026-08-09
+
 # Nalex Visualization Schema Template
 
 ## Recommended record shape

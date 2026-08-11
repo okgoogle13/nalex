@@ -1,3 +1,5 @@
+> **Canonical triage note** — Original path: `research_prompt_modes/visualization_pipeline.md` · Kept because: Canonical evidence-to-visualization workflow contract, explicitly designated by index.md Section 11 as the required process (extract -> flatten -> render, analysis/rendering separation). · Triage date: 2026-08-09
+
 # Nalex Visualization Pipeline
 
 ## Purpose

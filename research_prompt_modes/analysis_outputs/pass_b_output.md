@@ -31,7 +31,7 @@
 ### 1. Role & Mirroring
 - **Pronoun & Mirroring Note**: Alex shows early divergence in the Baseline, being highly self-referenced (70 "I" vs 30 "You") with constrained brevity (46.4 average words). During the Conflict, he compresses his output (42.2 average words) but relies on rare massive monologues (bimodal length) as an intellectual buffer. In the Aftermath, he refuses to mirror Naomi's volume, maintaining his baseline brevity and strict self-referencing (146 "I" vs 85 "You").
 - **Role Hypotheses**: 
-  - *The Cost Controller*: Strictly rations emotional availability to limit engulfment. | *Evidence*: Use of withdrawal-by-exit (B062) and flat Aftermath "I" focus. | *Phase*: Aftermath.
+  - *The Sponge (Flooding)*: Strictly rations emotional availability via withdrawal to prevent nervous system overstimulation and trauma flooding. | *Evidence*: Explicit self-identification ("I'm a sponge") on July 13, sensory boundaries (map gas). | *Phase*: Aftermath.
   - *The Internalizer*: Processes the relationship by looking strictly inward at his own limits. | *Evidence*: "I" usage is nearly double his "You" usage across all three phases. | *Phase*: Present at Baseline; hardened in Conflict.
   - *The Gatekeeper*: Controls access to resolution by deciding which topics are permissible. | *Evidence*: Splitting and threat of permanent exit (G112) enforcing rigid boundaries. | *Phase*: Aftermath.
 
