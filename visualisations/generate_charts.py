@@ -19,8 +19,8 @@ plt.rcParams.update({
 
 # Colorblind-friendly palettes / M3 Dark Mode aligned
 # Naomi: Purple/Blueish, Alex: Orange/Brownish
-COLOR_NAOMI = '#87719d'
-COLOR_ALEX = '#5f7f96'
+COLOR_NAOMI = '#3F8AD8'
+COLOR_ALEX = '#CC7F30'
 
 out_dir = os.path.dirname(os.path.abspath(__file__))
 
