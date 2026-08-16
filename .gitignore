@@ -1,11 +1,74 @@
-# Google Drive upload cache — ~46,000 transient files.
-# Never scan or stage: it hangs `git status` on the full tree.
-.tmp.driveupload/
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# macOS
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
 .DS_Store
+Thumbs.db
 
-# Ignore large archives
-_archive/
-_backup/
-.venv/
+# Data - large/generated files
+data/audio/
+data/raw/transcripts/
+data/viz_exports/*.csv
+data/*.jsonl
+
+# Visualizations - generated outputs
+visualizations/outputs/*.png
+visualizations/outputs/*.svg
+visualizations/outputs/*.pdf
+
+# Analysis - generated artifacts
+analysis/audits/*.csv
+analysis/timelines/*.json
+
+# Archive
+archive/*
+!archive/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Local config
+.env
+.env.local
+config.local.json
