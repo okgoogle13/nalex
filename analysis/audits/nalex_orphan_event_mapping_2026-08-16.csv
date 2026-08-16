@@ -1,0 +1,179 @@
+event_id,timestamp,session_id,original_assignment,proposed_classification,proposed_parent,confidence,evidence_basis,boundary_or_exclusion_reason,review_status
+A001+A002,2026-06-23 00:45:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A003,2026-06-23 00:46:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A004,2026-06-23 00:47:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A005,2026-06-23 00:48:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A006+A007,2026-06-23 00:48:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A008,2026-06-23 00:53:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A009,2026-06-23 00:56:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A010,2026-06-23 00:57:00,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+G008,2026-06-23 01:02:58,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+G054,2026-06-23 01:06:36,S-CONF-1,null,new_incident,PROPOSED-CONF-00A,High,"Contains language clarifying earlier Ned dispute","null",proposed
+A012,2026-06-23 02:57:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A013,2026-06-23 02:58:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A014,2026-06-23 03:10:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A015,2026-06-23 03:12:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A016,2026-06-23 03:27:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A017,2026-06-23 03:27:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A018+A019,2026-06-23 03:28:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A020,2026-06-23 03:30:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A021,2026-06-23 03:30:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A022,2026-06-23 03:32:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A023,2026-06-23 03:33:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A024,2026-06-23 03:36:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A025,2026-06-23 03:36:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A026,2026-06-23 03:48:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A027,2026-06-23 03:50:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A028,2026-06-23 03:50:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+A029+A030,2026-06-23 03:50:00,S-CONF-2,null,new_incident,PROPOSED-CONF-00B,Medium,"Escalates earlier Ned dispute into gaslighting claims","null",proposed
+B001,2026-06-26 11:30:18,S-CONF-3,null,baseline,null,High,"Is it kind of fucked up that I can like eat one or two and then just function...","null",proposed
+B002,2026-06-26 11:48:00,S-CONF-3,null,baseline,null,High,"you still with the Irish lad","null",proposed
+B003,2026-06-26 12:09:00,S-CONF-3,null,baseline,null,High,"??","null",proposed
+B004,2026-06-26 13:34:09,S-CONF-4,null,baseline,null,High,"[unclear/no clear speech detected]","null",proposed
+B005+B006,2026-06-26 15:50:00,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B007,2026-06-26 15:50:20,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B008,2026-06-26 15:51:24,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B009+B010+B011+B012+B013,2026-06-26 15:52:00,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B014,2026-06-26 15:57:06,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B015,2026-06-26 15:57:28,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B016+B017+B018,2026-06-26 16:02:00,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B019,2026-06-26 16:02:33,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B020,2026-06-26 16:03:44,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B024,2026-06-26 16:07:00,S-CONF-5,null,uncertain,null,Low,"Video/media clip visible in screenshot; no transcript available.","Excluded: lack of transcript context.",proposed
+B025,2026-06-26 16:08:19,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B027,2026-06-26 16:12:00,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B029,2026-06-26 16:13:35,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B030,2026-06-26 16:14:08,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B031,2026-06-26 16:16:47,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B032,2026-06-26 16:19:52,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B033,2026-06-26 16:22:42,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B034,2026-06-26 16:22:59,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B035,2026-06-26 16:24:00,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B036,2026-06-26 16:24:14,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B037,2026-06-26 16:25:24,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B038,2026-06-26 16:26:16,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B040,2026-06-26 16:30:20,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B041,2026-06-26 16:31:33,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B042,2026-06-26 16:32:41,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B043,2026-06-26 16:47:09,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+C001,2026-06-26 17:08:00,S-CONF-5,null,continuation,PROPOSED-CONTEXT-S-CONF-5,Medium,"Direct temporal and thematic buildup to CONF-01 (sanding table/loneliness)","null",proposed
+B048,2026-06-26 18:20:00,S-CONF-6,null,baseline,null,High,"Jiddu krishnamurti","null",proposed
+B050+B051+B052,2026-06-26 21:59:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B053,2026-06-26 21:59:30,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B054,2026-06-26 22:00:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B057+B058+B059,2026-06-26 22:24:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B060,2026-06-26 23:23:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B061,2026-06-26 23:32:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B064,2026-06-26 23:56:56,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,High,"Naomi asserts she was chilling; marks sub-boundary of re-escalation","Internal sub-boundary of re-escalation within block",proposed
+B065,2026-06-26 23:57:16,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B067,2026-06-26 23:59:43,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B068,2026-06-26 23:59:54,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B070,2026-06-27 00:00:43,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B071,2026-06-27 00:00:54,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B073,2026-06-27 00:06:47,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B075,2026-06-27 00:07:31,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B076,2026-06-27 00:07:39,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B077,2026-06-27 00:08:26,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B078,2026-06-27 00:08:36,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B079,2026-06-27 00:08:42,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B080,2026-06-27 00:09:14,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B081,2026-06-27 00:09:29,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B082+B083,2026-06-27 00:09:53,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+G168,2026-06-27 00:10:12,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B084,2026-06-27 00:15:20,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B086,2026-06-27 00:17:06,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B089,2026-06-27 00:23:16,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B090,2026-06-27 00:24:50,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B093,2026-06-27 00:31:33,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B094,2026-06-27 00:32:08,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B096,2026-06-27 00:34:15,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B097,2026-06-27 00:34:38,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B098,2026-06-27 00:34:48,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B099,2026-06-27 00:35:59,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B100,2026-06-27 00:36:33,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B101,2026-06-27 00:39:19,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B102,2026-06-27 00:40:08,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B103,2026-06-27 00:42:28,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B104,2026-06-27 00:45:12,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B105,2026-06-27 00:47:09,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B106,2026-06-27 00:48:55,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B108,2026-06-27 00:52:51,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B109,2026-06-27 00:54:31,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B110,2026-06-27 00:57:39,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B111,2026-06-27 00:59:28,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B112,2026-06-27 00:59:46,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B113,2026-06-27 01:01:03,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B114,2026-06-27 01:01:42,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B115,2026-06-27 01:05:01,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B116,2026-06-27 01:06:08,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B117,2026-06-27 01:09:05,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B118,2026-06-27 01:10:48,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B119,2026-06-27 01:11:29,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B120,2026-06-27 01:21:57,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B121,2026-06-27 01:27:03,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B123,2026-06-27 01:33:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B124+B125+B126,2026-06-27 01:37:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B129,2026-06-27 02:27:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B130,2026-06-27 02:30:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+B131,2026-06-27 02:34:00,S-CONF-7,null,continuation,PROPOSED-CONTEXT-S-CONF-7,Medium,"Interspersed texts responding to main June 26/27 argument in CONF-02","null",proposed
+G169,2026-07-01 23:32:26,S-CONF-8,null,baseline,null,High,"okay, um, okay, I'm coming out now, I guess, I can come to you, it's okay,","null",proposed
+C002,2026-07-04 12:29:28,S-CONF-9,null,baseline,null,High,"There you are. I am not feeling fantastic. I feel like I've got the flu.","null",proposed
+C003,2026-07-04 12:29:40,S-CONF-9,null,baseline,null,High,"and cunts rippin you off is deserved conflict","null",proposed
+C004,2026-07-04 19:22:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C005,2026-07-04 19:22:30,S-CONF-10,null,uncertain,null,Low,"Missed voice call - 7:22 pm.","Excluded: system event lacking context.",proposed
+C006,2026-07-04 19:29:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C007,2026-07-04 19:51:54,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C008,2026-07-04 20:07:23,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C009,2026-07-04 20:07:31,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C010,2026-07-04 20:40:27,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C011,2026-07-04 20:40:59,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C012,2026-07-04 20:41:48,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C013,2026-07-04 20:47:56,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C014,2026-07-04 20:49:53,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C015,2026-07-04 20:53:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C016+C017,2026-07-04 20:57:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C018,2026-07-04 20:58:46,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C019,2026-07-04 21:01:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C020,2026-07-04 21:02:36,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C021,2026-07-04 21:15:26,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C022,2026-07-04 21:15:35,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C023,2026-07-04 21:22:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C024+C025+C026+C027,2026-07-04 21:25:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C028,2026-07-04 21:25:40,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C029,2026-07-04 21:26:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C030,2026-07-04 21:26:20,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C031,2026-07-04 21:31:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C032,2026-07-04 21:39:32,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C033,2026-07-04 21:40:13,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C034,2026-07-04 21:55:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C035+C036,2026-07-04 21:56:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C037,2026-07-04 21:58:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C038,2026-07-04 21:59:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C039,2026-07-04 21:59:10,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C040+C041,2026-07-04 22:01:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C042,2026-07-04 22:03:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C043+C044+C045,2026-07-04 22:03:10,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C046,2026-07-04 22:04:10,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C048,2026-07-04 22:19:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C049,2026-07-04 22:22:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C050,2026-07-04 22:24:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C051,2026-07-04 22:39:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C052,2026-07-04 22:56:00,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C053,2026-07-04 23:00:37,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C054,2026-07-04 23:02:26,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C056,2026-07-04 23:19:28,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,High,"Naomi 'Is that a signing off message?'; transition from logistics to conflict","Marks transition from logistical delay to active conflict",proposed
+C057,2026-07-04 23:23:18,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C058,2026-07-04 23:23:46,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C060,2026-07-04 23:24:40,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C061,2026-07-04 23:25:19,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C063,2026-07-04 23:28:34,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C064,2026-07-04 23:29:08,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C069,2026-07-04 23:36:51,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C070,2026-07-04 23:37:25,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C071,2026-07-04 23:39:14,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C073,2026-07-04 23:50:48,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C074,2026-07-05 00:07:18,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C076,2026-07-05 00:12:10,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C077,2026-07-05 00:13:22,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C078,2026-07-05 00:14:42,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
+C079,2026-07-05 00:16:40,S-CONF-10,null,continuation,PROPOSED-CONTEXT-S-CONF-10,Medium,"Logistics discussing meeting up that precede and contribute to CONF-03 fight","null",proposed
