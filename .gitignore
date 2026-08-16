@@ -4,3 +4,8 @@
 
 # macOS
 .DS_Store
+
+# Ignore large archives
+_archive/
+_backup/
+.venv/
