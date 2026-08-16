@@ -1,0 +1,44 @@
+{
+  "interaction_loop_id": "loop_house_visit_001",
+  "semantic_loop_label": "House Visit Boundary and Intent",
+  "participants": [
+    "Naomi",
+    "Alex"
+  ],
+  "core_topic": "Disputed circumstances of a house visit",
+  "loop_start_event_id": "G042",
+  "loop_end_event_id": "G181",
+  "events": [
+    {
+      "event_ids": [
+        "G042"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-07-11T22:40:44Z",
+      "excerpt": "You invited me to go for a ride... Then you brought me to your house, which I didn't ask to go to... put on fucking music, closed the door, and showed me pictures... That was not the situation to invite me to your home.",
+      "tags": [
+        "states_explicit_concern_or_boundary",
+        "uses_heightened_or_confrontational_language"
+      ],
+      "privacy_level": "private_evidence",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G181"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-07-11T22:43:31Z",
+      "excerpt": "I don't really remember showing you baby photos. I remember showing you my paintings... I coerced you into leaving your apartment because I thought maybe getting out... would be healthy... shouldn't have blown a pipe... yes, it's understandable that you're upset because rejection's not nice.",
+      "tags": [
+        "contests_stated_account",
+        "responds_to_concern_with_explanation_of_intent",
+        "acknowledges_impact_of_action"
+      ],
+      "privacy_level": "private_evidence",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}

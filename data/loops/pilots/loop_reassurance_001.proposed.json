@@ -1,0 +1,245 @@
+{
+  "loop": {
+    "interaction_loop_id": "loop_reassurance_001",
+    "semantic_loop_label": "Fault Admission and Reassurance",
+    "participants": [
+      "Naomi",
+      "Alex"
+    ],
+    "core_topic": "Discussion regarding a broken or thin pipe, fault admission, and de-escalation",
+    "loop_start_event_id": "G148",
+    "loop_end_event_id": "G092",
+    "loop_outcome": "response_provided",
+    "repair_response_status": "unclear",
+    "boundary_confidence": "low",
+    "boundary_rationale": "G148 and G149 are chronologically contiguous (31-second gap). G092 follows G149 as a response (82-second gap). G092's stated explanation of prior remarks as teasing refers to earlier material traceable to G147. G147 precedes G148 by 17 minutes 35 seconds and is an external context dependency, not a loop member. Low boundary confidence reflects this external dependency (G147 has low speaker confidence) and the low speaker confidence on G148 with restored transcript text.",
+    "intervening_events_note": {
+      "excluded_event_ids": [],
+      "reason": "No events fall between G148 and G092 in the source log. G147 is not an intervening event; it is an external context dependency documented separately.",
+      "effect_on_boundary_confidence": "G147's external dependency reduces boundary confidence from medium to low. See external_context_dependencies."
+    },
+    "external_context_dependencies": [
+      {
+        "source_event_id": "G147",
+        "relationship": "referenced_by_later_event",
+        "used_for": "context for G092's stated explanation of prior remarks as teasing",
+        "source_quality_caveat": "Speaker confidence 0.29 (low); speaker attribution requires audio verification. Source review required before this dependency can be confirmed.",
+        "required_for_interpretation": true
+      }
+    ],
+    "source_limitations": "Audio review required for all three loop events and for G147 (external dependency). G148 has low speaker confidence (0.37) and transcript restoration applied (txt_restored_20260802). G147 has low speaker confidence (0.29); if speaker attribution is incorrect, the G147-to-G092 semantic link cannot be established.",
+    "related_loop_ids": [],
+    "selection_reason": "Tests schema tracking of repair attempts and de-escalation without assuming repair success, providing contrast to conflict loops."
+  },
+  "events": [
+    {
+      "source": {
+        "source_event_ids": [
+          "G148"
+        ],
+        "source_order": 1,
+        "timestamps": [
+          "2026-04-02T00:17:15Z"
+        ],
+        "speaker": "Naomi",
+        "minimal_redacted_excerpt": "What do you want me to do?... Fucking not my fault. Actually, it is my fault. Your pipe is thin.",
+        "excerpt_mode": "redacted_quote",
+        "evidence_type": "direct_text",
+        "source_quality": "transcript_with_known_errors",
+        "source_quality_note": "txt_restored_20260802 applied.",
+        "speaker_confidence": "low"
+      },
+      "evidence_integrity": {
+        "claim_to_excerpt_alignment": "high",
+        "unverified_or_ambiguous_claims": [
+          "Transcript restoration applied.",
+          "Tone required to distinguish genuine admission from sarcasm."
+        ],
+        "requires_audio_review": true
+      },
+      "observation": {
+        "observable_moves": [
+          {
+            "sequence": 1,
+            "code": "uses_heightened_or_confrontational_language",
+            "evidence_reference": "G148",
+            "coding_rationale": "Uses profanity ('Fucking not my fault')."
+          }
+        ],
+        "_coding_note_seq2_removed": "Sequence 2 ('acknowledges_impact_of_action') removed. That code is defined as validating how an action affected the other person. The source statement ('Actually, it is my fault') is a statement of causal responsibility, not impact validation. No existing vocabulary code accurately covers this move. A new code proposal has been added to the audit file for human vocabulary decision.",
+        "target_or_topic": "Fault for an issue related to a thin pipe.",
+        "need_or_boundary": {
+          "content": null,
+          "basis": "not_assessed",
+          "evidence_reference": null,
+          "uncertainty_note": null
+        },
+        "response_to_prior_move": null,
+        "explicit_statement_of_impact": null,
+        "explicit_statement_of_intent": null,
+        "explicit_request_for_response": "What do you want me to do?",
+        "direct_response_status": "not_applicable",
+        "context_facts": "States 'not my fault,' then states 'it is my fault.'",
+        "interaction_state_after_event": "strained"
+      },
+      "interpretation": {
+        "interpretation_tags": []
+      },
+      "coding_metadata": {
+        "coded_by": "ai_proposed_pending_human_review",
+        "coding_version": "nalex_semantic_schema_v2",
+        "review_notes": "Awaiting audio review for tone.",
+        "coding_review_status": "proposed"
+      },
+      "artifact_controls": {
+        "privacy_level": "private_evidence",
+        "shareability_notes": "Unverified transcript and raw expressions. Private only.",
+        "suitable_for": [
+          "alex_reflection",
+          "naomi_reflection",
+          "facilitator_only"
+        ],
+        "visual_weight": "primary",
+        "display_mode": "private_only"
+      }
+    },
+    {
+      "source": {
+        "source_event_ids": [
+          "G149"
+        ],
+        "source_order": 2,
+        "timestamps": [
+          "2026-04-02T00:17:46Z"
+        ],
+        "speaker": "Naomi",
+        "minimal_redacted_excerpt": "what do you want? I can do something. I could go over there or something... how can I help?",
+        "excerpt_mode": "redacted_quote",
+        "evidence_type": "direct_text",
+        "source_quality": "voice_transcript",
+        "source_quality_note": "Automated transcript of a voice message.",
+        "speaker_confidence": "medium"
+      },
+      "evidence_integrity": {
+        "claim_to_excerpt_alignment": "high",
+        "unverified_or_ambiguous_claims": [
+          "Tone of the offer (sincere vs exasperated) is not captured."
+        ],
+        "requires_audio_review": true
+      },
+      "observation": {
+        "observable_moves": [
+          {
+            "sequence": 1,
+            "code": "offers_specific_repair_step",
+            "evidence_reference": "G149",
+            "coding_rationale": "Offers to 'go over there' and asks 'how can I help?'"
+          }
+        ],
+        "target_or_topic": "Actions to remedy the prior issue.",
+        "need_or_boundary": {
+          "content": null,
+          "basis": "not_assessed",
+          "evidence_reference": null,
+          "uncertainty_note": null
+        },
+        "response_to_prior_move": null,
+        "explicit_statement_of_impact": null,
+        "explicit_statement_of_intent": null,
+        "explicit_request_for_response": "what do you want? ... how can I help?",
+        "direct_response_status": "not_applicable",
+        "context_facts": "Immediate follow-up to G148.",
+        "interaction_state_after_event": "unclear"
+      },
+      "interpretation": {
+        "interpretation_tags": []
+      },
+      "coding_metadata": {
+        "coded_by": "ai_proposed_pending_human_review",
+        "coding_version": "nalex_semantic_schema_v2",
+        "review_notes": "Awaiting audio review for tone.",
+        "coding_review_status": "proposed"
+      },
+      "artifact_controls": {
+        "privacy_level": "private_evidence",
+        "shareability_notes": "Private only.",
+        "suitable_for": [
+          "alex_reflection",
+          "naomi_reflection",
+          "facilitator_only"
+        ],
+        "visual_weight": "primary",
+        "display_mode": "private_only"
+      }
+    },
+    {
+      "source": {
+        "source_event_ids": [
+          "G092"
+        ],
+        "source_order": 3,
+        "timestamps": [
+          "2026-04-02T00:19:08Z"
+        ],
+        "speaker": "Alex",
+        "minimal_redacted_excerpt": "I mean, you know I'm kind of teasing, right? I'm just being a bit cheeky... don't feel like you have to just because I was giving you some shit. It's all good.",
+        "excerpt_mode": "redacted_quote",
+        "evidence_type": "direct_text",
+        "source_quality": "voice_transcript",
+        "source_quality_note": "Automated transcript of a voice message.",
+        "speaker_confidence": "medium"
+      },
+      "evidence_integrity": {
+        "claim_to_excerpt_alignment": "high",
+        "unverified_or_ambiguous_claims": [
+          "Context of the original 'teasing' and 'giving some shit' refers to G147, now documented as an external context dependency. G147 has low speaker confidence (0.29); if speaker attribution cannot be confirmed by audio, the coded move loses its traceable referent."
+        ],
+        "requires_audio_review": true
+      },
+      "observation": {
+        "observable_moves": [
+          {
+            "sequence": 1,
+            "code": "responds_to_concern_with_explanation_of_intent",
+            "evidence_reference": "G092",
+            "coding_rationale": "Explains that the prior remarks were 'teasing' and 'being a bit cheeky'."
+          }
+        ],
+        "target_or_topic": "De-escalation of the fault/guilt exchange.",
+        "need_or_boundary": {
+          "content": null,
+          "basis": "not_assessed",
+          "evidence_reference": null,
+          "uncertainty_note": null
+        },
+        "response_to_prior_move": "G148, G149",
+        "explicit_statement_of_impact": null,
+        "explicit_statement_of_intent": "States intent was to tease ('being a bit cheeky').",
+        "explicit_request_for_response": null,
+        "direct_response_status": "addresses_prior_concern",
+        "context_facts": "States the prior remarks were teasing ('being a bit cheeky') and states 'It's all good,' relieving pressure of the repair offer.",
+        "interaction_state_after_event": "unclear"
+      },
+      "interpretation": {
+        "interpretation_tags": []
+      },
+      "coding_metadata": {
+        "coded_by": "ai_proposed_pending_human_review",
+        "coding_version": "nalex_semantic_schema_v2",
+        "review_notes": "De-escalation achieved without formalizing the repair action. invites_closeness remains removed pending human source review: the phrase 'If you want to come say hey, you're more than welcome to' is confirmed present in full source text (G092) but is absent from the current minimal_redacted_excerpt. Code may be reconsidered only after human source review verifies the wording and determines it is necessary for this pilot, at which point the excerpt must be extended to include it.",
+        "coding_review_status": "proposed"
+      },
+      "artifact_controls": {
+        "privacy_level": "private_evidence",
+        "shareability_notes": "Private only.",
+        "suitable_for": [
+          "alex_reflection",
+          "naomi_reflection",
+          "facilitator_only"
+        ],
+        "visual_weight": "primary",
+        "display_mode": "private_only"
+      }
+    }
+  ]
+}

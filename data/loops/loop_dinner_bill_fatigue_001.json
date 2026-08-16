@@ -1,0 +1,49 @@
+{
+  "interaction_loop_id": "loop_dinner_bill_fatigue_001",
+  "semantic_loop_label": "Dinner Bill Fatigue",
+  "participants": [
+    "Naomi",
+    "Alex"
+  ],
+  "core_topic": "",
+  "loop_start_event_id": "G012",
+  "loop_end_event_id": "G084",
+  "events": [
+    {
+      "event_ids": [
+        "G012"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-07-21 21:45:25",
+      "excerpt": "Can't say not having this conversation again and again and again when you haven't even had the conversation one time Yeah, you know I wasn't even gonna bring it up tonight I was just mentioning the dinner thing because I do feel like you owe me dinner from that You did say you would pay for it, and I ordered you food on your request, and you never came back And it was you know cost me money and I believe in making myself accountable to Things I say I will do and I think that you do too. I thought you did Anyways So that's why I was bringing up dinner. I wasn't going to talk about any of this shit at all I didn't I didn't want to I'm too tired been away for too many days But yeah here we are",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G059"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-07-21 21:19:11",
+      "excerpt": "Why even bring it up is what I'm saying What is this gonna achieve?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G084"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-07-21 21:48:45",
+      "excerpt": "The irony of the line of, um, I'm not having this conversation is that you've been saying I'm not having this conversation the moment since you left my house on that Friday. Like, you're like, you had plenty of time earlier in the evening to have this conversation, you know, say this stuff, blah blah blah, and like, now, now instead of saying that, you well, not instead of, as well as saying that, you just say again and again and again and again. Like, you've just been saying the same thing the whole time. Like, you don't want to talk about it because you don't want to take responsibility. You can't see, or you don't want to see, your partners. And I think that, like, it's actually, like, um, probably exemplifies, like, your greater, the greater role of responsibility in this whole thing, that, you know, you're placating. Uh, no, not placating, um, evading, I don't know, um, something like that, you know. Um, yeah. But we'll never know, will we? Bye.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}

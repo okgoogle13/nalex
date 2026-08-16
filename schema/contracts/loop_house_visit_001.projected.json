@@ -1,0 +1,18 @@
+{
+  "record_id": "loop_house_visit_001",
+  "loop_type": "House Visit Boundary and Intent",
+  "sequence": 1,
+  "speaker_role": "Naomi, Alex",
+  "move_codes": [
+    "states_explicit_concern_or_boundary",
+    "uses_heightened_or_confrontational_language",
+    "contests_stated_account",
+    "responds_to_concern_with_explanation_of_intent",
+    "acknowledges_impact_of_action"
+  ],
+  "direct_response_status": "partly_addresses_prior_concern",
+  "repair_response_status": "unclear",
+  "source_review_state": "verified",
+  "projection_eligibility": true,
+  "privacy_level": "private_evidence"
+}

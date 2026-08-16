@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#050509">
+<title>Nalex — Structural Patterns (Dramatic)</title>
+<!--
+  RENDER TARGET: Pixel 10 Pro, vertical mobile infographic. Variant 3 of 3 — "dramatic".
+  PAYLOAD: visualisations/nalex_mobile_infographic_schema.json
+  This file renders that schema only. No inferred themes, no rewritten evidence, no added analysis.
+-->
+<style>
+:root{
+  --void:#050509;
+  --s1:#0B0B13;
+  --s2:#10101B;
+  --s3:#181826;
+  --line:#20202F;
+  --line-hot:#2C2C42;
+
+  --on:#FFFFFF;
+  --on-var:#A9A6BE;
+  --on-dim:#6E6B85;
+
+  --naomi:#FF2E9A;
+  --naomi-2:#FF7ACB;
+  --alex:#00F0DC;
+  --alex-2:#7DFFF4;
+  --violet:#8B5CFF;
+  --amber:#FFB020;
+
+  --r:30px;
+  --r-in:20px;
+  --r-pill:999px;
+  --pad:20px;
+  --tap:48px;
+
+  --ease:800ms cubic-bezier(.16,.84,.24,1);
+  --font:"Google Sans Text",Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:8px;overflow-x:hidden}
+body{
+  margin:0;background:var(--void);color:var(--on);
+  font-family:var(--font);font-size:15px;line-height:1.6;
+  overflow-x:hidden;
+  padding:0 0 calc(104px + env(safe-area-inset-bottom));
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:520px;margin:0 auto;padding:0 var(--pad)}
+
+/* ---------- chapter rail (left edge) ---------- */
+.rail{
+  position:fixed;left:0;top:0;bottom:0;width:3px;z-index:30;
+  background:linear-gradient(180deg,var(--naomi),var(--violet) 42%,var(--alex));
+  transform-origin:top;transform:scaleY(0);
+  transition:transform 90ms linear;
+}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:66vh;display:flex;flex-direction:column;justify-content:flex-end;
+  padding:64px var(--pad) 42px;overflow:hidden;
+}
+.hero::before{
+  content:"";position:absolute;inset:-30% -60% 10% -60%;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(42% 34% at 22% 30%, rgba(255,46,154,.42), transparent 68%),
+    radial-gradient(46% 36% at 84% 46%, rgba(0,240,220,.28), transparent 70%),
+    radial-gradient(56% 44% at 50% 82%, rgba(139,92,255,.30), transparent 72%);
+  filter:blur(28px);
+  animation:drift 22s ease-in-out infinite alternate;
+}
+@keyframes drift{ from{transform:translate3d(-3%,0,0) scale(1)} to{transform:translate3d(3%,-3%,0) scale(1.08)} }
+.hero > *{position:relative;z-index:1}
+.stamp{
+  display:inline-block;font-size:0.75rem;font-weight:800;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--on-var);border:1px solid var(--line-hot);border-radius:var(--r-pill);
+  padding:9px 16px;margin:0 0 26px;background:rgba(5,5,9,.5);backdrop-filter:blur(8px);
+}
+.hero h1{
+  margin:0 0 20px;font-size:clamp(2.1rem,12.4vw,3.4rem);line-height:.92;font-weight:800;letter-spacing:-.05em;
+  text-transform:uppercase;
+}
+.hero h1 span{display:block}
+.hero h1 .a{color:var(--naomi);text-shadow:0 0 46px rgba(255,46,154,.55)}
+.hero h1 .b{color:var(--on)}
+.hero h1 .c{color:var(--alex);text-shadow:0 0 46px rgba(0,240,220,.45)}
+.hero p{margin:0 0 28px;color:var(--on-var);font-size:1rem;max-width:32ch}
+.heroline{display:flex;gap:0;border-top:1px solid var(--line-hot);border-bottom:1px solid var(--line-hot)}
+.heroline div{flex:1;padding:15px 4px;border-right:1px solid var(--line-hot)}
+.heroline div:last-child{border-right:none}
+.heroline u{display:block;text-decoration:none;font-size:1.3rem;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+.heroline i{display:block;font-style:normal;font-size:0.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dim);margin-top:5px}
+.heroline .v u{color:var(--violet)} .heroline .n u{color:var(--naomi)} .heroline .m u{color:var(--amber)} .heroline .a u{color:var(--alex)}
+
+/* ---------- chapter head (full-bleed wash) ---------- */
+.chapter{position:relative;margin:0;padding:56px var(--pad) 30px;overflow:hidden}
+.chapter::before{
+  content:"";position:absolute;inset:0;z-index:0;opacity:.9;
+}
+.chapter.c1::before{background:linear-gradient(180deg,rgba(255,46,154,.20),transparent 78%)}
+.chapter.c2::before{background:linear-gradient(180deg,rgba(0,240,220,.16),transparent 78%)}
+.chapter.c3::before{background:linear-gradient(180deg,rgba(139,92,255,.20),transparent 78%)}
+.chapter.c4::before{background:linear-gradient(180deg,rgba(255,176,32,.16),transparent 78%)}
+.chapter.c5::before{background:linear-gradient(180deg,rgba(110,107,133,.20),transparent 78%)}
+.chapter > *{position:relative;z-index:1}
+.chapter em{display:block;font-style:normal;font-size:0.75rem;font-weight:800;letter-spacing:.28em;text-transform:uppercase;color:var(--on-dim);margin:0 0 14px}
+.chapter h2{margin:0;font-size:clamp(2rem,9.6vw,2.5rem);line-height:1.02;font-weight:800;letter-spacing:-.045em;text-transform:uppercase}
+.chapter.c1 h2{color:var(--naomi-2)} .chapter.c2 h2{color:var(--alex-2)}
+.chapter.c3 h2{color:#C0A9FF} .chapter.c4 h2{color:#FFD07A} .chapter.c5 h2{color:var(--on-var)}
+
+/* ---------- panels ---------- */
+.panel{
+  background:var(--s1);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 20px;margin:0 0 14px;
+  transition:opacity var(--ease),transform var(--ease);
+}
+.js .panel{opacity:0;transform:translateY(30px)}
+.panel.in{opacity:1;transform:none}
+.eyebrow{font-size:0.75rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:var(--on-dim);margin:0 0 20px}
+.say{margin:0;color:var(--on-var);font-size:.95rem}
+
+/* ---------- monument numeral ---------- */
+.monument{margin:0 0 26px;text-align:left}
+.monument b{
+  display:block;font-size:clamp(4rem,22vw,5.6rem);line-height:.82;font-weight:800;
+  letter-spacing:-.062em;font-variant-numeric:tabular-nums;
+  transition:transform var(--ease),opacity var(--ease);
+}
+.js .monument b{transform:scale(.86);opacity:0}
+.js .panel.in .monument b{transform:none;opacity:1}
+.monument b.n{color:var(--naomi);text-shadow:0 0 60px rgba(255,46,154,.5)}
+.monument b.a{color:var(--alex);text-shadow:0 0 60px rgba(0,240,220,.4)}
+.monument b.v{color:var(--violet);text-shadow:0 0 60px rgba(139,92,255,.5)}
+.monument b.m{color:var(--amber);text-shadow:0 0 60px rgba(255,176,32,.4)}
+.monument span{display:block;margin-top:16px;font-size:.85rem;color:var(--on-var);line-height:1.55}
+
+/* ---------- triptych ---------- */
+.trip{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--line);border-radius:var(--r-in);overflow:hidden;margin:0 0 24px}
+.trip > div{background:var(--s2);padding:18px 10px}
+.trip u{display:block;text-decoration:none;font-size:1.6rem;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums;line-height:1}
+.trip i{display:block;font-style:normal;font-size:0.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dim);margin-top:9px}
+.trip u.n{color:var(--naomi)} .trip u.v{color:var(--violet)} .trip u.a{color:var(--alex)}
+
+/* ---------- bars ---------- */
+.grp{margin:0 0 26px}
+.grp:last-of-type{margin-bottom:0}
+.ghead{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 14px}
+.ghead b{font-size:0.75rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase}
+.ghead span{font-size:0.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--on-dim);font-variant-numeric:tabular-nums}
+.row{display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;margin:0 0 4px}
+.row .who{font-size:0.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dim)}
+.row b.val{font-size:1.15rem;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.03em;white-space:nowrap}
+.row b.val.n{color:var(--naomi)} .row b.val.a{color:var(--alex)}
+.track{position:relative;height:7px;border-radius:var(--r-pill);background:var(--s3);overflow:hidden;margin:0 0 18px}
+.fill{position:absolute;inset:0 auto 0 0;width:0;min-width:4px;border-radius:var(--r-pill);transition:width 900ms cubic-bezier(.16,.84,.24,1)}
+.fill.n{background:linear-gradient(90deg,rgba(255,46,154,.25),var(--naomi));box-shadow:0 0 16px rgba(255,46,154,.75)}
+.fill.a{background:linear-gradient(90deg,rgba(0,240,220,.22),var(--alex));box-shadow:0 0 16px rgba(0,240,220,.6)}
+.band{position:absolute;top:0;bottom:0;left:0;width:0;border-radius:var(--r-pill);transition:width 900ms cubic-bezier(.16,.84,.24,1),left 900ms cubic-bezier(.16,.84,.24,1)}
+.band.n{background:var(--naomi);box-shadow:0 0 16px rgba(255,46,154,.8)}
+.band.a{background:var(--alex);box-shadow:0 0 16px rgba(0,240,220,.7)}
+
+/* ---------- versus split ---------- */
+.vs{margin:0 0 22px}
+.vs > span{display:flex;justify-content:space-between;font-size:0.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dim);margin:0 0 9px}
+.split{display:flex;height:44px;border-radius:var(--r-pill);overflow:hidden;background:var(--s3)}
+.seg{display:grid;place-items:center;font-size:1rem;font-weight:800;font-variant-numeric:tabular-nums;color:var(--void);transition:flex-basis var(--ease)}
+.seg.n{background:linear-gradient(90deg,var(--naomi),var(--naomi-2));box-shadow:inset 0 0 24px rgba(255,255,255,.18)}
+.seg.a{background:linear-gradient(90deg,var(--alex-2),var(--alex));box-shadow:inset 0 0 24px rgba(255,255,255,.18)}
+.seg.z{background:transparent;color:var(--on-dim);font-size:.9rem;border:1px dashed var(--line-hot);border-left:none;border-radius:0 var(--r-pill) var(--r-pill) 0}
+
+/* ---------- rows/ledger ---------- */
+.led{margin:22px 0 0;border-top:1px solid var(--line)}
+.led > div{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:center;padding:15px 0;border-bottom:1px solid var(--line);min-height:var(--tap)}
+.led em{font-style:normal;font-size:.82rem;color:var(--on-var)}
+.led b{font-size:1.05rem;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.02em;white-space:nowrap}
+.led b.n{color:var(--naomi)} .led b.a{color:var(--alex)} .led b.z{color:var(--on-dim)}
+
+/* ---------- meta ---------- */
+.warn{
+  margin:22px 0 0;padding:16px 18px;border-radius:var(--r-in);
+  background:rgba(255,176,32,.08);border:1px solid rgba(255,176,32,.3);
+  font-size:.83rem;line-height:1.55;color:#FFDDA1;
+}
+.warn b{display:block;color:var(--amber);font-size:0.75rem;font-weight:800;letter-spacing:.24em;text-transform:uppercase;margin:0 0 7px}
+.warn + .warn{margin-top:10px}
+.def{margin:22px 0 0;padding:16px 18px;border-radius:var(--r-in);background:var(--s2);border-left:3px solid var(--violet);font-size:.83rem;color:var(--on-var)}
+.def b{color:#C0A9FF}
+.tag{display:block;margin:10px 0 0;font-size:.78rem;color:var(--on-var);line-height:1.5}
+.tag i{font-style:normal;font-size:0.75rem;font-weight:800;letter-spacing:.2em;color:var(--amber);display:inline-block;margin-right:8px}
+.quote{
+  margin:24px 0 0;padding:22px 20px;border-radius:var(--r-in);
+  background:linear-gradient(155deg,rgba(255,46,154,.10),rgba(139,92,255,.08));
+  border:1px solid var(--line-hot);font-size:.9rem;line-height:1.6;
+}
+.quote span{display:block;margin-top:14px;font-size:0.75rem;letter-spacing:.2em;text-transform:uppercase;color:var(--on-dim)}
+.src{margin:22px 0 0;font-size:0.75rem;color:var(--on-dim);line-height:1.55}
+
+.cut{
+  margin:30px 0;padding:20px 18px;border-radius:var(--r-in);text-align:center;
+  background:repeating-linear-gradient(135deg,rgba(255,176,32,.07) 0 12px,transparent 12px 24px);
+  border:1px solid rgba(255,176,32,.32);color:#FFDDA1;font-size:.8rem;line-height:1.5;
+}
+.cut b{color:var(--amber)}
+
+/* ---------- tally ---------- */
+.tally{margin:18px 0 0}
+.tally > div{display:grid;grid-template-columns:74px 1fr 24px;align-items:center;gap:12px;padding:8px 0}
+.tally em{font-style:normal;font-size:.76rem;color:var(--on-var);letter-spacing:.02em}
+.tally .t{height:6px;border-radius:var(--r-pill);background:var(--s3);overflow:hidden}
+.tally .t i{display:block;height:100%;width:0;border-radius:var(--r-pill);background:linear-gradient(90deg,var(--violet),var(--naomi));box-shadow:0 0 12px rgba(139,92,255,.7);transition:width var(--ease)}
+.tally u{text-decoration:none;text-align:right;font-size:.86rem;font-weight:800;font-variant-numeric:tabular-nums}
+
+/* ---------- pills ---------- */
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0 0}
+.pill{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:7px 14px;border-radius:var(--r-pill);background:var(--s2);border:1px solid var(--line-hot);font-size:.76rem;color:var(--on-var);font-variant-numeric:tabular-nums}
+.pill b{color:var(--on);font-weight:800}
+.pill.n{border-color:rgba(255,46,154,.45);color:#FFA8D8}
+.pill.a{border-color:rgba(0,240,220,.4);color:#95FFF6}
+.pill.v{border-color:rgba(139,92,255,.45);color:#CBB8FF}
+
+/* ---------- bottom nav ---------- */
+.navbar{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));background:linear-gradient(0deg,var(--void) 58%,rgba(5,5,9,0))}
+.navinner{display:flex;max-width:480px;margin:0 auto;gap:4px;padding:5px;background:rgba(16,16,27,.9);border:1px solid var(--line-hot);border-radius:var(--r-pill);backdrop-filter:blur(16px)}
+.navinner a{flex:1;min-height:var(--tap);display:grid;place-items:center;border-radius:var(--r-pill);text-decoration:none;font-size:0.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dim);transition:all 220ms}
+.navinner a:active{transform:scale(.93)}
+.navinner a.on{background:var(--on);color:var(--void)}
+
+footer{margin:48px 0 0;padding-top:22px;border-top:1px solid var(--line);color:var(--on-dim);font-size:0.75rem;line-height:1.65}
+footer b{color:var(--on-var);font-weight:700}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms!important;animation:none!important}
+  html{scroll-behavior:auto}
+  .js .panel{opacity:1;transform:none}
+  .js .monument b{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="rail" id="rail"></div>
+
+<header class="hero">
+  <div class="stamp">378 events · Apr – Jul 2026</div>
+  <h1><span class="a">Structural</span><span class="b">patterns</span><span class="c">in four acts</span></h1>
+  <p>Two speakers, one voice channel. Measured quantities only — interpretation is labelled wherever it appears.</p>
+  <div class="heroline">
+    <div class="v"><u>52</u><i>Baseline</i></div>
+    <div class="n"><u>221</u><i>Conflict</i></div>
+    <div class="m"><u>0</u><i>Silence</i></div>
+    <div class="a"><u>105</u><i>Aftermath</i></div>
+  </div>
+</header>
+
+<!-- ================= 01 ================= -->
+<section id="q1">
+  <div class="chapter c1"><em>Act one — volume</em><h2>Who fills the channel</h2></div>
+  <div class="wrap">
+    <div class="panel">
+      <p class="eyebrow">Word ratio · Naomi ÷ Alex</p>
+      <div class="trip">
+        <div><u class="n">1.83×</u><i>Baseline</i></div>
+        <div><u class="v">1.12×</u><i>Conflict</i></div>
+        <div><u class="a">3.14×</u><i>Aftermath</i></div>
+      </div>
+      <p class="say">The gap nearly closes in Conflict, then reopens wider than it ever was at Baseline.</p>
+
+      <div style="height:30px"></div>
+
+      <div class="grp">
+        <div class="ghead"><b>Baseline</b><span>words</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">1,693</b></div>
+        <div class="track"><div class="fill n" data-w="24.7"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">927</b></div>
+        <div class="track" style="margin-bottom:0"><div class="fill a" data-w="13.5"></div></div>
+      </div>
+      <div class="grp">
+        <div class="ghead"><b>Conflict</b><span>words</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">5,888</b></div>
+        <div class="track"><div class="fill n" data-w="85.9"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">5,233</b></div>
+        <div class="track" style="margin-bottom:0"><div class="fill a" data-w="76.4"></div></div>
+      </div>
+      <div class="grp">
+        <div class="ghead"><b>Aftermath</b><span>words</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">6,852</b></div>
+        <div class="track"><div class="fill n" data-w="100"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">2,181</b></div>
+        <div class="track" style="margin-bottom:0"><div class="fill a" data-w="31.8"></div></div>
+      </div>
+
+      <div class="pills">
+        <span class="pill n">Conflict median / turn <b>39.5 : 21</b></span>
+        <span class="pill a">Aftermath median / turn <b>66 : 26</b></span>
+      </div>
+
+      <div class="warn"><b>Caveat</b>Totals, not rates — the phases span 83, 13 and 11 calendar days.</div>
+      <p class="src">Source: baseline_comparison_audit.json</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 02 ================= -->
+<section id="q2">
+  <div class="chapter c2"><em>Act two — latency</em><h2>Who is watching</h2></div>
+  <div class="wrap">
+    <div class="panel">
+      <p class="eyebrow">Median reply latency</p>
+      <div class="monument">
+        <b class="n">484s → 169s</b>
+        <span>Naomi, Baseline → Aftermath. Alex over the same span barely moves: 101s → 122s.</span>
+      </div>
+      <p class="say">One line moves. The convergence is not two people meeting in the middle — it is one party speeding up.</p>
+
+      <div style="height:30px"></div>
+
+      <div class="grp">
+        <div class="ghead"><b>Baseline</b><span>n = 7 / 8</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">484s</b></div>
+        <div class="track"><div class="fill n" data-w="100"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">101s</b></div>
+        <div class="track" style="margin-bottom:0"><div class="fill a" data-w="20.9"></div></div>
+      </div>
+      <div class="grp">
+        <div class="ghead"><b>Conflict</b><span>band, not point</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">112–120s</b></div>
+        <div class="track"><div class="band n" data-l="23.1" data-w="1.7"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">70–94s</b></div>
+        <div class="track" style="margin-bottom:0"><div class="band a" data-l="14.5" data-w="4.9"></div></div>
+      </div>
+      <div class="grp">
+        <div class="ghead"><b>Aftermath</b><span>ratio 1.39×</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">169s</b></div>
+        <div class="track"><div class="fill n" data-w="34.9"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">122s</b></div>
+        <div class="track" style="margin-bottom:0"><div class="fill a" data-w="25.2"></div></div>
+      </div>
+
+      <div class="warn"><b>Caveat</b>Conflict is a band, not a point — 36 Conflict events carry inferred timestamps.</div>
+      <div class="warn"><b>Caveat</b>Baseline medians rest on 7 (Naomi) and 8 (Alex) observations. Three points per line is not a trend, and no per-event latency series exists anywhere in the inputs.</div>
+      <p class="src">Source: phase_profile.json</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 03 ================= -->
+<section id="q3">
+  <div class="chapter c3"><em>Act three — initiation &amp; closure</em><h2>Who starts it,<br>who ends it</h2></div>
+  <div class="wrap">
+    <div class="panel">
+      <p class="eyebrow">Session opens · Naomi : Alex</p>
+      <div class="vs"><span><i style="font-style:normal">Baseline</i><i style="font-style:normal">10 sessions</i></span>
+        <div class="split"><div class="seg n" style="flex:5">5</div><div class="seg a" style="flex:5">5</div></div></div>
+      <div class="vs"><span><i style="font-style:normal">Conflict</i><i style="font-style:normal">10 sessions</i></span>
+        <div class="split"><div class="seg n" style="flex:5">5</div><div class="seg a" style="flex:5">5</div></div></div>
+      <div class="vs" style="margin-bottom:0"><span><i style="font-style:normal">Aftermath</i><i style="font-style:normal">5 sessions</i></span>
+        <div class="split"><div class="seg n" style="flex:9">5</div><div class="seg z" style="flex:1">0</div></div></div>
+    </div>
+
+    <div class="panel">
+      <p class="eyebrow">Session closes · Naomi : Alex</p>
+      <div class="vs"><span><i style="font-style:normal">Baseline</i><i style="font-style:normal">10 sessions</i></span>
+        <div class="split"><div class="seg n" style="flex:4">4</div><div class="seg a" style="flex:6">6</div></div></div>
+      <div class="vs"><span><i style="font-style:normal">Conflict</i><i style="font-style:normal">10 sessions</i></span>
+        <div class="split"><div class="seg n" style="flex:3">3</div><div class="seg a" style="flex:7">7</div></div></div>
+      <div class="vs"><span><i style="font-style:normal">Aftermath</i><i style="font-style:normal">5 sessions</i></span>
+        <div class="split"><div class="seg n" style="flex:9">5</div><div class="seg z" style="flex:1">0</div></div></div>
+
+      <div class="def"><b>“Session close”</b> — the last turn before a 60-minute gap. A mechanical artifact, not a communicative act.</div>
+      <div class="warn"><b>Caveat</b>Naomi's 5 Aftermath closes overlap her 11 post-exit turns, so the metric partly counts talking after he left as closing. The Aftermath denominator is 5 sessions — one session is 20% of the bar.</div>
+    </div>
+
+    <div class="panel">
+      <p class="eyebrow">Explicit sign-offs · whole corpus</p>
+      <div class="monument">
+        <b class="a">15 <span style="display:inline;font-size:.3em;letter-spacing:.14em;color:var(--on-dim);text-shadow:none">ALEX</span></b>
+        <b class="n" style="margin-top:12px">0 <span style="display:inline;font-size:.3em;letter-spacing:.14em;color:var(--on-dim);text-shadow:none">NAOMI</span></b>
+        <span>Across all 378 events, Naomi never performs a verbal ending. Alex does it 15 times — 11 in Conflict, 4 in the Aftermath.</span>
+      </div>
+      <div class="led" style="margin-top:0">
+        <div><em>Baseline</em><b class="z">0 : 0</b></div>
+        <div><em>Conflict</em><b class="a">0 : 11</b></div>
+        <div><em>Aftermath</em><b class="a">0 : 4</b></div>
+      </div>
+      <div class="def"><b>“Explicit sign-off”</b> — a verbal termination move.</div>
+      <span class="tag"><i>STRUCTURAL TAG</i>naomi_never_closes_verbally — zero explicit sign-off moves in the phase.</span>
+      <span class="tag"><i>INTERPRETATION</i>alex_withdrawal_by_exit — managing load by ending exchanges rather than escalating.</span>
+      <span class="tag"><i>INTERPRETATION</i>dyad_asymmetric_repair_expectation — each waits for the other to perform the first repair move.</span>
+    </div>
+
+    <div class="panel">
+      <p class="eyebrow">Aftermath · words with no one on the other end</p>
+      <div class="monument">
+        <b class="n">37.7%</b>
+        <span>2,585 of Naomi's 6,852 Aftermath words are produced after Alex has left the session, or in sessions he never joins.</span>
+      </div>
+      <div class="track" style="height:12px"><div class="fill n" data-w="37.7"></div></div>
+      <div class="led">
+        <div><em>Post-exit tail · 11 turns</em><b class="n">1,792 w</b></div>
+        <div><em>Solo session · 8 turns</em><b class="n">793 w</b></div>
+        <div><em>Alex · post-exit and solo</em><b class="z">0 w</b></div>
+      </div>
+      <p class="src">Source: phase_profile.json. Word totals here use the phase_profile tokenisation (6,860); Act one uses the audit figure (6,852). The two differ by &lt;0.3%.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 04 ================= -->
+<section id="q4">
+  <div class="chapter c4"><em>Act four — question function</em><h2>What the questions do</h2></div>
+  <div class="wrap">
+    <div class="panel">
+      <p class="eyebrow">Population · all literal “?” questions in Conflict</p>
+      <div class="grp">
+        <div class="ghead"><b>Asked</b><span>83 total</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">39</b></div>
+        <div class="track"><div class="fill n" data-w="88.6"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">44</b></div>
+        <div class="track" style="margin-bottom:0"><div class="fill a" data-w="100"></div></div>
+      </div>
+      <div class="grp">
+        <div class="ghead"><b>Documented unanswered</b><span>23 total</span></div>
+        <div class="row"><span class="who">Naomi</span><b class="val n">8 / 39</b></div>
+        <div class="track"><div class="fill n" data-w="53.3"></div></div>
+        <div class="row"><span class="who">Alex</span><b class="val a">15 / 44</b></div>
+        <div class="track" style="margin-bottom:0"><div class="fill a" data-w="100"></div></div>
+      </div>
+
+      <p class="say" style="margin-top:26px">This is the inversion that names the phase. At Baseline it ran the other way.</p>
+      <div class="led">
+        <div><em>Baseline · Naomi asked / unanswered</em><b class="n">12 / 6</b></div>
+        <div><em>Baseline · Alex asked / unanswered</em><b class="a">4 / 1</b></div>
+      </div>
+
+      <div class="warn"><b>Caveat</b>Alex's 15/44 is an analyst-assigned content judgement, not reproducible from events.jsonl. A mechanical 10-minute rule yields ≈16% vs ≈18% — no inversion at all.</div>
+      <p class="src">Source: baseline_comparison_audit.json</p>
+    </div>
+
+    <div class="cut">20% annotated sample — <b>not</b> drawn from the panel above.<br>Its speaker skew (11 : 6 Naomi) inverts the population's (39 : 44 Alex).</div>
+
+    <div class="panel">
+      <p class="eyebrow">Sample · 17 hand-annotated questions</p>
+      <div class="pills" style="margin:0 0 26px">
+        <span class="pill n">Naomi <b>11</b></span>
+        <span class="pill a">Alex <b>6</b></span>
+        <span class="pill">26–27 Jun <b>12</b></span>
+        <span class="pill">4 Jul <b>5</b></span>
+      </div>
+
+      <div class="monument">
+        <b class="m">0 / 17</b>
+        <span>Not one of the annotated questions is recorded as fully answered. The field takes only Partial and No.</span>
+      </div>
+
+      <div class="led" style="margin-top:0">
+        <div><em>Answered — Partial</em><b>10</b></div>
+        <div><em>Answered — No</em><b>7</b></div>
+        <div><em>Answered — Yes</em><b class="z">0</b></div>
+        <div><em>Flagged genuine_unanswered</em><b>3</b></div>
+      </div>
+
+      <p class="eyebrow" style="margin:30px 0 0">Intent</p>
+      <div class="tally">
+        <div><em>challenge</em><div class="t"><i data-w="100"></i></div><u>5</u></div>
+        <div><em>boundary</em><div class="t"><i data-w="100"></i></div><u>5</u></div>
+        <div><em>clarify</em><div class="t"><i data-w="80"></i></div><u>4</u></div>
+        <div><em>justify</em><div class="t"><i data-w="20"></i></div><u>1</u></div>
+        <div><em>deflect</em><div class="t"><i data-w="20"></i></div><u>1</u></div>
+        <div><em>repair</em><div class="t"><i data-w="20"></i></div><u>1</u></div>
+      </div>
+
+      <div class="pills">
+        <span class="pill n">hot <b>9</b></span>
+        <span class="pill">tense <b>7</b></span>
+        <span class="pill">explosive <b>1</b></span>
+        <span class="pill v">proof-loop <b>6 / 17</b></span>
+      </div>
+
+      <div class="quote">
+        “One party repeatedly demands specific proof of intent (e.g. regarding flirting and avoidance) and the other refuses to supply or restate it, leading to character attacks. Accusatory questions are weaponized as pressure, while requests for concrete examples go unanswered.”
+        <span>Core problem · verbatim · dominant loop: Retrieval vs. Proof Deadlock</span>
+      </div>
+
+      <div class="warn"><b>Caveat</b>This panel is not evidence about the panel above it.</div>
+      <p class="src">Source: conflict_questions_annotated.json · conflict_questions_summary.json</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 05 ================= -->
+<section id="q5">
+  <div class="chapter c5"><em>Coda</em><h2>What this can't say</h2></div>
+  <div class="wrap">
+    <div class="panel">
+      <div class="warn" style="margin-top:0"><b>Channel</b>The Aftermath window is 100% audio (105 / 105). Conflict contained 69 text events (38 Alex / 31 Naomi). If Alex replied by text in July, those turns are absent by construction — every Aftermath asymmetry figure is an upper bound, not a measurement.</div>
+      <div class="warn"><b>Join key</b>77 of 378 events carry no sha256, all of them in Conflict. The “always join on sha256” invariant cannot be applied to the Conflict text thread.</div>
+      <div class="warn"><b>Sample size</b>Baseline latency medians rest on 7 (Naomi) and 8 (Alex) observations.</div>
+      <div class="warn"><b>Label status</b>problematic_tags and emotional_tags are assigned analytic labels, not measured quantities. emotional_tags are INTERPRETATION.</div>
+    </div>
+
+    <footer>
+      <b>Nalex · structural evidence pass.</b><br>
+      Rendered from <b>visualisations/nalex_mobile_infographic_schema.json</b>.<br>
+      Canonical sources: CURRENT_STATE_CLEAN.md · phase_profile.json · baseline_comparison_audit.json · conflict_questions_annotated.json · conflict_questions_summary.json.
+    </footer>
+  </div>
+</section>
+
+<nav class="navbar">
+  <div class="navinner">
+    <a href="#q1" class="on">Vol</a>
+    <a href="#q2">Lat</a>
+    <a href="#q3">Turns</a>
+    <a href="#q4">Q&amp;A</a>
+    <a href="#q5">Limits</a>
+  </div>
+</nav>
+
+<script>
+(function(){
+  document.documentElement.className = 'js';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function revealAll(){
+    document.querySelectorAll('.panel').forEach(function(p){ p.classList.add('in'); });
+    paint(document);
+  }
+
+  function paint(root){
+    root.querySelectorAll('.fill[data-w]').forEach(function(el){ el.style.width = el.dataset.w + '%'; });
+    root.querySelectorAll('.band[data-w]').forEach(function(el){
+      el.style.left  = el.dataset.l + '%';
+      el.style.width = Math.max(parseFloat(el.dataset.w), 3) + '%';
+    });
+    root.querySelectorAll('.tally i[data-w]').forEach(function(el){ el.style.width = el.dataset.w + '%'; });
+  }
+
+  if (reduce || !('IntersectionObserver' in window)) {
+    revealAll();
+  } else {
+    // failsafe: nothing stays invisible if the observer never fires
+    setTimeout(revealAll, 2500);
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        setTimeout(function(){ paint(e.target); }, 200);
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.1 });
+    document.querySelectorAll('.panel').forEach(function(p){ io.observe(p); });
+  }
+
+  // scroll-progress rail
+  var rail = document.getElementById('rail'), ticking = false;
+  function tick(){
+    var max = document.body.scrollHeight - innerHeight;
+    rail.style.transform = 'scaleY(' + (max > 0 ? Math.min(scrollY / max, 1) : 0) + ')';
+    ticking = false;
+  }
+  addEventListener('scroll', function(){ if (!ticking) { ticking = true; requestAnimationFrame(tick); } }, { passive: true });
+  tick();
+
+  var links = [].slice.call(document.querySelectorAll('.navinner a'));
+  var secs  = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var i = secs.indexOf(e.target);
+      links.forEach(function(a,j){ a.classList.toggle('on', j === i); });
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  secs.forEach(function(s){ if (s) spy.observe(s); });
+})();
+</script>
+</body>
+</html>

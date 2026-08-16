@@ -1,0 +1,15 @@
+{
+  "_contract_note": "Target shape for viz-safe projection layer. De-identified, non-quote-forward, structure-only.",
+  "record_id": "string",
+  "loop_type": "string",
+  "sequence": 0,
+  "speaker_role": "string",
+  "move_codes": [
+    "string"
+  ],
+  "direct_response_status": "string",
+  "repair_response_status": "string",
+  "source_review_state": "string",
+  "projection_eligibility": true,
+  "privacy_level": "string"
+}

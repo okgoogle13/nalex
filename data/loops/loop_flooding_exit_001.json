@@ -1,0 +1,36 @@
+{
+  "interaction_loop_id": "loop_flooding_exit_001",
+  "semantic_loop_label": "Flooding Exit",
+  "participants": [
+    "Alex"
+  ],
+  "core_topic": "",
+  "loop_start_event_id": "G006",
+  "loop_end_event_id": "G193",
+  "events": [
+    {
+      "event_ids": [
+        "G006"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-07-13 19:44:09",
+      "excerpt": "But also I have been cut out of that many people's lives and I've cut that many people out of my life Including my own brother for a good hot minute that I Sorry, just going through yellow lights Yeah, I've cut that many people out been cut out that many times It's not not something I'm proud of but it's something that I can do and do pretty easy Because I kind of like me. I like my alone time and I like to guard my Space and my energy because I'm fucking Kind of sponge for other people's shit and it gets raining as fuck shoot shoot Shoot god damn gonna crash this car a second. I thought I was saying",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G193"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-07-13 20:33:59",
+      "excerpt": "Like I said, I am a sponge. I will reciprocate the emotions around me because I don't have my own.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}

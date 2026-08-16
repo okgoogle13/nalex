@@ -1,0 +1,728 @@
+{
+  "summary_version": "2.0",
+  "generated_at": "2026-08-16T11:45:00+10:00",
+  "supersedes": {
+    "version": "1.0",
+    "generated_at": "2026-08-14T21:23:00+10:00",
+    "incident_count": 6,
+    "reason": "v1.0 predated the resegmentation and omitted CONF-01, AFT-03 through AFT-10, and 60 of 105 Aftermath events, including the corpus's only mutual acknowledgement (AFT-06 / G189)."
+  },
+  "authoritative_incident_count": 16,
+  "schema_source_of_truth": "nalex_incidents.json",
+  "narrative_source": "nalex_resegmented_timeline.md",
+  "event_assignment_source": "nalex_event_audit.md",
+  "uncertainties_source": "nalex_claims_and_uncertainties.md",
+  "attribution_rules": [
+    "direct_observation: verbatim quote or measurable fact from events.jsonl",
+    "participant_account: one party's stated claim; not independently verified",
+    "inference: analyst structural reading; not established fact",
+    "participant claims are never promoted to verified facts"
+  ],
+  "phases": [
+    {
+      "phase": "Baseline",
+      "window": "2026-04-01/2026-06-22",
+      "events": 52,
+      "sessions": 10,
+      "incidents": []
+    },
+    {
+      "phase": "Conflict",
+      "window": "2026-06-23/2026-07-05",
+      "events": 221,
+      "sessions": 10,
+      "incidents": [
+        "CONF-01",
+        "CONF-02",
+        "CONF-03"
+      ]
+    },
+    {
+      "phase": "Silence",
+      "window": "2026-07-06/2026-07-10",
+      "events": 0,
+      "sessions": 0,
+      "incidents": []
+    },
+    {
+      "phase": "Aftermath",
+      "window": "2026-07-11/2026-07-21",
+      "events": 105,
+      "sessions": 5,
+      "incidents": [
+        "AFT-01",
+        "AFT-02",
+        "AFT-03",
+        "AFT-04",
+        "AFT-05",
+        "AFT-06",
+        "AFT-07",
+        "AFT-08",
+        "AFT-09",
+        "AFT-10",
+        "AFT-11",
+        "AFT-12",
+        "AFT-13"
+      ]
+    }
+  ],
+  "aftermath_sessions": [
+    {
+      "session_id": "S-AM-1",
+      "start": "2026-07-11T20:07:12",
+      "end": "2026-07-11T22:53:24",
+      "events": 40,
+      "gap_before": "6.8 days",
+      "incidents": [
+        "AFT-01",
+        "AFT-02",
+        "AFT-03"
+      ]
+    },
+    {
+      "session_id": "S-AM-2",
+      "start": "2026-07-11T23:55:57",
+      "end": "2026-07-12T00:04:10",
+      "events": 4,
+      "gap_before": "62.6 min",
+      "incidents": [
+        "AFT-04"
+      ]
+    },
+    {
+      "session_id": "S-AM-3",
+      "start": "2026-07-12T01:10:23",
+      "end": "2026-07-12T01:31:53",
+      "events": 4,
+      "gap_before": "66.2 min",
+      "incidents": [
+        "AFT-05"
+      ]
+    },
+    {
+      "session_id": "S-AM-4",
+      "start": "2026-07-13T19:31:56",
+      "end": "2026-07-13T23:04:44",
+      "events": 28,
+      "gap_before": "~42 hr",
+      "incidents": [
+        "AFT-06",
+        "AFT-07",
+        "AFT-08",
+        "AFT-09",
+        "AFT-10"
+      ]
+    },
+    {
+      "session_id": "S-AM-5",
+      "start": "2026-07-21T19:04:12",
+      "end": "2026-07-21T21:48:45",
+      "events": 29,
+      "gap_before": "~7.8 days",
+      "incidents": [
+        "AFT-11",
+        "AFT-12",
+        "AFT-13"
+      ]
+    }
+  ],
+  "incidents": [
+    {
+      "incident_id": "CONF-01",
+      "phase": "Conflict",
+      "session": "S5",
+      "label": "Relational acknowledgement dispute — afternoon Jun 26",
+      "date_time_start": "2026-06-26T16:04:00",
+      "date_time_end": "2026-06-26T17:06:00",
+      "neutral_description": "Naomi asks Alex to acknowledge an unspoken past conversation; he says he cannot acknowledge what she will not name. He then sends 392 words of disclosure across 76 seconds immediately before arriving; she had a 37-minute gap and no recorded window to hear them.",
+      "source_event_ids": [
+        "B021",
+        "B022",
+        "B023",
+        "B026",
+        "B028",
+        "B039",
+        "B044",
+        "B045",
+        "B046",
+        "B047"
+      ],
+      "event_count": 10,
+      "significance_tags": [
+        "acknowledgement-deadlock",
+        "voice-note-channel-timing",
+        "first-instance-retrieval-deadlock",
+        "directness-loop"
+      ],
+      "confidence": "High",
+      "outcome": "Unresolved. Alex left. Naomi's first question sent at 21:57 (B049).",
+      "detail_ref": "nalex_incidents.json#CONF-01"
+    },
+    {
+      "incident_id": "CONF-02",
+      "phase": "Conflict",
+      "session": "S7",
+      "label": "Keyboard warrior trigger and overnight escalation",
+      "date_time_start": "2026-06-26T21:57:00",
+      "date_time_end": "2026-06-27T02:33:00",
+      "neutral_description": "Escalation over ~4.5 hours into mutual character attack. The 'keyboard warrior' comment is a re-entry 1m58s after a declared exit; rebuttal 72 seconds later. Turn rate goes 5.1/hr to 25.6/hr.",
+      "source_event_ids": [
+        "B049",
+        "B055",
+        "B056",
+        "B062",
+        "B063",
+        "B066",
+        "B069",
+        "B072",
+        "B074",
+        "B085",
+        "B087",
+        "B088",
+        "B091",
+        "B092",
+        "B095",
+        "B107",
+        "B122",
+        "B127",
+        "B128"
+      ],
+      "event_count": 19,
+      "significance_tags": [
+        "keyboard-warrior-hinge",
+        "5x-escalation",
+        "retrieval-deadlock",
+        "mutual-character-attack",
+        "alex-exits-not-held"
+      ],
+      "confidence": "High (pre-01:28). Paraphrase only for B122/B127/B128 (CURRENT_STATE_CLEAN.md §3).",
+      "outcome": "Cessation without agreement. B122/B127/B128 cited from CURRENT_STATE_CLEAN.md §8.5 only — no verbatim transcript.",
+      "detail_ref": "nalex_incidents.json#CONF-02",
+      "untranscribable_event_ids": [
+        "B122",
+        "B127",
+        "B128"
+      ]
+    },
+    {
+      "incident_id": "CONF-03",
+      "phase": "Conflict",
+      "session": "S9/S10",
+      "label": "Boundary and flirtation clarification — friendship termination declared",
+      "date_time_start": "2026-07-04T22:07:00",
+      "date_time_end": "2026-07-05T00:53:00",
+      "neutral_description": "Alex re-initiates, asks three specific clarifying questions about flirtation (all unanswered), then declares the friendship ended. Naomi describes it as emotional blackmail.",
+      "source_event_ids": [
+        "C047",
+        "C055",
+        "C059",
+        "C062",
+        "C065",
+        "C066",
+        "C067",
+        "C068",
+        "C072",
+        "C075",
+        "C080",
+        "C081",
+        "C082",
+        "C083"
+      ],
+      "event_count": 14,
+      "significance_tags": [
+        "repair-attempt",
+        "boundary-clarification",
+        "friendship-termination-declared",
+        "retrieval-deadlock",
+        "directness-loop"
+      ],
+      "confidence": "High",
+      "outcome": "Friendship declared ended by Alex. 6.8-day silence follows (CURRENT_STATE_CLEAN.md §3).",
+      "detail_ref": "nalex_incidents.json#CONF-03"
+    },
+    {
+      "incident_id": "AFT-01",
+      "phase": "Aftermath",
+      "session": "S-AM-1",
+      "label": "Reconnection after 6.8-day silence",
+      "date_time_start": "2026-07-11T20:07:12",
+      "date_time_end": "2026-07-11T20:27:26",
+      "neutral_description": "Naomi breaks the 6.8-day silence. Alex's acknowledgement demand arrives on his third turn, followed by a conditional withdrawal offer.",
+      "source_event_ids": [
+        "G212",
+        "G170",
+        "G171",
+        "G172",
+        "G173",
+        "G174",
+        "G019"
+      ],
+      "event_count": 7,
+      "significance_tags": [
+        "naomi-opens-aftermath",
+        "6.8-day-silence-broken",
+        "alex-acknowledgement-demand",
+        "low-key-opening"
+      ],
+      "confidence": "High",
+      "outcome": "Transitions to AFT-02 within same session.",
+      "detail_ref": "nalex_incidents.json#AFT-01",
+      "initiator": "Naomi"
+    },
+    {
+      "incident_id": "AFT-02",
+      "phase": "Aftermath",
+      "session": "S-AM-1",
+      "label": "Acknowledgement deadlock — first contact session",
+      "date_time_start": "2026-07-11T20:30:43",
+      "date_time_end": "2026-07-11T22:30:13",
+      "neutral_description": "Alex names hurt and anxiety, states acknowledgement as a precondition for meeting. Naomi: 'What am I acknowledging?' Structurally identical to CONF-01, 15 days on.",
+      "source_event_ids": [
+        "G097",
+        "G175",
+        "G096",
+        "G080",
+        "G028",
+        "G066",
+        "G176",
+        "G020",
+        "G040",
+        "G089",
+        "G085",
+        "G016",
+        "G177",
+        "G037",
+        "G065",
+        "G064",
+        "G032"
+      ],
+      "event_count": 17,
+      "significance_tags": [
+        "acknowledgement-deadlock",
+        "retrieval-deadlock-recurrence",
+        "alex-anxiety-stated",
+        "alex-in-person-condition"
+      ],
+      "confidence": "High",
+      "outcome": "No acknowledgement given. Session continues to AFT-03.",
+      "detail_ref": "nalex_incidents.json#AFT-02"
+    },
+    {
+      "incident_id": "AFT-03",
+      "phase": "Aftermath",
+      "session": "S-AM-1",
+      "label": "Conflicting accounts of Jun 26 — mischaracterisation dispute",
+      "date_time_start": "2026-07-11T22:30:45",
+      "date_time_end": "2026-07-11T22:53:24",
+      "neutral_description": "Competing accounts of Jun 26. Naomi's voice-message timing account, third corpus instance. Alex exits; Naomi continues post-exit with the first dinner-debt mention.",
+      "source_event_ids": [
+        "G046",
+        "G178",
+        "G179",
+        "G031",
+        "G099",
+        "G045",
+        "G042",
+        "G180",
+        "G181",
+        "G062",
+        "G112",
+        "G182",
+        "G183",
+        "G055",
+        "G184",
+        "G070"
+      ],
+      "event_count": 16,
+      "significance_tags": [
+        "voice-message-timing-dispute",
+        "mischaracterisation-dispute",
+        "alex-exit-1-of-4",
+        "post-exit-continuation",
+        "dinner-debt-first-mention"
+      ],
+      "confidence": "High",
+      "outcome": "Alex exits (G183). S-AM-1 closes 22:53:24. Gap 62.6 min to S-AM-2 (computed).",
+      "detail_ref": "nalex_incidents.json#AFT-03"
+    },
+    {
+      "incident_id": "AFT-04",
+      "phase": "Aftermath",
+      "session": "S-AM-2",
+      "label": "Attentiveness dispute — did Alex read her messages?",
+      "date_time_start": "2026-07-11T23:55:57",
+      "date_time_end": "2026-07-12T00:04:10",
+      "neutral_description": "Naomi challenges whether Alex read or listened to anything; states she has the conversation screenshotted. Alex's side absent from the corpus.",
+      "source_event_ids": [
+        "G030",
+        "G185",
+        "G075",
+        "G100"
+      ],
+      "event_count": 4,
+      "significance_tags": [
+        "attentiveness-dispute",
+        "what-was-known-dispute",
+        "naomi-only-session",
+        "missing-alex-replies",
+        "screenshot-evidence"
+      ],
+      "confidence": "Moderate. Naomi's audio confirmed; Alex's side unknown.",
+      "outcome": "No resolution recorded. S-AM-2 closes 00:04:10. Gap 66.2 min to S-AM-3 (computed).",
+      "detail_ref": "nalex_incidents.json#AFT-04",
+      "participants_note": "Naomi audio only. Alex's replies implied by G030 framing but absent from corpus (CURRENT_STATE_CLEAN.md §7.2D)."
+    },
+    {
+      "incident_id": "AFT-05",
+      "phase": "Aftermath",
+      "session": "S-AM-3",
+      "label": "Explicit apology demand — claim about prior knowledge via Nishant — conditional patience stated",
+      "date_time_start": "2026-07-12T01:10:23",
+      "date_time_end": "2026-07-12T01:31:53",
+      "neutral_description": "Naomi's explicit apology demand — the closest specification in the corpus of what she states she needed. Raises the Nishant prior-knowledge claim. Alex's side absent.",
+      "source_event_ids": [
+        "G186",
+        "G094",
+        "G187",
+        "G188"
+      ],
+      "event_count": 4,
+      "significance_tags": [
+        "apology-demand-explicit",
+        "acknowledgement-absence-stated",
+        "naomi-claim-nishant-prior-knowledge",
+        "naomi-says-forced-into-vulnerability",
+        "naomi-only-session"
+      ],
+      "confidence": "Moderate. Naomi's audio confirmed; Alex's side unknown.",
+      "outcome": "Naomi states she will wait. S-AM-3 ends 01:31:53. ~42-hour gap before S-AM-4.",
+      "detail_ref": "nalex_incidents.json#AFT-05",
+      "participants_note": "Naomi audio only. Alex's replies implied by G188 framing but absent from corpus.",
+      "claim_status_notes": {
+        "G094": "Participant account only. No corpus event independently establishes what Nishant communicated to Alex or when. Recurs at G211 (AFT-13).",
+        "G187": "Naomi says she was forced into vulnerability — participant account."
+      }
+    },
+    {
+      "incident_id": "AFT-06",
+      "phase": "Aftermath",
+      "session": "S-AM-4",
+      "label": "Single mutual acknowledgement event — bilateral apology — personal disclosure",
+      "date_time_start": "2026-07-13T19:31:56",
+      "date_time_end": "2026-07-13T20:09:52",
+      "neutral_description": "The only substantive acknowledgement and apology from Alex in the corpus, following Naomi's apology. Non-specific, no named harms. Alex exits while driving.",
+      "source_event_ids": [
+        "G053",
+        "G189",
+        "G190",
+        "G006",
+        "G010",
+        "G102",
+        "G090",
+        "G191"
+      ],
+      "event_count": 8,
+      "significance_tags": [
+        "mutual-acknowledgement-single-instance",
+        "alex-apology-given",
+        "naomi-apology-given",
+        "alex-personal-disclosure"
+      ],
+      "confidence": "High",
+      "outcome": "Both parties apologised. Alex exits while driving (G191, 20:09:52). 23-min pause; S-AM-4 continues at AFT-07.",
+      "detail_ref": "nalex_incidents.json#AFT-06",
+      "initiator": "Naomi"
+    },
+    {
+      "incident_id": "AFT-07",
+      "phase": "Aftermath",
+      "session": "S-AM-4",
+      "label": "Conflict reopened — apology negotiation — boundary declaration as inflection point",
+      "date_time_start": "2026-07-13T20:32:56",
+      "date_time_end": "2026-07-13T21:13:53",
+      "neutral_description": "Conflict reopens 23.1 minutes after the acknowledgement. Apology-format negotiation; Naomi names her boundary declaration as the inflection point.",
+      "source_event_ids": [
+        "G192",
+        "G193",
+        "G194",
+        "G034",
+        "G195",
+        "G196"
+      ],
+      "event_count": 6,
+      "significance_tags": [
+        "conflict-reopened-within-session",
+        "voice-message-timing-fourth-instance",
+        "apology-negotiation",
+        "boundary-as-inflection-point",
+        "sponge-disclosure"
+      ],
+      "confidence": "High",
+      "outcome": "No resolution. Transitions to AFT-08.",
+      "detail_ref": "nalex_incidents.json#AFT-07",
+      "gap_from_AFT06_minutes": 23.1
+    },
+    {
+      "incident_id": "AFT-08",
+      "phase": "Aftermath",
+      "session": "S-AM-4",
+      "label": "Alex refers to a past suicide attempt — harm identification — partial de-escalation stated",
+      "date_time_start": "2026-07-13T21:25:24",
+      "date_time_end": "2026-07-13T21:49:21",
+      "neutral_description": "Alex frames himself as impervious to hurt, referring to a past suicide attempt. Naomi reads it as an attempt to hurt her and names specific harms. She states a pause she does not hold.",
+      "source_event_ids": [
+        "G197",
+        "G087",
+        "G021",
+        "G017",
+        "G047",
+        "G026",
+        "G108"
+      ],
+      "event_count": 7,
+      "significance_tags": [
+        "alex-personal-disclosure",
+        "invulnerability-claim",
+        "alex-defended-invulnerability",
+        "naomi-names-specific-harms",
+        "naomi-states-pause-not-held"
+      ],
+      "confidence": "High",
+      "outcome": "Naomi states she has said her piece (G108). Does not hold — AFT-09 follows 17.2 min later.",
+      "detail_ref": "nalex_incidents.json#AFT-08"
+    },
+    {
+      "incident_id": "AFT-09",
+      "phase": "Aftermath",
+      "session": "S-AM-4",
+      "label": "Renewed accusation — ADHD/dyslexia disclosure — exit-as-regulation",
+      "date_time_start": "2026-07-13T22:06:35",
+      "date_time_end": "2026-07-13T22:18:56",
+      "neutral_description": "Naomi demands he scroll up; Alex cites ADHD and dyslexia, states he is getting worked up, and exits. Naomi disputes the applicability.",
+      "source_event_ids": [
+        "G067",
+        "G198",
+        "G199",
+        "G088"
+      ],
+      "event_count": 4,
+      "significance_tags": [
+        "alex-neurodivergence-disclosure",
+        "retrieval-deadlock-recurrence",
+        "alex-exit-2-of-4",
+        "naomi-continues-after-stated-pause"
+      ],
+      "confidence": "High",
+      "outcome": "Alex exits (G199). G088 follows. One post-exit turn remains (AFT-10).",
+      "detail_ref": "nalex_incidents.json#AFT-09"
+    },
+    {
+      "incident_id": "AFT-10",
+      "phase": "Aftermath",
+      "session": "S-AM-4",
+      "label": "Post-exit communication style complaint — session close",
+      "date_time_start": "2026-07-13T23:04:44",
+      "date_time_end": "2026-07-13T23:04:44",
+      "neutral_description": "Single post-exit turn 45.8 minutes later objecting to backhanded inferences. Closes S-AM-4; ~7.8-day gap follows.",
+      "source_event_ids": [
+        "G200"
+      ],
+      "event_count": 1,
+      "significance_tags": [
+        "post-exit-continuation",
+        "communication-style-complaint",
+        "session-close"
+      ],
+      "confidence": "High",
+      "outcome": "S-AM-4 closes at 23:04:44. ~7.8-day gap before S-AM-5.",
+      "detail_ref": "nalex_incidents.json#AFT-10"
+    },
+    {
+      "incident_id": "AFT-11",
+      "phase": "Aftermath",
+      "session": "S-AM-5",
+      "label": "Warm reciprocal exchange — S-AM-5 opening — 129 minutes",
+      "date_time_start": "2026-07-21T19:04:12",
+      "date_time_end": "2026-07-21T21:13:03",
+      "neutral_description": "129 minutes of warm reciprocal exchange — banter, a drop-off offer, an in-joke run. Retained as context; necessary to read AFT-12.",
+      "source_event_ids": [
+        "G201",
+        "G073",
+        "G050",
+        "G202",
+        "G091",
+        "G203",
+        "G204",
+        "G023",
+        "G205",
+        "G039",
+        "G079",
+        "G107",
+        "G063",
+        "G206",
+        "G072",
+        "G003",
+        "G069",
+        "G103",
+        "G061"
+      ],
+      "event_count": 19,
+      "significance_tags": [
+        "context_episode",
+        "contrast_before_escalation",
+        "warm-reciprocal-exchange",
+        "naomi-opens-session-5"
+      ],
+      "confidence": "High",
+      "outcome": "Transitions to AFT-12 when Naomi raises dinner debt at G207 (21:14:31). Elapsed since G061: 1m28s.",
+      "detail_ref": "nalex_incidents.json#AFT-11",
+      "initiator": "Naomi",
+      "duration_minutes": 128.9,
+      "significance": "contrast_before_escalation"
+    },
+    {
+      "incident_id": "AFT-12",
+      "phase": "Aftermath",
+      "session": "S-AM-5",
+      "label": "Dinner debt trigger — conflict fatigue — Alex's final recorded event",
+      "date_time_start": "2026-07-21T21:14:31",
+      "date_time_end": "2026-07-21T21:20:15",
+      "neutral_description": "Naomi raises the dinner debt 1m28s after the last warm turn. Alex reads it as reopening the conflict and exits 344 seconds later — his final recorded event.",
+      "source_event_ids": [
+        "G207",
+        "G022",
+        "G078",
+        "G059",
+        "G208",
+        "G209"
+      ],
+      "event_count": 6,
+      "significance_tags": [
+        "dinner-debt-trigger",
+        "alex-final-recorded-event",
+        "conflict-fatigue",
+        "topic-contingent-withdrawal"
+      ],
+      "confidence": "High",
+      "outcome": "Alex's final recorded event at 21:20:15. Naomi continues 28 min / 6 turns / 765 words (AFT-13).",
+      "detail_ref": "nalex_incidents.json#AFT-12",
+      "elapsed_to_exit_seconds": 344
+    },
+    {
+      "incident_id": "AFT-13",
+      "phase": "Aftermath",
+      "session": "S-AM-5",
+      "label": "Final accountability protest — no closure — corpus end",
+      "date_time_start": "2026-07-21T21:20:55",
+      "date_time_end": "2026-07-21T21:48:45",
+      "neutral_description": "28.5 minutes, 6 turns, 765 words, no reply. Naomi names AFT-06 as the exception proving the absence and appeals to the record. Corpus ends mid-protest.",
+      "source_event_ids": [
+        "G058",
+        "G029",
+        "G210",
+        "G211",
+        "G012",
+        "G084"
+      ],
+      "event_count": 6,
+      "significance_tags": [
+        "no-closure-event",
+        "post-exit-continuation",
+        "corpus-end",
+        "naomi-last-word",
+        "dyad-no-closure-event"
+      ],
+      "confidence": "High for Naomi's audio. Nishant claim: participant account only.",
+      "outcome": "Corpus ends at G084, 21 July 21:48:45 (CURRENT_STATE_CLEAN.md §3). No Alex response. No agreed close.",
+      "detail_ref": "nalex_incidents.json#AFT-13",
+      "claim_status_notes": {
+        "G211": "Naomi's claim about prior knowledge via Nishant — participant account only. Second corpus instance (first: G094, AFT-05). No corpus event independently establishes this claim. Naomi frames it as factual ('canonical truth', 'you can't argue with the record') — this framing is itself Naomi's account."
+      },
+      "post_exit_duration_minutes": 28.5,
+      "post_exit_words": 765
+    }
+  ],
+  "structural_patterns": [
+    {
+      "id": "retrieval-deadlock-recurs",
+      "statement": "The retrieval deadlock recurs three times with the same shape: one party asks the other to name the thing first; neither does.",
+      "evidence": [
+        "CONF-01 B022/B023",
+        "CONF-02 B088-B106",
+        "AFT-02 G064/G032"
+      ]
+    },
+    {
+      "id": "acknowledgement-demand-mutual",
+      "statement": "The acknowledgement demand is mutual — four Aftermath instances each. Neither party is only asking or only withholding.",
+      "evidence": [
+        "CURRENT_STATE_CLEAN.md §8.7a"
+      ]
+    },
+    {
+      "id": "timing-account-four-times",
+      "statement": "Naomi's voice-message timing account is stated four times and never engaged with on its merits. The timing record supports it.",
+      "evidence": [
+        "B066",
+        "G182",
+        "G055",
+        "G194",
+        "CURRENT_STATE_CLEAN.md §8.4"
+      ]
+    },
+    {
+      "id": "exits-declared-not-held",
+      "statement": "Exits are declared more often than held: 2 of 11 Conflict-phase sign-offs held. Both parties continue after stating they are finished.",
+      "evidence": [
+        "B062->B063 (1m58s)",
+        "B107 breached in 9 min",
+        "G108->G067 (17.2 min)"
+      ]
+    },
+    {
+      "id": "acknowledgement-did-not-survive",
+      "statement": "One acknowledgement occurred and did not survive the session it occurred in.",
+      "evidence": [
+        "AFT-06 G189",
+        "AFT-07 G192 at +23.1 min"
+      ]
+    },
+    {
+      "id": "warmth-separable-from-conflict",
+      "statement": "Warmth and conflict-adjacency are separable: 129 warm minutes collapse in under six once the dinner debt is raised.",
+      "evidence": [
+        "AFT-11 128.9 min",
+        "AFT-12 344 sec to exit"
+      ]
+    },
+    {
+      "id": "no-closure-event",
+      "statement": "The corpus has no closure event. It ends mid-protest, one-sided.",
+      "evidence": [
+        "AFT-13 G084",
+        "CURRENT_STATE_CLEAN.md §13.4"
+      ]
+    }
+  ],
+  "known_limits": [
+    "Alex's side of S-AM-2 and S-AM-3 is absent from the corpus; AFT-04 and AFT-05 are Naomi's audio only. Confidence: Moderate.",
+    "B122/B127/B128 are untranscribable; paraphrase only from CURRENT_STATE_CLEAN.md §8.5.",
+    "The Nishant prior-knowledge claim (G094, G211) has no corroborating corpus event. Participant account only.",
+    "No event-level assignment audit exists for the 221 Conflict events; CONF-01 through CONF-03 are not audited to the AFT standard.",
+    "Conflict phase start unresolved: phase table says Jun 23; no CONF incident covers Jun 23-25.",
+    "The corpus ends at 2026-07-21T21:48:45. Nothing after that is known.",
+    "All Aftermath events are kind=audio; asymmetry figures are upper bounds within the audio channel only."
+  ],
+  "archived_do_not_use": [
+    {
+      "file": "artifacts/timelines/all_critical_incidents.timeline.md",
+      "moved_to": "_archive/superseded_misread_2026-08-16/",
+      "reason": "Describes G042 and G181 as a physical house visit on 2026-07-11. Per nalex_event_audit.md they are audio events at 22:40:44 and 22:43:31 inside S-AM-1 in which the parties dispute a past visit."
+    },
+    {
+      "file": "artifacts/timelines/all_loops_significant_events.timeline.md",
+      "moved_to": "_archive/superseded_misread_2026-08-16/",
+      "reason": "Same misreading of G042 and G181."
+    }
+  ]
+}

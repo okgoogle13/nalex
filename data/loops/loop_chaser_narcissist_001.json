@@ -1,0 +1,253 @@
+{
+  "interaction_loop_id": "loop_chaser_narcissist_001",
+  "semantic_loop_label": "Chaser Narcissist",
+  "participants": [
+    "Alex",
+    "Naomi"
+  ],
+  "core_topic": "",
+  "loop_start_event_id": "B088-B107",
+  "loop_end_event_id": "B088-B107",
+  "events": [
+    {
+      "event_ids": [
+        "B088"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:18:49",
+      "excerpt": "Yeah, and I see someone that's a narcissist that's never fucking wrong. Always someone else's problem. That's why you're always in conflict with someone at some point. It's only a matter of time. What are your fucking questions?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B089"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:23:16",
+      "excerpt": "I think by your standards, everyone is a narcissist compared to you because you're like so selfless and so giving and so charitable. So in service to other people. Since I'm a narcissist, you know, you know, Since everyone is a narcissist compared to that kind of person who meets those standards, definitely everyone's a narcissist. Yeah. This has become a really, really, really cruel, mean fight. And i don't know why all i wanted was like information i just wanted to understand so that i could know what the world is you know like i need to know the truth about things because if i don't know the truth about things then like i just end up in this position where i think the world is one way and then i find out it's actually a different way because i've been lied to you know so that's why the truth is really really important to me because i want to know what reality is i don't want to know what somebody tells me reality is",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B090"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:24:50",
+      "excerpt": "So what are your questions?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B091"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:29:46",
+      "excerpt": "I think that you're a chaser. I think that you're only interested in trans women for sex. And I think that you were never attracted to me. And I think that you were too afraid to tell me how you felt. And so you let me believe what you saw at the time to be a lesser hurt. I wish you didn't try to do that. I wish you were honest with me. I really do",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B092"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:31:20",
+      "excerpt": "I was actually dating a trans girl when we met, with all hopes that that was going to lead into something more. But, unfortunately, I'm a drug addict and she works in the government. And if I was such a trans chaser, then why the fuck didn't we hook up? Why didn't I come on to you? So, would you mind telling me what your questions were? Like, you've said so many times, I won't answer your questions. I won't answer your questions. What are your questions?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B093"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:31:33",
+      "excerpt": "You're just throwing whatever the fuck you can at me to make me the bad guy so you don't feel shit.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B094"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:32:08",
+      "excerpt": "I'm sorry if I don't like fucking my friends. Like, it's not a fucking line I like to cross. Alright? And that's when you became a friend. At least I fucking thought so.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B095"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:33:55",
+      "excerpt": "Well, the questions are written in the chat. You can just go have a look, dude. I don't know why you want me to type them out again. Like, do you want me to do that labor for you? So, you know, like you, the one who just kept going on and on and on and on about irrelevant things. Mate, you made this into a fucking shit argument where we're now we're fighting. You know, now I'm angry at you. Now I hate you.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B096"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:34:15",
+      "excerpt": "Because I'm driving.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B097"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:34:38",
+      "excerpt": "Yeah, and it's all about me. I did this, I did this, I did this. Have some accountability. See you later. I'll speak to you another time.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B098"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:34:48",
+      "excerpt": "Well, why are you sending me messages while you're driving? Why are you sending me messages at all? Why are you not here? Face to face, like you said you wanted. Like, I didn't want to do this over voice either, but you've given me no option. You know, I'll take it how I can get it.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B099"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:35:59",
+      "excerpt": "Accountability for what, dude? What did I do? You don't even know what is going on right now. You don't even know why you're mad. I will take some accountability. I will. Never. Ever. Ever. I promise. If I can promise myself this one, this time, ever let myself get hurt again.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B100"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:36:33",
+      "excerpt": "Bullshit. You had every fucking opportunity. We were just hung out for like three hours, face to face, and you just fucking stared at your feet.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B101"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:39:19",
+      "excerpt": "Oh, like, I explained this to you already, but the whole reason why I messaged you at all while you were gone, for how long you were gone for, by the way, your pizza's here, that, yeah, thanks for that one, oh, fuck me.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B102"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:40:08",
+      "excerpt": "I'm not going to repeat myself anymore. I've told you everything you need to know. Figure it out.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B103"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:42:28",
+      "excerpt": "You did lead me on, hecticly, obviously. I think you should take some accountability for that. Yeah, big time, this is a weird one, I've got to say, I don't know what is going on that is as real as I can get fuck bye",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B104"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:45:12",
+      "excerpt": "I don't really understand how telling you that nothing more was going to happen is leading you on. But if that's the case, then that's the case. I'll speak to you later. Bye.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B105"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:47:09",
+      "excerpt": "You didn't say that. You said you, like, almost couldn't stop yourself. You said that you didn't want to have, you said, this is exactly what you said, in fact, that you didn't want to have a meaningless sexual relationship with me. And I didn't want that either. I've got plenty of that in my life already. I know that you like traditional relationships. I wasn't expecting anything different, but, I wasn't really expecting anything at all, to be honest. I mean, I didn't, I knew this might not work out and maybe not, but, you know, I was protecting myself until you force the point you know and you made it weird tonight i'm not gonna lie you made it really fucking weird especially not answering my questions is and then like me blowing it into this like really hectic argument just to avoid being honest with me like about like the things i'm asking you you know why Could be something to think about Something to ponder on Maybe",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B106"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:48:55",
+      "excerpt": "What are your questions?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B107"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-27 00:50:44",
+      "excerpt": "And I didn't make this weird. You made this weird when you made this about me avoiding you and Ned because apparently I'm in love with you and I can't stand to see you with other guys or some shit. I told you I don't sleep with friends? And, like, how can you fucking even recall, like, the exact details? Of what was said fucking ages ago. Like, just fucking probably put it into chat to TTP and got it to fucking answer all the questions for you. That's not how fucking humans work. We're not AI. You can't just get it to answer all these things for you. Like, it's concerning. I've been patient. I've been fucking respectful I've been trying to like increasingly lay out the fact that I don't and have not wanted anything more than your friendship for a while now and from someone that was moments ago taking accountability all of a sudden it's all my fault again so that's all I'm going to say tonight I will speak to you later I will not be responding to any more messages you can send me a list of questions you've got and I'll get to it when I get to it goodnight Naomi",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}

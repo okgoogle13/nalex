@@ -1,0 +1,157 @@
+{
+  "_manifest_rule": {
+    "shareable_emission_gate": "A field must not be emitted into a shareable artifact unless BOTH conditions are met: (1) shareable_safe is true, AND (2) human_review_required is false OR an explicit recorded human approval exists for this field in this record. shareable_safe alone does not function as publishing clearance."
+  },
+  "loop.interaction_loop_id": {
+    "role": "identifier",
+    "privacy_tier": "shareable",
+    "human_review_required": false,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Safe identifier for visual routing."
+  },
+  "loop.semantic_loop_label": {
+    "role": "metadata",
+    "privacy_tier": "shareable",
+    "human_review_required": true,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Human review completed. Neutral phrasing confirmed. Safe for third-party distribution."
+  },
+  "loop.participants": {
+    "role": "metadata",
+    "privacy_tier": "shareable",
+    "human_review_required": true,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "human_review_required set to true. Real first names combined with semantic labels and event excerpts may be identifying. Must not appear in any artifact destined for a third party without explicit consent from both participants. See integrity_audit.md FLAG-02, H-03."
+  },
+  "loop.core_topic": {
+    "role": "analysis",
+    "privacy_tier": "shareable",
+    "human_review_required": true,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Human review completed. Contested framing removed. Safe for third-party distribution."
+  },
+  "loop.loop_start_event_id": {
+    "role": "identifier",
+    "privacy_tier": "shareable",
+    "human_review_required": false,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Reference ID."
+  },
+  "loop.loop_end_event_id": {
+    "role": "identifier",
+    "privacy_tier": "shareable",
+    "human_review_required": false,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Reference ID."
+  },
+  "loop.loop_outcome": {
+    "role": "analysis",
+    "privacy_tier": "shareable",
+    "human_review_required": true,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Neutral enum tracking."
+  },
+  "loop.repair_response_status": {
+    "role": "analysis",
+    "privacy_tier": "shareable",
+    "human_review_required": true,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Neutral enum tracking."
+  },
+  "loop.boundary_confidence": {
+    "role": "metadata",
+    "privacy_tier": "shareable",
+    "human_review_required": false,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Analytic confidence metric."
+  },
+  "loop.boundary_rationale": {
+    "role": "metadata",
+    "privacy_tier": "private",
+    "human_review_required": true,
+    "viz_safe": false,
+    "shareable_safe": false,
+    "notes": "Analyst notes."
+  },
+  "loop.intervening_events_note": {
+    "role": "metadata",
+    "privacy_tier": "private",
+    "human_review_required": true,
+    "viz_safe": false,
+    "shareable_safe": false,
+    "notes": "Analyst notes."
+  },
+  "events.source.minimal_redacted_excerpt": {
+    "role": "evidence",
+    "privacy_tier": "private_evidence",
+    "human_review_required": true,
+    "viz_safe": false,
+    "shareable_safe": false,
+    "notes": "Contains raw statements and potentially swearing/vulnerability. Not viz_safe unless privacy_level changes to shareable_paraphrase."
+  },
+  "events.evidence_integrity.requires_audio_review": {
+    "role": "metadata",
+    "privacy_tier": "private",
+    "human_review_required": true,
+    "viz_safe": false,
+    "shareable_safe": false,
+    "notes": "Must block shareable artifact generation if true."
+  },
+  "events.observation.observable_moves": {
+    "role": "analysis",
+    "privacy_tier": "shareable",
+    "human_review_required": true,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Controlled vocabulary. Safe to render."
+  },
+  "events.observation.need_or_boundary": {
+    "role": "analysis",
+    "privacy_tier": "shareable",
+    "human_review_required": true,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Dependent on precise wording and constraint. Does not cover sub-fields independently — see events.observation.need_or_boundary.uncertainty_note for that sub-field's separate classification."
+  },
+  "events.observation.need_or_boundary.uncertainty_note": {
+    "role": "analysis",
+    "privacy_tier": "private",
+    "human_review_required": true,
+    "viz_safe": false,
+    "shareable_safe": false,
+    "notes": "Separately classified sub-field. Contains interpretive framing that goes beyond observation. Must not be rendered in any shareable artifact even when the parent need_or_boundary object is otherwise shareable. See integrity_audit.md FLAG-04, H-06."
+  },
+  "events.interpretation.interpretation_tags": {
+    "role": "analysis",
+    "privacy_tier": "private",
+    "human_review_required": true,
+    "viz_safe": false,
+    "shareable_safe": false,
+    "notes": "Optional interpretations. High risk of interpretive leakage; keep private unless explicitly approved."
+  },
+  "events.coding_metadata.coding_review_status": {
+    "role": "metadata",
+    "privacy_tier": "shareable",
+    "human_review_required": false,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Status tracker."
+  },
+  "events.artifact_controls.privacy_level": {
+    "role": "metadata",
+    "privacy_tier": "shareable",
+    "human_review_required": false,
+    "viz_safe": true,
+    "shareable_safe": true,
+    "notes": "Driver for shareability downstream."
+  }
+}

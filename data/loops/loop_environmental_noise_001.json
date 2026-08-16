@@ -1,0 +1,37 @@
+{
+  "interaction_loop_id": "loop_environmental_noise_001",
+  "semantic_loop_label": "Environmental Noise",
+  "participants": [
+    "Naomi",
+    "Alex"
+  ],
+  "core_topic": "",
+  "loop_start_event_id": "G046",
+  "loop_end_event_id": "G178",
+  "events": [
+    {
+      "event_ids": [
+        "G046"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-07-11 22:30:45",
+      "excerpt": "But, but, you have to turn off the, um, the fucking map gas. I'm not doing this conversation while you have got map gas going on in the background.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G178"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-07-11 22:31:54",
+      "excerpt": "I think what you might be hearing is my air filter. There is no map gas running. I've already got a prototype of Nemo 2.0. It's pretty cracked out, but it works.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}

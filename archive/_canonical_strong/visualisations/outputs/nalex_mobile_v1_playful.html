@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<!--
+  ============================================================================
+  CANONICAL TRIAGE NOTE
+  Original path: visualisations/nalex_mobile_v1_playful.html
+  Kept because: Strongest mobile-first Material 3 Expressive dark-mode realization in the set (Pixel 10 Pro target, varied/asymmetric radii, neon persona tokens); disciplined schema-locked rendering with on-face caveats and properly prefixed INTERPRETATION tags. Best structural/visual base for a minimal variant; needs forward-looking coaching content layered in (see nalex_viz_schema.json).
+  Triage date: 2026-08-09
+  ============================================================================
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#0B0B12">
+<title>Nalex — Structural Patterns (Playful)</title>
+<!--
+  RENDER TARGET: Pixel 10 Pro, vertical mobile infographic. Variant 1 of 3 — "playful".
+  PAYLOAD: visualisations/nalex_mobile_infographic_schema.json
+  This file renders that schema only. No inferred themes, no rewritten evidence, no added analysis.
+-->
+<style>
+:root{
+  /* ---- surface ramp: Tokyo night ---- */
+  --bg:#08080F;
+  --s-lowest:#0B0B14;
+  --s-low:#12121F;
+  --s:#171728;
+  --s-high:#1E1E33;
+  --s-highest:#26263F;
+  --outline:#33334F;
+  --outline-soft:#24243A;
+
+  --on:#EFEDFF;
+  --on-var:#ADA9D0;
+  --on-dim:#7C78A0;
+
+  /* ---- neon roles ---- */
+  --naomi:#FF63C4;
+  --naomi-dim:#7A1D57;
+  --naomi-glow:rgba(255,99,196,.42);
+  --alex:#3FE7E0;
+  --alex-dim:#0C4C53;
+  --alex-glow:rgba(63,231,224,.38);
+  --violet:#A78CFF;
+  --violet-dim:#33235E;
+  --amber:#FFC46B;
+  --amber-dim:#4A3316;
+
+  /* ---- shape (M3 Expressive: varied, asymmetric) ---- */
+  --r-xl:34px;
+  --r-lg:26px;
+  --r-md:18px;
+  --r-sm:12px;
+  --r-pill:999px;
+
+  --pad:16px;
+  --gap:14px;
+  --tap:48px;
+
+  --spring:640ms cubic-bezier(.2,.9,.24,1.06);
+  --quick:200ms cubic-bezier(.3,0,.2,1);
+
+  --font:"Google Sans Text",Roboto,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{scroll-behavior:smooth;scroll-padding-top:64px;overflow-x:hidden}
+body{
+  margin:0; background:var(--bg); color:var(--on);
+  font-family:var(--font); font-size:15px; line-height:1.55;
+  overflow-x:hidden;
+  padding:0 0 calc(96px + env(safe-area-inset-bottom));
+  -webkit-font-smoothing:antialiased;
+}
+/* ambient neon field */
+body::before{
+  content:""; position:fixed; inset:-20% -40% auto -40%; height:70vh; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(46% 40% at 18% 12%, rgba(255,99,196,.20), transparent 70%),
+    radial-gradient(50% 44% at 86% 26%, rgba(63,231,224,.16), transparent 72%),
+    radial-gradient(60% 50% at 50% 76%, rgba(167,140,255,.14), transparent 74%);
+  filter:blur(6px);
+}
+.wrap{max-width:520px;margin:0 auto;padding:0 var(--pad)}
+
+/* ============ top bar ============ */
+.topbar{
+  position:sticky; top:0; z-index:40;
+  display:flex; align-items:center; gap:10px;
+  padding:10px var(--pad) 10px;
+  background:linear-gradient(180deg,rgba(8,8,15,.94),rgba(8,8,15,.62) 70%,transparent);
+  backdrop-filter:blur(14px);
+}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--naomi);box-shadow:0 0 12px var(--naomi-glow);flex:none}
+.topbar b{font-size:.9rem;letter-spacing:.02em}
+.topbar span{margin-left:auto;font-size:0.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dim)}
+
+/* ============ masthead ============ */
+.mast{padding:18px 0 8px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:0.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--violet);
+  background:var(--violet-dim); border:1px solid rgba(167,140,255,.35);
+  padding:8px 14px;border-radius:var(--r-pill);
+}
+.mast h1{
+  margin:16px 0 6px; font-size:clamp(2.6rem,13.5vw,3.5rem); line-height:.94;
+  font-weight:800; letter-spacing:-.045em;
+  background:linear-gradient(104deg,var(--naomi) 4%,var(--violet) 48%,var(--alex) 96%);
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.mast p{margin:0 0 16px;color:var(--on-var);font-size:1.02rem;max-width:30ch}
+
+/* phase rail — horizontal scroll inside its own container */
+.rail{display:flex;gap:10px;overflow-x:auto;padding:4px var(--pad) 14px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.rail::-webkit-scrollbar{display:none}
+.phase{
+  flex:0 0 auto;min-width:132px;min-height:var(--tap);
+  padding:12px 16px;border-radius:22px 22px 22px 8px;
+  background:var(--s-low);border:1px solid var(--outline-soft);
+}
+.phase b{display:block;font-size:.95rem;letter-spacing:-.01em}
+.phase i{display:block;font-style:normal;font-size:0.75rem;color:var(--on-dim);margin-top:2px}
+.phase u{display:block;text-decoration:none;font-size:1.45rem;font-weight:800;font-variant-numeric:tabular-nums;margin-top:6px}
+.phase.p1{border-color:rgba(167,140,255,.32)} .phase.p1 u{color:var(--violet)}
+.phase.p2{border-color:rgba(255,99,196,.32)} .phase.p2 u{color:var(--naomi)}
+.phase.p3{border-color:rgba(255,196,107,.28)} .phase.p3 u{color:var(--amber)}
+.phase.p4{border-color:rgba(63,231,224,.32)} .phase.p4 u{color:var(--alex)}
+
+/* ============ sections & cards ============ */
+section{margin:26px 0 0}
+.qnum{
+  display:inline-grid;place-items:center;width:34px;height:34px;border-radius:12px 12px 12px 4px;
+  font-weight:800;font-size:.95rem;background:var(--s-high);color:var(--on-var);border:1px solid var(--outline)
+}
+.qhead{display:flex;align-items:center;gap:12px;margin:0 0 10px}
+.qhead h2{margin:0;font-size:1.3rem;font-weight:800;letter-spacing:-.025em;line-height:1.2}
+
+.card{
+  background:var(--s-low); border:1px solid var(--outline-soft);
+  border-radius:var(--r-xl) var(--r-xl) var(--r-xl) 14px;
+  padding:20px 18px; margin-bottom:var(--gap);
+  transition:opacity var(--spring),transform var(--spring);
+}
+.js .card{opacity:0;transform:translateY(22px) scale(.985)}
+.card.in{opacity:1;transform:none}
+.card.alt{border-radius:14px var(--r-xl) var(--r-xl) var(--r-xl)}
+.kicker{font-size:0.75rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--on-dim);margin:0 0 12px}
+.lede{margin:0 0 16px;color:var(--on-var);font-size:.95rem}
+
+/* ============ big stat ============ */
+.hero-stat{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin:2px 0 14px}
+.hero-stat .n{font-size:3.2rem;font-weight:800;letter-spacing:-.05em;font-variant-numeric:tabular-nums;line-height:.9}
+.hero-stat .u{font-size:.9rem;color:var(--on-var)}
+.n.mag{color:var(--naomi);text-shadow:0 0 26px var(--naomi-glow)}
+.n.cy{color:var(--alex);text-shadow:0 0 26px var(--alex-glow)}
+.n.vi{color:var(--violet)}
+.n.am{color:var(--amber)}
+
+/* 3-up + 2-up stat blocks */
+.triple{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:4px 0 16px}
+.triple > div{background:var(--s);border:1px solid var(--outline-soft);border-radius:20px 20px 20px 6px;padding:13px 10px}
+.triple u{display:block;text-decoration:none;font-size:1.5rem;font-weight:800;letter-spacing:-.045em;font-variant-numeric:tabular-nums;line-height:1}
+.triple i{display:block;font-style:normal;font-size:0.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--on-dim);margin-top:6px}
+.triple u.mag{color:var(--naomi)} .triple u.vi{color:var(--violet)} .triple u.cy{color:var(--alex)}
+
+.pair{display:grid;gap:8px;margin:4px 0 16px}
+.pair > div{background:var(--s);border:1px solid var(--outline-soft);border-radius:20px;padding:14px 16px}
+.pair u{display:block;text-decoration:none;font-size:1.75rem;font-weight:800;letter-spacing:-.04em;font-variant-numeric:tabular-nums;line-height:1}
+.pair i{display:block;font-style:normal;font-size:0.75rem;letter-spacing:.05em;color:var(--on-dim);margin-top:6px}
+.pair > .mag u{color:var(--naomi)} .pair > .mag{border-color:rgba(255,99,196,.32)}
+.pair > .cy  u{color:var(--alex)}  .pair > .cy{border-color:rgba(63,231,224,.32)}
+
+/* ============ bars ============ */
+.group{margin:0 0 16px}
+.group:last-child{margin-bottom:0}
+.glabel{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 8px}
+.glabel b{font-size:.9rem;font-weight:700}
+.ratio{
+  font-size:0.75rem;font-weight:800;letter-spacing:.03em;
+  padding:5px 11px;border-radius:var(--r-pill);
+  background:var(--s-highest);color:var(--on);border:1px solid var(--outline);
+  font-variant-numeric:tabular-nums;
+}
+.row{display:grid;grid-template-columns:46px 1fr auto;align-items:center;gap:10px;margin:8px 0}
+.who{font-size:0.75rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase}
+.who.n{color:var(--naomi)} .who.a{color:var(--alex)}
+.track{position:relative;height:30px;border-radius:var(--r-pill);background:var(--s);overflow:hidden}
+.fill{
+  position:absolute;inset:0 auto 0 0;border-radius:var(--r-pill);
+  min-width:6px; width:0; transition:width 900ms cubic-bezier(.2,.9,.24,1.02);
+}
+.fill.n{background:linear-gradient(90deg,#C43A93,var(--naomi));box-shadow:0 0 18px var(--naomi-glow)}
+.fill.a{background:linear-gradient(90deg,#1E9B98,var(--alex));box-shadow:0 0 18px var(--alex-glow)}
+.val{min-width:62px;text-align:right;font-size:.86rem;font-weight:800;font-variant-numeric:tabular-nums;letter-spacing:-.01em;white-space:nowrap}
+.val.n{color:var(--naomi)} .val.a{color:var(--alex)}
+
+/* latency band */
+.band{position:absolute;top:0;bottom:0;border-radius:var(--r-pill);opacity:.95;width:0;left:0;transition:width 900ms cubic-bezier(.2,.9,.24,1.02),left 900ms cubic-bezier(.2,.9,.24,1.02)}
+.band.n{background:repeating-linear-gradient(115deg,var(--naomi),var(--naomi) 7px,#C43A93 7px,#C43A93 14px)}
+.band.a{background:repeating-linear-gradient(115deg,var(--alex),var(--alex) 7px,#1E9B98 7px,#1E9B98 14px)}
+
+/* ============ split (opens/closes) ============ */
+.split{display:flex;height:44px;border-radius:var(--r-pill);overflow:hidden;background:var(--s);border:1px solid var(--outline-soft)}
+.seg{display:grid;place-items:center;font-size:.85rem;font-weight:800;font-variant-numeric:tabular-nums;color:#08080F;transition:flex-basis var(--spring)}
+.seg.n{background:linear-gradient(90deg,var(--naomi),#FF8AD4)}
+.seg.a{background:linear-gradient(90deg,#5BEDE7,var(--alex))}
+.seg.zero{color:var(--on-dim);background:var(--s);font-weight:700}
+.splitrow{margin:0 0 14px}
+.splitrow > span{display:block;font-size:0.75rem;color:var(--on-dim);margin:0 0 7px;letter-spacing:.02em}
+
+/* ============ chips ============ */
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;min-height:38px;
+  padding:8px 14px;border-radius:var(--r-pill);
+  background:var(--s-high);border:1px solid var(--outline);
+  font-size:.8rem;font-weight:700;color:var(--on-var);
+  font-variant-numeric:tabular-nums;
+}
+.chip b{color:var(--on);font-weight:800}
+.chip.mag{background:rgba(255,99,196,.14);border-color:rgba(255,99,196,.42);color:#FFC0E8}
+.chip.cy{background:rgba(63,231,224,.13);border-color:rgba(63,231,224,.40);color:#B7F6F3}
+.chip.vi{background:rgba(167,140,255,.14);border-color:rgba(167,140,255,.40);color:#D6C9FF}
+.chip.am{background:rgba(255,196,107,.13);border-color:rgba(255,196,107,.38);color:#FFDCA9}
+
+/* ============ callout / caveat ============ */
+.note{
+  margin:14px 0 0;padding:14px 16px;border-radius:var(--r-md) var(--r-md) var(--r-md) 6px;
+  background:var(--amber-dim);border:1px solid rgba(255,196,107,.34);
+  color:#FFE3B8;font-size:.84rem;line-height:1.5;
+}
+.note b{color:var(--amber);display:block;font-size:0.75rem;letter-spacing:.16em;text-transform:uppercase;margin:0 0 5px}
+.note + .note{margin-top:8px}
+.def{
+  margin:14px 0 0;padding:13px 15px;border-radius:var(--r-md);
+  background:var(--s);border-left:4px solid var(--violet);
+  font-size:.83rem;color:var(--on-var);
+}
+.def b{color:var(--violet)}
+.tag{
+  display:block;margin:8px 0 0;padding:11px 14px;border-radius:var(--r-md);
+  background:var(--s);border:1px dashed var(--outline);
+  font-size:.78rem;color:var(--on-var);
+}
+.tag i{font-style:normal;color:var(--amber);font-weight:800;letter-spacing:.06em}
+.quote{
+  margin:14px 0 0;padding:15px 16px;border-radius:var(--r-md) var(--r-md) 6px var(--r-md);
+  background:var(--s);border:1px solid var(--outline-soft);
+  font-size:.88rem;color:var(--on);line-height:1.55;
+}
+.quote span{display:block;margin-top:9px;font-size:0.75rem;letter-spacing:.13em;text-transform:uppercase;color:var(--on-dim)}
+.src{margin:12px 0 0;font-size:0.75rem;color:var(--on-dim);letter-spacing:.02em}
+
+/* ============ divider ============ */
+.divider{
+  display:flex;align-items:center;gap:10px;margin:18px 0;
+  font-size:0.75rem;font-weight:700;color:var(--amber);
+}
+.divider::before,.divider::after{content:"";flex:1;height:2px;border-radius:2px;background:repeating-linear-gradient(90deg,rgba(255,196,107,.6) 0 8px,transparent 8px 15px)}
+.divider span{flex:0 1 auto;text-align:center;max-width:64%;line-height:1.35}
+
+/* ============ tally (intent) ============ */
+.tally{display:grid;gap:8px;margin:12px 0 0}
+.tallyrow{display:grid;grid-template-columns:78px 1fr 26px;align-items:center;gap:10px}
+.tallyrow em{font-style:normal;font-size:.78rem;font-weight:700;color:var(--on-var)}
+.tallybar{height:12px;border-radius:var(--r-pill);background:var(--s);overflow:hidden}
+.tallybar i{display:block;height:100%;border-radius:var(--r-pill);background:linear-gradient(90deg,var(--violet),var(--naomi));width:0;transition:width var(--spring)}
+.tallyrow u{text-decoration:none;text-align:right;font-size:.82rem;font-weight:800;font-variant-numeric:tabular-nums}
+
+/* ============ bottom nav (thumb zone) ============ */
+.navbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  padding:10px 12px calc(10px + env(safe-area-inset-bottom));
+  background:linear-gradient(0deg,rgba(8,8,15,.97) 60%,rgba(8,8,15,0));
+}
+.navinner{
+  display:flex;gap:6px;justify-content:space-between;
+  max-width:496px;margin:0 auto;padding:6px;
+  background:var(--s-high);border:1px solid var(--outline);
+  border-radius:var(--r-pill);
+  box-shadow:0 10px 34px rgba(0,0,0,.6);
+}
+.navinner a{
+  flex:1;min-height:var(--tap);display:grid;place-items:center;
+  border-radius:var(--r-pill);text-decoration:none;
+  font-size:0.75rem;font-weight:800;letter-spacing:.04em;color:var(--on-var);
+  transition:background var(--quick),color var(--quick),transform var(--quick);
+}
+.navinner a:active{transform:scale(.94)}
+.navinner a.on{background:linear-gradient(120deg,var(--naomi),var(--violet));color:#08080F}
+
+footer{padding:26px 0 6px;color:var(--on-dim);font-size:0.75rem;line-height:1.6}
+footer b{color:var(--on-var)}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms!important;animation-duration:1ms!important}
+  html{scroll-behavior:auto}
+  .js .card{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="dot"></span><b>Nalex</b>
+  <span>378 events · Apr–Jul 2026</span>
+</div>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="eyebrow">Evidence pass · Rev 4</div>
+    <h1>Structural patterns</h1>
+    <p>Four phases, two speakers, one voice channel. Measured quantities only — interpretation is labelled where it appears.</p>
+  </header>
+</div>
+
+<div class="rail">
+  <div class="phase p1"><b>Baseline</b><i>1 Apr – 22 Jun · 83d</i><u>52</u></div>
+  <div class="phase p2"><b>Conflict</b><i>23 Jun – 5 Jul · 13d</i><u>221</u></div>
+  <div class="phase p3"><b>Silence</b><i>6 – 10 Jul · 5d</i><u>0</u></div>
+  <div class="phase p4"><b>Aftermath</b><i>11 – 21 Jul · 11d</i><u>105</u></div>
+</div>
+
+<div class="wrap">
+
+  <!-- ============ Q1 VOLUME ============ -->
+  <section id="q1">
+    <div class="qhead"><span class="qnum">01</span><h2>Who fills the channel?</h2></div>
+
+    <div class="card">
+      <p class="kicker">Word ratio · Naomi ÷ Alex</p>
+      <div class="triple">
+        <div><u class="mag">1.83×</u><i>Baseline</i></div>
+        <div><u class="vi">1.12×</u><i>Conflict</i></div>
+        <div><u class="cy">3.14×</u><i>Aftermath</i></div>
+      </div>
+      <p class="lede">The gap nearly closes in Conflict, then reopens wider than it ever was at Baseline.</p>
+
+      <div class="group">
+        <div class="glabel"><b>Baseline</b><span class="ratio">1.83×</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="fill n" data-w="24.7"></div></div><b class="val n">1,693</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="fill a" data-w="13.5"></div></div><b class="val a">927</b></div>
+      </div>
+      <div class="group">
+        <div class="glabel"><b>Conflict</b><span class="ratio">1.12×</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="fill n" data-w="85.9"></div></div><b class="val n">5,888</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="fill a" data-w="76.4"></div></div><b class="val a">5,233</b></div>
+      </div>
+      <div class="group">
+        <div class="glabel"><b>Aftermath</b><span class="ratio">3.14×</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="fill n" data-w="100"></div></div><b class="val n">6,852</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="fill a" data-w="31.8"></div></div><b class="val a">2,181</b></div>
+      </div>
+
+      <div class="chips">
+        <span class="chip mag"><b>39.5</b> vs <b>21</b> median words / turn · Conflict</span>
+        <span class="chip cy"><b>66</b> vs <b>26</b> median words / turn · Aftermath</span>
+      </div>
+
+      <div class="note"><b>Caveat</b>Totals, not rates — the phases span 83, 13 and 11 calendar days.</div>
+      <p class="src">Source: baseline_comparison_audit.json</p>
+    </div>
+  </section>
+
+  <!-- ============ Q2 LATENCY ============ -->
+  <section id="q2">
+    <div class="qhead"><span class="qnum">02</span><h2>Who is watching the channel?</h2></div>
+
+    <div class="card alt">
+      <p class="kicker">Median reply latency · seconds</p>
+      <div class="pair">
+        <div class="mag"><u>484s → 169s</u><i>Naomi · Baseline → Aftermath</i></div>
+        <div class="cy"><u>101s → 122s</u><i>Alex · Baseline → Aftermath</i></div>
+      </div>
+      <p class="lede">One line moves. Naomi's median falls ~3× from Baseline; Alex's stays close to flat across all three phases.</p>
+
+      <div class="group">
+        <div class="glabel"><b>Baseline</b><span class="ratio">n = 7 / 8</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="fill n" data-w="100"></div></div><b class="val n">484s</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="fill a" data-w="20.9"></div></div><b class="val a">101s</b></div>
+      </div>
+      <div class="group">
+        <div class="glabel"><b>Conflict</b><span class="ratio">band, not point</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="band n" data-l="23.1" data-w="1.7"></div></div><b class="val n">112–120s</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="band a" data-l="14.5" data-w="4.9"></div></div><b class="val a">70–94s</b></div>
+      </div>
+      <div class="group">
+        <div class="glabel"><b>Aftermath</b><span class="ratio">1.39×</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="fill n" data-w="34.9"></div></div><b class="val n">169s</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="fill a" data-w="25.2"></div></div><b class="val a">122s</b></div>
+      </div>
+
+      <div class="note"><b>Caveat</b>Conflict is a band, not a point — 36 Conflict events carry inferred timestamps.</div>
+      <div class="note"><b>Caveat</b>Baseline medians rest on 7 (Naomi) and 8 (Alex) observations. Three points per line is not a trend, and no per-event latency series exists in the inputs.</div>
+      <p class="src">Source: phase_profile.json</p>
+    </div>
+  </section>
+
+  <!-- ============ Q3 OPEN / CLOSE ============ -->
+  <section id="q3">
+    <div class="qhead"><span class="qnum">03</span><h2>Who starts it, who ends it?</h2></div>
+
+    <div class="card">
+      <p class="kicker">Session opens · Naomi : Alex</p>
+      <div class="splitrow">
+        <span>Baseline · 10 sessions</span>
+        <div class="split"><div class="seg n" style="flex:5">5</div><div class="seg a" style="flex:5">5</div></div>
+      </div>
+      <div class="splitrow">
+        <span>Conflict · 10 sessions</span>
+        <div class="split"><div class="seg n" style="flex:5">5</div><div class="seg a" style="flex:5">5</div></div>
+      </div>
+      <div class="splitrow" style="margin-bottom:0">
+        <span>Aftermath · 5 sessions</span>
+        <div class="split"><div class="seg n" style="flex:5">5</div><div class="seg a zero" style="flex:.001">0</div></div>
+      </div>
+    </div>
+
+    <div class="card alt">
+      <p class="kicker">Session closes · Naomi : Alex</p>
+      <div class="splitrow">
+        <span>Baseline</span>
+        <div class="split"><div class="seg n" style="flex:4">4</div><div class="seg a" style="flex:6">6</div></div>
+      </div>
+      <div class="splitrow">
+        <span>Conflict</span>
+        <div class="split"><div class="seg n" style="flex:3">3</div><div class="seg a" style="flex:7">7</div></div>
+      </div>
+      <div class="splitrow">
+        <span>Aftermath</span>
+        <div class="split"><div class="seg n" style="flex:5">5</div><div class="seg a zero" style="flex:.001">0</div></div>
+      </div>
+
+      <div class="def"><b>“Session close”</b> = the last turn before a 60-minute gap. It is a mechanical artifact, not a communicative act.</div>
+      <div class="note"><b>Caveat</b>Naomi's 5 Aftermath closes overlap her 11 post-exit turns — the metric partly counts talking after he left as closing. The Aftermath denominator is 5 sessions, so one session is 20%.</div>
+    </div>
+
+    <div class="card">
+      <p class="kicker">Explicit sign-offs · whole corpus</p>
+      <div class="hero-stat"><span class="n cy">15</span><span class="u">Alex</span><span class="n mag" style="margin-left:14px">0</span><span class="u">Naomi</span></div>
+      <p class="lede">Across all 378 events, Naomi never performs a verbal ending. Alex does it 15 times — 11 in Conflict, 4 in the Aftermath.</p>
+      <div class="chips">
+        <span class="chip">Baseline <b>0 : 0</b></span>
+        <span class="chip cy">Conflict <b>0 : 11</b></span>
+        <span class="chip cy">Aftermath <b>0 : 4</b></span>
+      </div>
+      <div class="def"><b>“Explicit sign-off”</b> = a verbal termination move.</div>
+      <span class="tag"><i>STRUCTURAL TAG</i> — naomi_never_closes_verbally: zero explicit sign-off moves in the phase.</span>
+      <span class="tag"><i>INTERPRETATION</i> — alex_withdrawal_by_exit: managing load by ending exchanges rather than escalating.</span>
+      <span class="tag"><i>INTERPRETATION</i> — dyad_asymmetric_repair_expectation: each waits for the other to perform the first repair move.</span>
+    </div>
+
+    <div class="card alt">
+      <p class="kicker">Aftermath · words spoken with no one on the other end</p>
+      <div class="hero-stat"><span class="n mag">37.7%</span><span class="u">of Naomi's 6,852 words</span></div>
+      <div class="row" style="grid-template-columns:1fr auto">
+        <div class="track" style="height:38px"><div class="fill n" data-w="37.7"></div></div>
+        <b class="val n">2,585 w</b>
+      </div>
+      <div class="chips">
+        <span class="chip mag"><b>1,792</b> w · 11 post-exit turns</span>
+        <span class="chip mag"><b>793</b> w · 8 solo-session turns</span>
+        <span class="chip cy">Alex <b>0</b> post-exit · <b>0</b> solo</span>
+      </div>
+      <p class="src">Source: phase_profile.json </p>
+    </div>
+  </section>
+
+  <!-- ============ Q4 QUESTIONS ============ -->
+  <section id="q4">
+    <div class="qhead"><span class="qnum">04</span><h2>What do the questions do?</h2></div>
+
+    <div class="card">
+      <p class="kicker">Population · all literal “?” questions in Conflict</p>
+      <div class="group">
+        <div class="glabel"><b>Asked</b><span class="ratio">83 total</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="fill n" data-w="88.6"></div></div><b class="val n">39</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="fill a" data-w="100"></div></div><b class="val a">44</b></div>
+      </div>
+      <div class="group">
+        <div class="glabel"><b>Documented unanswered</b><span class="ratio">23 total</span></div>
+        <div class="row"><span class="who n">Naomi</span><div class="track"><div class="fill n" data-w="53.3"></div></div><b class="val n">8 / 39</b></div>
+        <div class="row"><span class="who a">Alex</span><div class="track"><div class="fill a" data-w="100"></div></div><b class="val a">15 / 44</b></div>
+      </div>
+      <p class="lede" style="margin:14px 0 0">This is the inversion that names the phase: at Baseline it ran Naomi 12 asked / 6 unanswered against Alex 4 / 1.</p>
+      <div class="chips">
+        <span class="chip mag">Baseline Naomi <b>12 / 6</b></span>
+        <span class="chip cy">Baseline Alex <b>4 / 1</b></span>
+      </div>
+      <div class="note"><b>Caveat</b>Alex's 15/44 is an analyst-assigned content judgement, not reproducible from events.jsonl. A mechanical 10-minute rule yields ≈16% vs ≈18% — no inversion.</div>
+      <p class="src">Source: baseline_comparison_audit.json</p>
+    </div>
+
+    <div class="divider"><span>20% annotated sample — NOT drawn from the panel above</span></div>
+
+    <div class="card alt">
+      <p class="kicker">Sample · 17 hand-annotated questions</p>
+      <div class="chips" style="margin:0 0 14px">
+        <span class="chip mag">Naomi <b>11</b></span>
+        <span class="chip cy">Alex <b>6</b></span>
+        <span class="chip">26–27 Jun <b>12</b></span>
+        <span class="chip">4 Jul <b>5</b></span>
+      </div>
+
+      <div class="hero-stat"><span class="n am">0</span><span class="u">of 17 fully answered</span></div>
+      <div class="chips">
+        <span class="chip am">Partial <b>10</b></span>
+        <span class="chip am">No <b>7</b></span>
+        <span class="chip am">Yes <b>0</b></span>
+        <span class="chip vi">genuine_unanswered <b>3</b></span>
+      </div>
+
+      <p class="kicker" style="margin:20px 0 0">Intent</p>
+      <div class="tally">
+        <div class="tallyrow"><em>challenge</em><div class="tallybar"><i data-w="100"></i></div><u>5</u></div>
+        <div class="tallyrow"><em>boundary</em><div class="tallybar"><i data-w="100"></i></div><u>5</u></div>
+        <div class="tallyrow"><em>clarify</em><div class="tallybar"><i data-w="80"></i></div><u>4</u></div>
+        <div class="tallyrow"><em>justify</em><div class="tallybar"><i data-w="20"></i></div><u>1</u></div>
+        <div class="tallyrow"><em>deflect</em><div class="tallybar"><i data-w="20"></i></div><u>1</u></div>
+        <div class="tallyrow"><em>repair</em><div class="tallybar"><i data-w="20"></i></div><u>1</u></div>
+      </div>
+
+      <div class="chips" style="margin-top:16px">
+        <span class="chip mag">hot <b>9</b></span>
+        <span class="chip am">tense <b>7</b></span>
+        <span class="chip">explosive <b>1</b></span>
+        <span class="chip vi">proof-loop <b>6 / 17</b></span>
+      </div>
+
+      <div class="quote">
+        “One party repeatedly demands specific proof of intent (e.g. regarding flirting and avoidance) and the other refuses to supply or restate it, leading to character attacks. Accusatory questions are weaponized as pressure, while requests for concrete examples go unanswered.”
+        <span>Core problem · verbatim · Retrieval vs. Proof Deadlock</span>
+      </div>
+
+      <div class="note"><b>Caveat</b>The 17 annotated questions are a ~20% sample whose speaker skew (11:6 Naomi) inverts the population's (39:44 Alex). This panel is not evidence about the panel above it.</div>
+      <p class="src">Source: conflict_questions_annotated.json · conflict_questions_summary.json</p>
+    </div>
+  </section>
+
+  <!-- ============ LIMITS ============ -->
+  <section id="q5">
+    <div class="qhead"><span class="qnum">05</span><h2>What this can't say</h2></div>
+
+    <div class="card">
+      <div class="note"><b>Channel</b>The Aftermath window is 100% audio (105 / 105). Conflict contained 69 text events (38 Alex / 31 Naomi). If Alex replied by text in July, those turns are absent by construction — every Aftermath asymmetry figure is an <b style="display:inline;font-size:inherit;letter-spacing:0;text-transform:none">upper bound</b>, not a measurement.</div>
+      <div class="note"><b>Join key</b>77 of 378 events carry no sha256 — all of them in Conflict. The “always join on sha256” invariant cannot be applied to the Conflict text thread.</div>
+      <div class="note"><b>Sample size</b>Baseline latency medians rest on 7 (Naomi) and 8 (Alex) observations.</div>
+      <div class="note"><b>Label status</b>problematic_tags and emotional_tags are assigned analytic labels, not measured quantities. emotional_tags are INTERPRETATION.</div>
+    </div>
+  </section>
+
+  <footer>
+    <b>Nalex · structural evidence pass.</b><br>
+    Rendered from <b>visualisations/nalex_mobile_infographic_schema.json</b>. Canonical sources: CURRENT_STATE_CLEAN.md · phase_profile.json · baseline_comparison_audit.json · conflict_questions_annotated.json · conflict_questions_summary.json.
+  </footer>
+</div>
+
+<nav class="navbar">
+  <div class="navinner">
+    <a href="#q1" class="on">Volume</a>
+    <a href="#q2">Speed</a>
+    <a href="#q3">Turns</a>
+    <a href="#q4">Q&amp;A</a>
+    <a href="#q5">Limits</a>
+  </div>
+</nav>
+
+<script>
+(function(){
+  document.documentElement.className = 'js';
+  var reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function revealAll(){
+    document.querySelectorAll('.card').forEach(function(c){ c.classList.add('in'); });
+    paint(document);
+  }
+
+  function paint(root){
+    root.querySelectorAll('.fill[data-w]').forEach(function(el){ el.style.width = el.dataset.w + '%'; });
+    root.querySelectorAll('.band[data-w]').forEach(function(el){
+      el.style.left = el.dataset.l + '%';
+      el.style.width = Math.max(parseFloat(el.dataset.w), 2.2) + '%';
+    });
+    root.querySelectorAll('.tallybar i[data-w]').forEach(function(el){ el.style.width = el.dataset.w + '%'; });
+  }
+
+  if (reduce || !('IntersectionObserver' in window)) { revealAll(); }
+  else {
+    // failsafe: nothing stays invisible if the observer never fires
+    setTimeout(revealAll, 2500);
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (!e.isIntersecting) return;
+        e.target.classList.add('in');
+        setTimeout(function(){ paint(e.target); }, 140);
+        io.unobserve(e.target);
+      });
+    }, { rootMargin: '0px 0px -12% 0px', threshold: 0.12 });
+    document.querySelectorAll('.card').forEach(function(c){ io.observe(c); });
+  }
+
+  // bottom-nav active state
+  var links = [].slice.call(document.querySelectorAll('.navinner a'));
+  var secs  = links.map(function(a){ return document.querySelector(a.getAttribute('href')); });
+  var spy = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      var i = secs.indexOf(e.target);
+      links.forEach(function(a,j){ a.classList.toggle('on', j === i); });
+    });
+  }, { rootMargin: '-45% 0px -45% 0px' });
+  secs.forEach(function(s){ if (s) spy.observe(s); });
+})();
+</script>
+</body>
+</html>

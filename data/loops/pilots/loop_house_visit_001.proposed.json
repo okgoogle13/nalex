@@ -1,0 +1,186 @@
+{
+  "loop": {
+    "interaction_loop_id": "loop_house_visit_001",
+    "semantic_loop_label": "House Visit Boundary and Intent",
+    "participants": [
+      "Naomi",
+      "Alex"
+    ],
+    "core_topic": "Disputed circumstances of a house visit",
+    "loop_start_event_id": "G042",
+    "loop_end_event_id": "G181",
+    "loop_outcome": "response_provided",
+    "repair_response_status": "unclear",
+    "boundary_confidence": "medium",
+    "boundary_rationale": "G042 and G181 are semantically linked by topic; G181 is a subsequent response rather than an uninterrupted adjacent turn; G180 occurs between them chronologically and is excluded because it appears to address a distinct concern; voice-transcript limitations remain material.",
+    "intervening_events_note": {
+      "excluded_event_ids": [
+        "G180"
+      ],
+      "reason": "G180 is chronologically between G042 and G181 but appears to concern a distinct dispute about name-calling and trust rather than the house-visit boundary.",
+      "effect_on_boundary_confidence": "The exclusion keeps the pilot semantically focused but means it is not a literal uninterrupted turn-by-turn exchange."
+    },
+    "source_limitations": "Audio transcripts lack tone, pacing, and inflection markers which are crucial for interpreting hostility vs. earnestness.",
+    "related_loop_ids": [],
+    "selection_reason": "Provides the tightest 'Call and Response' dynamic isolating a single boundary and a subsequent response containing a contested factual detail, stated intent, and a potentially related acknowledgement of upset."
+  },
+  "events": [
+    {
+      "source": {
+        "source_event_ids": [
+          "G042"
+        ],
+        "source_order": 1,
+        "timestamps": [
+          "2026-07-11T22:40:44Z"
+        ],
+        "speaker": "Naomi",
+        "minimal_redacted_excerpt": "You invited me to go for a ride... Then you brought me to your house, which I didn't ask to go to... put on fucking music, closed the door, and showed me pictures... That was not the situation to invite me to your home.",
+        "excerpt_mode": "redacted_quote",
+        "evidence_type": "direct_text",
+        "source_quality": "voice_transcript",
+        "source_quality_note": "Automated transcript of a voice message.",
+        "speaker_confidence": "high"
+      },
+      "evidence_integrity": {
+        "claim_to_excerpt_alignment": "high",
+        "unverified_or_ambiguous_claims": [
+          "Differences between literal spoken wording and redacted text require verification."
+        ],
+        "requires_audio_review": true
+      },
+      "observation": {
+        "observable_moves": [
+          {
+            "sequence": 1,
+            "code": "states_explicit_concern_or_boundary",
+            "evidence_reference": "G042",
+            "coding_rationale": "Explicitly identifies being brought to the house, the door closing, and the timing as inappropriate and upsetting."
+          },
+          {
+            "sequence": 2,
+            "code": "uses_heightened_or_confrontational_language",
+            "evidence_reference": "G042",
+            "coding_rationale": "Use of profanity ('fucking music') to underscore the intensity of the boundary."
+          }
+        ],
+        "target_or_topic": "Alex's decision to bring Naomi to his house and the environment created there.",
+        "need_or_boundary": {
+          "content": "Requirement for consent and appropriate context before being invited to a private residence.",
+          "basis": "constrained_paraphrase",
+          "evidence_reference": "brought me to your house, which I didn't ask to go to... That was not the situation to invite me to your home.",
+          "uncertainty_note": "Paraphrased from stated grievances; boundary is articulated retrospectively rather than as a forward-looking rule."
+        },
+        "response_to_prior_move": null,
+        "explicit_statement_of_impact": null,
+        "explicit_statement_of_intent": null,
+        "explicit_request_for_response": null,
+        "direct_response_status": "not_applicable",
+        "context_facts": "Naomi is directly addressing a specific past interaction involving a visit to Alex's house.",
+        "interaction_state_after_event": "strained"
+      },
+      "interpretation": {
+        "interpretation_tags": []
+      },
+      "coding_metadata": {
+        "coded_by": "ai_proposed_pending_human_review",
+        "coding_version": "nalex_semantic_schema_v2",
+        "review_notes": "Clean boundary statement; no interpretive tags required.",
+        "coding_review_status": "proposed"
+      },
+      "artifact_controls": {
+        "privacy_level": "private_evidence",
+        "shareability_notes": "Contains raw swearing and vulnerability. Private use only.",
+        "suitable_for": [
+          "alex_reflection",
+          "naomi_reflection",
+          "facilitator_only"
+        ],
+        "visual_weight": "supporting",
+        "display_mode": "private_only"
+      }
+    },
+    {
+      "source": {
+        "source_event_ids": [
+          "G181"
+        ],
+        "source_order": 2,
+        "timestamps": [
+          "2026-07-11T22:43:31Z"
+        ],
+        "speaker": "Alex",
+        "minimal_redacted_excerpt": "I don't really remember showing you baby photos. I remember showing you my paintings... I coerced you into leaving your apartment because I thought maybe getting out... would be healthy... shouldn't have blown a pipe... yes, it's understandable that you're upset because rejection's not nice.",
+        "excerpt_mode": "redacted_quote",
+        "evidence_type": "direct_text",
+        "source_quality": "voice_transcript",
+        "source_quality_note": "Automated transcript of a voice message.",
+        "speaker_confidence": "high"
+      },
+      "evidence_integrity": {
+        "claim_to_excerpt_alignment": "medium",
+        "unverified_or_ambiguous_claims": [
+          "The transcript's wording around 'coerced' implies force, but might be a colloquialism or transcription error for 'encouraged' or 'convinced'.",
+          "It is unclear if the acknowledgment regarding 'rejection' applies directly to the house-visit concern or a separate underlying issue."
+        ],
+        "requires_audio_review": true
+      },
+      "observation": {
+        "observable_moves": [
+          {
+            "sequence": 1,
+            "code": "contests_stated_account",
+            "evidence_reference": "G181",
+            "coding_rationale": "Directly disputes the factual memory of showing baby photos, substituting it with paintings."
+          },
+          {
+            "sequence": 2,
+            "code": "responds_to_concern_with_explanation_of_intent",
+            "evidence_reference": "G181",
+            "coding_rationale": "Explains the underlying motivation for the visit was to help her get out of her apartment for her health."
+          },
+          {
+            "sequence": 3,
+            "code": "acknowledges_impact_of_action",
+            "evidence_reference": "G181",
+            "coding_rationale": "Validates that her upset is understandable, though explicitly attributes it to 'rejection'."
+          }
+        ],
+        "target_or_topic": "The facts and intentions of the house visit, and Naomi's emotional state.",
+        "need_or_boundary": {
+          "content": null,
+          "basis": "none",
+          "evidence_reference": null,
+          "uncertainty_note": null
+        },
+        "response_to_prior_move": "G042",
+        "explicit_statement_of_impact": null,
+        "explicit_statement_of_intent": "States that the aim of encouraging her to leave the apartment was concern for her wellbeing.",
+        "explicit_request_for_response": null,
+        "direct_response_status": "partly_addresses_prior_concern",
+        "context_facts": "Addresses G042 chronologically. The explanation of intent addresses the house visit, but the acknowledgment of upset addresses 'rejection', which was not explicitly stated as the cause of upset in G042.",
+        "interaction_state_after_event": "unclear"
+      },
+      "interpretation": {
+        "interpretation_tags": []
+      },
+      "coding_metadata": {
+        "coded_by": "ai_proposed_pending_human_review",
+        "coding_version": "nalex_semantic_schema_v2",
+        "review_notes": "Interpretation block removed entirely. Connection of the 'rejection' acknowledgment to the specific house boundary is ambiguous. The response contains an explanation and a possibly related acknowledgement, but this record does not establish whether the concern was received, whether the acknowledgement addressed the house-visit concern, or whether a repair opening occurred.",
+        "coding_review_status": "proposed"
+      },
+      "artifact_controls": {
+        "privacy_level": "private_evidence",
+        "shareability_notes": "Private reflection only.",
+        "suitable_for": [
+          "alex_reflection",
+          "naomi_reflection",
+          "facilitator_only"
+        ],
+        "visual_weight": "supporting",
+        "display_mode": "private_only"
+      }
+    }
+  ]
+}

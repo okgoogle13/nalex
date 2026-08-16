@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#111318">
+<title>Nalex — Who opens, who closes?</title>
+<!--
+  ============================================================================
+  NALEX VISUALIZATION ARTIFACT
+  Visual question : "Who opens and who closes sessions, per phase?"
+  Payload         : _canonical_strong/nalex_viz_schema.json → artifact_3_initiation_closure
+  Schema contract : _canonical_strong/viz_schema_template.md
+  Shell lineage   : _canonical_strong/nalex_mobile_v1_playful.html (layout, sticky bar,
+                    card sections, tap-target model, reduced-motion handling)
+  Render target   : Pixel 10 Pro class — 412px wide, ~20:9, 120Hz, dark.
+
+  RENDERING DISCIPLINE
+  Every number and label on this page is read at runtime from the RECORDS array
+  below. That array is a verbatim copy of the artifact_3 records: no fields added,
+  renamed, or removed; no themes inferred; no evidence rewritten; no new metrics
+  computed. Bar widths are a display scale against the largest value in the active
+  metric — a rendering device, not a derived metric.
+
+  visual_hint is honoured literally:
+    table   → the phase × speaker grid (session_opens, session_closes)
+    overlay → explicit_signoff_turns, shown as a badge layer over the grid.
+              It displays its own recorded value and calculates nothing.
+    strip   → explicit_signoffs_total (scope: corpus), the compact bottom strip.
+  ============================================================================
+-->
+<style>
+:root{
+  /* ---- M3 Expressive · tonal dark surfaces (no pure black) ---- */
+  --surface:#111318;
+  --surface-container-lowest:#0C0E13;
+  --surface-container-low:#181B21;
+  --surface-container:#1C2027;
+  --surface-container-high:#242A32;
+  --surface-container-highest:#2C323C;
+  --outline:#3B434F;
+  --outline-variant:#272D36;
+
+  --on-surface:#E2E2E9;
+  --on-surface-variant:#C3C7D3;
+  --on-surface-dim:#8E94A2;
+
+  /* ---- dynamic high-chroma accents mapped to M3 roles ---- */
+  --primary:#90CDFF;                 /* Alex — electric baseline accent */
+  --primary-container:#123A5C;
+  --on-primary-container:#CDE6FF;
+  --primary-glow:rgba(144,205,255,.34);
+
+  --tertiary:#C9A8FF;                /* Naomi */
+  --tertiary-container:#5B37B7;      /* saturated shape-morphing container */
+  --on-tertiary-container:#F1E8FF;   /* neon lilac readout */
+  --tertiary-glow:rgba(201,168,255,.34);
+
+  --amber:#FFC46B;
+  --amber-container:#3E2E14;
+
+  /* ---- shape: varied + asymmetric ---- */
+  --r-xl:32px;
+  --r-lg:24px;
+  --r-md:18px;
+  --r-sm:12px;
+  --r-pill:999px;
+
+  --pad:16px;
+  --gap:14px;
+  --tap:48px;
+
+  --spring:520ms cubic-bezier(.2,.9,.24,1.06);
+  --morph:640ms cubic-bezier(.16,1,.3,1);
+  --quick:180ms cubic-bezier(.3,0,.2,1);
+
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+
+  /* thumb-zone deck height, reserved out of the scroll area */
+  --deck:212px;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{overflow-x:hidden;scroll-behavior:smooth;scroll-padding-top:66px}
+body{
+  margin:0;
+  background:var(--surface);
+  color:var(--on-surface);
+  font-family:var(--font);
+  font-size:15px;
+  line-height:1.55;
+  overflow-x:hidden;
+  padding:0 0 calc(var(--deck) + env(safe-area-inset-bottom));
+  -webkit-font-smoothing:antialiased;
+}
+/* ambient tonal field — depth without shadow */
+body::before{
+  content:"";position:fixed;inset:-16% -34% auto -34%;height:62vh;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(46% 40% at 20% 10%, rgba(91,55,183,.30), transparent 70%),
+    radial-gradient(48% 42% at 84% 24%, rgba(144,205,255,.14), transparent 72%);
+  filter:blur(4px);
+}
+.wrap{max-width:520px;margin:0 auto;padding:0 var(--pad)}
+
+/* ================= top bar ================= */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  display:flex;align-items:center;gap:10px;
+  padding:8px var(--pad);
+  background:linear-gradient(180deg,rgba(17,19,24,.96),rgba(17,19,24,.66) 72%,transparent);
+  backdrop-filter:blur(14px);
+}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--tertiary);box-shadow:0 0 12px var(--tertiary-glow);flex:none}
+.topbar b{font-size:.92rem;font-weight:700;letter-spacing:-.01em}
+.topbar .sp{margin-left:auto}
+.iconbtn{
+  min-height:44px;min-width:44px;padding:0 18px;
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  border-radius:var(--r-pill);border:1px solid var(--outline);
+  background:var(--surface-container-high);color:var(--on-surface-variant);
+  font:inherit;font-size:.8rem;font-weight:700;letter-spacing:.04em;
+  cursor:pointer;transition:background var(--quick),color var(--quick),transform var(--quick),border-radius var(--morph);
+}
+.iconbtn:active{transform:scale(.94)}
+.iconbtn[aria-expanded="true"]{
+  background:var(--tertiary-container);color:var(--on-tertiary-container);
+  border-color:transparent;border-radius:22px 22px 8px 22px;
+}
+.iconbtn:focus-visible,.pill:focus-visible,.cell:focus-visible,.legendbtn:focus-visible{
+  outline:3px solid var(--primary);outline-offset:3px;
+}
+
+/* ================= masthead ================= */
+.mast{padding:8px 0 4px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--on-tertiary-container);
+  background:var(--tertiary-container);
+  padding:8px 15px;border-radius:var(--r-pill);
+}
+.mast h1{
+  margin:11px 0 7px;
+  font-size:clamp(1.95rem,9.6vw,2.55rem);line-height:.96;
+  font-weight:800;letter-spacing:-.045em;
+  color:var(--on-surface);
+}
+.mast h1 em{font-style:normal;color:var(--tertiary)}
+.mast p{margin:0;color:var(--on-surface-variant);font-size:.88rem;max-width:34ch}
+
+/* ================= about panel ================= */
+.about{
+  overflow:hidden;max-height:0;opacity:0;
+  transition:max-height var(--morph),opacity var(--spring),margin var(--morph);
+  margin:0;
+}
+.about.open{max-height:760px;opacity:1;margin:16px 0 0}
+.about-inner{
+  background:var(--surface-container-low);border:1px solid var(--outline-variant);
+  border-radius:10px var(--r-xl) var(--r-xl) var(--r-xl);
+  padding:18px 17px;
+}
+.about-inner h2{margin:0 0 10px;font-size:1.02rem;font-weight:800;letter-spacing:-.02em}
+.about-inner p{margin:0 0 11px;font-size:.87rem;color:var(--on-surface-variant)}
+.about-inner p:last-child{margin-bottom:0}
+.about-inner b{color:var(--on-surface)}
+
+/* ================= section heads ================= */
+section{margin:18px 0 0}
+.qhead{display:flex;align-items:center;gap:11px;margin:0 0 10px}
+.qnum{
+  display:inline-grid;place-items:center;width:36px;height:36px;
+  border-radius:14px 14px 14px 5px;
+  font-weight:800;font-size:.92rem;
+  background:var(--surface-container-high);color:var(--on-surface-variant);
+  border:1px solid var(--outline);flex:none;
+}
+.qhead h2{margin:0;font-size:1.24rem;font-weight:800;letter-spacing:-.028em;line-height:1.18}
+
+/* ================= cards ================= */
+.card{
+  background:var(--surface-container-low);
+  border:1px solid var(--outline-variant);
+  border-radius:var(--r-xl) var(--r-xl) var(--r-xl) 14px;
+  padding:16px;margin-bottom:var(--gap);
+}
+.card.alt{border-radius:14px var(--r-xl) var(--r-xl) var(--r-xl)}
+.kicker{
+  font-size:.72rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--on-surface-dim);margin:0 0 11px;
+}
+.lede{margin:0;color:var(--on-surface-variant);font-size:.9rem}
+
+/* ================= the table (visual_hint: table) ================= */
+.tbl{display:grid;gap:9px}
+.tbl-head{
+  display:grid;grid-template-columns:76px 1fr 1fr;gap:8px;align-items:end;
+  padding:0 2px 2px;
+}
+.tbl-head span{
+  font-size:.7rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--on-surface-dim);
+}
+.tbl-head .who-n{color:var(--tertiary);text-align:left}
+.tbl-head .who-a{color:var(--primary);text-align:left}
+
+.trow{display:grid;grid-template-columns:76px 1fr 1fr;gap:8px;align-items:stretch}
+.rowlab{
+  display:flex;align-items:center;
+  font-size:.74rem;font-weight:800;letter-spacing:-.005em;
+  color:var(--on-surface-variant);line-height:1.15;
+  hyphens:none;
+}
+
+.cell{
+  position:relative;overflow:hidden;
+  min-height:var(--tap);
+  display:block;width:100%;
+  padding:11px 12px 12px;
+  border:1px solid var(--outline-variant);
+  background:var(--surface-container);
+  color:var(--on-surface);
+  font:inherit;text-align:left;cursor:pointer;
+  border-radius:20px 20px 20px 7px;
+  transition:border-radius var(--morph),background var(--spring),
+             border-color var(--spring),transform var(--quick);
+}
+.cell:active{
+  border-radius:0px 60px 0px 60px !important;
+  transform:scale(0.90) !important;
+}
+
+@keyframes expressiveWobble {
+  0% { border-radius: 8px 26px 8px 26px; transform: scaleY(1); }
+  50% { border-radius: 26px 8px 26px 8px; transform: scaleY(1.04); }
+  100% { border-radius: 8px 26px 8px 26px; transform: scaleY(1); }
+}
+.cell .bar{
+  position:absolute;left:0;bottom:0;height:5px;width:0;
+  border-radius:var(--r-pill);
+  transition:width var(--morph),background var(--spring);
+}
+.cell .v{
+  display:block;font-size:1.9rem;font-weight:800;letter-spacing:-.05em;
+  font-variant-numeric:tabular-nums;line-height:1;
+}
+.cell .u{
+  display:block;margin-top:5px;
+  font-size:.68rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--on-surface-dim);
+}
+.cell.n .v{color:var(--tertiary)}
+.cell.a .v{color:var(--primary)}
+.cell.n .bar{background:linear-gradient(90deg,var(--tertiary-container),var(--tertiary))}
+.cell.a .bar{background:linear-gradient(90deg,var(--primary-container),var(--primary))}
+.cell.zero .v{color:var(--on-surface-dim)}
+.cell.zero .bar{background:var(--outline)}
+
+/* selected cell morphs: asymmetric radii flip + saturated container */
+.cell.sel{
+  border-radius:8px 26px 8px 26px;
+  transform:none;
+  animation: expressiveWobble 4s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+  will-change: border-radius, transform;
+}
+.cell.n.sel{background:var(--tertiary-container);border-color:var(--tertiary)}
+.cell.n.sel .v,.cell.n.sel .u{color:var(--on-tertiary-container)}
+.cell.a.sel{background:var(--primary-container);border-color:var(--primary)}
+.cell.a.sel .v,.cell.a.sel .u{color:var(--on-primary-container)}
+
+/* overlay badge (visual_hint: overlay) */
+.ov{
+  position:absolute;top:8px;right:8px;
+  display:none;align-items:center;gap:4px;
+  padding:4px 9px;border-radius:var(--r-pill);
+  background:var(--amber-container);border:1px solid rgba(255,196,107,.42);
+  color:var(--amber);font-size:.66rem;font-weight:800;letter-spacing:.04em;
+  font-variant-numeric:tabular-nums;
+  animation:ovIn var(--spring) both;
+}
+body.ov-on .ov{display:inline-flex}
+@keyframes ovIn{from{opacity:0;transform:translateY(-6px) scale(.86)}to{opacity:1;transform:none}}
+
+.scalenote{
+  margin:13px 0 0;font-size:.72rem;color:var(--on-surface-dim);letter-spacing:.01em;
+}
+
+/* ================= detail (morphing) ================= */
+.detail{
+  overflow:hidden;max-height:0;opacity:0;
+  transition:max-height var(--morph),opacity var(--spring),margin var(--morph);
+}
+.detail.open{max-height:1400px;opacity:1;margin:14px 0 0}
+.detail-inner{
+  border-radius:var(--r-lg) 8px var(--r-lg) var(--r-lg);
+  border:1px solid var(--outline-variant);
+  background:var(--surface-container-high);
+  padding:17px 16px;
+}
+.dtag{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:6px 13px;border-radius:var(--r-pill);
+  font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  margin:0 0 12px;
+}
+.dtag.n{background:var(--tertiary-container);color:var(--on-tertiary-container)}
+.dtag.a{background:var(--primary-container);color:var(--on-primary-container)}
+.quote{
+  margin:0;padding:14px 15px;
+  border-radius:var(--r-md) var(--r-md) 6px var(--r-md);
+  background:var(--surface-container-lowest);border:1px solid var(--outline-variant);
+  font-size:.87rem;line-height:1.55;color:var(--on-surface);
+}
+.quote span{
+  display:block;margin-top:9px;
+  font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:var(--on-surface-dim);
+}
+.fwd{
+  margin:12px 0 0;padding:15px 16px;
+  border-radius:var(--r-md);
+  background:linear-gradient(140deg,rgba(91,55,183,.42),rgba(91,55,183,.16));
+  border:1px solid rgba(201,168,255,.34);
+  color:var(--on-tertiary-container);font-size:.9rem;line-height:1.55;
+}
+.fwd b{
+  display:block;margin:0 0 7px;
+  font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--tertiary);
+}
+
+/* record inspector */
+details.rec{margin:12px 0 0}
+details.rec summary{
+  list-style:none;cursor:pointer;
+  min-height:44px;display:flex;align-items:center;gap:9px;
+  padding:0 15px;border-radius:var(--r-pill);
+  background:var(--surface-container);border:1px dashed var(--outline);
+  font-size:.75rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--on-surface-dim);
+}
+details.rec summary::-webkit-details-marker{display:none}
+details.rec[open] summary{border-style:solid;color:var(--on-surface-variant);border-radius:22px 22px 6px 22px}
+.fields{
+  margin:9px 0 0;padding:14px 15px;
+  border-radius:6px var(--r-md) var(--r-md) var(--r-md);
+  background:var(--surface-container-lowest);border:1px solid var(--outline-variant);
+  display:grid;gap:7px;
+}
+.frow{display:grid;grid-template-columns:112px 1fr;gap:9px;align-items:baseline}
+.frow dt{
+  font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--on-surface-dim);overflow-wrap:anywhere;
+}
+.frow dd{margin:0;font-size:.79rem;color:var(--on-surface-variant);overflow-wrap:anywhere}
+.frow dd.null{color:var(--on-surface-dim);font-style:italic}
+
+/* ================= strip (visual_hint: strip) ================= */
+.strip{display:grid;gap:9px}
+.striprow{
+  display:grid;grid-template-columns:60px 1fr auto;gap:11px;align-items:center;
+  min-height:44px;
+}
+.striprow em{
+  font-style:normal;font-size:.76rem;font-weight:800;letter-spacing:.05em;
+}
+.striprow.n em{color:var(--tertiary)} .striprow.a em{color:var(--primary)}
+.striptrack{height:16px;border-radius:var(--r-pill);background:var(--surface-container);overflow:hidden}
+.striptrack i{display:block;height:100%;border-radius:var(--r-pill);width:0;transition:width var(--morph)}
+.striprow.n .striptrack i{background:linear-gradient(90deg,var(--tertiary-container),var(--tertiary))}
+.striprow.a .striptrack i{background:linear-gradient(90deg,var(--primary-container),var(--primary))}
+.striprow u{
+  text-decoration:none;min-width:26px;text-align:right;
+  font-size:1rem;font-weight:800;font-variant-numeric:tabular-nums;
+}
+.striprow.n u{color:var(--tertiary)} .striprow.a u{color:var(--primary)}
+.striprow.z u{color:var(--on-surface-dim)}
+
+/* ================= reading note ================= */
+.note{
+  margin:14px 0 0;padding:14px 15px;
+  border-radius:var(--r-md) var(--r-md) var(--r-md) 6px;
+  background:var(--amber-container);border:1px solid rgba(255,196,107,.32);
+  color:#FFE3B8;font-size:.83rem;line-height:1.5;
+}
+.note b{
+  display:block;margin:0 0 5px;
+  font-size:.68rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase;color:var(--amber);
+}
+
+footer{padding:22px 0 8px;color:var(--on-surface-dim);font-size:.72rem;line-height:1.65}
+footer b{color:var(--on-surface-variant)}
+
+/* ================= thumb-zone deck ================= */
+.deck{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  padding:12px 12px calc(12px + env(safe-area-inset-bottom));
+  background:linear-gradient(0deg,rgba(17,19,24,.985) 62%,rgba(17,19,24,0));
+}
+.deck-inner{
+  max-width:496px;margin:0 auto;
+  background:var(--surface-container-high);border:1px solid var(--outline);
+  border-radius:26px;padding:11px;
+  display:grid;gap:9px;
+}
+.decklabel{
+  font-size:.64rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--on-surface-dim);padding:0 6px;
+}
+.pillrow{display:flex;gap:7px}
+.pill{
+  flex:1;min-height:var(--tap);min-width:0;
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:0 10px;border-radius:var(--r-pill);
+  border:1px solid var(--outline);background:var(--surface-container);
+  color:var(--on-surface-variant);font:inherit;font-size:.79rem;font-weight:800;
+  letter-spacing:.01em;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  transition:background var(--spring),color var(--spring),
+             border-color var(--spring),border-radius var(--morph),transform var(--quick);
+}
+.pill:active{transform:scale(.95)}
+.pill[aria-pressed="true"]{
+  background:var(--tertiary-container);color:var(--on-tertiary-container);
+  border-color:transparent;border-radius:24px 24px 9px 24px;
+}
+.pill.ovpill[aria-pressed="true"]{
+  background:var(--amber);color:#241703;border-radius:9px 24px 24px 24px;
+}
+
+@media (max-width:380px){
+  .trow,.tbl-head{grid-template-columns:60px 1fr 1fr;gap:6px}
+  .rowlab{font-size:.68rem;overflow-wrap:anywhere}
+  .cell{padding:10px 10px 11px}
+  .cell .v{font-size:1.55rem}
+  .frow{grid-template-columns:94px 1fr}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *{transition-duration:1ms!important;animation-duration:1ms!important;animation-iteration-count:1!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="dot" aria-hidden="true"></span><b>Nalex</b>
+  <span class="sp"></span>
+  <button class="iconbtn" id="aboutBtn" aria-expanded="false" aria-controls="aboutPanel">About</button>
+</div>
+
+<div class="wrap">
+
+  <header class="mast">
+    <div class="eyebrow">One visual question</div>
+    <h1>Who opens,<br><em>who closes?</em></h1>
+    <p>Session starts and session endings, phase by phase — a place to notice the shape of the pattern and try something different next time.</p>
+  </header>
+
+  <div class="about" id="aboutPanel">
+    <div class="about-inner">
+      <h2>About this view</h2>
+      <p><b>What it shows.</b> A single question: who opens and who closes sessions in each phase. Nothing else is layered in — every figure comes from one small set of records, and each one can be opened and read in full.</p>
+      <p><b>How to use it.</b> Tap any tile to open the record behind it, along with a forward-looking direction to try. Use the bottom deck to switch between <b>Opens</b> and <b>Closes</b>, to narrow to a single phase, and to bring the <b>Sign-offs</b> layer over the top.</p>
+      <p><b>What it is for.</b> This is a reflection surface, not a verdict. It describes what was recorded so you can experiment with a different move — it does not explain why anything happened, and it does not decide anything about what comes next.</p>
+    </div>
+  </div>
+
+  <!-- ============ TABLE: session_opens / session_closes ============ -->
+  <section id="grid">
+    <div class="qhead"><span class="qnum">01</span><h2 id="gridTitle">Session opens</h2></div>
+
+    <div class="card">
+      <p class="kicker" id="gridKicker">Per phase · Naomi and Alex</p>
+
+      <div class="tbl" id="tbl">
+        <div class="tbl-head">
+          <span>Phase</span><span class="who-n">Naomi</span><span class="who-a">Alex</span>
+        </div>
+        <!-- rows injected -->
+      </div>
+
+      <p class="scalenote" id="scaleNote"></p>
+
+      <div class="detail" id="detail">
+        <div class="detail-inner" id="detailInner"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STRIP: explicit_signoffs_total (corpus) ============ -->
+  <section id="corpus">
+    <div class="qhead"><span class="qnum">02</span><h2>Across the whole corpus</h2></div>
+
+    <div class="card alt">
+      <p class="kicker" id="stripKicker">Explicit sign-offs · corpus total</p>
+      <div class="strip" id="strip"><!-- rows injected --></div>
+
+      <div class="note">
+        <b>Reading note</b>
+        A recorded &ldquo;close&rdquo; is the last turn before a long gap — a mechanical marker rather than a chosen goodbye. Holding those two apart makes room to design an ending that both of you would recognise as one.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <b>Nalex · one visual question.</b><br>
+    Rendered from <b>_canonical_strong/nalex_viz_schema.json</b> → <b>artifact_3_initiation_closure</b>, against the record contract in <b>_canonical_strong/viz_schema_template.md</b>. Source: CURRENT_STATE_CLEAN.md §2 Finding 4, §13.0; NALEX_EVIDENCE_BRIEF_headline_patterns.md §2.4.
+  </footer>
+</div>
+
+<nav class="deck" aria-label="View controls">
+  <div class="deck-inner">
+    <span class="decklabel">Layer</span>
+    <div class="pillrow" role="group" aria-label="Metric layer">
+      <button class="pill" data-metric="session_opens"  aria-pressed="true">Opens</button>
+      <button class="pill" data-metric="session_closes" aria-pressed="false">Closes</button>
+      <button class="pill ovpill" id="ovBtn" aria-pressed="false">Sign-offs</button>
+    </div>
+    <span class="decklabel">Phase</span>
+    <div class="pillrow" role="group" aria-label="Phase filter">
+      <button class="pill" data-phase="all"       aria-pressed="true">All</button>
+      <button class="pill" data-phase="Baseline"  aria-pressed="false">Baseline</button>
+      <button class="pill" data-phase="Conflict"  aria-pressed="false">Conflict</button>
+      <button class="pill" data-phase="Aftermath" aria-pressed="false">After</button>
+    </div>
+  </div>
+</nav>
+
+<script>
+/* ===========================================================================
+   PAYLOAD — verbatim records from
+   _canonical_strong/nalex_viz_schema.json → artifact_3_initiation_closure.records
+   No field added, renamed, or removed. Order preserved.
+   =========================================================================== */
+var VISUAL_QUESTION = "Who opens and who closes sessions, per phase?";
+var SOURCE = "CURRENT_STATE_CLEAN.md §2 Finding 4, §13.0; NALEX_EVIDENCE_BRIEF_headline_patterns.md §2.4";
+
+var RECORDS = [
+{"theme":"initiation_closure_asymmetry","phase":"Baseline","speaker":"Naomi","metric":{"name":"session_opens","value":5,"unit":"count"},"evidence_quote":"5:5 opens at Baseline","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"supports","visual_hint":"table","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Baseline","speaker":"Alex","metric":{"name":"session_opens","value":5,"unit":"count"},"evidence_quote":"5:5 opens at Baseline","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"supports","visual_hint":"table","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Baseline","speaker":"Naomi","metric":{"name":"session_closes","value":4,"unit":"count"},"evidence_quote":"Baseline closes: Alex 6, Naomi 4","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"contrasts","visual_hint":"table","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Baseline","speaker":"Alex","metric":{"name":"session_closes","value":6,"unit":"count"},"evidence_quote":"Baseline closes: Alex 6, Naomi 4","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"contrasts","visual_hint":"table","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Conflict","speaker":"Naomi","metric":{"name":"session_opens","value":5,"unit":"count"},"evidence_quote":"5:5 opens in Conflict","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"supports","visual_hint":"table","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Conflict","speaker":"Alex","metric":{"name":"session_opens","value":5,"unit":"count"},"evidence_quote":"5:5 opens in Conflict","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"supports","visual_hint":"table","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Conflict","speaker":"Naomi","metric":{"name":"session_closes","value":3,"unit":"count"},"evidence_quote":"Conflict closes: Alex 7, Naomi 3","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"contrasts","visual_hint":"table","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Conflict","speaker":"Alex","metric":{"name":"session_closes","value":7,"unit":"count"},"evidence_quote":"Conflict closes: Alex 7, Naomi 3","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"contrasts","visual_hint":"table","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Aftermath","speaker":"Naomi","metric":{"name":"session_opens","value":5,"unit":"count"},"evidence_quote":"Naomi opens 5 of 5 Aftermath sessions; Alex opens 0.","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"escalates","visual_hint":"table","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Aftermath","speaker":"Alex","metric":{"name":"session_opens","value":0,"unit":"count"},"evidence_quote":"Naomi opens 5 of 5 Aftermath sessions; Alex opens 0.","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"escalates","visual_hint":"table","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Aftermath","speaker":"Naomi","metric":{"name":"session_closes","value":5,"unit":"count"},"evidence_quote":"Aftermath closes: Naomi 5, Alex 0","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"escalates","visual_hint":"table","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Aftermath","speaker":"Alex","metric":{"name":"session_closes","value":0,"unit":"count"},"evidence_quote":"Aftermath closes: Naomi 5, Alex 0","confidence":"high","linked_theme":"unilateral_initiation","relation_type":"escalates","visual_hint":"table","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Baseline","speaker":"Naomi","metric":{"name":"explicit_signoff_turns","value":0,"unit":"count"},"evidence_quote":"Explicit signoffs for Naomi in Baseline","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"overlay","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Baseline","speaker":"Alex","metric":{"name":"explicit_signoff_turns","value":0,"unit":"count"},"evidence_quote":"Explicit signoffs for Alex in Baseline","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"overlay","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Conflict","speaker":"Naomi","metric":{"name":"explicit_signoff_turns","value":0,"unit":"count"},"evidence_quote":"Explicit signoffs for Naomi in Conflict","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"overlay","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Conflict","speaker":"Alex","metric":{"name":"explicit_signoff_turns","value":11,"unit":"count"},"evidence_quote":"Explicit signoffs for Alex in Conflict","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"overlay","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Aftermath","speaker":"Naomi","metric":{"name":"explicit_signoff_turns","value":0,"unit":"count"},"evidence_quote":"Explicit signoffs for Naomi in Aftermath","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"overlay","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":"Aftermath","speaker":"Alex","metric":{"name":"explicit_signoff_turns","value":4,"unit":"count"},"evidence_quote":"Explicit signoffs for Alex in Aftermath","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"overlay","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"phase","detail_label":null,"display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":null,"speaker":"Naomi","metric":{"name":"explicit_signoffs_total","value":0,"unit":"count"},"evidence_quote":"Corpus total explicit signoffs","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"strip","forward_looking_evaluation":"Sharing the labor of initiation could prevent the build-up of resentment and allow the partner space to demonstrate voluntary approach.","scope":"corpus","detail_label":"Corpus","display_instance":null},
+{"theme":"initiation_closure_asymmetry","phase":null,"speaker":"Alex","metric":{"name":"explicit_signoffs_total","value":15,"unit":"count"},"evidence_quote":"Corpus total explicit signoffs","confidence":"high","linked_theme":"withdrawal_by_exit","relation_type":"supports","visual_hint":"strip","forward_looking_evaluation":"Taking on intentional, small initiation tasks (e.g. a morning check-in) would disrupt the pattern of unilateral pursuit and provide needed reassurance.","scope":"corpus","detail_label":"Corpus","display_instance":null}
+];
+
+/* ---------- display-only label maps (no data derived from these) ---------- */
+var METRIC_LABEL = {
+  session_opens:"Session opens",
+  session_closes:"Session closes",
+  explicit_signoff_turns:"Explicit sign-off turns",
+  explicit_signoffs_total:"Explicit sign-offs"
+};
+var PHASE_ORDER = ["Baseline","Conflict","Aftermath"];
+
+(function(){
+  "use strict";
+
+  var state = { metric:"session_opens", phase:"all", overlay:false, sel:null };
+
+  var tbl        = document.getElementById("tbl");
+  var strip      = document.getElementById("strip");
+  var detail     = document.getElementById("detail");
+  var detailIn   = document.getElementById("detailInner");
+  var gridTitle  = document.getElementById("gridTitle");
+  var gridKicker = document.getElementById("gridKicker");
+  var scaleNote  = document.getElementById("scaleNote");
+  var stripKick  = document.getElementById("stripKicker");
+
+  function esc(s){
+    return String(s).replace(/[&<>"']/g, function(c){
+      return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
+    });
+  }
+  function find(metric, phase, speaker){
+    for (var i=0;i<RECORDS.length;i++){
+      var r = RECORDS[i];
+      if (r.metric.name===metric && r.phase===phase && r.speaker===speaker) return r;
+    }
+    return null;
+  }
+  function maxOf(metric){
+    var m = 0;
+    for (var i=0;i<RECORDS.length;i++){
+      var r = RECORDS[i];
+      if (r.metric.name===metric && typeof r.metric.value === "number" && r.metric.value > m) m = r.metric.value;
+    }
+    return m || 1;
+  }
+
+  /* ---------------- table (visual_hint: table) ---------------- */
+  function buildTable(){
+    var phases = state.phase === "all" ? PHASE_ORDER : [state.phase];
+    var scale  = maxOf(state.metric);
+
+    tbl.querySelectorAll(".trow").forEach(function(n){ n.remove(); });
+
+    phases.forEach(function(ph){
+      var row = document.createElement("div");
+      row.className = "trow";
+
+      var lab = document.createElement("div");
+      lab.className = "rowlab";
+      lab.textContent = ph;
+      row.appendChild(lab);
+
+      [["Naomi","n"],["Alex","a"]].forEach(function(sp){
+        var rec = find(state.metric, ph, sp[0]);
+        var ov  = find("explicit_signoff_turns", ph, sp[0]);
+        var btn = document.createElement("button");
+        var val = rec ? rec.metric.value : null;
+
+        btn.type = "button";
+        btn.className = "cell " + sp[1] + (val === 0 ? " zero" : "");
+        btn.dataset.metric  = state.metric;
+        btn.dataset.phase   = ph;
+        btn.dataset.speaker = sp[0];
+        btn.setAttribute("aria-pressed","false");
+        btn.setAttribute("aria-label",
+          sp[0] + ", " + ph + ", " + METRIC_LABEL[state.metric] + ": " +
+          (rec ? rec.metric.value + " " + rec.metric.unit : "no record") +
+          ". Open record.");
+
+        btn.innerHTML =
+          '<span class="v">' + (rec ? esc(rec.metric.value) : "—") + '</span>' +
+          '<span class="u">' + (rec ? esc(rec.metric.unit) : "no record") + '</span>' +
+          (ov ? '<span class="ov" title="Explicit sign-off turns">⏎ ' + esc(ov.metric.value) + '</span>' : '') +
+          '<span class="bar"></span>';
+
+        row.appendChild(btn);
+
+        requestAnimationFrame(function(){
+          var bar = btn.querySelector(".bar");
+          if (!bar || !rec || typeof rec.metric.value !== "number") return;
+          bar.style.width = (rec.metric.value === 0 ? 5 : (rec.metric.value / scale) * 100) + "%";
+        });
+      });
+
+      tbl.appendChild(row);
+    });
+
+    gridTitle.textContent  = METRIC_LABEL[state.metric];
+    gridKicker.textContent = "Per phase · Naomi and Alex";
+    scaleNote.textContent  =
+      "Tile width is scaled against the largest recorded " + METRIC_LABEL[state.metric].toLowerCase() +
+      " value (" + scale + ")." +
+      (state.overlay ? " Amber badges carry the explicit sign-off turns recorded for that phase and speaker." : "");
+
+    restoreSelection();
+  }
+
+  /* ---------------- strip (visual_hint: strip) ---------------- */
+  function buildStrip(){
+    var scale = maxOf("explicit_signoffs_total");
+    strip.innerHTML = "";
+    ["Naomi","Alex"].forEach(function(sp){
+      var rec = find("explicit_signoffs_total", null, sp);
+      if (!rec) return;
+      var cls = sp === "Naomi" ? "n" : "a";
+      var row = document.createElement("div");
+      row.className = "striprow " + cls + (rec.metric.value === 0 ? " z" : "");
+      row.innerHTML =
+        '<em>' + esc(sp) + '</em>' +
+        '<div class="striptrack"><i></i></div>' +
+        '<u>' + esc(rec.metric.value) + '</u>';
+      strip.appendChild(row);
+      requestAnimationFrame(function(){
+        row.querySelector("i").style.width =
+          (rec.metric.value === 0 ? 2 : (rec.metric.value / scale) * 100) + "%";
+      });
+    });
+    stripKick.textContent =
+      METRIC_LABEL.explicit_signoffs_total + " · scope: corpus · " +
+      (find("explicit_signoffs_total", null, "Naomi") || {}).detail_label;
+  }
+
+  /* ---------------- detail (morphing panel) ---------------- */
+  function fieldRow(k, v){
+    var isNull = (v === null || v === undefined);
+    return '<div class="frow"><dt>' + esc(k) + '</dt>' +
+           '<dd class="' + (isNull ? "null" : "") + '">' + (isNull ? "null" : esc(v)) + '</dd></div>';
+  }
+
+  function openDetail(rec, cls){
+    var ovRec = (rec.scope === "phase")
+      ? find("explicit_signoff_turns", rec.phase, rec.speaker)
+      : null;
+
+    var html =
+      '<span class="dtag ' + cls + '">' + esc(rec.speaker) +
+        ' · ' + esc(rec.phase === null ? "corpus" : rec.phase) + '</span>' +
+      '<p class="quote">' + esc(rec.evidence_quote) +
+        '<span>' + esc(METRIC_LABEL[rec.metric.name] || rec.metric.name) +
+        ' · ' + esc(rec.metric.value) + ' ' + esc(rec.metric.unit) +
+        ' · confidence: ' + esc(rec.confidence) + '</span></p>' +
+      '<div class="fwd"><b>A direction to try</b>' + esc(rec.forward_looking_evaluation) + '</div>';
+
+    if (state.overlay && ovRec && ovRec !== rec){
+      html +=
+        '<p class="quote" style="margin-top:12px">' + esc(ovRec.evidence_quote) +
+        '<span>Overlay · ' + esc(METRIC_LABEL[ovRec.metric.name]) + ' · ' +
+        esc(ovRec.metric.value) + ' ' + esc(ovRec.metric.unit) + '</span></p>';
+    }
+
+    html +=
+      '<details class="rec"><summary>Record fields</summary><dl class="fields">' +
+        fieldRow("theme", rec.theme) +
+        fieldRow("phase", rec.phase) +
+        fieldRow("scope", rec.scope) +
+        fieldRow("detail_label", rec.detail_label) +
+        fieldRow("display_instance", rec.display_instance) +
+        fieldRow("speaker", rec.speaker) +
+        fieldRow("metric.name", rec.metric.name) +
+        fieldRow("metric.value", rec.metric.value) +
+        fieldRow("metric.unit", rec.metric.unit) +
+        fieldRow("evidence_quote", rec.evidence_quote) +
+        fieldRow("confidence", rec.confidence) +
+        fieldRow("linked_theme", rec.linked_theme) +
+        fieldRow("relation_type", rec.relation_type) +
+        fieldRow("visual_hint", rec.visual_hint) +
+        fieldRow("forward_looking_evaluation", rec.forward_looking_evaluation) +
+      '</dl></details>';
+
+    detailIn.innerHTML = html;
+    detail.classList.add("open");
+  }
+
+  /* bring the opened panel above the thumb deck.
+     Measured from detailIn (its final height) rather than the animating
+     container, so the target is correct before the morph finishes. */
+  var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  function revealDetail(){
+    if (!detail.classList.contains("open")) return;
+    var deckH  = document.querySelector(".deck").getBoundingClientRect().height;
+    var top    = detail.getBoundingClientRect().top;
+    var bottom = top + detailIn.offsetHeight;
+    var limit  = window.innerHeight - deckH - 12;
+    if (bottom <= limit) return;
+    var delta = Math.min(bottom - limit, top - 72);
+    if (delta > 0) window.scrollBy({ top: delta, behavior: REDUCED ? "auto" : "smooth" });
+  }
+
+  /* run once the morph has settled, so the document has its full height */
+  detail.addEventListener("transitionend", function(e){
+    if (e.propertyName === "max-height") revealDetail();
+  });
+
+  function closeDetail(){
+    detail.classList.remove("open");
+    state.sel = null;
+    tbl.querySelectorAll(".cell").forEach(function(c){
+      c.classList.remove("sel");
+      c.setAttribute("aria-pressed","false");
+    });
+  }
+
+  function restoreSelection(){
+    if (!state.sel) { detail.classList.remove("open"); return; }
+    var match = tbl.querySelector(
+      '.cell[data-phase="' + state.sel.phase + '"][data-speaker="' + state.sel.speaker + '"]'
+    );
+    if (!match){ closeDetail(); return; }
+    match.classList.add("sel");
+    match.setAttribute("aria-pressed","true");
+    var rec = find(state.metric, state.sel.phase, state.sel.speaker);
+    if (rec) openDetail(rec, state.sel.speaker === "Naomi" ? "n" : "a");
+  }
+
+  tbl.addEventListener("click", function(e){
+    var btn = e.target.closest(".cell");
+    if (!btn) return;
+    if (navigator.vibrate) navigator.vibrate([15]);
+    var phase = btn.dataset.phase, speaker = btn.dataset.speaker;
+    var same  = state.sel && state.sel.phase === phase && state.sel.speaker === speaker;
+
+    tbl.querySelectorAll(".cell").forEach(function(c){
+      c.classList.remove("sel");
+      c.setAttribute("aria-pressed","false");
+    });
+
+    if (same){ closeDetail(); return; }
+
+    var rec = find(state.metric, phase, speaker);
+    if (!rec) return;
+    btn.classList.add("sel");
+    btn.setAttribute("aria-pressed","true");
+    state.sel = { phase:phase, speaker:speaker };
+    openDetail(rec, speaker === "Naomi" ? "n" : "a");
+    setTimeout(revealDetail, REDUCED ? 0 : 700);   /* fallback if transitionend never fires */
+  });
+
+  /* ---------------- deck controls ---------------- */
+  document.querySelectorAll(".pill[data-metric]").forEach(function(p){
+    p.addEventListener("click", function(){
+      if (navigator.vibrate) navigator.vibrate([10]);
+      document.querySelectorAll(".pill[data-metric]").forEach(function(o){
+        o.setAttribute("aria-pressed", String(o === p));
+      });
+      state.metric = p.dataset.metric;
+      buildTable();
+    });
+  });
+
+  document.querySelectorAll(".pill[data-phase]").forEach(function(p){
+    p.addEventListener("click", function(){
+      document.querySelectorAll(".pill[data-phase]").forEach(function(o){
+        o.setAttribute("aria-pressed", String(o === p));
+      });
+      state.phase = p.dataset.phase;
+      buildTable();
+    });
+  });
+
+  var ovBtn = document.getElementById("ovBtn");
+  ovBtn.addEventListener("click", function(){
+    state.overlay = !state.overlay;
+    ovBtn.setAttribute("aria-pressed", String(state.overlay));
+    document.body.classList.toggle("ov-on", state.overlay);
+    buildTable();
+  });
+
+  var aboutBtn = document.getElementById("aboutBtn");
+  var aboutPanel = document.getElementById("aboutPanel");
+  aboutBtn.addEventListener("click", function(){
+    var open = aboutPanel.classList.toggle("open");
+    aboutBtn.setAttribute("aria-expanded", String(open));
+  });
+
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && state.sel) closeDetail();
+  });
+
+  buildTable();
+  buildStrip();
+})();
+</script>
+</body>
+</html>

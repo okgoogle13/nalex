@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#111318">
+<title>Naomi — Who reaches out after conflict</title>
+<!--
+  Nalex · personal view (Naomi)
+  Rendered from: _canonical_strong/nalex_viz_schema.json (artifact_3)
+  Cross-checked against: phase_profile.json rev 4, baseline_comparison_audit.json
+  Series palette #3F8AD8 / #CC7F30 validated dark-mode, all six checks PASS
+  (worst adjacent CVD dE 23.8; normal-vision dE 27.4).
+  Font strategy: system UI stack only. No webfont is requested, so there is no
+  silent fallback -- the declared stack IS the intended typeface.
+  Copy pass 2026-08-11: plain-language rewrite. Figures unchanged.
+-->
+<style>
+:root{
+  --surface:#111318;
+  --surface-container-lowest:#0C0E13;
+  --surface-container-low:#181B21;
+  --surface-container:#1C2027;
+  --surface-container-high:#242A32;
+  --surface-container-highest:#2C323C;
+  --outline:#3B434F;
+  --outline-variant:#272D36;
+
+  /* Text tokens. Data values and labels wear these, never a series colour. */
+  --on-surface:#E2E2E9;          /* 15.1:1 on --surface */
+  --on-surface-variant:#C3C7D3;  /* 11.2:1 */
+  --on-surface-dim:#9DA3B1;      /*  7.3:1 -- above the 4.5:1 AA floor */
+
+  /* Series identity. Fixed per person across BOTH views, never cycled. */
+  --series-alex:#3F8AD8;
+  --series-naomi:#CC7F30;
+
+  --accent:var(--series-naomi);
+  --accent-container:#4A2E0C;
+  --on-accent-container:#FFE2C2;
+
+  --r-xl:32px; --r-lg:24px; --r-md:18px; --r-sm:12px; --r-pill:999px;
+  --pad:16px;
+  --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html{overflow-x:hidden;scroll-behavior:smooth}
+body{
+  margin:0;background:var(--surface);color:var(--on-surface);
+  font-family:var(--font);font-size:15px;line-height:1.6;
+  overflow-x:hidden;padding:0 0 48px;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:-16% -34% auto -34%;height:62vh;z-index:-1;pointer-events:none;
+  background:radial-gradient(46% 40% at 20% 12%, rgba(204,127,48,.13), transparent 70%);
+}
+.wrap{max-width:520px;margin:0 auto;padding:0 var(--pad)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:var(--pad);top:8px;z-index:60;background:var(--surface-container-high);
+  color:var(--on-surface);padding:10px 16px;border-radius:var(--r-pill);}
+
+.topbar{
+  position:sticky;top:0;z-index:40;display:flex;align-items:center;gap:10px;
+  padding:8px var(--pad);
+  background:linear-gradient(180deg,rgba(17,19,24,.97),rgba(17,19,24,.7) 72%,transparent);
+  backdrop-filter:blur(14px);
+}
+.dot{width:11px;height:11px;border-radius:50%;background:var(--accent);flex:none}
+.topbar b{font-size:.92rem;font-weight:700;letter-spacing:-.01em}
+
+.mast{padding:10px 0 4px}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--on-accent-container);background:var(--accent-container);
+  padding:8px 15px;border-radius:var(--r-pill);
+}
+.mast h1{margin:12px 0 8px;font-size:clamp(1.85rem,8.6vw,2.35rem);line-height:1.06;
+  font-weight:800;letter-spacing:-.04em}
+.mast .sub{margin:0;color:var(--on-surface-variant);font-size:.9rem;max-width:40ch}
+
+section{margin:32px 0 0}
+.qhead{display:flex;align-items:center;gap:11px;margin:0 0 14px}
+.qnum{display:inline-grid;place-items:center;width:34px;height:34px;
+  border-radius:14px 14px 14px 5px;font-weight:800;font-size:.85rem;
+  background:var(--surface-container-high);color:var(--on-surface-variant);
+  border:1px solid var(--outline);flex:none}
+.qhead h2{margin:0;font-size:1.16rem;font-weight:800;letter-spacing:-.028em;line-height:1.22}
+
+.legend{display:flex;gap:16px;align-items:center;margin:14px 0 0;
+  font-size:.78rem;color:var(--on-surface-variant)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.sw{width:12px;height:12px;border-radius:3px;flex:none}
+.sw-a{background:var(--series-alex)}
+.sw-n{background:var(--series-naomi)}
+
+.card{
+  background:var(--surface-container-low);
+  border:1px solid var(--outline-variant);
+  border-radius:var(--r-lg);
+  padding:20px;
+}
+.card h3{margin:0;font-size:1.08rem;font-weight:800;letter-spacing:-.018em;
+  color:var(--on-surface);line-height:1.28}
+.strength{
+  display:block;margin:9px 0 12px;
+  font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--on-accent-container);
+}
+.card p{margin:0 0 11px;font-size:.9rem;color:var(--on-surface-variant)}
+.card p:last-child{margin-bottom:0}
+
+/* ---- chart: thin marks, 2px gap between adjacent bars, rounded data-end ---- */
+.chart{margin:18px 0 0;display:flex;flex-direction:column;gap:12px}
+.row-label{font-size:.71rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;
+  color:var(--on-surface-dim);margin:0 0 5px}
+.pair{display:flex;flex-direction:column;gap:2px}
+.bar{display:flex;align-items:center;gap:9px}
+.track{flex:1;min-width:0;height:13px;background:var(--surface-container-high);
+  border-radius:4px;overflow:hidden}
+.fill{height:100%;border-radius:0 4px 4px 0;min-width:2px}
+/* A measured zero must draw nothing -- the min-width sliver would read as a value. */
+.fill.zero{min-width:0}
+.fill-a{background:var(--series-alex)}
+.fill-n{background:var(--series-naomi)}
+.val{font-size:.76rem;font-weight:700;color:var(--on-surface);
+  min-width:62px;text-align:right;font-variant-numeric:tabular-nums}
+.val .who{color:var(--on-surface-dim);font-weight:600}
+.nodata{font-size:.78rem;color:var(--on-surface-variant);
+  padding:10px 12px;background:var(--surface-container);border-radius:10px;
+  border:1px dashed var(--outline);margin:0}
+
+.ptable{width:100%;border-collapse:collapse;font-size:.86rem}
+.ptable caption{text-align:left;font-size:.78rem;color:var(--on-surface-dim);padding:0 0 10px}
+.ptable th,.ptable td{text-align:left;padding:11px 12px;vertical-align:top;
+  border-bottom:1px solid var(--outline-variant)}
+.ptable thead th{font-size:.7rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--on-surface);border-bottom:1px solid var(--outline)}
+.ptable tbody th{font-weight:700;color:var(--on-surface);white-space:nowrap;width:1%}
+.ptable tbody td{color:var(--on-surface-variant)}
+.ptable tbody tr:last-child th,.ptable tbody tr:last-child td{border-bottom:none}
+
+.limits{background:var(--surface-container-lowest);border:1px solid var(--outline);
+  border-radius:var(--r-lg);padding:20px}
+.limits p{margin:0 0 12px;font-size:.9rem;color:var(--on-surface)}
+.limits ul{margin:0;padding:0 0 0 20px}
+.limits li{margin:0 0 9px;font-size:.88rem;color:var(--on-surface-variant)}
+.limits li:last-child{margin-bottom:0}
+
+.prompt{
+  border:1px dashed var(--outline);border-radius:var(--r-lg);
+  padding:22px 20px;background:transparent;
+}
+.prompt p{margin:0;font-size:1.02rem;font-weight:700;line-height:1.45;
+  color:var(--on-surface);letter-spacing:-.012em}
+
+.closing{background:var(--surface-container-low);border:1px solid var(--outline-variant);
+  border-radius:var(--r-lg);padding:20px}
+.closing p{margin:0 0 12px;font-size:.9rem;color:var(--on-surface-variant)}
+.closing ul{margin:0 0 12px;padding:0 0 0 20px}
+.closing li{margin:0 0 8px;font-size:.9rem;color:var(--on-surface)}
+.closing li:last-child{margin-bottom:0}
+.closing p:last-child{margin-bottom:0}
+
+details{margin-top:14px;border:1px solid var(--outline-variant);
+  border-radius:var(--r-md);background:var(--surface-container-lowest)}
+summary{cursor:pointer;padding:13px 16px;font-size:.82rem;font-weight:700;
+  color:var(--on-surface-variant);list-style:none;display:flex;
+  align-items:center;justify-content:space-between;gap:10px;border-radius:var(--r-md)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.15rem;font-weight:700;color:var(--on-surface-dim)}
+details[open] summary::after{content:"\2212"}
+.tablewrap{overflow-x:auto;padding:0 16px 16px}
+.dtable{border-collapse:collapse;width:100%;font-size:.78rem;min-width:330px}
+.dtable caption{text-align:left;font-size:.74rem;color:var(--on-surface-dim);padding:0 0 9px}
+.dtable th,.dtable td{text-align:right;padding:7px 9px;
+  border-bottom:1px solid var(--outline-variant);font-variant-numeric:tabular-nums}
+.dtable th:first-child,.dtable td:first-child{text-align:left}
+.dtable thead th{color:var(--on-surface);font-weight:800;border-bottom:1px solid var(--outline)}
+.dtable tbody th{font-weight:600;color:var(--on-surface-variant)}
+
+footer{margin-top:36px;padding:20px 0 0;border-top:1px solid var(--outline-variant);
+  color:var(--on-surface-dim);font-size:.75rem;line-height:1.75}
+footer b{color:var(--on-surface-variant)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{animation-duration:.001ms!important;animation-iteration-count:1!important;
+    transition-duration:.001ms!important}
+}
+@media (prefers-contrast:more){
+  :root{--on-surface-dim:#C3C7D3;--outline:#6B7482}
+}
+@media (forced-colors:active){
+  .fill-a,.fill-n{forced-color-adjust:none;border:1px solid ButtonText}
+  .fill-n{background:Highlight}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to the main pattern</a>
+
+<div class="topbar" role="banner">
+  <span class="dot" aria-hidden="true"></span><b>Nalex</b>
+</div>
+
+<div class="wrap">
+  <header class="mast">
+    <p class="eyebrow">Personal view · 2 of 2</p>
+    <h1>Naomi — Who reaches out after conflict</h1>
+    <p class="sub">A plain-language view of who starts the recorded exchanges and how
+    that changes across the relationship timeline.</p>
+  </header>
+
+  <main id="main">
+
+    <section aria-labelledby="h-main">
+      <div class="qhead"><span class="qnum" aria-hidden="true">01</span>
+        <h2 id="h-main">Main pattern</h2></div>
+
+      <article class="card">
+        <h3>Naomi starts all recorded Aftermath sessions</h3>
+        <b class="strength">Clearly shown in the record</b>
+
+        <p>At Baseline and during Conflict, both people start the same number of recorded
+        sessions: 5 each.</p>
+
+        <p>In Aftermath, Naomi starts all 5 recorded sessions. Alex starts none during
+        that phase.</p>
+
+        <p>This shift appears in Aftermath. It is not present throughout the record.</p>
+
+        <div class="chart" role="img" aria-label="Who starts each recorded session, by phase. Baseline: Naomi 5, Alex 5. Conflict: Naomi 5, Alex 5. Silence: no exchanges were recorded. Aftermath: Naomi 5, Alex 0.">
+          <div>
+            <p class="row-label">Baseline</p>
+            <div class="pair">
+              <div class="bar"><div class="track"><div class="fill fill-n" style="width:100%"></div></div><span class="val"><span class="who">Naomi</span> 5</span></div>
+              <div class="bar"><div class="track"><div class="fill fill-a" style="width:100%"></div></div><span class="val"><span class="who">Alex</span> 5</span></div>
+            </div>
+          </div>
+          <div>
+            <p class="row-label">Conflict</p>
+            <div class="pair">
+              <div class="bar"><div class="track"><div class="fill fill-n" style="width:100%"></div></div><span class="val"><span class="who">Naomi</span> 5</span></div>
+              <div class="bar"><div class="track"><div class="fill fill-a" style="width:100%"></div></div><span class="val"><span class="who">Alex</span> 5</span></div>
+            </div>
+          </div>
+          <div>
+            <p class="row-label">Silence</p>
+            <p class="nodata">No exchanges were recorded during this period. We can't use
+            that gap to say what did or didn't happen.</p>
+          </div>
+          <div>
+            <p class="row-label">Aftermath</p>
+            <div class="pair">
+              <div class="bar"><div class="track"><div class="fill fill-n" style="width:100%"></div></div><span class="val"><span class="who">Naomi</span> 5</span></div>
+              <div class="bar"><div class="track"><div class="fill fill-a zero" style="width:0"></div></div><span class="val"><span class="who">Alex</span> 0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="legend" role="note">
+          <span><i class="sw sw-n" aria-hidden="true"></i>Naomi</span>
+          <span><i class="sw sw-a" aria-hidden="true"></i>Alex</span>
+        </div>
+      </article>
+    </section>
+
+    <section aria-labelledby="h-where">
+      <div class="qhead"><span class="qnum" aria-hidden="true">02</span>
+        <h2 id="h-where">Who starts each phase</h2></div>
+
+      <table class="ptable">
+        <caption>Who starts the recorded sessions, across the recorded material.</caption>
+        <thead>
+          <tr><th scope="col">Phase</th><th scope="col">What the record shows</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Baseline</th><td>Naomi and Alex each start 5 recorded sessions.</td></tr>
+          <tr><th scope="row">Conflict</th><td>Naomi and Alex each start 5 recorded sessions.</td></tr>
+          <tr><th scope="row">Silence</th><td>No exchanges were recorded during this period.</td></tr>
+          <tr><th scope="row">Aftermath</th><td>Naomi starts all 5 recorded sessions.</td></tr>
+        </tbody>
+      </table>
+
+      <details>
+        <summary>Table view — the counts behind this page</summary>
+        <div class="tablewrap">
+          <table class="dtable">
+            <caption>“—” marks a period with no recorded exchanges, not a count of zero.</caption>
+            <thead>
+              <tr><th scope="col">Count</th><th scope="col">Baseline</th><th scope="col">Conflict</th><th scope="col">Silence</th><th scope="col">Aftermath</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Sessions started · Naomi</th><td>5</td><td>5</td><td>—</td><td>5</td></tr>
+              <tr><th scope="row">Sessions started · Alex</th><td>5</td><td>5</td><td>—</td><td>0</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </details>
+    </section>
+
+    <section aria-labelledby="h-change">
+      <div class="qhead"><span class="qnum" aria-hidden="true">03</span>
+        <h2 id="h-change">The pattern changes after Conflict</h2></div>
+
+      <article class="card">
+        <p>The record shows an even split before Aftermath. The difference appears later,
+        when Naomi starts each of the 5 recorded sessions in that phase.</p>
+        <p>The record does not tell us why Naomi reached out, what she hoped would happen,
+        or why Alex did not start a recorded session during that period.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="h-limits">
+      <div class="qhead"><span class="qnum" aria-hidden="true">04</span>
+        <h2 id="h-limits">What we can't know from this record</h2></div>
+
+      <div class="limits">
+        <p>The record cannot establish:</p>
+        <ul>
+          <li>what Naomi was feeling when she reached out.</li>
+          <li>whether the contact was wanted or unwelcome.</li>
+          <li>why Alex did not start a recorded session.</li>
+          <li>whether either person communicated outside the recorded material.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-prompt">
+      <div class="qhead"><span class="qnum" aria-hidden="true">05</span>
+        <h2 id="h-prompt">Reflection prompt</h2></div>
+
+      <div class="prompt">
+        <p>When one person is doing most of the reaching out, what would make the next
+        exchange feel more balanced and clear?</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="h-dist">
+      <div class="qhead"><span class="qnum" aria-hidden="true">06</span>
+        <h2 id="h-dist">A useful distinction</h2></div>
+
+      <div class="closing">
+        <p>Reaching out can mean many different things:</p>
+        <ul>
+          <li>wanting to repair the connection.</li>
+          <li>wanting an answer.</li>
+          <li>wanting to clarify what happened.</li>
+          <li>wanting to check whether contact is still possible.</li>
+        </ul>
+        <p>The record shows who started the exchanges. It does not tell us which meaning
+        applied.</p>
+      </div>
+    </section>
+
+    <footer>
+      <b>Source:</b> Nalex interaction record<br>
+      <b>Scope:</b> Recorded sessions across Baseline, Conflict, Silence, and Aftermath
+      (2026-04-01 to 2026-07-21)<br>
+      <b>Note:</b> Missing periods are not treated as evidence that nothing happened.
+      <br><br>
+      Figures are read directly from the prepared record set and are not recalculated
+      here. Interpretive labels applied by earlier analysis are deliberately not shown.
+      Paired with <b>Alex — How conversations end</b>, which uses the same layout and
+      the same colours for each person.
+    </footer>
+  </main>
+</div>
+
+</body>
+</html>

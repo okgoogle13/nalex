@@ -1,0 +1,1 @@
+bash: /Users/okgoogle13/.pyenv/shims/python: Operation not permitted

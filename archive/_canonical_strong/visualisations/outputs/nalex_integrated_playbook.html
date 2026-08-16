@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nalex — Data-Driven Playbook</title>
+<style>
+  :root {
+    /* M3 Dark Mode Expressive Tokens - Calming & Grounded */
+    --md-sys-color-background: #0F1512;
+    --md-sys-color-on-background: #E1E3DF;
+    
+    --md-sys-color-surface: #19211C;
+    --md-sys-color-surface-variant: #3F4943;
+    --md-sys-color-on-surface: #E1E3DF;
+    --md-sys-color-on-surface-variant: #BFC9C2;
+    
+    --md-sys-color-primary: #82D3A0;
+    --md-sys-color-on-primary: #00391C;
+    --md-sys-color-primary-container: #00522B;
+    --md-sys-color-on-primary-container: #9DF0BB;
+    
+    /* Persona Tokens (Softer, harmonious tones) */
+    --naomi-surface: #2D3A44;
+    --naomi-on-surface: #D3E4F0;
+    --naomi-border: #4A6070;
+    
+    --alex-surface: #38342D;
+    --alex-on-surface: #EFE4D3;
+    --alex-border: #6B6252;
+
+    --radius-huge: 32px;
+    --radius-large: 24px;
+    --radius-medium: 16px;
+    --radius-pill: 9999px;
+    
+    --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    
+    /* Playful Spring Animation */
+    --transition-spring: 0.6s cubic-bezier(0.2, 0.8, 0.2, 1);
+    --transition-fast: 0.2s ease-out;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background-color: var(--md-sys-color-background);
+    color: var(--md-sys-color-on-background);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px 120px 20px;
+    overflow-x: hidden;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 80px;
+  }
+
+  /* --- Masthead --- */
+  header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  header h1 {
+    font-size: 3rem;
+    color: var(--md-sys-color-primary);
+    margin-bottom: 16px;
+    letter-spacing: -0.03em;
+    font-weight: 800;
+  }
+  header p {
+    font-size: 1.15rem;
+    color: var(--md-sys-color-on-surface-variant);
+    max-width: 650px;
+    margin: 0 auto;
+  }
+
+  /* --- Interactive Flip Cards --- */
+  .card-scene {
+    perspective: 1200px;
+    margin-bottom: 40px;
+  }
+  .flip-card {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform var(--transition-spring);
+  }
+  
+  .flip-card-inner {
+    display: grid;
+    transform-style: preserve-3d;
+    transition: transform var(--transition-spring);
+    border-radius: var(--radius-huge);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+  }
+  .flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .card-face {
+    grid-area: 1 / 1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background: var(--md-sys-color-surface);
+    border: 1px solid var(--md-sys-color-surface-variant);
+    border-radius: var(--radius-huge);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-back {
+    transform: rotateY(180deg);
+    cursor: default;
+  }
+
+  /* --- Front of Card Styling --- */
+  .front-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    min-height: 250px;
+  }
+  .front-title h2 {
+    font-size: 2rem;
+    margin: 0 0 16px 0;
+    color: var(--md-sys-color-on-surface);
+  }
+  .front-title p {
+    font-size: 1.1rem;
+    color: var(--md-sys-color-on-surface-variant);
+    margin: 0;
+    max-width: 90%;
+  }
+  .btn-action {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--md-sys-color-primary-container);
+    color: var(--md-sys-color-on-primary-container);
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: background var(--transition-fast), transform var(--transition-fast);
+    margin-top: 32px;
+  }
+  .btn-action:hover {
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    transform: translateY(-2px);
+  }
+
+  /* --- Back of Card Styling (The Playbook) --- */
+  .back-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+  .btn-close {
+    background: transparent;
+    color: var(--md-sys-color-on-surface-variant);
+    border: 1px solid var(--md-sys-color-surface-variant);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    font-weight: 600;
+    transition: var(--transition-fast);
+  }
+  .btn-close:hover {
+    background: var(--md-sys-color-surface-variant);
+    color: var(--md-sys-color-on-surface);
+  }
+  
+  .img-container {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .img-container img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .interpretation-box {
+    background: rgba(255,255,255,0.05);
+    border-left: 4px solid var(--md-sys-color-primary);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .interpretation-box strong {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    color: rgba(255,255,255,0.7);
+  }
+  .interpretation-box p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #FFF;
+  }
+
+  @media (max-width: 768px) {
+    header h1 { font-size: 2.2rem; }
+    .card-face { padding: 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Data-Driven Playbook</h1>
+    <p>A unified view combining interactive insights with evidence-based data visualizations.</p>
+  </header>
+
+  <!-- Card 1: Volume -->
+  <div class="card-scene">
+    <div class="flip-card" id="card-1">
+      <div class="flip-card-inner">
+        <!-- Front -->
+        <div class="card-face card-front" onclick="toggleCard('card-1')">
+          <div class="front-content">
+            <div class="front-title">
+              <h2>Volume &amp; Turn Length</h2>
+              <p>One of us tends to say more per turn; the other says it in shorter bursts, with rare long exceptions.</p>
+            </div>
+            <button class="btn-action">Flip to view evidence</button>
+          </div>
+        </div>
+        <!-- Back -->
+        <div class="card-face card-back">
+          <div class="back-header">
+            <h3 style="margin:0; font-size: 1.2rem; color: var(--md-sys-color-primary);">Turn Length by Phase</h3>
+            <button class="btn-close" onclick="toggleCard('card-1')">Close View</button>
+          </div>
+          
+          <div class="img-container">
+            <img src="volume_chart.svg" alt="Median words per turn across phases: Naomi 44.5 in Baseline, 39.5 in Conflict, no exchanges in Silence, 66.0 in Aftermath; Alex 31.5 in Baseline, 21.0 in Conflict, no exchanges in Silence, 26.0 in Aftermath.">
+          </div>
+          
+          <div class="interpretation-box">
+            <strong>Interpretation</strong>
+            <p>It often looks like two different settings running at once: length building on one side, and on the other a typical turn that shrinks by about a third going into the Conflict and never comes back up. Averages hide this &mdash; by the mean, Alex&rsquo;s output looks flat across all three windows, because a handful of very long turns hold the average up over a much shorter floor.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 2: Latency -->
+  <div class="card-scene">
+    <div class="flip-card" id="card-2">
+      <div class="flip-card-inner">
+        <!-- Front -->
+        <div class="card-face card-front" onclick="toggleCard('card-2')">
+          <div class="front-content">
+            <div class="front-title">
+              <h2>Reply Speed</h2>
+              <p>After the conflict, one of us got much faster to reply. The other stayed roughly where he already was.</p>
+            </div>
+            <button class="btn-action">Flip to view evidence</button>
+          </div>
+        </div>
+        <!-- Back -->
+        <div class="card-face card-back">
+          <div class="back-header">
+            <h3 style="margin:0; font-size: 1.2rem; color: var(--md-sys-color-primary);">Reply Speed by Phase</h3>
+            <button class="btn-close" onclick="toggleCard('card-2')">Close View</button>
+          </div>
+          
+          <div class="img-container">
+            <img src="latency_chart.svg" alt="Median reply speed in seconds across phases: Naomi 484s in Baseline, 112–120s range in Conflict, no exchanges in Silence, 169s in Aftermath; Alex 101s in Baseline, 70–94s range in Conflict, no exchanges in Silence, 122s in Aftermath.">
+          </div>
+          
+          <div class="interpretation-box">
+            <strong>Interpretation</strong>
+            <p>The larger movement here is not that one person is faster &mdash; that was already true. It&rsquo;s that roughly eight minutes became roughly two. A change that size is consistent with the channel becoming something checked rather than answered on your own clock. Whatever else the conflict involved, one visible cost is the ability to put the phone down.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3: Questions -->
+  <div class="card-scene">
+    <div class="flip-card" id="card-3">
+      <div class="flip-card-inner">
+        <!-- Front -->
+        <div class="card-face card-front" onclick="toggleCard('card-3')">
+          <div class="front-content">
+            <div class="front-title">
+              <h2>Unanswered Questions</h2>
+              <p>Both of us ask a great many questions. A lot of them don&rsquo;t get answered directly &mdash; on both sides.</p>
+            </div>
+            <button class="btn-action">Flip to view evidence</button>
+          </div>
+        </div>
+        <!-- Back -->
+        <div class="card-face card-back">
+          <div class="back-header">
+            <h3 style="margin:0; font-size: 1.2rem; color: var(--md-sys-color-primary);">Questions Unanswered (Conflict Phase)</h3>
+            <button class="btn-close" onclick="toggleCard('card-3')">Close View</button>
+          </div>
+          
+          <div class="img-container">
+            <img src="unanswered_chart.svg" alt="Conflict phase unanswered questions: Naomi 8 of 39 documented (31 answered), Alex 15 of 44 documented (29 answered); 7 each under 10-minute timing rule.">
+          </div>
+          
+          <div class="interpretation-box">
+            <strong>Interpretation</strong>
+            <p>On this measure, neither person is the one who won&rsquo;t engage. Both are present at high volume and neither is answering. One exchange holds the whole shape: <i>"How am I gaslighting me? Tell me how. Explain to me how."</i> met with <i>"No, but can you just answer my questions from earlier?"</i> &mdash; each declining on the grounds that the other declined first.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleCard(cardId) {
+    const card = document.getElementById(cardId);
+    if (card) {
+      card.classList.toggle('is-flipped');
+    }
+  }
+</script>
+</body>
+</html>

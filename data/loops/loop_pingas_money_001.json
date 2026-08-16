@@ -1,0 +1,49 @@
+{
+  "interaction_loop_id": "loop_pingas_money_001",
+  "semantic_loop_label": "Pingas Money",
+  "participants": [
+    "Naomi",
+    "Alex"
+  ],
+  "core_topic": "",
+  "loop_start_event_id": "G106",
+  "loop_end_event_id": "G155",
+  "events": [
+    {
+      "event_ids": [
+        "G106"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-04-02 01:49:46",
+      "excerpt": "I'm not upset. I was just like, yeah, I was just saying, like, the way that we did it, we ended up in a good position with the pingas being cheap because I had, like, a mad presale, which I was happy to, and I am happy to, like, share it, but, um, yeah. I was just like, well, I mean, you could maybe do me one more for 350, but it's all good. Like, it doesn't not matter at the end of the day. It's just fucking drugs.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G110"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-04-02 01:50:40",
+      "excerpt": "That was your suggestion to share it it was literally yours, and I was one who's like no you in fact You were telling me I should just take all the profit. I was like no let's Split it. Let's just do this like pay it off, you know",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G155"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-04-02 01:51:11",
+      "excerpt": "Yeah, it was my suggestion because I wanted everyone to be even Stevens. And you always help me out. I'm not upset about how it's gone down.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}

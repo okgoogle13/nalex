@@ -1,0 +1,193 @@
+{
+  "interaction_loop_id": "loop_keyboard_warrior_001",
+  "semantic_loop_label": "Keyboard Warrior",
+  "participants": [
+    "Naomi",
+    "Alex"
+  ],
+  "core_topic": "",
+  "loop_start_event_id": "B049-B069",
+  "loop_end_event_id": "B049-B069",
+  "events": [
+    {
+      "event_ids": [
+        "B049"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-26 21:57:59",
+      "excerpt": "I have a question. Maybe you can talk about it when you get back, but I need to say it now. It's on my mind. Why did you ever, like, even mention the sexual tension? Then. I'm so confused. Why?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B053"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-26 21:59:30",
+      "excerpt": "Reacted with laughing emoji.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "text_message"
+    },
+    {
+      "event_ids": [
+        "B054"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-26 22:00:00",
+      "excerpt": "Pizza just got here",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "text_message"
+    },
+    {
+      "event_ids": [
+        "B055"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-26 22:01:02",
+      "excerpt": "Alex, I've only just met you. It's still early days. I barely know you. Like, if you're talking like early days, like three months ago, that's early day. Like, I haven't known you for that long. But also, what do you mean it needed to be addressed? What part of it needed to be addressed?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B056"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-26 22:03:28",
+      "excerpt": "Like, the only thing that makes sense to me is that you've been gaslighting me this whole time. It's the only thing that makes sense right now. And I don't know why. Why?",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B060"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-26 23:23:00",
+      "excerpt": "I suppose I'll go fuck myself then",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "text_message"
+    },
+    {
+      "event_ids": [
+        "B061"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-26 23:32:00",
+      "excerpt": "why has this come up after I leave when we had so many opportunities to talk about this in person.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "text_message"
+    },
+    {
+      "event_ids": [
+        "B062"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-26 23:54:50",
+      "excerpt": "I brought it up because I was looking at moving into Nishant's place. And if we didn't discuss this, that could have been a really fucking uncomfortable scenario. So things needed to be sorted out because you obviously have one thing in your mind and I've got a different thing in my mind. And if there was going to be a chance where this living arrangement was going to work, it needed to be addressed rather than going in there with some aloof idea that fucking there's more going on here than there is. I didn't create this. You created this. And if you can't see that, then I don't know what the fuck the point of me continuing this conversation is. So, I'll speak to you later.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B063"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-26 23:56:48",
+      "excerpt": "I had suspicions. I didn't want to sound like a conceited dick, alright? And I wasn't the only one that had fucking concerns. So... Yeah, maybe I fucking withheld some stuff. Not just for my fucking sake, but for other people's sake as well. And... Like, the fucking argument is over as far as I'm concerned. I'm done talking about this. To do it when we were hanging out just moments ago, I asked you multiple times, what's up, are you okay, and you're like, yeah, yeah, no, I'm fine, I'm fine, I'm fine, but then the second I leave, you're a fucking keyboard warrior, so, yeah, I'm fucking, I'm right, I'm good, I'll speak to you later.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B064"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-26 23:56:56",
+      "excerpt": "What do you mean? Can't see? What do you mean? I created this. I did not create this, dude. You did. You started this. I was chilling. I was chilling. I'm still going to be chilling. I'll continue to chill. But you are not chill right now. And you are not cool.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B065"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-26 23:57:16",
+      "excerpt": "And you want to talk about gaslighting. You've been gaslighting me this whole fucking time. Like saying, I'm not being clear, I'm not doing this, ba-ba-ba-ba-ba. You're fucking gaslighting me, alright? So, thank you, but no thank you.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B066"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-26 23:58:33",
+      "excerpt": "Yeah, well, I clearly wasn't okay, and I'm clearly still not okay, and I needed time to think about it, and I needed to listen to your fucking voice messages, which you didn't give me a chance to listen to. You literally sent me three two-minute voice messages and then called me on the phone and asked me to open the gate for you, while I'm, like, got other shit going on. You know, and you're expecting me to, like, be like, oh, like, oh, I'm just, I'm prepared to, you know, now talk about this, like, really hectic shit that I'm being, like, fully, like, you know, had the rug pulled out from underneath me. It feels like.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B067"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-26 23:59:43",
+      "excerpt": "How has the rug been pulled out from underneath you? And how is this fully hectic shit? It's a miscommunication. It's two people feeling different ways. It's not that complicated.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B068"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-06-26 23:59:54",
+      "excerpt": "How am I gaslighting me? Tell me how. Explain to me how. I need to have the feedback.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "B069"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-06-27 00:00:29",
+      "excerpt": "No, but can you just answer my questions from earlier? Like, you literally haven't answered a single fucking one of my questions. You're just blowing me off right now. That's bullshit. You don't do that to people.",
+      "tags": [],
+      "privacy_level": "standard",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "artifact_bundle_id": "bundle_house_visit_001",
+  "audience": "alex_reflection",
+  "scope_note": "Unprompted house visit, closed doors, and resulting discomfort",
+  "source_limitations_summary": "Audio transcripts lack tone, pacing, and inflection markers which are crucial for interpreting hostility vs. earnestness.",
+  "privacy_controls": "private_evidence",
+  "rendering_status": "ready",
+  "evidence_samples": [
+    {
+      "eid": "G042",
+      "speaker": "Naomi",
+      "quote_or_paraphrase": "You invited me to go for a ride... Then you brought me to your house, which I didn't ask to go to... put on fucking music, closed the door, and showed me pictures... That was not the situation to invite me to your home.",
+      "why_it_matters": "Explicitly identifies being brought to the house, the door closing, and the timing as inappropriate and upsetting.",
+      "theme": "Boundary Statement",
+      "source_limits": {
+        "requires_audio_review": false,
+        "source_quality": "voice_transcript",
+        "privacy_level": "private_evidence"
+      }
+    },
+    {
+      "eid": "G181",
+      "speaker": "Alex",
+      "quote_or_paraphrase": "I don't really remember showing you baby photos. I remember showing you my paintings... I coerced you into leaving your apartment because I thought maybe getting out... would be healthy... shouldn't have blown a pipe... yes, it's understandable that you're upset because rejection's not nice.",
+      "why_it_matters": "Explains the underlying motivation for the visit was to help her get out of her apartment for her health, but acknowledges she is upset over 'rejection'.",
+      "theme": "Explanation of Intent",
+      "source_limits": {
+        "requires_audio_review": false,
+        "source_quality": "voice_transcript",
+        "privacy_level": "private_evidence"
+      }
+    }
+  ],
+  "observation_summary": [
+    "Naomi states an explicit boundary around being taken to Alex's house unprompted and having the door closed.",
+    "Alex contests the memory of baby photos, explaining his intent was to help her get out of her apartment for her health.",
+    "Alex acknowledges her upset, but attributes it to 'rejection' rather than the boundary violation stated by Naomi."
+  ],
+  "reflection_prompts": [
+    "What might Naomi have needed to feel safe when being invited to your home?",
+    "How does your explanation of intent (wanting to help her health) align or misalign with her stated boundary?",
+    "The acknowledgment points to 'rejection' as the source of upset. How does this compare to the boundary she expressed?"
+  ],
+  "counterevidence_or_limits": [
+    "The transcript's wording around 'coerced' implies force, but might be a colloquialism or transcription error.",
+    "It is unclear if the acknowledgment regarding 'rejection' applies directly to the house-visit concern or a separate underlying issue."
+  ]
+}

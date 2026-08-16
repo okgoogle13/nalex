@@ -1,0 +1,32 @@
+{
+  "_contract_note": "Target shape for reflective schema. Not yet populated with actual event bundles.",
+  "artifact_bundle_id": "string",
+  "audience": "string",
+  "scope_note": "string",
+  "source_limitations_summary": "string",
+  "privacy_controls": "string",
+  "rendering_status": "string",
+  "evidence_samples": [
+    {
+      "eid": "string",
+      "speaker": "string",
+      "quote_or_paraphrase": "string",
+      "why_it_matters": "string",
+      "theme": "string",
+      "source_limits": {
+        "requires_audio_review": true,
+        "source_quality": "string",
+        "privacy_level": "string"
+      }
+    }
+  ],
+  "observation_summary": [
+    "string"
+  ],
+  "reflection_prompts": [
+    "string"
+  ],
+  "counterevidence_or_limits": [
+    "string"
+  ]
+}

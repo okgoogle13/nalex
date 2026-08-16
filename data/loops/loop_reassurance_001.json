@@ -1,0 +1,55 @@
+{
+  "interaction_loop_id": "loop_reassurance_001",
+  "semantic_loop_label": "Fault Admission and Reassurance",
+  "participants": [
+    "Naomi",
+    "Alex"
+  ],
+  "core_topic": "Discussion regarding a broken or thin pipe, fault admission, and de-escalation",
+  "loop_start_event_id": "G148",
+  "loop_end_event_id": "G092",
+  "events": [
+    {
+      "event_ids": [
+        "G148"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-04-02T00:17:15Z",
+      "excerpt": "What do you want me to do?... Fucking not my fault. Actually, it is my fault. Your pipe is thin.",
+      "tags": [
+        "uses_heightened_or_confrontational_language"
+      ],
+      "privacy_level": "private_evidence",
+      "evidence_status": "quoted",
+      "source_type": "transcript_with_known_errors"
+    },
+    {
+      "event_ids": [
+        "G149"
+      ],
+      "speaker": "Naomi",
+      "timestamp": "2026-04-02T00:17:46Z",
+      "excerpt": "what do you want? I can do something. I could go over there or something... how can I help?",
+      "tags": [
+        "offers_specific_repair_step"
+      ],
+      "privacy_level": "private_evidence",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    },
+    {
+      "event_ids": [
+        "G092"
+      ],
+      "speaker": "Alex",
+      "timestamp": "2026-04-02T00:19:08Z",
+      "excerpt": "I mean, you know I'm kind of teasing, right? I'm just being a bit cheeky... don't feel like you have to just because I was giving you some shit. It's all good.",
+      "tags": [
+        "responds_to_concern_with_explanation_of_intent"
+      ],
+      "privacy_level": "private_evidence",
+      "evidence_status": "quoted",
+      "source_type": "voice_transcript"
+    }
+  ]
+}
