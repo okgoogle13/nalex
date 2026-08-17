@@ -1,0 +1,1280 @@
+[
+  {
+    "session": "S-CONF-1",
+    "type": "full_session",
+    "events": [
+      {
+        "eid": "A001+A002",
+        "t": "2026-06-23 00:45:00",
+        "s": "Alex",
+        "txt": "Hey dude I just wanted to touch base real quick about the me avoiding Ned thing.. Did you think I was avoiding coming around because you guys have your little thing going on? / Because I definitely wasn't and wouldn't do that. Cuz like, we are just friends right"
+      },
+      {
+        "eid": "A003",
+        "t": "2026-06-23 00:46:00",
+        "s": "Naomi",
+        "txt": "Totally agree! 😊"
+      },
+      {
+        "eid": "A004",
+        "t": "2026-06-23 00:47:00",
+        "s": "Alex",
+        "txt": "okay Coolio I was just getting some super weird vibes from you today and still don't understand the bed thing"
+      },
+      {
+        "eid": "A005",
+        "t": "2026-06-23 00:48:00",
+        "s": "Naomi",
+        "txt": "What bed thing?"
+      },
+      {
+        "eid": "A006+A007",
+        "t": "2026-06-23 00:48:00",
+        "s": "Alex",
+        "txt": "ned** / one day I'll learn to proof read"
+      },
+      {
+        "eid": "A008",
+        "t": "2026-06-23 00:53:00",
+        "s": "Alex",
+        "txt": "like if you don't wanna talk about it that's fine it just confused me why you thought I'd be avoiding him 🤷‍♂️"
+      },
+      {
+        "eid": "A009",
+        "t": "2026-06-23 00:56:00",
+        "s": "Naomi",
+        "txt": "Wdym?"
+      },
+      {
+        "eid": "A010",
+        "t": "2026-06-23 00:57:00",
+        "s": "Alex",
+        "txt": "you said you thought I was avoiding coming around because Ned was staying with you but I like Ned I still don't understand where ... [remainder hidden by the input bar]"
+      },
+      {
+        "eid": "G008",
+        "t": "2026-06-23 01:02:58",
+        "s": "Alex",
+        "txt": "No, I know you're not trying to make things weird like it's not what I mean. I just yeah, I was trying to clarify What the fuck is going on? I was confused"
+      },
+      {
+        "eid": "G054",
+        "t": "2026-06-23 01:06:36",
+        "s": "Alex",
+        "txt": "always, but don't feel like Yeah, I mean we can change the subject, but yes, I do always want to sell that"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-2",
+    "type": "full_session",
+    "events": [
+      {
+        "eid": "A012",
+        "t": "2026-06-23 02:57:00",
+        "s": "Naomi",
+        "txt": "I'm confused hun"
+      },
+      {
+        "eid": "A013",
+        "t": "2026-06-23 02:58:00",
+        "s": "Alex",
+        "txt": "I don't think I could be clearer"
+      },
+      {
+        "eid": "A014",
+        "t": "2026-06-23 03:10:00",
+        "s": "Naomi",
+        "txt": "↳A013 That's the least clear thing you've said. I thought you might feel awkward coming over while Ned was here."
+      },
+      {
+        "eid": "A015",
+        "t": "2026-06-23 03:12:00",
+        "s": "Alex",
+        "txt": "yes but why would I feel awkward about that?"
+      },
+      {
+        "eid": "A016",
+        "t": "2026-06-23 03:27:00",
+        "s": "Alex",
+        "txt": "??"
+      },
+      {
+        "eid": "A017",
+        "t": "2026-06-23 03:27:00",
+        "s": "Naomi",
+        "txt": "That's the most direct and clear thing you've said. I just figured it might feel strange given what we talked about before. Does it?"
+      },
+      {
+        "eid": "A018+A019",
+        "t": "2026-06-23 03:28:00",
+        "s": "Alex",
+        "txt": "talked about before? / I feel like I've been pretty straight up but okay"
+      },
+      {
+        "eid": "A020",
+        "t": "2026-06-23 03:30:00",
+        "s": "Alex",
+        "txt": "↳A001+A002 this isn't clear?"
+      },
+      {
+        "eid": "A021",
+        "t": "2026-06-23 03:30:00",
+        "s": "Alex",
+        "txt": "↳A010 this wasn't clear?"
+      },
+      {
+        "eid": "A022",
+        "t": "2026-06-23 03:32:00",
+        "s": "Alex",
+        "txt": "↳A017 this isn't clear..."
+      },
+      {
+        "eid": "A023",
+        "t": "2026-06-23 03:33:00",
+        "s": "Alex",
+        "txt": "I feel like I'm being gaslite right now"
+      },
+      {
+        "eid": "A024",
+        "t": "2026-06-23 03:36:00",
+        "s": "Naomi",
+        "txt": "I'm not questioning your clarity about Ned, I was referring to a different conversation we had, I think this isn't worth getting into over text"
+      },
+      {
+        "eid": "A025",
+        "t": "2026-06-23 03:36:00",
+        "s": "Alex",
+        "txt": "we have had a thousand conversation Naomi.... your the other not being clear but okay I get the not hashing this out via text"
+      },
+      {
+        "eid": "A026",
+        "t": "2026-06-23 03:48:00",
+        "s": "Naomi",
+        "txt": "We have had a thousand conversations, but I think you know which one I'm referring to."
+      },
+      {
+        "eid": "A027",
+        "t": "2026-06-23 03:50:00",
+        "s": "Alex",
+        "txt": "omg I obviously do not can you be clearer?!"
+      },
+      {
+        "eid": "A028",
+        "t": "2026-06-23 03:50:00",
+        "s": "Naomi",
+        "txt": "Anyways g'night Mr Magoo I need to sleep 3 hours ago"
+      },
+      {
+        "eid": "A029+A030",
+        "t": "2026-06-23 03:50:00",
+        "s": "Alex",
+        "txt": "goodnight / sleep well"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-3",
+    "type": "full_session",
+    "events": [
+      {
+        "eid": "B001",
+        "t": "2026-06-26 11:30:18",
+        "s": "Alex",
+        "txt": "Is it kind of fucked up that I can like eat one or two and then just function normally throughout my day?"
+      },
+      {
+        "eid": "B002",
+        "t": "2026-06-26 11:48:00",
+        "s": "Alex",
+        "txt": "you still with the Irish lad"
+      },
+      {
+        "eid": "B003",
+        "t": "2026-06-26 12:09:00",
+        "s": "Alex",
+        "txt": "??"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-4",
+    "type": "full_session",
+    "events": [
+      {
+        "eid": "B004",
+        "t": "2026-06-26 13:34:09",
+        "s": "Alex",
+        "txt": "[unclear/no clear speech detected]"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-5",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B005+B006",
+        "t": "2026-06-26 15:50:00",
+        "s": "Naomi",
+        "txt": "Het / So sorry I slept the whole day"
+      },
+      {
+        "eid": "B007",
+        "t": "2026-06-26 15:50:20",
+        "s": "Naomi",
+        "txt": "↳B002 Nah he left forever ago"
+      },
+      {
+        "eid": "B008",
+        "t": "2026-06-26 15:51:24",
+        "s": "Alex",
+        "txt": "This motherfucker right here."
+      },
+      {
+        "eid": "B009+B010+B011+B012+B013",
+        "t": "2026-06-26 15:52:00",
+        "s": "Naomi",
+        "txt": "Ive seen like 40 ppl in the last two days / Ned randomly came over this morning he just left, he basically came for the day while I slept the entire day then left and went home / Aa I woke up / Wanna come over? / Friday night"
+      },
+      {
+        "eid": "B014",
+        "t": "2026-06-26 15:57:06",
+        "s": "Alex",
+        "txt": "Well, that's why I was hitting you up before, because I was going to come over this morning. And then you disappeared. So now I'm standing at a table."
+      },
+      {
+        "eid": "B015",
+        "t": "2026-06-26 15:57:28",
+        "s": "Alex",
+        "txt": "Also, we've got to talk about this thing because it's frustrating me."
+      },
+      {
+        "eid": "B016+B017+B018",
+        "t": "2026-06-26 16:02:00",
+        "s": "Alex",
+        "txt": "you know what I'm saying? / also where Nishant / he wanted to help with this wood work"
+      },
+      {
+        "eid": "B019",
+        "t": "2026-06-26 16:02:33",
+        "s": "Naomi",
+        "txt": "Yeah, I didn't realize, you were gonna be so long. I was kind of hoping, like, when you, I just sort of thought, I don't know, but I'm a goose, so don't worry. Yeah, I know what you're saying. I'm sorry that you're feeling frustrated. No, Nishant snuck off with the Irish goodbye last night. So I imagine that they are next door. Are you okay?"
+      },
+      {
+        "eid": "B020",
+        "t": "2026-06-26 16:03:44",
+        "s": "Alex",
+        "txt": "Yeah, I'm good. I'm good. I just feel like there's been some major miscommunications between yourself and myself. And I just want to clear that up before we end up in a weirder place somehow, if that was possible."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-5",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B024",
+        "t": "2026-06-26 16:07:00",
+        "s": "Alex",
+        "txt": "Video/media clip visible in screenshot; no transcript."
+      },
+      {
+        "eid": "B025",
+        "t": "2026-06-26 16:08:19",
+        "s": "Alex",
+        "txt": "I'll start packing down my shit here and head around to you. If Nishant is in the land of the living and wants to do this sanding and stuff, that'd be good. If not, it's all good. And I will not bring a tabletop."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-5",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B027",
+        "t": "2026-06-26 16:12:00",
+        "s": "Naomi",
+        "txt": "Nishant will be awake later. If they are awake now, they're just sort of starting to wake up probably. I haven't heard them banging around or anything. So maybe you should just come over and skip the table and then you can do that another day with him. Oh, I don't know. Whatever. I just want you to come around, but it's okay. Because I want to finish this conversation once and for all."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-5",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B029",
+        "t": "2026-06-26 16:13:35",
+        "s": "Alex",
+        "txt": "Skip the table? What is this skip the table shit? I got like, not even halfway through it, I got like a third through it. And then my belt, and the fucking belt was like, just smooth. It wasn't even sandpaper. And then my orbital sanded, battery fucking died. So it's just been a hiccup after hiccup over here."
+      },
+      {
+        "eid": "B030",
+        "t": "2026-06-26 16:14:08",
+        "s": "Naomi",
+        "txt": "Nope. No love triangle. Well, yep. I don't know what I'm doing with my life, to be honest. I'm a complete mess. I'm very lonely. And, I think I'll be alone forever. Most likely."
+      },
+      {
+        "eid": "B031",
+        "t": "2026-06-26 16:16:47",
+        "s": "Alex",
+        "txt": "Okay, that is a ridiculous notion to think that you will be alone forever. Just kill that shit here and now. Because that's not true. Not true. And I'm sorry that you're alone there. I'm sorry you don't know what you're doing with your life. I don't know if this brings you any comfort, but nobody knows what they're doing with their lives. Everybody is just faking it until they're making it. And loneliness is something that I think will always be with you until you learn to enjoy your own company. Sounds really fucking cheesy. But you shouldn't draw happiness from other people and then how other people feel about you because you should like be confident that you're a fucking cool person with lots to offer which you are and acting out of like loneliness and fear essentially is not going to help it's going to keep getting you into relationships with like people like Freya who I know you love but it's not right for you because she's mentally unwell and you're definitely the sort of person who just Sort of gives it all and just allows themselves to sort of be treated like shit because they're lonely and stuff."
+      },
+      {
+        "eid": "B032",
+        "t": "2026-06-26 16:19:52",
+        "s": "Naomi",
+        "txt": "I'm not acting out of loneliness and fear. You're incorrect there. Sorry about that one. Wrong. I'm not afraid. Not afraid of anything. Really? I'm lonely because I'm alone. I'm not lonely because I'm lonely. I've always been alone. Always will be, always was, always will be, it's just how the cookie crumbles sometimes."
+      },
+      {
+        "eid": "B033",
+        "t": "2026-06-26 16:22:42",
+        "s": "Alex",
+        "txt": "Look, I'm getting myself packed up and I'm going to come past and hang out. We can discuss this further. Because I think I'm not wrong. I don't think I'm wrong. But story of my life. We come into this world alone we leave alone the only sustainable real happiness that we've got in this world comes from us, from within like yeah, I don't know we'll discuss more in person I think, ultimately, fear and love are, like, same thing. There's just a really fine line between the two. And it's like love and hate, you know what I mean? It's all... It's all part of the same fucking coin really, there's different sides of it, and the other thing that separates that coin is a thin piece of metal."
+      },
+      {
+        "eid": "B034",
+        "t": "2026-06-26 16:22:59",
+        "s": "Alex",
+        "txt": "Also, I just found out that the little monitors that I bought, which are also fucking really good, are Bluetooth."
+      },
+      {
+        "eid": "B035",
+        "t": "2026-06-26 16:24:00",
+        "s": "Naomi",
+        "txt": "My body remembers faster than my heart hopes"
+      },
+      {
+        "eid": "B036",
+        "t": "2026-06-26 16:24:14",
+        "s": "Alex",
+        "txt": "Also, I kind of want to ride my bike over, but I've low-key got, like, pretty fucking gnarly hemorrhoids. And I feel like it's a bad idea. But the idea is I haven't got it. Oh, fuck, I'm going to drive."
+      },
+      {
+        "eid": "B037",
+        "t": "2026-06-26 16:25:24",
+        "s": "Alex",
+        "txt": "I don't know what that means. I'm sure it's very profound, but I'm a simpleton."
+      },
+      {
+        "eid": "B038",
+        "t": "2026-06-26 16:26:16",
+        "s": "Naomi",
+        "txt": "You're preaching to the wrong crowd. I've been through all of that. I'm not talking about, like, you don't understand. It's okay, though. You don't need to understand."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-5",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B040",
+        "t": "2026-06-26 16:30:20",
+        "s": "Alex",
+        "txt": "I've got to disagree there. I think there's plenty of people that are in love with the things that they're afraid of. And I think fear and hate are one and the same. So if love and hate share a line, so do fear and hate."
+      },
+      {
+        "eid": "B041",
+        "t": "2026-06-26 16:31:33",
+        "s": "Alex",
+        "txt": "Hence the term fear and loathing."
+      },
+      {
+        "eid": "B042",
+        "t": "2026-06-26 16:32:41",
+        "s": "Alex",
+        "txt": "And I do get it. I do... Well, I think I get it. Like you locked yourself in a room for 10 years and made all your friends online and probably a bit of an outcast most of your life. But you'd be surprised how many people are outcasts for one. And also while you might like you've got more people around you these days that want to spend time with you and hang out with you and fucking do stuff but I feel like you're locking yourself in the room again even though there's people out there going like fucking don't do it don't do it and I get that fucking dealing and being home is definitely helpful, but it shouldn't be the be-all end-all."
+      },
+      {
+        "eid": "B043",
+        "t": "2026-06-26 16:47:09",
+        "s": "Alex",
+        "txt": "I guess my major confusion came from the whole me avoiding Ned thing. I still don't really understand where that came from. But, anyway, I'm in the car. I'm on the way to yours. I hope that's okay. And I was hoping I could park in the car, in the car house because I got all my shit in the back and there's like laptops and shit in here and I've seen the riffraff that hang at the back of that fucking place."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-5",
+    "type": "suffix",
+    "events": [
+      {
+        "eid": "C001",
+        "t": "2026-06-26 17:08:00",
+        "s": "System",
+        "txt": "Incoming voice call visible above the July 4/5 conversation; not part of the local unknown2 audio set."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-6",
+    "type": "full_session",
+    "events": [
+      {
+        "eid": "B048",
+        "t": "2026-06-26 18:20:00",
+        "s": "Naomi",
+        "txt": "Jiddu krishnamurti"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B050+B051+B052",
+        "t": "2026-06-26 21:59:00",
+        "s": "Alex",
+        "txt": "because it needed to be addressed / I don't like having the elephant in the room / but also once again that was early days"
+      },
+      {
+        "eid": "B053",
+        "t": "2026-06-26 21:59:30",
+        "s": "Alex",
+        "txt": "Reacted with laughing emoji."
+      },
+      {
+        "eid": "B054",
+        "t": "2026-06-26 22:00:00",
+        "s": "Naomi",
+        "txt": "Pizza just got here"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B057+B058+B059",
+        "t": "2026-06-26 22:24:00",
+        "s": "Naomi",
+        "txt": "You're a lovely person... \"But there's a big step between like a romance, I don't know, more than thing, yeah\" > What does that even mean / Why is it - you're a lovely person, but, but what? and why is but related to me? / There's something fishy here and it's not my fish"
+      },
+      {
+        "eid": "B060",
+        "t": "2026-06-26 23:23:00",
+        "s": "Naomi",
+        "txt": "I suppose I'll go fuck myself then"
+      },
+      {
+        "eid": "B061",
+        "t": "2026-06-26 23:32:00",
+        "s": "Alex",
+        "txt": "why has this come up after I leave when we had so many opportunities to talk about this in person."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B064",
+        "t": "2026-06-26 23:56:56",
+        "s": "Naomi",
+        "txt": "What do you mean? Can't see? What do you mean? I created this. I did not create this, dude. You did. You started this. I was chilling. I was chilling. I'm still going to be chilling. I'll continue to chill. But you are not chill right now. And you are not cool."
+      },
+      {
+        "eid": "B065",
+        "t": "2026-06-26 23:57:16",
+        "s": "Alex",
+        "txt": "And you want to talk about gaslighting. You've been gaslighting me this whole fucking time. Like saying, I'm not being clear, I'm not doing this, ba-ba-ba-ba-ba. You're fucking gaslighting me, alright? So, thank you, but no thank you."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B067",
+        "t": "2026-06-26 23:59:43",
+        "s": "Alex",
+        "txt": "How has the rug been pulled out from underneath you? And how is this fully hectic shit? It's a miscommunication. It's two people feeling different ways. It's not that complicated."
+      },
+      {
+        "eid": "B068",
+        "t": "2026-06-26 23:59:54",
+        "s": "Alex",
+        "txt": "How am I gaslighting me? Tell me how. Explain to me how. I need to have the feedback."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B070",
+        "t": "2026-06-27 00:00:43",
+        "s": "Alex",
+        "txt": "Well, it begins with the other night when you were like, you're not being clear, you're not being clear when I was being fucking very clear. And then when you were referencing this conversation that we had, you weren't being clear."
+      },
+      {
+        "eid": "B071",
+        "t": "2026-06-27 00:00:54",
+        "s": "Alex",
+        "txt": "I'm not going to continue to argue about this tonight, alright? So I'll speak to you later on. Have a good night. Bye."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B073",
+        "t": "2026-06-27 00:06:47",
+        "s": "Alex",
+        "txt": "No, hold up a second. I didn't know things. I had suspicions, alright? I had suspicions because of fucking external factors. And they needed to be addressed. I'm not going to come up and be like, oh, you fucking want something more from me that I'm not going to give to you. Cause that's just like, that's conceded fucking arrogance. I didn't know what the fuck was going on. Cause originally, thought you thought I didn't like Ned that's what I said to you I don't know if you remember that but that's what I said to you and then afterwards the only other thing I could think of was that but we'd already spoken about that and it not happening so I didn't go in fucking stupid and ignorant playing dumb thank you very much"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B075",
+        "t": "2026-06-27 00:07:31",
+        "s": "Naomi",
+        "txt": "What do you mean, suspicions because of external factors? What the fuck does that even mean, dude? Don't... Like, see? Now you're being indirect. You're doing the thing again."
+      },
+      {
+        "eid": "B076",
+        "t": "2026-06-27 00:07:39",
+        "s": "Alex",
+        "txt": "So, by that logic, then, everyone that you meet should be like, no, I'm not into you, right?"
+      },
+      {
+        "eid": "B077",
+        "t": "2026-06-27 00:08:26",
+        "s": "Naomi",
+        "txt": "No, not everyone. But someone who tells me, like, when we're talking about sexual tension between us, it says, Oh, I'm interested in you, but I only want you as a friend. That like, you should probably not say that I'm interested in you part, you know, just leave that part off. Maybe just say, No, there's actually no sexual tension, and I'm not interested in you. Don't lie. That's some bullshit"
+      },
+      {
+        "eid": "B078",
+        "t": "2026-06-27 00:08:36",
+        "s": "Alex",
+        "txt": "And that is bullshit. I've asked you, I don't know how many times tonight alone, what's going on? What do we need to talk about? And you just fucking stare at your feet or the wall and go, no, nothing. I'm fine. No, no, it's all good. I'm fine."
+      },
+      {
+        "eid": "B079",
+        "t": "2026-06-27 00:08:42",
+        "s": "Alex",
+        "txt": "Turn around and blame that on me?"
+      },
+      {
+        "eid": "B080",
+        "t": "2026-06-27 00:09:14",
+        "s": "Alex",
+        "txt": "And you don't really know me that well if you think I don't like full-on emotional conversations because I fucking have them all the time. Alright? I want to hurt your fucking feelings over something that could have just been completely incorrect."
+      },
+      {
+        "eid": "B081",
+        "t": "2026-06-27 00:09:29",
+        "s": "Naomi",
+        "txt": "Dude, I was not going to have a conversation in that moment. I was about to fucking cry, okay? Because you're showing me shit about your life. And you're, like, making me like you more, you know? Like, the fuck?"
+      },
+      {
+        "eid": "B082+B083",
+        "t": "2026-06-27 00:09:53",
+        "s": "Alex",
+        "txt": "Being into someone and having sexual tension with someone are two very different things, alright? They don't go hand in hand. / And there's a difference between being like into someone and enjoying their company and wanting to be with them. So maybe you should figure that out."
+      },
+      {
+        "eid": "G168",
+        "t": "2026-06-27 00:10:12",
+        "s": "Alex",
+        "txt": "And there's a difference between being into someone and enjoying their company and wanting to be with them. So maybe you should figure that out."
+      },
+      {
+        "eid": "B084",
+        "t": "2026-06-27 00:15:20",
+        "s": "Naomi",
+        "txt": "The fuck is wrong with you, dude? Like, ass. You're cooked. Fuck off."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B086",
+        "t": "2026-06-27 00:17:06",
+        "s": "Alex",
+        "txt": "Respect is a two-way street and you haven't shown me fucking any either, so I guess that's where we stand."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B089",
+        "t": "2026-06-27 00:23:16",
+        "s": "Naomi",
+        "txt": "I think by your standards, everyone is a narcissist compared to you because you're like so selfless and so giving and so charitable. So in service to other people. Since I'm a narcissist, you know, you know, Since everyone is a narcissist compared to that kind of person who meets those standards, definitely everyone's a narcissist. Yeah. This has become a really, really, really cruel, mean fight. And i don't know why all i wanted was like information i just wanted to understand so that i could know what the world is you know like i need to know the truth about things because if i don't know the truth about things then like i just end up in this position where i think the world is one way and then i find out it's actually a different way because i've been lied to you know so that's why the truth is really really important to me because i want to know what reality is i don't want to know what somebody tells me reality is"
+      },
+      {
+        "eid": "B090",
+        "t": "2026-06-27 00:24:50",
+        "s": "Alex",
+        "txt": "So what are your questions?"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B093",
+        "t": "2026-06-27 00:31:33",
+        "s": "Alex",
+        "txt": "You're just throwing whatever the fuck you can at me to make me the bad guy so you don't feel shit."
+      },
+      {
+        "eid": "B094",
+        "t": "2026-06-27 00:32:08",
+        "s": "Alex",
+        "txt": "I'm sorry if I don't like fucking my friends. Like, it's not a fucking line I like to cross. Alright? And that's when you became a friend. At least I fucking thought so."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B096",
+        "t": "2026-06-27 00:34:15",
+        "s": "Alex",
+        "txt": "Because I'm driving."
+      },
+      {
+        "eid": "B097",
+        "t": "2026-06-27 00:34:38",
+        "s": "Alex",
+        "txt": "Yeah, and it's all about me. I did this, I did this, I did this. Have some accountability. See you later. I'll speak to you another time."
+      },
+      {
+        "eid": "B098",
+        "t": "2026-06-27 00:34:48",
+        "s": "Naomi",
+        "txt": "Well, why are you sending me messages while you're driving? Why are you sending me messages at all? Why are you not here? Face to face, like you said you wanted. Like, I didn't want to do this over voice either, but you've given me no option. You know, I'll take it how I can get it."
+      },
+      {
+        "eid": "B099",
+        "t": "2026-06-27 00:35:59",
+        "s": "Naomi",
+        "txt": "Accountability for what, dude? What did I do? You don't even know what is going on right now. You don't even know why you're mad. I will take some accountability. I will. Never. Ever. Ever. I promise. If I can promise myself this one, this time, ever let myself get hurt again."
+      },
+      {
+        "eid": "B100",
+        "t": "2026-06-27 00:36:33",
+        "s": "Alex",
+        "txt": "Bullshit. You had every fucking opportunity. We were just hung out for like three hours, face to face, and you just fucking stared at your feet."
+      },
+      {
+        "eid": "B101",
+        "t": "2026-06-27 00:39:19",
+        "s": "Naomi",
+        "txt": "Oh, like, I explained this to you already, but the whole reason why I messaged you at all while you were gone, for how long you were gone for, by the way, your pizza's here, that, yeah, thanks for that one, oh, fuck me."
+      },
+      {
+        "eid": "B102",
+        "t": "2026-06-27 00:40:08",
+        "s": "Alex",
+        "txt": "I'm not going to repeat myself anymore. I've told you everything you need to know. Figure it out."
+      },
+      {
+        "eid": "B103",
+        "t": "2026-06-27 00:42:28",
+        "s": "Naomi",
+        "txt": "You did lead me on, hecticly, obviously. I think you should take some accountability for that. Yeah, big time, this is a weird one, I've got to say, I don't know what is going on that is as real as I can get fuck bye"
+      },
+      {
+        "eid": "B104",
+        "t": "2026-06-27 00:45:12",
+        "s": "Alex",
+        "txt": "I don't really understand how telling you that nothing more was going to happen is leading you on. But if that's the case, then that's the case. I'll speak to you later. Bye."
+      },
+      {
+        "eid": "B105",
+        "t": "2026-06-27 00:47:09",
+        "s": "Naomi",
+        "txt": "You didn't say that. You said you, like, almost couldn't stop yourself. You said that you didn't want to have, you said, this is exactly what you said, in fact, that you didn't want to have a meaningless sexual relationship with me. And I didn't want that either. I've got plenty of that in my life already. I know that you like traditional relationships. I wasn't expecting anything different, but, I wasn't really expecting anything at all, to be honest. I mean, I didn't, I knew this might not work out and maybe not, but, you know, I was protecting myself until you force the point you know and you made it weird tonight i'm not gonna lie you made it really fucking weird especially not answering my questions is and then like me blowing it into this like really hectic argument just to avoid being honest with me like about like the things i'm asking you you know why Could be something to think about Something to ponder on Maybe"
+      },
+      {
+        "eid": "B106",
+        "t": "2026-06-27 00:48:55",
+        "s": "Alex",
+        "txt": "What are your questions?"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B108",
+        "t": "2026-06-27 00:52:51",
+        "s": "Naomi",
+        "txt": "Look, dude, you're just digging yourself a deeper hole right now. You're right. I'm really crazy. I misinterpreted everything. I don't know why I thought you were in love with me. Silly old me. What such a narcissist I am. By the way, I never thought you were in love with me, but apparently I do now. Let me listen to the rest of your message so I'll see what else I can change my reality to fit."
+      },
+      {
+        "eid": "B109",
+        "t": "2026-06-27 00:54:31",
+        "s": "Naomi",
+        "txt": "You don't and have not wanted anything more than my friendship for a while now. Since when? Since when did that change? Like... You're saying that it was different at one point, and now it's not. And if it's changed, okay, that's fine. Right? Whatever. Why the fuck are you, like, coming around in the middle of the night, like, hanging out all night, being flirtatious with me? Like, what is all that about? I don't understand. Why are you still messaging me? Why don't you just tell me to fuck off like i don't understand i'm so fucking confused still at this moment"
+      },
+      {
+        "eid": "B110",
+        "t": "2026-06-27 00:57:39",
+        "s": "Naomi",
+        "txt": "Although, I'm not using ChatGPT to talk about any of this shit, you fucking dipstick. I haven't chatted to ChatGPT like a single time about this. I talk about concepts with ChatGPT. I don't, like, you know, put singular words in. Like, what does this word mean? What did it mean? Like, oh, let's understand all of this person's consciousness based on this singular word. What do you think's going on dude you're inventing problems that aren't problems i have you don't know me if that's what you think i do you don't know me i didn't want to do this over the phone i didn't want to ever do this in text i didn't want to do it in voice message i would have rather never spoken about it to be honest if you're not interested i'd rather just let it go as i would have done, but, you know, you wanted to, you wanted to feel wanted, that's what I think, I get it, I want to be wanted to, it's a nice feeling, it doesn't feel so nice it ends up like this."
+      },
+      {
+        "eid": "B111",
+        "t": "2026-06-27 00:59:28",
+        "s": "Alex",
+        "txt": "I wanted to feel like if I did move into Nishant's place, which is probably just not going to happen, that it wasn't going to be awkward between us or uncomfortable between us. That's what I wanted."
+      },
+      {
+        "eid": "B112",
+        "t": "2026-06-27 00:59:46",
+        "s": "Alex",
+        "txt": "I wanted to continue to build a friendship with you that's not aligned with fucking a relationship or sexual conduct."
+      },
+      {
+        "eid": "B113",
+        "t": "2026-06-27 01:01:03",
+        "s": "Alex",
+        "txt": "And as far as coming around in the middle of the night and hanging out and talking shit, that's not necessarily flirtatious. Like, I'm as flirtatious with you as I am with fucking Jamie or Nishant or pretty much anyone else. Don't mistake kindness and someone enjoying your company for flirtation and, like, anything more than that. Because you're supposed to enjoy your friend's company. You're supposed to hang out. We fucking... The nature of what we do, we hang out at night. Like... Just because it might be something you do with others doesn't mean that that's how I'm seeing it. Because once again, I don't sleep with my friends. Anyway. I'm signing out."
+      },
+      {
+        "eid": "B114",
+        "t": "2026-06-27 01:01:42",
+        "s": "Naomi",
+        "txt": "Why would it be awkward between us? Why would it be uncomfortable? Like, you said you had no idea. You said, like, that I've been gaslighting you about this thing this whole time. You know, I didn't, you know, you're acting as if there was no awkwardness before, except you were completely aware of exactly what was going on, and I wasn't. And you just didn't have the fucking guts to confront me about it till I was going to force the issue. And then you could just kind of sense that I was like maybe sort of edging towards that and you stuffed up my flow by forcing me to be put myself in a vulnerable position where you know I could get hurt and you know it's like that's kind of like the story of my life, like, no one else ever wants to be vulnerable, you know, it's always me who has to do that work for them, I guess, take that, bear that load, as one might say, always, yes, oh well, It's good to know at least that we didn't even try to go down that road. I'm glad we didn't, because you would not have been careful with my heart, is the truth. At least we can know in a short, quick amount of time that that would be true."
+      },
+      {
+        "eid": "B115",
+        "t": "2026-06-27 01:05:01",
+        "s": "Alex",
+        "txt": "I was not aware until you made the comment about me avoiding Ned. That's when my ears pricked up to it. I didn't start that conversation. You started that conversation. Okay? Because you were worried that I couldn't stand to see you with other guys. This is what you told me today. Is that incorrect? Or am I making that up?"
+      },
+      {
+        "eid": "B116",
+        "t": "2026-06-27 01:06:08",
+        "s": "Naomi",
+        "txt": "Yes, I did tell you that today. But I wasn't going to take it any further than where I left it last week. In fact, I had made a decision. I made a decision to not. I was like, no, Alex isn't interested in me. I'm not going to make myself vulnerable and explain it any further than needs to be because I don't want to get hurt. Yeah, here I am, hiding myself yet again."
+      },
+      {
+        "eid": "B117",
+        "t": "2026-06-27 01:09:05",
+        "s": "Naomi",
+        "txt": "You're not as flirtatious with them as with me, but that's okay. It's okay to make mistakes. It's just not okay to hurt people, that's all. But it's okay. I forgive you. I just wish you could see your responsibility in this, that's all. I know you don't want to hurt me. I want to hurt you right now though, I'm not going to lie. Really, really badly. I'll try not to though, sorry for saying mean things earlier."
+      },
+      {
+        "eid": "B118",
+        "t": "2026-06-27 01:10:48",
+        "s": "Alex",
+        "txt": "I'm sorry for losing my temper. Doesn't happen often, but when it happens, it's usually worse than this."
+      },
+      {
+        "eid": "B119",
+        "t": "2026-06-27 01:11:29",
+        "s": "Alex",
+        "txt": "I am going to put my phone away. If you want to talk about this, talk about it another day. You can talk to Nishant or you can talk to whoever. But I am done for tonight. Good night."
+      },
+      {
+        "eid": "B120",
+        "t": "2026-06-27 01:21:57",
+        "s": "Naomi",
+        "txt": "I do just want to put it out there that I answered every single one of your questions tonight that you asked me, and you didn't answer a single one. And mine are very clearly written with question marks. You're welcome. For me, being vulnerable, putting myself out there, letting you, protecting your ego, doing all those things for you. You're welcome."
+      },
+      {
+        "eid": "B121",
+        "t": "2026-06-27 01:27:03",
+        "s": "Naomi",
+        "txt": "Also, why were you fucking flirting with Freya? Like, that's fucking weird, dude. Ultra weird. I know what was happening. I'm not an idiot. Yeah. You are not careful with my heart. I don't think you ever would be."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "B123",
+        "t": "2026-06-27 01:33:00",
+        "s": "Naomi",
+        "txt": "Sent an image/screenshot of the earlier 10 pm exchange."
+      },
+      {
+        "eid": "B124+B125+B126",
+        "t": "2026-06-27 01:37:00",
+        "s": "Naomi",
+        "txt": "I did respect you tonight, by being vulnerable and replying to every single question you asked. / Not that you listened to the replies / Neways cya"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-7",
+    "type": "suffix",
+    "events": [
+      {
+        "eid": "B129",
+        "t": "2026-06-27 02:27:00",
+        "s": "Naomi",
+        "txt": "Why did you mutter 'it's not fair' two weeks ago while I was getting changed? While I was preparing for Kyle to arrive. You made me feel guilty that night, I thought I had done something wrong, this is what sparked me thinking I was wrong about the way you felt about me. > Immediately proceeding that you had a hectic from the sounds of it problematic weekend by your own admission. You took Xanax which you've said is a self destructive thing you don't want to do anymore, you also called me after a hookup while you should have known I was already chilling with Ned, proceeded to speak to me flirtatiously up until the point you heard Ned was here, then you back peddled about coming over and said you were going home. Like how can you not see the way you've been interacting with me the way you've been talking with me is not okay? If tonight is the way you feel and the way you are going to speak to me. It made my other connections with people more difficult."
+      },
+      {
+        "eid": "B130",
+        "t": "2026-06-27 02:30:00",
+        "s": "Naomi",
+        "txt": "Why did you keep me up for 5 fucking hours on Monday night acting dumb like you didnt know what was going on after I gave you every opportunity to be honest."
+      },
+      {
+        "eid": "B131",
+        "t": "2026-06-27 02:34:00",
+        "s": "Naomi",
+        "txt": "You have been doing everything you can to protect yourself and nothing to protect me."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-8",
+    "type": "full_session",
+    "events": [
+      {
+        "eid": "G169",
+        "t": "2026-07-01 23:32:26",
+        "s": "Naomi",
+        "txt": "okay, um, okay, I'm coming out now, I guess, I can come to you, it's okay,"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-9",
+    "type": "full_session",
+    "events": [
+      {
+        "eid": "C002",
+        "t": "2026-07-04 12:29:28",
+        "s": "Alex",
+        "txt": "There you are. I am not feeling fantastic. I feel like I've got the flu."
+      },
+      {
+        "eid": "C003",
+        "t": "2026-07-04 12:29:40",
+        "s": "Alex",
+        "txt": "and cunts rippin you off is deserved conflict"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C004",
+        "t": "2026-07-04 19:22:00",
+        "s": "Alex",
+        "txt": "you wanna catch up or at you busy"
+      },
+      {
+        "eid": "C005",
+        "t": "2026-07-04 19:22:30",
+        "s": "System",
+        "txt": "Missed voice call - 7:22 pm"
+      },
+      {
+        "eid": "C006",
+        "t": "2026-07-04 19:29:00",
+        "s": "Alex",
+        "txt": "maybe another night"
+      },
+      {
+        "eid": "C007",
+        "t": "2026-07-04 19:51:54",
+        "s": "Naomi",
+        "txt": "Hey. Sorry, I'm just waking up. Holy miss messages, I got a fucking, got a whole fucking, I need a receptionist or something. What are you doing? How are you?"
+      },
+      {
+        "eid": "C008",
+        "t": "2026-07-04 20:07:23",
+        "s": "Naomi",
+        "txt": "Would you be interested in giving me a lift to Fisher's house? He's gonna sort me out with the rest of the gear."
+      },
+      {
+        "eid": "C009",
+        "t": "2026-07-04 20:07:31",
+        "s": "Naomi",
+        "txt": "No stress if not, I'd get it if you're already drunk or whatever you're worried about, by the way."
+      },
+      {
+        "eid": "C010",
+        "t": "2026-07-04 20:40:27",
+        "s": "Alex",
+        "txt": "I'm not drunk, I'm just working from a nap myself. I'm going to pierce my brain together."
+      },
+      {
+        "eid": "C011",
+        "t": "2026-07-04 20:40:59",
+        "s": "Naomi",
+        "txt": "Yeah, no stress. Me and Nishant are gonna go right now."
+      },
+      {
+        "eid": "C012",
+        "t": "2026-07-04 20:41:48",
+        "s": "Alex",
+        "txt": "I was keen to hang out, but I'm just fucking covering cold bloods."
+      },
+      {
+        "eid": "C013",
+        "t": "2026-07-04 20:47:56",
+        "s": "Naomi",
+        "txt": "Why are you covered in cobwebs?"
+      },
+      {
+        "eid": "C014",
+        "t": "2026-07-04 20:49:53",
+        "s": "Alex",
+        "txt": "I just woke up, I'm just a bit dazed and confused. Like I've been left in the attic for trouble."
+      },
+      {
+        "eid": "C015",
+        "t": "2026-07-04 20:53:00",
+        "s": "Alex",
+        "txt": "I've got half a mind. mmmmm rhbn I have)"
+      },
+      {
+        "eid": "C016+C017",
+        "t": "2026-07-04 20:57:00",
+        "s": "Naomi",
+        "txt": "Wot / Why you in the attic"
+      },
+      {
+        "eid": "C018",
+        "t": "2026-07-04 20:58:46",
+        "s": "Alex",
+        "txt": "Because I'm an old relic of Christmas past."
+      },
+      {
+        "eid": "C019",
+        "t": "2026-07-04 21:01:00",
+        "s": "Naomi",
+        "txt": "LL I"
+      },
+      {
+        "eid": "C020",
+        "t": "2026-07-04 21:02:36",
+        "s": "Alex",
+        "txt": "If you want to kick it, let me know. I'm just fucking tired for some reason. Like, I've slept all day. There's no reason to be so sleepy."
+      },
+      {
+        "eid": "C021",
+        "t": "2026-07-04 21:15:26",
+        "s": "Alex",
+        "txt": "[unclear/no clear speech detected]"
+      },
+      {
+        "eid": "C022",
+        "t": "2026-07-04 21:15:35",
+        "s": "Alex",
+        "txt": "If not, it's all good. I will keep myself preoccupied here at home."
+      },
+      {
+        "eid": "C023",
+        "t": "2026-07-04 21:22:00",
+        "s": "Alex",
+        "txt": "soooo ??"
+      },
+      {
+        "eid": "C024+C025+C026+C027",
+        "t": "2026-07-04 21:25:00",
+        "s": "Naomi",
+        "txt": "Sorry one million things going on / So what? / I'm in car otw to far away / Then come back maybe back by 11pm"
+      },
+      {
+        "eid": "C028",
+        "t": "2026-07-04 21:25:40",
+        "s": "Alex",
+        "txt": "oh yeah"
+      },
+      {
+        "eid": "C029",
+        "t": "2026-07-04 21:26:00",
+        "s": "Naomi",
+        "txt": "Outside cc's right now lol"
+      },
+      {
+        "eid": "C030",
+        "t": "2026-07-04 21:26:20",
+        "s": "Alex",
+        "txt": "↳C029 bitch owes me some glass!"
+      },
+      {
+        "eid": "C031",
+        "t": "2026-07-04 21:31:00",
+        "s": "Alex",
+        "txt": "okay well I was hoping to kick it for a bit but if your out till late maybe next time"
+      },
+      {
+        "eid": "C032",
+        "t": "2026-07-04 21:39:32",
+        "s": "Naomi",
+        "txt": "We are heading back to my place now."
+      },
+      {
+        "eid": "C033",
+        "t": "2026-07-04 21:40:13",
+        "s": "Alex",
+        "txt": "Any chance you want to pick us up?"
+      },
+      {
+        "eid": "C034",
+        "t": "2026-07-04 21:55:00",
+        "s": "Naomi",
+        "txt": "What's your address?"
+      },
+      {
+        "eid": "C035+C036",
+        "t": "2026-07-04 21:56:00",
+        "s": "Alex",
+        "txt": "465 Albion Street / if it's a Hassell don't stress"
+      },
+      {
+        "eid": "C037",
+        "t": "2026-07-04 21:58:00",
+        "s": "Naomi",
+        "txt": "It's out of our way"
+      },
+      {
+        "eid": "C038",
+        "t": "2026-07-04 21:59:00",
+        "s": "Alex",
+        "txt": "☺️"
+      },
+      {
+        "eid": "C039",
+        "t": "2026-07-04 21:59:10",
+        "s": "Naomi",
+        "txt": "??"
+      },
+      {
+        "eid": "C040+C041",
+        "t": "2026-07-04 22:01:00",
+        "s": "Alex",
+        "txt": "I mean I'd appreciate it if yall wanna hang / Incan also ride my bike"
+      },
+      {
+        "eid": "C042",
+        "t": "2026-07-04 22:03:00",
+        "s": "Naomi",
+        "txt": "Do you want to hang?"
+      },
+      {
+        "eid": "C043+C044+C045",
+        "t": "2026-07-04 22:03:10",
+        "s": "Alex",
+        "txt": "yes / like good ol times / we can discuss whatever's happened the other night if you'd like"
+      },
+      {
+        "eid": "C046",
+        "t": "2026-07-04 22:04:10",
+        "s": "Naomi",
+        "txt": "Do you want to discuss what happened the other night?"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C048",
+        "t": "2026-07-04 22:19:00",
+        "s": "Alex",
+        "txt": "thoughts feelings opinions?"
+      },
+      {
+        "eid": "C049",
+        "t": "2026-07-04 22:22:00",
+        "s": "Naomi",
+        "txt": "Sorry just sitting down for a second got customers and things to do rn I'll respond when I can"
+      },
+      {
+        "eid": "C050",
+        "t": "2026-07-04 22:24:00",
+        "s": "Alex",
+        "txt": "okay then"
+      },
+      {
+        "eid": "C051",
+        "t": "2026-07-04 22:39:00",
+        "s": "Alex",
+        "txt": "I might just ride my bike"
+      },
+      {
+        "eid": "C052",
+        "t": "2026-07-04 22:56:00",
+        "s": "Alex",
+        "txt": "?"
+      },
+      {
+        "eid": "C053",
+        "t": "2026-07-04 23:00:37",
+        "s": "Naomi",
+        "txt": "Sorry dude, I'm literally so busy right now. I got Jamie coming, I got Brass coming, and I got your mates coming. I'm just trying to organise everything and I need to clean up my room and I need to breathe and wake up because I just woke up like a couple hours ago and then I had to rush off to go sort out this gear that I got underweight about and then you're messaging me and you know, any chance driving me and giving you a hundred bucks and you know like there's a lot going on in my life sorry i just like so fucking busy right now"
+      },
+      {
+        "eid": "C054",
+        "t": "2026-07-04 23:02:26",
+        "s": "Alex",
+        "txt": "Oh good, we'll hang out another time."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C056",
+        "t": "2026-07-04 23:19:28",
+        "s": "Naomi",
+        "txt": "Is that a signing off message? I don't understand what's going on right now. I literally saw Jamie for two seconds. I will enjoy the customers. Thank you. It is appreciated. Not going to enjoy seeing brass though. Like I'm just literally busy as fuck tonight, dude. I don't know you don't need to be so hectic it's just like like when you're messaging me question marks and and like it's hard for me like there's other stuff going on in my life and it's hard for me to manage everything you know like literally like i'm not good at managing this stuff already and you know it's what night is it i think it's saturday or friday night you know potentially one of the busiest nights of the week for me and organizing like i want to hang out i literally want to see you i haven't heard you actually say that you want to hang out with me yet you keep asking me if i want to hang out or if i want to have a conversation you never say hey i want to hang out with you i want to have this conversation i want to have it i want to have this conversation with you i want to hang out with you but it doesn't seem like you want to do that with me so it's like it just goes to the bottom of my list because it doesn't seem like you even want to do it"
+      },
+      {
+        "eid": "C057",
+        "t": "2026-07-04 23:23:18",
+        "s": "Alex",
+        "txt": "Dude, I'm pretty sure I'm the one that reached out saying, hey, hey, do you want to hang out? And I might have worded it slightly off, saying, do y'all want to hang out? But that's still me saying, I want to hang out. And it doesn't take that long to just be like, hey, I'm just swamped on a head over whenever you want. It's all good. Instead, I now just feel like I'm badgering you and a burden. And once again, this is all my fault. So push me to the bottom of the list. That's fine."
+      },
+      {
+        "eid": "C058",
+        "t": "2026-07-04 23:23:46",
+        "s": "Alex",
+        "txt": "Definitely been around many times when you've had custodies coming in and out, in and out, when you've had a messy room, all that sort of stuff. I've been around all of that, but for some reason it's different this time, and I don't quite know why."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C060",
+        "t": "2026-07-04 23:24:40",
+        "s": "Alex",
+        "txt": "I said, do y'all, because you were with Nishan, and I meant like, do y'all all want to hang out? Meaning, yes, I want to hang out. Why would I reach out to you and be like, do you want to hang out? And then you turn around and say, yes, and I'm like, oh, no, I actually don't want to, sorry. That's ridiculous. But Whatever Poor wording on my bath Anyway Have a good night"
+      },
+      {
+        "eid": "C061",
+        "t": "2026-07-04 23:25:19",
+        "s": "Naomi",
+        "txt": "It's not, once again, it's all your fault, dude. Like, you are badgering me a bit, I'm not gonna lie. Like, and I've tried to say to you a few times, like, I got shit going on. But it's not, like, and, like, I don't think you can just head around at any time, like, is the reality. Like, like, I'm kind of, like, busy. Like, if you come over, are you gonna, like, blow a pipe in here? And, like, you know, like, what's gonna happen? Like, is it really gonna be that enjoyable to hang out with you? I don't know. Stuff we need to talk about, stuff I need to say to you. Maybe I should just do it over text. Maybe it would be better."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C063",
+        "t": "2026-07-04 23:28:34",
+        "s": "Alex",
+        "txt": "I think if you read the messages from like 9. 50, 9. 30? I was like, I was hoping to kick it for a bit, but if you're out till late, maybe next time, then I was like, wouldn't mind a lift. Wink, wink. When you asked me my address, I told you the address. You said, it's out of our way. I was like, it's my other face. Then I said, I'd appreciate if you all want to hang. I can also ride my bike. And you said, do you want to hang? When I said, yes, like good old times. We can discuss whatever happened the other night if you'd like. And you said, do you want to discuss what happened the other night? There was a voice note, which I don't remember exactly what I said. And then there was a bit of back and forth. And then 45 minutes later, I was like, I can just ride my bike. No response. Half an hour after that, I said, question mark. And then this conversation unfolded. So I did say that I wanted to hang out. And that definitely implied that I'm aware we need to talk about whatever the fuck happened but he just kind of ghosted me so if that's hassling you then yeah I guess that's hassling"
+      },
+      {
+        "eid": "C064",
+        "t": "2026-07-04 23:29:08",
+        "s": "Alex",
+        "txt": "I think you should just maybe reread the messages from tonight and tell me what you think you see."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C069",
+        "t": "2026-07-04 23:36:51",
+        "s": "Naomi",
+        "txt": "I will give you some specific and direct examples, but I'm busy right now. I can't keep doing this voice conversation at this very moment. I've got to go see. I've still got a way up. I still got to sort out where I'm going to meet these people. They're all coming at similar times. Okay, I got to go. I'll speak to you soon."
+      },
+      {
+        "eid": "C070",
+        "t": "2026-07-04 23:37:25",
+        "s": "Alex",
+        "txt": "Because I'm starting to feel like this friendship was only based off the fact that you were hoping for more. When I don't feel like I was putting any more effort into flirting with you than I would with someone like Nishant or anyone else."
+      },
+      {
+        "eid": "C071",
+        "t": "2026-07-04 23:39:14",
+        "s": "Alex",
+        "txt": "Regardless, I did want to hang out, and I did want to talk about this, and right now I want to think about it all, because I don't know if I do anymore."
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C073",
+        "t": "2026-07-04 23:50:48",
+        "s": "Naomi",
+        "txt": "I haven't even had a shower, or brushed my teeth, or eaten dinner, or anything. Like, I'm literally so busy. I've got more people coming now. So, that's why, like, you know, I wanted to hang out with you tonight, and maybe I should have been more realistic with myself and just said to you early on, sorry, I'm too busy, got too much going on. But I just didn't even really know that. It just creeps up on you, because people don't message me until the last minute. And you know at this moment i know it's not going to be a good time for us to talk about it because i'm too busy otherwise my mind is elsewhere i'm too divided so we should just put a stop to it for now and we'll you know touch back you know tomorrow or whatever just keep in touch dude don't be a stranger don't be weird please look i get you're emotional and sad and it's fair enough you know because your friendship means a lot to me too I don't want to lose you either okay please"
+      },
+      {
+        "eid": "C074",
+        "t": "2026-07-05 00:07:18",
+        "s": "Alex",
+        "txt": "Yeah, well, I've been around when you've been busy, many times before. But, for some reason it's different now. And I don't know how me hanging around when you're busy could be misleading towards you. But, you're busy, so you can't hang around. Which just doesn't make any sense to me. All I've ever wanted was your friendship, so anything more that you've read into has definitely been misconstrued. I'd still like to know how I've led you on in that way, because you've never made that clear. And you've also not really addressed the whole how I'm a chaser or how I was flirting with Freya. It actually kind of feels like quite the opposite. It kind of feels like if you can't have the friendship that you want from me, then that's it. You know, the friendship's going to change completely. Which means that unless you've got you know all this free time we won't hang out cause you're always fucking slinging shit you've always got people popping in and out and you've always got multiple people popping in and out but god forbid I'd be one of those people that pops in and out just to kick it and say what's up to my friend I think I have a pretty good idea where I stand on this whole thing and shitty shitty to think about losing a friend someone that you felt was kin and like minded with similar interests and all of that sort of stuff but The second it seems like it didn't go the way that you thought it was going, or hoping it was going, you know, it's all changed, like, instantly. You also called me a whole bunch of shit that day that was unreasonable you had hours with me where we could have spoken about it but then the second that I left to go pick up you started sending me pretty hectos messages to the point where I got shitty and I responded in a way that I don't usually like to respond and even now when you've gone to pick up it was like all good to come around all good to come around until no no I'm too busy now I'm too busy for you so you tell me who's changed because I don't think I've changed my attitude towards you I'm still going to be who I am. I don't understand what I've done that's flirting. I feel like you might possibly misconstrue kindness for flirtation. But, I don't know. I don't know I was fine before I'll be fine after"
+      }
+    ]
+  },
+  {
+    "session": "S-CONF-10",
+    "type": "prefix/mid",
+    "events": [
+      {
+        "eid": "C076",
+        "t": "2026-07-05 00:12:10",
+        "s": "Naomi",
+        "txt": "I haven't listened to your voice messages yet, but I've just finished seeing all my customers, so now I can take a breather and relax a little bit, maybe clear up my room a bit, because it's pretty filthy. It's not pretty filthy actually it's completely covered in shit right now because although i have many people over i'm the only one that cleans up yeah"
+      },
+      {
+        "eid": "C077",
+        "t": "2026-07-05 00:13:22",
+        "s": "Naomi",
+        "txt": "It's different tonight, you big dummy, because we need to have a chat. We need to give that chat more energy than just, like, lazy hanging out, like, where you're blowing pipes and I'm seeing Custies, like, it means more to me than that."
+      },
+      {
+        "eid": "C078",
+        "t": "2026-07-05 00:14:42",
+        "s": "Naomi",
+        "txt": "You, you're being an absolute fuckwit right now, Alex. You need to stop. You're absolutely, like, making a fool of yourself and hurting me in the process. Like, it's so upsetting. I don't know why you want to be this way. Like, we can be cool. Just stop being a fuckwit. I don't know how like don't be so like like what is this like oh god it's so infuriating i'm not saying that you blowing pipes and me being busy is you flirting with me fuck me dude like you miss you're willfully misinterpreting me willfully that's being a fuckhead don't do that don't do that"
+      },
+      {
+        "eid": "C079",
+        "t": "2026-07-05 00:16:40",
+        "s": "Naomi",
+        "txt": "Okay, look, I'm listening to your voice message, I'm about 30 seconds in, I don't like what I'm hearing, I'm about to end this friendship myself. Like, I don't know if I even should listen to the rest of these messages, because you're being such a fuckwit, and I don't want to lose you as a friend. But you're really annoying me right now. I'm gonna, in fact, you know what, I'm gonna save these messages, and we'll come back to this conversation tomorrow. When I've had a bit of time to chill, a bit of time to myself. Yeah, I need some time to myself, sorry."
+      }
+    ]
+  }
+]

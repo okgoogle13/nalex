@@ -12,44 +12,7 @@
     "Word counts differ from baseline_comparison_audit.json by <0.3% due to tokenizer choice; all other integer metrics reproduce exactly.",
     "Medians are reported unrounded; on even-length samples they fall on .5 (Baseline Alex 31.5, Conflict Naomi 39.5)."
   ],
-  "tag_vocabulary": {
-    "problematic_tags": {
-      "naomi_volume_dominance": "Naomi out-words Alex by a wide margin in the phase",
-      "naomi_wpm_escalation": "Naomi's per-turn length rises sharply relative to prior phase",
-      "naomi_high_question_load": "Naomi carries >=35 questions per 100 turns",
-      "naomi_unanswered_bid_rate_high": "~50% of Naomi's questions get no other-party turn within 10 min in-session",
-      "naomi_unreciprocated_sessions": "Sessions containing only Naomi turns",
-      "naomi_post_exit_continuation": "Substantial output after the other party has left the session",
-      "naomi_unilateral_initiation": "Naomi opens all sessions in the phase",
-      "naomi_never_closes_verbally": "Zero explicit sign-off moves in the phase",
-      "alex_low_content_initiation": "Alex's session opens are mostly single-turn drops that generate no exchange",
-      "alex_terse_turn_floor": "Alex's median turn length is roughly half Naomi's or lower",
-      "alex_bimodal_turn_length": "Low median with rare very long turns; mean masks the floor",
-      "alex_question_burst_pressure": "Runs of >=3 consecutive Alex turns each carrying a question",
-      "alex_bare_punctuation_prompting": "Content-free '?' turns used as prompts",
-      "alex_explicit_termination_moves": "Verbal sign-offs used to end live exchanges",
-      "alex_zero_initiation": "Alex opens no sessions in the phase",
-      "alex_topic_contingent_availability": "Engages readily on neutral topics, exits soon after grievance topics are raised",
-      "dyad_question_crossfire": "Both parties above 35 questions per 100 turns simultaneously",
-      "dyad_mutual_non_answering": "Both parties' questions go unaddressed at comparable rates",
-      "dyad_low_contact_high_burst": "Few contact days, very high events per contact day",
-      "dyad_no_closure_event": "Phase ends without a mutual termination or repair turn"
-    },
-    "emotional_tags": {
-      "naomi_chronic_unanswered_bids": "INTERPRETATION: sustained experience of questions not landing",
-      "naomi_unwitnessed": "INTERPRETATION: posture of speaking without confirmation of being heard",
-      "naomi_pursuing": "INTERPRETATION: initiation and volume consistent with pursuit",
-      "naomi_escalating_elaboration": "INTERPRETATION: adding length in response to non-response",
-      "naomi_seeking_acknowledgement": "INTERPRETATION: explicit and repeated demand for acknowledgement over resolution",
-      "naomi_anticipatory_vigilance": "INTERPRETATION: sharply reduced latency consistent with monitoring",
-      "alex_constrained_engagement": "INTERPRETATION: present but rationing contribution",
-      "alex_withdrawal_by_exit": "INTERPRETATION: managing load by ending exchanges rather than escalating",
-      "alex_over_vigilant_pursuit": "INTERPRETATION: high-frequency questioning consistent with alarm-seeking",
-      "alex_feeling_ambushed": "INTERPRETATION: stated experience of being blamed or attacked without warning",
-      "alex_defended_invulnerability": "INTERPRETATION: asserted imperviousness to harm as a protective stance",
-      "dyad_asymmetric_repair_expectation": "INTERPRETATION: each waits for the other to perform the first repair move"
-    }
-  },
+  "tag_vocabulary": {},
   "phases": {
     "Baseline": {
       "phase_name": "Baseline",

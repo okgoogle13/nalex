@@ -1,81 +1,37 @@
 [
   {
     "phase": "Baseline",
-    "speaker": "Naomi",
+    "speaker": "naomi",
     "hard_metrics": {
       "messages": 32,
       "words": 1697
-    },
-    "canonical_tags": {
-      "problematic": [
-        "naomi_volume_dominance",
-        "naomi_high_question_load",
-        "naomi_unanswered_bid_rate_high",
-        "naomi_unreciprocated_sessions",
-        "naomi_never_closes_verbally"
-      ],
-      "emotional": [
-        "naomi_chronic_unanswered_bids",
-        "naomi_unwitnessed"
-      ]
     },
     "extracted_themes": []
   },
   {
     "phase": "Baseline",
-    "speaker": "Alex",
+    "speaker": "alex",
     "hard_metrics": {
       "messages": 20,
       "words": 928
     },
-    "canonical_tags": {
-      "problematic": [
-        "alex_low_content_initiation",
-        "alex_terse_turn_floor"
-      ],
-      "emotional": [
-        "alex_constrained_engagement"
-      ]
-    },
     "extracted_themes": []
   },
   {
     "phase": "Conflict",
-    "speaker": "Naomi",
+    "speaker": "naomi",
     "hard_metrics": {
       "messages": 94,
       "words": 6168
     },
-    "canonical_tags": {
-      "problematic": [
-        "naomi_high_question_load"
-      ],
-      "emotional": [
-        "naomi_seeking_acknowledgement"
-      ]
-    },
     "extracted_themes": []
   },
   {
     "phase": "Conflict",
-    "speaker": "Alex",
+    "speaker": "alex",
     "hard_metrics": {
       "messages": 124,
       "words": 5227
-    },
-    "canonical_tags": {
-      "problematic": [
-        "alex_question_burst_pressure",
-        "alex_bare_punctuation_prompting",
-        "alex_explicit_termination_moves",
-        "alex_terse_turn_floor",
-        "alex_bimodal_turn_length"
-      ],
-      "emotional": [
-        "alex_over_vigilant_pursuit",
-        "alex_feeling_ambushed",
-        "alex_withdrawal_by_exit"
-      ]
     },
     "extracted_themes": [
       "Setting Boundaries & Friendship Termination",
@@ -86,79 +42,37 @@
   },
   {
     "phase": "Silence",
-    "speaker": "Naomi",
+    "speaker": "naomi",
     "hard_metrics": {
       "messages": 0,
       "words": 0
-    },
-    "canonical_tags": {
-      "problematic": [],
-      "emotional": []
     },
     "extracted_themes": []
   },
   {
     "phase": "Silence",
-    "speaker": "Alex",
+    "speaker": "alex",
     "hard_metrics": {
       "messages": 0,
       "words": 0
     },
-    "canonical_tags": {
-      "problematic": [],
-      "emotional": []
-    },
     "extracted_themes": []
   },
   {
     "phase": "Aftermath",
-    "speaker": "Naomi",
+    "speaker": "naomi",
     "hard_metrics": {
       "messages": 61,
       "words": 6860
     },
-    "canonical_tags": {
-      "problematic": [
-        "naomi_volume_dominance",
-        "naomi_wpm_escalation",
-        "naomi_high_question_load",
-        "naomi_unanswered_bid_rate_high",
-        "naomi_unreciprocated_sessions",
-        "naomi_post_exit_continuation",
-        "naomi_unilateral_initiation",
-        "naomi_never_closes_verbally"
-      ],
-      "emotional": [
-        "naomi_pursuing",
-        "naomi_escalating_elaboration",
-        "naomi_seeking_acknowledgement",
-        "naomi_anticipatory_vigilance",
-        "naomi_unwitnessed",
-        "naomi_chronic_unanswered_bids"
-      ]
-    },
     "extracted_themes": []
   },
   {
     "phase": "Aftermath",
-    "speaker": "Alex",
+    "speaker": "alex",
     "hard_metrics": {
       "messages": 44,
       "words": 2187
-    },
-    "canonical_tags": {
-      "problematic": [
-        "alex_zero_initiation",
-        "alex_terse_turn_floor",
-        "alex_bimodal_turn_length",
-        "alex_explicit_termination_moves",
-        "alex_topic_contingent_availability"
-      ],
-      "emotional": [
-        "alex_constrained_engagement",
-        "alex_withdrawal_by_exit",
-        "alex_defended_invulnerability"
-      ]
     },
     "extracted_themes": [
       "Setting Boundaries & Friendship Termination",

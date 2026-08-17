@@ -1,0 +1,92 @@
+{
+  "datasets": [
+    {
+      "name": "events_timeline",
+      "path": "viz_exports/events_timeline.csv",
+      "rows": 378,
+      "description": "Structural event timeline aligned to nalex_viz_projection_contract.json — no raw text",
+      "primary_keys": [
+        "record_id"
+      ],
+      "viz_types": [
+        "timeline",
+        "scatter",
+        "line",
+        "bar"
+      ],
+      "schema_note": "Fields: record_id, timestamp, event_type, speaker_role, phase, loop_type, sequence, move_codes, direct_response_status, repair_response_status, source_review_state, projection_eligibility, privacy_level"
+    },
+    {
+      "name": "theme_metrics",
+      "path": "viz_exports/theme_metrics.csv",
+      "rows": 8,
+      "description": "Per-phase/per-speaker message and word counts with extracted themes",
+      "primary_keys": [
+        "phase",
+        "speaker"
+      ],
+      "viz_types": [
+        "bar",
+        "pie",
+        "heatmap"
+      ],
+      "schema_note": "Fields: phase, speaker, message_count, word_count, theme_count, extracted_themes"
+    },
+    {
+      "name": "phase_profiles",
+      "path": "viz_exports/phase_profiles.csv",
+      "rows": 4,
+      "description": "Relationship phase metrics — event counts, session counts, per-speaker breakdowns",
+      "primary_keys": [
+        "phase_name"
+      ],
+      "viz_types": [
+        "bar",
+        "radar",
+        "timeline"
+      ],
+      "schema_note": "Fields: phase_name, window, calendar_days, event_count, naomi_*/alex_* speaker metrics, asymmetry ratios, flags"
+    },
+    {
+      "name": "gap_analysis",
+      "path": "viz_exports/gap_analysis.csv",
+      "rows": 105,
+      "description": "Inter-event silence gaps sorted by duration",
+      "primary_keys": [
+        "gap_id"
+      ],
+      "viz_types": [
+        "bar",
+        "scatter",
+        "histogram"
+      ],
+      "schema_note": "Fields: gap_id (local_id), event_id, prev_event_id, timestamp, prev_timestamp, gap_seconds, gap_minutes, sha256"
+    },
+    {
+      "name": "orphan_events",
+      "path": "viz_exports/orphan_events.csv",
+      "rows": 178,
+      "description": "Events without confirmed incident assignment — proposed classifications and review status",
+      "primary_keys": [
+        "orphan_id"
+      ],
+      "viz_types": [
+        "table",
+        "scatter"
+      ],
+      "schema_note": "Fields: orphan_id, timestamp, session_id, original_assignment, proposed_classification, proposed_parent, confidence, evidence_basis, boundary_or_exclusion_reason, review_status"
+    }
+  ],
+  "schema_version": "v2",
+  "contract": "schema/contracts/nalex_viz_projection_contract.json",
+  "last_updated": "2026-08-17T10:09:28.942277Z",
+  "generated_by": "generate_viz_exports.py",
+  "privacy_note": "events_timeline.csv contains NO raw transcript text. All txt/txt_v3/txt_raw_prior fields stripped at export.",
+  "column_conventions": {
+    "timestamp": "ISO 8601 or YYYY-MM-DD HH:MM:SS from source",
+    "speaker_role": "Normalized: alex | naomi | system | unknown",
+    "event_type": "From nalex_semantic_schema_v2.md",
+    "phase": "Relationship phase identifier (Baseline/Conflict/Silence/Aftermath)",
+    "record_id": "Canonical EID from events.jsonl"
+  }
+}

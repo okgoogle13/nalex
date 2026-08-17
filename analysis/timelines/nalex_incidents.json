@@ -3,27 +3,68 @@
     "incident_id": "CONF-01",
     "phase": "Conflict",
     "session": "S5",
-    "label": "Relational acknowledgement dispute — afternoon Jun 26",
+    "label": "Relational acknowledgement dispute \u2014 afternoon Jun 26",
     "event_type": "Interpersonal confrontation / acknowledgement deadlock",
     "date_time_start": "2026-06-26T16:04:00",
     "date_time_end": "2026-06-26T17:06:00",
-    "source_event_ids": ["B021", "B022", "B023", "B026", "B028", "B039", "B044", "B045", "B046", "B047"],
-    "participants": ["Naomi", "Alex"],
-    "significance_tags": ["acknowledgement-deadlock", "voice-note-channel-timing", "first-instance-retrieval-deadlock", "directness-loop"],
+    "source_event_ids": [
+      "B021",
+      "B022",
+      "B023",
+      "B026",
+      "B028",
+      "B039",
+      "B044",
+      "B045",
+      "B046",
+      "B047"
+    ],
+    "participants": [
+      "naomi",
+      "alex"
+    ],
+    "significance_tags": [
+      "acknowledgement-deadlock",
+      "voice-note-channel-timing",
+      "first-instance-retrieval-deadlock",
+      "directness-loop"
+    ],
     "speaker_accounts": {
-      "Naomi": "Had not heard the voice messages before Alex arrived. No window to listen. States this minimum 4x across corpus (B066, G182, G055, G194). CURRENT_STATE_CLEAN.md §8.4 assesses timing record as supporting this claim.",
+      "Naomi": "Had not heard the voice messages before Alex arrived. No window to listen. States this minimum 4x across corpus (B066, G182, G055, G194). CURRENT_STATE_CLEAN.md \u00a78.4 assesses timing record as supporting this claim.",
       "Alex": "Read her in-person quietness as concealment and avoidance (B063, G099).",
-      "inference": "[inference] The acknowledge-this/name-it-first deadlock is structurally identical to B088-B106 (8 hours later) and G032/G173 (Aftermath Jul 11). First instance. See CURRENT_STATE_CLEAN.md §8.7a."
+      "inference": "[inference] The acknowledge-this/name-it-first deadlock is structurally identical to B088-B106 (8 hours later) and G032/G173 (Aftermath Jul 11). First instance. See CURRENT_STATE_CLEAN.md \u00a78.7a."
     },
     "key_quotes": [
-      {"eid": "B022", "speaker": "Naomi", "text": "I thought it was a bit weird that you wouldn't acknowledge what conversation I was talking about."},
-      {"eid": "B023", "speaker": "Alex", "text": "How can I acknowledge a conversation that you won't tell me what it is?"},
-      {"eid": "B021", "speaker": "Alex", "text": "we talked about this in person because you're right, we should not do it over text or even voice message.", "note": "Alex's own rule, stated by Alex at 16:04. Breached at B044, 17:04:56."},
-      {"eid": "B044", "speaker": "Alex", "note": "307-word sexual tension disclosure, 17:04:56. Part of 392-word, 76-second delivery (B044/B045/B046)."},
-      {"eid": "B046", "speaker": "Alex", "text": "I am turning onto High Street... could you let me in the garage?", "note": "17:06:12 — 76 seconds after B044 (computed). B039 Naomi last turn: 16:27:42. Gap to B044: 37 min 14s (computed)."}
+      {
+        "eid": "B022",
+        "speaker": "naomi",
+        "text": "I thought it was a bit weird that you wouldn't acknowledge what conversation I was talking about."
+      },
+      {
+        "eid": "B023",
+        "speaker": "alex",
+        "text": "How can I acknowledge a conversation that you won't tell me what it is?"
+      },
+      {
+        "eid": "B021",
+        "speaker": "alex",
+        "text": "we talked about this in person because you're right, we should not do it over text or even voice message.",
+        "note": "Alex's own rule, stated by Alex at 16:04. Breached at B044, 17:04:56."
+      },
+      {
+        "eid": "B044",
+        "speaker": "alex",
+        "note": "307-word sexual tension disclosure, 17:04:56. Part of 392-word, 76-second delivery (B044/B045/B046)."
+      },
+      {
+        "eid": "B046",
+        "speaker": "alex",
+        "text": "I am turning onto High Street... could you let me in the garage?",
+        "note": "17:06:12 \u2014 76 seconds after B044 (computed). B039 Naomi last turn: 16:27:42. Gap to B044: 37 min 14s (computed)."
+      }
     ],
     "confidence": "High",
-    "ordering_status": "Confirmed. Precedes CONF-02 by ~5 hours (B047→B049).",
+    "ordering_status": "Confirmed. Precedes CONF-02 by ~5 hours (B047\u2192B049).",
     "outcome": "Unresolved. Alex left. Naomi's first question sent at 21:57 (B049)."
   },
   {
@@ -34,54 +75,177 @@
     "event_type": "Acute conflict escalation / mutual character attack",
     "date_time_start": "2026-06-26T21:57:00",
     "date_time_end": "2026-06-27T02:33:00",
-    "source_event_ids": ["B049", "B055", "B056", "B062", "B063", "B066", "B069", "B072", "B074", "B085", "B087", "B088", "B091", "B092", "B095", "B107", "B122", "B127", "B128"],
-    "untranscribable_event_ids": ["B122", "B127", "B128"],
-    "significance_tags": ["keyboard-warrior-hinge", "5x-escalation", "retrieval-deadlock", "mutual-character-attack", "alex-exits-not-held"],
-    "exchange_rate_before_B063": {"turns": 10, "duration_min": 117, "rate_per_hr": 5.1, "source": "CURRENT_STATE_CLEAN.md §8.1"},
-    "exchange_rate_after_B063": {"turns": 67, "duration_min": 157, "rate_per_hr": 25.6, "source": "CURRENT_STATE_CLEAN.md §8.1"},
+    "source_event_ids": [
+      "B049",
+      "B055",
+      "B056",
+      "B062",
+      "B063",
+      "B066",
+      "B069",
+      "B072",
+      "B074",
+      "B085",
+      "B087",
+      "B088",
+      "B091",
+      "B092",
+      "B095",
+      "B107",
+      "B122",
+      "B127",
+      "B128"
+    ],
+    "untranscribable_event_ids": [
+      "B122",
+      "B127",
+      "B128"
+    ],
+    "significance_tags": [
+      "keyboard-warrior-hinge",
+      "5x-escalation",
+      "retrieval-deadlock",
+      "mutual-character-attack",
+      "alex-exits-not-held"
+    ],
+    "exchange_rate_before_B063": {
+      "turns": 10,
+      "duration_min": 117,
+      "rate_per_hr": 5.1,
+      "source": "CURRENT_STATE_CLEAN.md \u00a78.1"
+    },
+    "exchange_rate_after_B063": {
+      "turns": 67,
+      "duration_min": 157,
+      "rate_per_hr": 25.6,
+      "source": "CURRENT_STATE_CLEAN.md \u00a78.1"
+    },
     "speaker_accounts": {
       "Naomi": "Responded at first available opportunity after hearing the voice messages; keyboard warrior framing mischaracterises ordinary voice-note channel latency. Direct rebuttal at B066 (72 sec after B063).",
       "Alex": "Naomi was avoidant in person, then delivered heavy emotional material by voice note the moment he drove away.",
-      "inference": "[inference] CURRENT_STATE_CLEAN.md §8.4 assesses Alex's charge as factually false on the record given B046/B047 timestamps and B066's contemporaneous rebuttal. Both characterisations are internally consistent from each party's position; timing record supports Naomi's account of latency."
+      "inference": "[inference] CURRENT_STATE_CLEAN.md \u00a78.4 assesses Alex's charge as factually false on the record given B046/B047 timestamps and B066's contemporaneous rebuttal. Both characterisations are internally consistent from each party's position; timing record supports Naomi's account of latency."
     },
     "key_quotes": [
-      {"eid": "B049", "speaker": "Naomi", "text": "Why did you ever, like, even mention the sexual tension then? I'm so confused."},
-      {"eid": "B062", "speaker": "Alex", "note": "Declared exit at 23:54. B063 follows 1m58s later (computed)."},
-      {"eid": "B063", "speaker": "Alex", "note": "Keyboard warrior comment. Re-entry 1m58s after B062."},
-      {"eid": "B066", "speaker": "Naomi", "text": "I clearly wasn't okay... I needed to listen to your fucking voice messages, which you didn't give me a chance to listen to.", "note": "72 seconds after B063. Contemporaneous rebuttal. CURRENT_STATE_CLEAN.md §8.4."},
-      {"eid": "B088", "speaker": "Alex", "text": "What are your fucking questions?", "note": "Retrieval deadlock — see CURRENT_STATE_CLEAN.md §8.3."},
-      {"eid": "B095", "speaker": "Naomi", "text": "Now I hate you."},
-      {"eid": "B107", "speaker": "Alex", "text": "I will not be responding to any more messages.", "note": "Breached within 9 minutes. CURRENT_STATE_CLEAN.md §8.2."}
+      {
+        "eid": "B049",
+        "speaker": "naomi",
+        "text": "Why did you ever, like, even mention the sexual tension then? I'm so confused."
+      },
+      {
+        "eid": "B062",
+        "speaker": "alex",
+        "note": "Declared exit at 23:54. B063 follows 1m58s later (computed)."
+      },
+      {
+        "eid": "B063",
+        "speaker": "alex",
+        "note": "Keyboard warrior comment. Re-entry 1m58s after B062."
+      },
+      {
+        "eid": "B066",
+        "speaker": "naomi",
+        "text": "I clearly wasn't okay... I needed to listen to your fucking voice messages, which you didn't give me a chance to listen to.",
+        "note": "72 seconds after B063. Contemporaneous rebuttal. CURRENT_STATE_CLEAN.md \u00a78.4."
+      },
+      {
+        "eid": "B088",
+        "speaker": "alex",
+        "text": "What are your fucking questions?",
+        "note": "Retrieval deadlock \u2014 see CURRENT_STATE_CLEAN.md \u00a78.3."
+      },
+      {
+        "eid": "B095",
+        "speaker": "naomi",
+        "text": "Now I hate you."
+      },
+      {
+        "eid": "B107",
+        "speaker": "alex",
+        "text": "I will not be responding to any more messages.",
+        "note": "Breached within 9 minutes. CURRENT_STATE_CLEAN.md \u00a78.2."
+      }
     ],
-    "confidence": "High (pre-01:28). Paraphrase only for B122/B127/B128 (CURRENT_STATE_CLEAN.md §3).",
+    "confidence": "High (pre-01:28). Paraphrase only for B122/B127/B128 (CURRENT_STATE_CLEAN.md \u00a73).",
     "ordering_status": "Confirmed.",
-    "outcome": "Cessation without agreement. B122/B127/B128 cited from CURRENT_STATE_CLEAN.md §8.5 only — no verbatim transcript."
+    "outcome": "Cessation without agreement. B122/B127/B128 cited from CURRENT_STATE_CLEAN.md \u00a78.5 only \u2014 no verbatim transcript.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "CONF-03",
     "phase": "Conflict",
     "session": "S9/S10",
-    "label": "Boundary and flirtation clarification — friendship termination declared",
+    "label": "Boundary and flirtation clarification \u2014 friendship termination declared",
     "event_type": "Repair attempt / boundary dispute / friendship termination",
     "date_time_start": "2026-07-04T22:07:00",
     "date_time_end": "2026-07-05T00:53:00",
-    "source_event_ids": ["C047", "C055", "C059", "C062", "C065", "C066", "C067", "C068", "C072", "C075", "C080", "C081", "C082", "C083"],
-    "significance_tags": ["repair-attempt", "boundary-clarification", "friendship-termination-declared", "retrieval-deadlock", "directness-loop"],
+    "source_event_ids": [
+      "C047",
+      "C055",
+      "C059",
+      "C062",
+      "C065",
+      "C066",
+      "C067",
+      "C068",
+      "C072",
+      "C075",
+      "C080",
+      "C081",
+      "C082",
+      "C083"
+    ],
+    "significance_tags": [
+      "repair-attempt",
+      "boundary-clarification",
+      "friendship-termination-declared",
+      "retrieval-deadlock",
+      "directness-loop"
+    ],
     "speaker_accounts": {
       "Naomi": "Describes the friendship termination as emotional blackmail, not a legitimate exit (C082).",
       "Alex": "Attempted repair; met with unavailability; ended the friendship when platonic basis seemed uncertain.",
       "inference": "[inference] C066-C068 (genuine_unanswered: true per conflict_questions_annotated.json) establish the specific questions the Aftermath sessions will attempt and fail to revisit."
     },
     "key_quotes": [
-      {"eid": "C047", "speaker": "Alex", "text": "I'm not eager to discuss it, but it clearly needs to be discussed... I don't want to lose you as a friend.", "annotation": "intent: repair (conflict_questions_annotated.json)"},
-      {"eid": "C066", "speaker": "Alex", "text": "May I ask you what things I did to make you feel like I was flirting with you more so than anyone else?", "annotation": "genuine_unanswered: true (conflict_questions_annotated.json)"},
-      {"eid": "C080", "speaker": "Alex", "text": "I think I am done with this friendship myself."},
-      {"eid": "C081", "speaker": "Alex", "text": "just in case that was not direct enough for you, that was me ending the friendship."},
-      {"eid": "C082", "speaker": "Naomi", "text": "It's not fair for you to do this emotional... blackmail, basically.", "note": "Naomi describes the interaction as emotional blackmail."}
+      {
+        "eid": "C047",
+        "speaker": "alex",
+        "text": "I'm not eager to discuss it, but it clearly needs to be discussed... I don't want to lose you as a friend.",
+        "annotation": "intent: repair (conflict_questions_annotated.json)"
+      },
+      {
+        "eid": "C066",
+        "speaker": "alex",
+        "text": "May I ask you what things I did to make you feel like I was flirting with you more so than anyone else?",
+        "annotation": "genuine_unanswered: true (conflict_questions_annotated.json)"
+      },
+      {
+        "eid": "C080",
+        "speaker": "alex",
+        "text": "I think I am done with this friendship myself."
+      },
+      {
+        "eid": "C081",
+        "speaker": "alex",
+        "text": "just in case that was not direct enough for you, that was me ending the friendship."
+      },
+      {
+        "eid": "C082",
+        "speaker": "naomi",
+        "text": "It's not fair for you to do this emotional... blackmail, basically.",
+        "note": "Naomi describes the interaction as emotional blackmail."
+      }
     ],
     "confidence": "High",
     "ordering_status": "Confirmed. Last Conflict session before Silence.",
-    "outcome": "Friendship declared ended by Alex. 6.8-day silence follows (CURRENT_STATE_CLEAN.md §3)."
+    "outcome": "Friendship declared ended by Alex. 6.8-day silence follows (CURRENT_STATE_CLEAN.md \u00a73).",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-01",
@@ -91,115 +255,284 @@
     "event_type": "Reconnection / conditional friendship offer",
     "date_time_start": "2026-07-11T20:07:12",
     "date_time_end": "2026-07-11T20:27:26",
-    "source_event_ids": ["G212", "G170", "G171", "G172", "G173", "G174", "G019"],
-    "initiator": "Naomi",
-    "significance_tags": ["naomi-opens-aftermath", "6.8-day-silence-broken", "alex-acknowledgement-demand", "low-key-opening"],
+    "source_event_ids": [
+      "G212",
+      "G170",
+      "G171",
+      "G172",
+      "G173",
+      "G174",
+      "G019"
+    ],
+    "initiator": "naomi",
+    "significance_tags": [
+      "naomi-opens-aftermath",
+      "6.8-day-silence-broken",
+      "alex-acknowledgement-demand",
+      "low-key-opening"
+    ],
     "speaker_accounts": {
       "Alex": "Wants friendship back; requires acknowledgement first; fears re-escalation (G173-G019).",
       "Naomi": "Did not know what she was being asked to acknowledge (G032, later in same session).",
       "inference": "[inference] Acknowledgement demand arrives on Alex's third turn (G173), three turns after reconnection opens."
     },
     "key_quotes": [
-      {"eid": "G212", "speaker": "Naomi", "text": "Sorry, I've been asleep all day. Whatever you want to do, dude.", "note": "20:07:12, 7.3s. Speaker confirmed by manual listening (CURRENT_STATE_CLEAN.md §3)."},
-      {"eid": "G173", "speaker": "Alex", "text": "I wouldn't mind having my friend back just think some uh acknowledgement would be good is all."},
-      {"eid": "G019", "speaker": "Alex", "text": "So if this is going to create another argument just just forget it and move on."}
+      {
+        "eid": "G212",
+        "speaker": "naomi",
+        "text": "Sorry, I've been asleep all day. Whatever you want to do, dude.",
+        "note": "20:07:12, 7.3s. Speaker confirmed by manual listening (CURRENT_STATE_CLEAN.md \u00a73)."
+      },
+      {
+        "eid": "G173",
+        "speaker": "alex",
+        "text": "I wouldn't mind having my friend back just think some uh acknowledgement would be good is all."
+      },
+      {
+        "eid": "G019",
+        "speaker": "alex",
+        "text": "So if this is going to create another argument just just forget it and move on."
+      }
     ],
     "confidence": "High",
     "ordering_status": "First Aftermath episode.",
-    "outcome": "Transitions to AFT-02 within same session."
+    "outcome": "Transitions to AFT-02 within same session.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-02",
     "phase": "Aftermath",
     "session_id": "S-AM-1",
-    "label": "Acknowledgement deadlock — first contact session",
+    "label": "Acknowledgement deadlock \u2014 first contact session",
     "event_type": "Accountability dispute / retrieval deadlock",
     "date_time_start": "2026-07-11T20:30:43",
     "date_time_end": "2026-07-11T22:30:13",
-    "source_event_ids": ["G097", "G175", "G096", "G080", "G028", "G066", "G176", "G020", "G040", "G089", "G085", "G016", "G177", "G037", "G065", "G064", "G032"],
-    "audit_corrections": ["G096 was absent from prior draft. Added as subsumed. Content: Alex dismissing Nishant tangent ('What does this have to do with the price of fish though?')."],
-    "significance_tags": ["acknowledgement-deadlock", "retrieval-deadlock-recurrence", "alex-anxiety-stated", "alex-in-person-condition"],
+    "source_event_ids": [
+      "G097",
+      "G175",
+      "G096",
+      "G080",
+      "G028",
+      "G066",
+      "G176",
+      "G020",
+      "G040",
+      "G089",
+      "G085",
+      "G016",
+      "G177",
+      "G037",
+      "G065",
+      "G064",
+      "G032"
+    ],
+    "audit_corrections": [
+      "G096 was absent from prior draft. Added as subsumed. Content: Alex dismissing Nishant tangent ('What does this have to do with the price of fish though?')."
+    ],
+    "significance_tags": [
+      "acknowledgement-deadlock",
+      "retrieval-deadlock-recurrence",
+      "alex-anxiety-stated",
+      "alex-in-person-condition"
+    ],
     "speaker_accounts": {
       "Alex": "Needs acknowledgement before risking in-person confrontation again.",
       "Naomi": "Does not know what she is being asked to acknowledge.",
-      "inference": "[inference] Structurally identical to CONF-01 deadlock (B022/B023) 15 days earlier. CURRENT_STATE_CLEAN.md §8.7a: acknowledgement demand is mutual (Naomi 4 Aftermath instances; Alex 4 Aftermath instances)."
+      "inference": "[inference] Structurally identical to CONF-01 deadlock (B022/B023) 15 days earlier. CURRENT_STATE_CLEAN.md \u00a78.7a: acknowledgement demand is mutual (Naomi 4 Aftermath instances; Alex 4 Aftermath instances)."
     },
     "key_quotes": [
-      {"eid": "G175", "speaker": "Alex", "text": "I've had radio silence and it's been a little bit hurtful, but I've endured worse."},
-      {"eid": "G096", "speaker": "Alex", "text": "What does this have to do with the price of fish though?", "note": "Subsumed. Alex dismissing Nishant tangent. Previously missing from incident assignments."},
-      {"eid": "G080", "speaker": "Alex", "text": "The anxiety of not knowing is going to kill me."},
-      {"eid": "G064", "speaker": "Alex", "text": "Dude you haven't acknowledged a single thing like if you want me to come around and talk about it there needs to be like a preliminary fucking conversation."},
-      {"eid": "G032", "speaker": "Naomi", "text": "What am I acknowledging? If you want to do this over the phone, let's do it. Let's go!"}
+      {
+        "eid": "G175",
+        "speaker": "alex",
+        "text": "I've had radio silence and it's been a little bit hurtful, but I've endured worse."
+      },
+      {
+        "eid": "G096",
+        "speaker": "alex",
+        "text": "What does this have to do with the price of fish though?",
+        "note": "Subsumed. Alex dismissing Nishant tangent. Previously missing from incident assignments."
+      },
+      {
+        "eid": "G080",
+        "speaker": "alex",
+        "text": "The anxiety of not knowing is going to kill me."
+      },
+      {
+        "eid": "G064",
+        "speaker": "alex",
+        "text": "Dude you haven't acknowledged a single thing like if you want me to come around and talk about it there needs to be like a preliminary fucking conversation."
+      },
+      {
+        "eid": "G032",
+        "speaker": "naomi",
+        "text": "What am I acknowledging? If you want to do this over the phone, let's do it. Let's go!"
+      }
     ],
     "confidence": "High",
     "ordering_status": "Follows AFT-01 continuously within S-AM-1.",
-    "outcome": "No acknowledgement given. Session continues to AFT-03."
+    "outcome": "No acknowledgement given. Session continues to AFT-03.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-03",
     "phase": "Aftermath",
     "session_id": "S-AM-1",
-    "label": "Conflicting accounts of Jun 26 — mischaracterisation dispute",
+    "label": "Conflicting accounts of Jun 26 \u2014 mischaracterisation dispute",
     "event_type": "Delayed processing / account dispute",
     "date_time_start": "2026-07-11T22:30:45",
     "date_time_end": "2026-07-11T22:53:24",
-    "source_event_ids": ["G046", "G178", "G179", "G031", "G099", "G045", "G042", "G180", "G181", "G062", "G112", "G182", "G183", "G055", "G184", "G070"],
-    "significance_tags": ["voice-message-timing-dispute", "mischaracterisation-dispute", "alex-exit-1-of-4", "post-exit-continuation", "dinner-debt-first-mention"],
+    "source_event_ids": [
+      "G046",
+      "G178",
+      "G179",
+      "G031",
+      "G099",
+      "G045",
+      "G042",
+      "G180",
+      "G181",
+      "G062",
+      "G112",
+      "G182",
+      "G183",
+      "G055",
+      "G184",
+      "G070"
+    ],
+    "significance_tags": [
+      "voice-message-timing-dispute",
+      "mischaracterisation-dispute",
+      "alex-exit-1-of-4",
+      "post-exit-continuation",
+      "dinner-debt-first-mention"
+    ],
     "speaker_accounts": {
-      "Naomi": "She was not avoidant — she was uninformed. Describes Alex's anger at her questions as borderline abusive (G070).",
+      "Naomi": "She was not avoidant \u2014 she was uninformed. Describes Alex's anger at her questions as borderline abusive (G070).",
       "Alex": "Her silence was concealment; chaser accusation amounted to gaslighting (G112).",
-      "inference": "[inference] Third corpus instance of Naomi's voice-message timing account. CURRENT_STATE_CLEAN.md §8.4 assesses timing record as supporting her claim."
+      "inference": "[inference] Third corpus instance of Naomi's voice-message timing account. CURRENT_STATE_CLEAN.md \u00a78.4 assesses timing record as supporting her claim."
     },
     "key_quotes": [
-      {"eid": "G099", "speaker": "Alex", "text": "last time I came over to have the conversation face-to-face you just stared at the ground... And then the second I left you started up over comments like over text."},
-      {"eid": "G182", "speaker": "Naomi", "text": "I didn't even listen to your voice messages that you sent before, right before you arrived.", "note": "Third corpus instance. Prior: B066, G055."},
-      {"eid": "G183", "speaker": "Alex", "text": "All right, Nelly. Have a good one. I'll speak to you another time.", "note": "Alex Exit 1 in Aftermath."},
-      {"eid": "G184", "speaker": "Naomi", "text": "You owe me for dinner for that night.", "note": "Post-exit. First dinner-debt mention."},
-      {"eid": "G070", "speaker": "Naomi", "text": "the fact that after the fact you got angry at me for... asking you questions at all is ridiculous. It's like borderline abusive, dude.", "note": "Naomi describes Alex's anger at her questions as borderline abusive."}
+      {
+        "eid": "G099",
+        "speaker": "alex",
+        "text": "last time I came over to have the conversation face-to-face you just stared at the ground... And then the second I left you started up over comments like over text."
+      },
+      {
+        "eid": "G182",
+        "speaker": "naomi",
+        "text": "I didn't even listen to your voice messages that you sent before, right before you arrived.",
+        "note": "Third corpus instance. Prior: B066, G055."
+      },
+      {
+        "eid": "G183",
+        "speaker": "alex",
+        "text": "All right, Nelly. Have a good one. I'll speak to you another time.",
+        "note": "Alex Exit 1 in Aftermath."
+      },
+      {
+        "eid": "G184",
+        "speaker": "naomi",
+        "text": "You owe me for dinner for that night.",
+        "note": "Post-exit. First dinner-debt mention."
+      },
+      {
+        "eid": "G070",
+        "speaker": "naomi",
+        "text": "the fact that after the fact you got angry at me for... asking you questions at all is ridiculous. It's like borderline abusive, dude.",
+        "note": "Naomi describes Alex's anger at her questions as borderline abusive."
+      }
     ],
     "confidence": "High",
     "ordering_status": "Immediately follows AFT-02 within S-AM-1.",
-    "outcome": "Alex exits (G183). S-AM-1 closes 22:53:24. Gap 62.6 min to S-AM-2 (computed)."
+    "outcome": "Alex exits (G183). S-AM-1 closes 22:53:24. Gap 62.6 min to S-AM-2 (computed).",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-04",
     "phase": "Aftermath",
     "session_id": "S-AM-2",
-    "label": "Attentiveness dispute — did Alex read her messages?",
+    "label": "Attentiveness dispute \u2014 did Alex read her messages?",
     "event_type": "Good-faith dispute / attentiveness challenge",
     "date_time_start": "2026-07-11T23:55:57",
     "date_time_end": "2026-07-12T00:04:10",
-    "source_event_ids": ["G030", "G185", "G075", "G100"],
-    "participants_note": "Naomi audio only. Alex's replies implied by G030 framing but absent from corpus (CURRENT_STATE_CLEAN.md §7.2D).",
-    "significance_tags": ["attentiveness-dispute", "what-was-known-dispute", "naomi-only-session", "missing-alex-replies", "screenshot-evidence"],
+    "source_event_ids": [
+      "G030",
+      "G185",
+      "G075",
+      "G100"
+    ],
+    "participants_note": "Naomi audio only. Alex's replies implied by G030 framing but absent from corpus (CURRENT_STATE_CLEAN.md \u00a77.2D).",
+    "significance_tags": [
+      "attentiveness-dispute",
+      "what-was-known-dispute",
+      "naomi-only-session",
+      "missing-alex-replies",
+      "screenshot-evidence"
+    ],
     "speaker_accounts": {
       "Naomi": "Alex did not read or engage with her messages when first sent; still not engaging properly. She states she has screenshots (G100).",
       "Alex": "Not audible. Replies implied by G030 framing but absent from corpus.",
       "inference": "[inference] Extends the 'you didn't listen' thread from CONF-02 (B069, B107). Missing Alex-side audio is the principal limitation on interpreting this episode."
     },
     "key_quotes": [
-      {"eid": "G030", "speaker": "Naomi", "text": "So you didn't read my messages is what you're telling me right now."},
-      {"eid": "G075", "speaker": "Naomi", "text": "You literally didn't listen or read a single thing or respond to a single question."},
-      {"eid": "G100", "speaker": "Naomi", "text": "Signal does allow you to take screenshots because I have the whole fucking conversation screenshotted."}
+      {
+        "eid": "G030",
+        "speaker": "naomi",
+        "text": "So you didn't read my messages is what you're telling me right now."
+      },
+      {
+        "eid": "G075",
+        "speaker": "naomi",
+        "text": "You literally didn't listen or read a single thing or respond to a single question."
+      },
+      {
+        "eid": "G100",
+        "speaker": "naomi",
+        "text": "Signal does allow you to take screenshots because I have the whole fucking conversation screenshotted."
+      }
     ],
     "confidence": "Moderate. Naomi's audio confirmed; Alex's side unknown.",
     "ordering_status": "Second Aftermath session (S-AM-2). Gap from S-AM-1: 62.6 min.",
-    "outcome": "No resolution recorded. S-AM-2 closes 00:04:10. Gap 66.2 min to S-AM-3 (computed)."
+    "outcome": "No resolution recorded. S-AM-2 closes 00:04:10. Gap 66.2 min to S-AM-3 (computed).",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-05",
     "phase": "Aftermath",
     "session_id": "S-AM-3",
-    "label": "Explicit apology demand — claim about prior knowledge via Nishant — conditional patience stated",
+    "label": "Explicit apology demand \u2014 claim about prior knowledge via Nishant \u2014 conditional patience stated",
     "event_type": "Accountability dispute / apology-format demand",
     "date_time_start": "2026-07-12T01:10:23",
     "date_time_end": "2026-07-12T01:31:53",
-    "source_event_ids": ["G186", "G094", "G187", "G188"],
+    "source_event_ids": [
+      "G186",
+      "G094",
+      "G187",
+      "G188"
+    ],
     "participants_note": "Naomi audio only. Alex's replies implied by G188 framing but absent from corpus.",
-    "significance_tags": ["apology-demand-explicit", "acknowledgement-absence-stated", "naomi-claim-nishant-prior-knowledge", "naomi-says-forced-into-vulnerability", "naomi-only-session"],
+    "significance_tags": [
+      "apology-demand-explicit",
+      "acknowledgement-absence-stated",
+      "naomi-claim-nishant-prior-knowledge",
+      "naomi-says-forced-into-vulnerability",
+      "naomi-only-session"
+    ],
     "claim_status_notes": {
       "G094": "Participant account only. No corpus event independently establishes what Nishant communicated to Alex or when. Recurs at G211 (AFT-13).",
-      "G187": "Naomi says she was forced into vulnerability — participant account."
+      "G187": "Naomi says she was forced into vulnerability \u2014 participant account."
     },
     "speaker_accounts": {
       "Naomi": "Alex gave no authentic apology; prior knowledge of her feelings was available via Nishant; she says she was forced into vulnerability she had been willing to let go of; she describes the situation as emotional blackmail.",
@@ -207,225 +540,512 @@
       "inference": "[inference] G186 functions as the closest specification in the corpus of what Naomi states she needed: at minimum one authentic apology and acknowledgement of named harms."
     },
     "key_quotes": [
-      {"eid": "G186", "speaker": "Naomi", "text": "You haven't even apologized one single time for one single thing. In fact, not one single authentic apology. / It's a type of emotional blackmail. / I still want to be your friend. I'll be patient.", "note": "Naomi describes the situation as emotional blackmail."},
-      {"eid": "G094", "speaker": "Naomi", "text": "it's not cool that you went to Nashant and spoke to Nashant about the situation and you were told what was going on, and you knew what was going on, and then you acted dumb.", "note": "Naomi's claim about prior knowledge via Nishant. Participant account only."},
-      {"eid": "G187", "speaker": "Naomi", "text": "you kept pushing the point. Like you forced it out of me. You forced me to be vulnerable when I didn't want to be... you just wanted to reject me. That's all.", "note": "Naomi says she was forced into vulnerability — participant account."}
+      {
+        "eid": "G186",
+        "speaker": "naomi",
+        "text": "You haven't even apologized one single time for one single thing. In fact, not one single authentic apology. / It's a type of emotional blackmail. / I still want to be your friend. I'll be patient.",
+        "note": "Naomi describes the situation as emotional blackmail."
+      },
+      {
+        "eid": "G094",
+        "speaker": "naomi",
+        "text": "it's not cool that you went to Nashant and spoke to Nashant about the situation and you were told what was going on, and you knew what was going on, and then you acted dumb.",
+        "note": "Naomi's claim about prior knowledge via Nishant. Participant account only."
+      },
+      {
+        "eid": "G187",
+        "speaker": "naomi",
+        "text": "you kept pushing the point. Like you forced it out of me. You forced me to be vulnerable when I didn't want to be... you just wanted to reject me. That's all.",
+        "note": "Naomi says she was forced into vulnerability \u2014 participant account."
+      }
     ],
     "confidence": "Moderate. Naomi's audio confirmed; Alex's side unknown.",
     "ordering_status": "Third Aftermath session (S-AM-3). ~42-hour gap follows before S-AM-4.",
-    "outcome": "Naomi states she will wait. S-AM-3 ends 01:31:53. ~42-hour gap before S-AM-4."
+    "outcome": "Naomi states she will wait. S-AM-3 ends 01:31:53. ~42-hour gap before S-AM-4.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-06",
     "phase": "Aftermath",
     "session_id": "S-AM-4",
-    "label": "Single mutual acknowledgement event — bilateral apology — personal disclosure",
+    "label": "Single mutual acknowledgement event \u2014 bilateral apology \u2014 personal disclosure",
     "event_type": "Mutual acknowledgement / bilateral apology / personal disclosure",
     "date_time_start": "2026-07-13T19:31:56",
     "date_time_end": "2026-07-13T20:09:52",
-    "source_event_ids": ["G053", "G189", "G190", "G006", "G010", "G102", "G090", "G191"],
-    "initiator": "Naomi",
-    "significance_tags": ["mutual-acknowledgement-single-instance", "alex-apology-given", "naomi-apology-given", "alex-personal-disclosure"],
+    "source_event_ids": [
+      "G053",
+      "G189",
+      "G190",
+      "G006",
+      "G010",
+      "G102",
+      "G090",
+      "G191"
+    ],
+    "initiator": "naomi",
+    "significance_tags": [
+      "mutual-acknowledgement-single-instance",
+      "alex-apology-given",
+      "naomi-apology-given",
+      "alex-personal-disclosure"
+    ],
     "speaker_accounts": {
-      "Alex": "Her message was authentic rather than reactive (G189). Apologises for 'my part to play' — non-specific, no named harms. Discloses cutting people from his life including his brother (G006).",
+      "Alex": "Her message was authentic rather than reactive (G189). Apologises for 'my part to play' \u2014 non-specific, no named harms. Discloses cutting people from his life including his brother (G006).",
       "Naomi_later": "G029 (Jul 21): 'This is the first moment you've even really acknowledged that I've said anything.' Describes this as the only such moment even at corpus end.",
-      "inference": "[inference] CURRENT_STATE_CLEAN.md §13.4: this event 'did not survive the session it occurred in.' AFT-07 follows 23 minutes later with conflict reopened."
+      "inference": "[inference] CURRENT_STATE_CLEAN.md \u00a713.4: this event 'did not survive the session it occurred in.' AFT-07 follows 23 minutes later with conflict reopened."
     },
     "key_quotes": [
-      {"eid": "G053", "speaker": "Naomi", "text": "I am sorry for... my behaviour that has caused you sadness and despair."},
-      {"eid": "G189", "speaker": "Alex", "text": "that is the first honest... authentic, honest, guttural message I've got from you... And obviously, I'm sorry for my part to play in this. I just wanted some fucking acknowledgement, and you've gone above and beyond. Thank you."},
-      {"eid": "G191", "speaker": "Alex", "text": "And I'm gone.", "note": "Exit while driving."}
+      {
+        "eid": "G053",
+        "speaker": "naomi",
+        "text": "I am sorry for... my behaviour that has caused you sadness and despair."
+      },
+      {
+        "eid": "G189",
+        "speaker": "alex",
+        "text": "that is the first honest... authentic, honest, guttural message I've got from you... And obviously, I'm sorry for my part to play in this. I just wanted some fucking acknowledgement, and you've gone above and beyond. Thank you."
+      },
+      {
+        "eid": "G191",
+        "speaker": "alex",
+        "text": "And I'm gone.",
+        "note": "Exit while driving."
+      }
     ],
     "confidence": "High",
     "ordering_status": "S-AM-4 opening sub-episode.",
-    "outcome": "Both parties apologised. Alex exits while driving (G191, 20:09:52). 23-min pause; S-AM-4 continues at AFT-07."
+    "outcome": "Both parties apologised. Alex exits while driving (G191, 20:09:52). 23-min pause; S-AM-4 continues at AFT-07.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-07",
     "phase": "Aftermath",
     "session_id": "S-AM-4",
-    "label": "Conflict reopened — apology negotiation — boundary declaration as inflection point",
+    "label": "Conflict reopened \u2014 apology negotiation \u2014 boundary declaration as inflection point",
     "event_type": "Conflict reopening / apology negotiation",
     "date_time_start": "2026-07-13T20:32:56",
     "date_time_end": "2026-07-13T21:13:53",
-    "source_event_ids": ["G192", "G193", "G194", "G034", "G195", "G196"],
+    "source_event_ids": [
+      "G192",
+      "G193",
+      "G194",
+      "G034",
+      "G195",
+      "G196"
+    ],
     "gap_from_AFT06_minutes": 23.1,
     "gap_source": "computed: G192 20:32:56 - G191 20:09:52",
-    "significance_tags": ["conflict-reopened-within-session", "voice-message-timing-fourth-instance", "apology-negotiation", "boundary-as-inflection-point", "sponge-disclosure"],
+    "significance_tags": [
+      "conflict-reopened-within-session",
+      "voice-message-timing-fourth-instance",
+      "apology-negotiation",
+      "boundary-as-inflection-point",
+      "sponge-disclosure"
+    ],
     "speaker_accounts": {
       "Naomi": "The hurt was Alex appearing to feign ignorance; boundary declaration was the inflection point (G196). G034 is apology negotiation, not refusal.",
-      "Alex": "He is a sponge — his earlier tone matched what he was receiving (G193).",
+      "Alex": "He is a sponge \u2014 his earlier tone matched what he was receiving (G193).",
       "inference": "[inference] G034 ('what am I apologising for') is a request for specificity, not a denial of wrongdoing."
     },
     "key_quotes": [
-      {"eid": "G193", "speaker": "Alex", "text": "I am a sponge. I will reciprocate the emotions around me because I don't have my own."},
-      {"eid": "G194", "speaker": "Naomi", "text": "I hadn't even listened to your voice messages. As I've said many times, like, there's, like, three two-minute voice messages you sent right before you arrived.", "note": "Fourth corpus instance: B066, G182, G055, G194."},
-      {"eid": "G034", "speaker": "Naomi", "text": "Well, what am I apologizing for like I'm apologizing... if my behavior has done that then I'm sorry..."},
-      {"eid": "G196", "speaker": "Naomi", "text": "From my perspective, it seemed like everything changed after I mentioned that I was going to have to maybe draw some boundaries."}
+      {
+        "eid": "G193",
+        "speaker": "alex",
+        "text": "I am a sponge. I will reciprocate the emotions around me because I don't have my own."
+      },
+      {
+        "eid": "G194",
+        "speaker": "naomi",
+        "text": "I hadn't even listened to your voice messages. As I've said many times, like, there's, like, three two-minute voice messages you sent right before you arrived.",
+        "note": "Fourth corpus instance: B066, G182, G055, G194."
+      },
+      {
+        "eid": "G034",
+        "speaker": "naomi",
+        "text": "Well, what am I apologizing for like I'm apologizing... if my behavior has done that then I'm sorry..."
+      },
+      {
+        "eid": "G196",
+        "speaker": "naomi",
+        "text": "From my perspective, it seemed like everything changed after I mentioned that I was going to have to maybe draw some boundaries."
+      }
     ],
     "confidence": "High",
     "ordering_status": "Follows AFT-06 within S-AM-4. 23.1-min gap (computed).",
-    "outcome": "No resolution. Transitions to AFT-08."
+    "outcome": "No resolution. Transitions to AFT-08.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-08",
     "phase": "Aftermath",
     "session_id": "S-AM-4",
-    "label": "Alex refers to a past suicide attempt — harm identification — partial de-escalation stated",
+    "label": "Alex refers to a past suicide attempt \u2014 harm identification \u2014 partial de-escalation stated",
     "event_type": "Personal disclosure / harm identification / partial de-escalation",
     "date_time_start": "2026-07-13T21:25:24",
     "date_time_end": "2026-07-13T21:49:21",
-    "source_event_ids": ["G197", "G087", "G021", "G017", "G047", "G026", "G108"],
-    "significance_tags": ["alex-personal-disclosure", "invulnerability-claim", "alex-defended-invulnerability", "naomi-names-specific-harms", "naomi-states-pause-not-held"],
+    "source_event_ids": [
+      "G197",
+      "G087",
+      "G021",
+      "G017",
+      "G047",
+      "G026",
+      "G108"
+    ],
+    "significance_tags": [
+      "alex-personal-disclosure",
+      "invulnerability-claim",
+      "alex-defended-invulnerability",
+      "naomi-names-specific-harms",
+      "naomi-states-pause-not-held"
+    ],
     "speaker_accounts": {
       "Alex": "Refers to a past suicide attempt as basis for stated imperviousness to hurt from this conflict (G197). Participant claim; biographical fact cannot be independently verified from corpus.",
-      "Naomi": "Reads G197 as an attempt to hurt her (G087). Names narcissist accusation as qualitatively more harmful than coward accusation — 'different ballparks' (G021).",
-      "inference": "[inference] CURRENT_STATE_CLEAN.md §13.3 labels G197 as alex_defended_invulnerability: 'a protective frame, not a report.' Analytical characterisation, not established fact."
+      "Naomi": "Reads G197 as an attempt to hurt her (G087). Names narcissist accusation as qualitatively more harmful than coward accusation \u2014 'different ballparks' (G021).",
+      "inference": "[inference] CURRENT_STATE_CLEAN.md \u00a713.3 labels G197 as alex_defended_invulnerability: 'a protective frame, not a report.' Analytical characterisation, not established fact."
     },
     "key_quotes": [
-      {"eid": "G197", "speaker": "Alex", "text": "none of it really hurt me because... there's nothing that can really be done or said to me at this point that is going to hurt me... i've already been through fucking far worse shit than this like attempted suicide.", "note": "Alex refers to a past suicide attempt. Participant account; biographical fact not independently verifiable from corpus."},
-      {"eid": "G021", "speaker": "Naomi", "text": "calling someone a coward is one thing, saying someone is a narcissist... Like, that's a different thing. Those are different ballparks."},
-      {"eid": "G108", "speaker": "Naomi", "text": "I've said my piece... I will do my very best to not message you again unless a thought comes up.", "note": "Naomi states pause. Not held — G067 follows 17.2 min later (computed)."}
+      {
+        "eid": "G197",
+        "speaker": "alex",
+        "text": "none of it really hurt me because... there's nothing that can really be done or said to me at this point that is going to hurt me... i've already been through fucking far worse shit than this like attempted suicide.",
+        "note": "Alex refers to a past suicide attempt. Participant account; biographical fact not independently verifiable from corpus."
+      },
+      {
+        "eid": "G021",
+        "speaker": "naomi",
+        "text": "calling someone a coward is one thing, saying someone is a narcissist... Like, that's a different thing. Those are different ballparks."
+      },
+      {
+        "eid": "G108",
+        "speaker": "naomi",
+        "text": "I've said my piece... I will do my very best to not message you again unless a thought comes up.",
+        "note": "Naomi states pause. Not held \u2014 G067 follows 17.2 min later (computed)."
+      }
     ],
     "confidence": "High",
     "ordering_status": "Follows AFT-07 within S-AM-4.",
-    "outcome": "Naomi states she has said her piece (G108). Does not hold — AFT-09 follows 17.2 min later."
+    "outcome": "Naomi states she has said her piece (G108). Does not hold \u2014 AFT-09 follows 17.2 min later.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-09",
     "phase": "Aftermath",
     "session_id": "S-AM-4",
-    "label": "Renewed accusation — ADHD/dyslexia disclosure — exit-as-regulation",
+    "label": "Renewed accusation \u2014 ADHD/dyslexia disclosure \u2014 exit-as-regulation",
     "event_type": "Renewed accusation / personal disclosure / exit",
     "date_time_start": "2026-07-13T22:06:35",
     "date_time_end": "2026-07-13T22:18:56",
-    "source_event_ids": ["G067", "G198", "G199", "G088"],
-    "significance_tags": ["alex-neurodivergence-disclosure", "retrieval-deadlock-recurrence", "alex-exit-2-of-4", "naomi-continues-after-stated-pause"],
+    "source_event_ids": [
+      "G067",
+      "G198",
+      "G199",
+      "G088"
+    ],
+    "significance_tags": [
+      "alex-neurodivergence-disclosure",
+      "retrieval-deadlock-recurrence",
+      "alex-exit-2-of-4",
+      "naomi-continues-after-stated-pause"
+    ],
     "speaker_accounts": {
       "Naomi": "Scrolling up is minimal labour; documented facts should not require repetition (G198).",
       "Alex": "Scrolling while occupied is genuinely difficult with ADHD and dyslexia; he is overwhelmed and exits (G199).",
-      "inference": "[inference] CURRENT_STATE_CLEAN.md §9.1 (Flooding Hypothesis) frames exits as nervous-system regulation rather than strategic avoidance. Analytical characterisation, not established motive."
+      "inference": "[inference] CURRENT_STATE_CLEAN.md \u00a79.1 (Flooding Hypothesis) frames exits as nervous-system regulation rather than strategic avoidance. Analytical characterisation, not established motive."
     },
     "key_quotes": [
-      {"eid": "G198", "speaker": "Naomi", "text": "I shouldn't have to repeat myself. I shouldn't have to post screenshots... all you had to do was scroll up in the conversation and look."},
-      {"eid": "G199", "speaker": "Alex", "text": "I'm just going to stop you there for a second. I'm an illiterate ADHD fucking head case... Sometimes scrolling up and reading something when you're doing six other things at once is not that easy... I'm getting worked up, so I'm actually going to put my phone on silent.", "note": "Alex Exit 2 in S-AM-4."},
-      {"eid": "G088", "speaker": "Naomi", "text": "You don't have a problem reading any of the other...", "note": "Disputes ADHD applicability."}
+      {
+        "eid": "G198",
+        "speaker": "naomi",
+        "text": "I shouldn't have to repeat myself. I shouldn't have to post screenshots... all you had to do was scroll up in the conversation and look."
+      },
+      {
+        "eid": "G199",
+        "speaker": "alex",
+        "text": "I'm just going to stop you there for a second. I'm an illiterate ADHD fucking head case... Sometimes scrolling up and reading something when you're doing six other things at once is not that easy... I'm getting worked up, so I'm actually going to put my phone on silent.",
+        "note": "Alex Exit 2 in S-AM-4."
+      },
+      {
+        "eid": "G088",
+        "speaker": "naomi",
+        "text": "You don't have a problem reading any of the other...",
+        "note": "Disputes ADHD applicability."
+      }
     ],
     "confidence": "High",
     "ordering_status": "Follows AFT-08 within S-AM-4.",
-    "outcome": "Alex exits (G199). G088 follows. One post-exit turn remains (AFT-10)."
+    "outcome": "Alex exits (G199). G088 follows. One post-exit turn remains (AFT-10).",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-10",
     "phase": "Aftermath",
     "session_id": "S-AM-4",
-    "label": "Post-exit communication style complaint — session close",
+    "label": "Post-exit communication style complaint \u2014 session close",
     "event_type": "Post-exit continuation / communication style complaint",
     "date_time_start": "2026-07-13T23:04:44",
     "date_time_end": "2026-07-13T23:04:44",
-    "source_event_ids": ["G200"],
+    "source_event_ids": [
+      "G200"
+    ],
     "gap_from_G088_minutes": 45.8,
     "gap_source": "computed: G200 23:04:44 - G088 22:18:56",
-    "significance_tags": ["post-exit-continuation", "communication-style-complaint", "session-close"],
+    "significance_tags": [
+      "post-exit-continuation",
+      "communication-style-complaint",
+      "session-close"
+    ],
     "speaker_accounts": {
       "Naomi": "Alex's communication style contained objectionable backhanded inferences, including an implied comparison to her father (G200).",
       "inference": "[inference] Post-exit continuation 45.8 min after G088 (52 min after Alex exit G199). Third post-exit turn in S-AM-4."
     },
     "key_quotes": [
-      {"eid": "G200", "speaker": "Naomi", "text": "I have to say that I don't very much like the way you've been speaking to me tonight. A lot of your comments are underlaid with backhanded inferences, like, I'm not your dad... He never did that."}
+      {
+        "eid": "G200",
+        "speaker": "naomi",
+        "text": "I have to say that I don't very much like the way you've been speaking to me tonight. A lot of your comments are underlaid with backhanded inferences, like, I'm not your dad... He never did that."
+      }
     ],
     "confidence": "High",
     "ordering_status": "Closes S-AM-4. Longest Aftermath inter-session gap follows: ~7.8 days before S-AM-5.",
-    "outcome": "S-AM-4 closes at 23:04:44. ~7.8-day gap before S-AM-5."
+    "outcome": "S-AM-4 closes at 23:04:44. ~7.8-day gap before S-AM-5.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-11",
     "phase": "Aftermath",
     "session_id": "S-AM-5",
-    "label": "Warm reciprocal exchange — S-AM-5 opening — 129 minutes",
+    "label": "Warm reciprocal exchange \u2014 S-AM-5 opening \u2014 129 minutes",
     "event_type": "context_episode",
     "significance": "contrast_before_escalation",
     "date_time_start": "2026-07-21T19:04:12",
     "date_time_end": "2026-07-21T21:13:03",
-    "source_event_ids": ["G201", "G073", "G050", "G202", "G091", "G203", "G204", "G023", "G205", "G039", "G079", "G107", "G063", "G206", "G072", "G003", "G069", "G103", "G061"],
-    "audit_corrections": ["G202 (synthesiser/cork offer) and G203 (banter aside) were absent from prior draft source_event_ids. Added."],
+    "source_event_ids": [
+      "G201",
+      "G073",
+      "G050",
+      "G202",
+      "G091",
+      "G203",
+      "G204",
+      "G023",
+      "G205",
+      "G039",
+      "G079",
+      "G107",
+      "G063",
+      "G206",
+      "G072",
+      "G003",
+      "G069",
+      "G103",
+      "G061"
+    ],
+    "audit_corrections": [
+      "G202 (synthesiser/cork offer) and G203 (banter aside) were absent from prior draft source_event_ids. Added."
+    ],
     "duration_minutes": 128.9,
     "duration_source": "computed: G061 21:13:03 - G201 19:04:12",
-    "initiator": "Naomi",
-    "significance_tags": ["context_episode", "contrast_before_escalation", "warm-reciprocal-exchange", "naomi-opens-session-5"],
+    "initiator": "naomi",
+    "significance_tags": [
+      "context_episode",
+      "contrast_before_escalation",
+      "warm-reciprocal-exchange",
+      "naomi-opens-session-5"
+    ],
     "speaker_accounts": {
-      "inference": "[inference] CURRENT_STATE_CLEAN.md §13.3 labels this pattern alex_topic_contingent_availability: warm reciprocal exchange is available; conflict-adjacent topics trigger withdrawal. Analytical characterisation, not stated intent. Retained as context_episode because it is necessary to interpret AFT-12's 5m44s escalation."
+      "inference": "[inference] CURRENT_STATE_CLEAN.md \u00a713.3 labels this pattern alex_topic_contingent_availability: warm reciprocal exchange is available; conflict-adjacent topics trigger withdrawal. Analytical characterisation, not stated intent. Retained as context_episode because it is necessary to interpret AFT-12's 5m44s escalation."
     },
     "key_quotes": [
-      {"eid": "G050", "speaker": "Alex", "text": "How much did you win this week?"},
-      {"eid": "G202", "speaker": "Alex", "text": "And speaking of synthesizers, do you want your cork back? Because I'm going to go see someone in Northcote very shortly."},
-      {"eid": "G091", "speaker": "Naomi", "text": "I grant you permission. I bequeath upon you the permiss of her lady, Naomi.", "note": "Playful mock-formal."},
-      {"eid": "G061", "speaker": "Alex", "text": "I'm fucking starving. I haven't had dinner yet.", "note": "Last turn before conflict trigger G207."}
+      {
+        "eid": "G050",
+        "speaker": "alex",
+        "text": "How much did you win this week?"
+      },
+      {
+        "eid": "G202",
+        "speaker": "alex",
+        "text": "And speaking of synthesizers, do you want your cork back? Because I'm going to go see someone in Northcote very shortly."
+      },
+      {
+        "eid": "G091",
+        "speaker": "naomi",
+        "text": "I grant you permission. I bequeath upon you the permiss of her lady, Naomi.",
+        "note": "Playful mock-formal."
+      },
+      {
+        "eid": "G061",
+        "speaker": "alex",
+        "text": "I'm fucking starving. I haven't had dinner yet.",
+        "note": "Last turn before conflict trigger G207."
+      }
     ],
     "confidence": "High",
     "ordering_status": "S-AM-5 opening sub-episode. Retained as context_episode.",
-    "outcome": "Transitions to AFT-12 when Naomi raises dinner debt at G207 (21:14:31). Elapsed since G061: 1m28s."
+    "outcome": "Transitions to AFT-12 when Naomi raises dinner debt at G207 (21:14:31). Elapsed since G061: 1m28s.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-12",
     "phase": "Aftermath",
     "session_id": "S-AM-5",
-    "label": "Dinner debt trigger — conflict fatigue — Alex's final recorded event",
+    "label": "Dinner debt trigger \u2014 conflict fatigue \u2014 Alex's final recorded event",
     "event_type": "Topic-contingent withdrawal / final exit",
     "date_time_start": "2026-07-21T21:14:31",
     "date_time_end": "2026-07-21T21:20:15",
-    "source_event_ids": ["G207", "G022", "G078", "G059", "G208", "G209"],
-    "audit_corrections": ["G078 (Naomi, 21:17:30) was absent from prior draft source_event_ids. Added as primary."],
+    "source_event_ids": [
+      "G207",
+      "G022",
+      "G078",
+      "G059",
+      "G208",
+      "G209"
+    ],
+    "audit_corrections": [
+      "G078 (Naomi, 21:17:30) was absent from prior draft source_event_ids. Added as primary."
+    ],
     "elapsed_to_exit_seconds": 344,
     "elapsed_to_exit_source": "computed: G209 21:20:15 - G207 21:14:31",
-    "significance_tags": ["dinner-debt-trigger", "alex-final-recorded-event", "conflict-fatigue", "topic-contingent-withdrawal"],
+    "significance_tags": [
+      "dinner-debt-trigger",
+      "alex-final-recorded-event",
+      "conflict-fatigue",
+      "topic-contingent-withdrawal"
+    ],
     "speaker_accounts": {
       "Alex": "Raising the dinner debt was re-opening the larger conflict; no productive purpose served (G022, G059).",
       "Naomi": "Dinner was a separate practical matter; she was not intending to raise the main dispute; she states Alex categorised the topic and brought it up (G078, G208).",
-      "inference": "[inference] CURRENT_STATE_CLEAN.md §9.3 frames Alex's response as conflict fatigue. §13.3 labels the pattern alex_topic_contingent_availability. Analytical characterisations, not established motives."
+      "inference": "[inference] CURRENT_STATE_CLEAN.md \u00a79.3 frames Alex's response as conflict fatigue. \u00a713.3 labels the pattern alex_topic_contingent_availability. Analytical characterisations, not established motives."
     },
     "key_quotes": [
-      {"eid": "G207", "speaker": "Naomi", "text": "You owe me dinner from the last time I saw you I haven't forgotten."},
-      {"eid": "G022", "speaker": "Alex", "text": "Are you starting this up again? Is that what I'm hearing?"},
-      {"eid": "G078", "speaker": "Naomi", "text": "Why do you disagree with me about you saying that you would pay for dinner that night? I don't understand.", "note": "Previously missing from source_event_ids."},
-      {"eid": "G059", "speaker": "Alex", "text": "Why even bring it up is what I'm saying. What is this gonna achieve?"},
-      {"eid": "G208", "speaker": "Naomi", "text": "What do you mean, bringing up dinner? Am I not allowed to talk about dinner?... I wasn't bringing it up. You brought it up, apparently."},
-      {"eid": "G209", "speaker": "Alex", "text": "Okay, and on that note, I will see you another time.", "note": "Alex's final recorded event in corpus."}
+      {
+        "eid": "G207",
+        "speaker": "naomi",
+        "text": "You owe me dinner from the last time I saw you I haven't forgotten."
+      },
+      {
+        "eid": "G022",
+        "speaker": "alex",
+        "text": "Are you starting this up again? Is that what I'm hearing?"
+      },
+      {
+        "eid": "G078",
+        "speaker": "naomi",
+        "text": "Why do you disagree with me about you saying that you would pay for dinner that night? I don't understand.",
+        "note": "Previously missing from source_event_ids."
+      },
+      {
+        "eid": "G059",
+        "speaker": "alex",
+        "text": "Why even bring it up is what I'm saying. What is this gonna achieve?"
+      },
+      {
+        "eid": "G208",
+        "speaker": "naomi",
+        "text": "What do you mean, bringing up dinner? Am I not allowed to talk about dinner?... I wasn't bringing it up. You brought it up, apparently."
+      },
+      {
+        "eid": "G209",
+        "speaker": "alex",
+        "text": "Okay, and on that note, I will see you another time.",
+        "note": "Alex's final recorded event in corpus."
+      }
     ],
     "confidence": "High",
     "ordering_status": "Follows AFT-11 within S-AM-5.",
-    "outcome": "Alex's final recorded event at 21:20:15. Naomi continues 28 min / 6 turns / 765 words (AFT-13)."
+    "outcome": "Alex's final recorded event at 21:20:15. Naomi continues 28 min / 6 turns / 765 words (AFT-13).",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   },
   {
     "incident_id": "AFT-13",
     "phase": "Aftermath",
     "session_id": "S-AM-5",
-    "label": "Final accountability protest — no closure — corpus end",
+    "label": "Final accountability protest \u2014 no closure \u2014 corpus end",
     "event_type": "Post-exit continuation / accountability demand / corpus end",
     "date_time_start": "2026-07-21T21:20:55",
     "date_time_end": "2026-07-21T21:48:45",
-    "source_event_ids": ["G058", "G029", "G210", "G211", "G012", "G084"],
+    "source_event_ids": [
+      "G058",
+      "G029",
+      "G210",
+      "G211",
+      "G012",
+      "G084"
+    ],
     "post_exit_duration_minutes": 28.5,
     "post_exit_duration_source": "computed: G084 21:48:45 - G209 21:20:15",
     "post_exit_words": 765,
-    "post_exit_words_source": "CURRENT_STATE_CLEAN.md §13.3",
-    "significance_tags": ["no-closure-event", "post-exit-continuation", "corpus-end", "naomi-last-word", "dyad-no-closure-event"],
+    "post_exit_words_source": "CURRENT_STATE_CLEAN.md \u00a713.3",
+    "significance_tags": [
+      "no-closure-event",
+      "post-exit-continuation",
+      "corpus-end",
+      "naomi-last-word",
+      "dyad-no-closure-event"
+    ],
     "claim_status_notes": {
-      "G211": "Naomi's claim about prior knowledge via Nishant — participant account only. Second corpus instance (first: G094, AFT-05). No corpus event independently establishes this claim. Naomi frames it as factual ('canonical truth', 'you can't argue with the record') — this framing is itself Naomi's account."
+      "G211": "Naomi's claim about prior knowledge via Nishant \u2014 participant account only. Second corpus instance (first: G094, AFT-05). No corpus event independently establishes this claim. Naomi frames it as factual ('canonical truth', 'you can't argue with the record') \u2014 this framing is itself Naomi's account."
     },
     "speaker_accounts": {
-      "Naomi": "No substantive conversation occurred (G058). AFT-06 (G189) was the only instance of Alex acknowledging what she said — she notes it but frames it as the exception proving the absence (G029). Claims the record is uncontestable (G210). Restates claim about prior knowledge via Nishant (G211).",
+      "Naomi": "No substantive conversation occurred (G058). AFT-06 (G189) was the only instance of Alex acknowledging what she said \u2014 she notes it but frames it as the exception proving the absence (G029). Claims the record is uncontestable (G210). Restates claim about prior knowledge via Nishant (G211).",
       "Alex": "Not available. Final recorded event was G209 at 21:20:15.",
-      "inference": "[inference] CURRENT_STATE_CLEAN.md §13.4: 'The Aftermath has no closure event. No mutual ending, no repair turn, no agreed terms.' Tagged dyad_no_closure_event. Corpus ends mid-protest; what followed after 21:48:45 is unknown."
+      "inference": "[inference] CURRENT_STATE_CLEAN.md \u00a713.4: 'The Aftermath has no closure event. No mutual ending, no repair turn, no agreed terms.' Tagged dyad_no_closure_event. Corpus ends mid-protest; what followed after 21:48:45 is unknown."
     },
     "key_quotes": [
-      {"eid": "G058", "speaker": "Naomi", "text": "We haven't even had one single conversation about it yet.", "note": "40 seconds after G209."},
-      {"eid": "G029", "speaker": "Naomi", "text": "you haven't taken any amount of responsibility, or you haven't even acknowledged it. This is the first moment you've even really acknowledged that I've said anything. You just go silent, you don't even respond. You've not said sorry."},
-      {"eid": "G211", "speaker": "Naomi", "text": "on the Saturday night prior to the Tuesday, you went into Nishant's house and asked Nishant what was going on and Nishant told you.", "note": "Naomi's claim about prior knowledge via Nishant. Second corpus instance. Participant account only."},
-      {"eid": "G084", "speaker": "Naomi", "text": "The irony of the line of, um, I'm not having this conversation is that you've been saying I'm not having this conversation the moment since you left my house on that Friday.", "note": "Last event in corpus. 21:48:45."}
+      {
+        "eid": "G058",
+        "speaker": "naomi",
+        "text": "We haven't even had one single conversation about it yet.",
+        "note": "40 seconds after G209."
+      },
+      {
+        "eid": "G029",
+        "speaker": "naomi",
+        "text": "you haven't taken any amount of responsibility, or you haven't even acknowledged it. This is the first moment you've even really acknowledged that I've said anything. You just go silent, you don't even respond. You've not said sorry."
+      },
+      {
+        "eid": "G211",
+        "speaker": "naomi",
+        "text": "on the Saturday night prior to the Tuesday, you went into Nishant's house and asked Nishant what was going on and Nishant told you.",
+        "note": "Naomi's claim about prior knowledge via Nishant. Second corpus instance. Participant account only."
+      },
+      {
+        "eid": "G084",
+        "speaker": "naomi",
+        "text": "The irony of the line of, um, I'm not having this conversation is that you've been saying I'm not having this conversation the moment since you left my house on that Friday.",
+        "note": "Last event in corpus. 21:48:45."
+      }
     ],
     "confidence": "High for Naomi's audio. Nishant claim: participant account only.",
     "ordering_status": "Final episode in corpus.",
-    "outcome": "Corpus ends at G084, 21 July 21:48:45 (CURRENT_STATE_CLEAN.md §3). No Alex response. No agreed close."
+    "outcome": "Corpus ends at G084, 21 July 21:48:45 (CURRENT_STATE_CLEAN.md \u00a73). No Alex response. No agreed close.",
+    "participants": [
+      "alex",
+      "naomi"
+    ]
   }
 ]

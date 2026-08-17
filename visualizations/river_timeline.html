@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nalex — Dual-Track River Timeline</title>
+  <meta name="description" content="Dual-track river timeline showing Alex and Naomi's incident spans across the Conflict and Aftermath phases." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:          #0f1117;
+      --surface:     #181c27;
+      --surface-2:   #1f2435;
+      --border:      rgba(255,255,255,0.07);
+      --text:        #e0e4f0;
+      --muted:       #5a6075;
+      --accent:      #7c8cff;
+
+      /* Phase palette */
+      --conflict:        #e05a5a;
+      --conflict-light:  rgba(224,90,90,0.18);
+      --aftermath:       #6a5acd;
+      --aftermath-light: rgba(106,90,205,0.18);
+      --silence:         rgba(255,255,255,0.06);
+
+      /* Person palette */
+      --alex-color:   #4fa3e0;
+      --naomi-color:  #e07a4f;
+
+      --track-h:    76px;
+      --gap-h:      40px;
+      --axis-h:     32px;
+      --rail-r:     6px;
+      --block-r:    5px;
+      --font-sans:  'Inter', system-ui, sans-serif;
+      --font-mono:  'JetBrains Mono', monospace;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-sans);
+      font-size: 14px;
+      min-height: 100vh;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 36px 48px 24px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .header-left h1 {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      color: var(--text);
+    }
+    .header-left p {
+      margin-top: 4px;
+      font-size: 12.5px;
+      color: var(--muted);
+      letter-spacing: 0.01em;
+    }
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 12px;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 5px 10px;
+      border-radius: 20px;
+      border: 1px solid transparent;
+      transition: border-color .2s, color .2s;
+    }
+    .legend-item:hover { border-color: var(--border); color: var(--text); }
+    .legend-item.active { border-color: var(--border); color: var(--text); }
+    .legend-dot {
+      width: 10px; height: 10px;
+      border-radius: 3px;
+      flex-shrink: 0;
+    }
+    .legend-dot.conflict  { background: var(--conflict); }
+    .legend-dot.aftermath { background: var(--aftermath); }
+    .legend-dot.alex      { background: var(--alex-color); }
+    .legend-dot.naomi     { background: var(--naomi-color); }
+
+    /* ── Controls ── */
+    .controls {
+      padding: 16px 48px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+    .pill-group { display: flex; gap: 6px; }
+    .pill {
+      font-family: var(--font-sans);
+      font-size: 12px;
+      font-weight: 500;
+      padding: 5px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all .18s ease;
+      letter-spacing: 0.01em;
+    }
+    .pill:hover { background: var(--surface-2); color: var(--text); }
+    .pill.active {
+      background: var(--surface-2);
+      color: var(--text);
+      border-color: rgba(255,255,255,0.18);
+    }
+    .pill.alex-active  { border-color: var(--alex-color);  color: var(--alex-color); }
+    .pill.naomi-active { border-color: var(--naomi-color); color: var(--naomi-color); }
+    .sep { width: 1px; height: 22px; background: var(--border); margin: 0 4px; }
+
+    /* ── Timeline wrapper ── */
+    .timeline-wrap {
+      padding: 36px 48px;
+      overflow-x: auto;
+    }
+    .timeline-inner {
+      position: relative;
+      min-width: 860px;
+    }
+
+    /* Phase band backdrops */
+    .phase-backdrop {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-radius: 4px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Person labels */
+    .person-labels {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-h);
+    }
+    .person-label {
+      height: var(--track-h);
+      display: flex;
+      align-items: center;
+    }
+
+    /* SVG river */
+    svg.river {
+      display: block;
+      width: 100%;
+      overflow: visible;
+    }
+
+    /* Incident blocks — styled via CSS on foreignObject children / rects */
+    .incident-block {
+      cursor: pointer;
+      transition: opacity .15s;
+    }
+    .incident-block rect {
+      transition: rx .15s, opacity .15s;
+    }
+    .incident-block:hover rect { opacity: 1 !important; }
+    .incident-block:hover .block-label { opacity: 1 !important; }
+
+    /* ── Tooltip ── */
+    #tooltip {
+      position: fixed;
+      z-index: 100;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .15s;
+      max-width: 320px;
+    }
+    #tooltip.visible { opacity: 1; }
+    .tooltip-inner {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.5);
+      backdrop-filter: blur(12px);
+    }
+    .tooltip-id {
+      font-family: var(--font-mono);
+      font-size: 10px;
+      color: var(--muted);
+      margin-bottom: 4px;
+    }
+    .tooltip-label {
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1.4;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .tooltip-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .tooltip-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 11.5px;
+    }
+    .tooltip-key { color: var(--muted); }
+    .tooltip-val { color: var(--text); font-family: var(--font-mono); font-size: 11px; }
+    .tooltip-tags {
+      margin-top: 8px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+    .tag {
+      font-size: 10.5px;
+      padding: 2px 7px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.06);
+      color: var(--muted);
+      font-family: var(--font-mono);
+    }
+    .phase-badge {
+      display: inline-block;
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-bottom: 6px;
+    }
+    .phase-badge.Conflict  { background: var(--conflict-light); color: var(--conflict); }
+    .phase-badge.Aftermath { background: var(--aftermath-light); color: #a090ff; }
+
+    /* ── Stats strip ── */
+    .stats-strip {
+      padding: 20px 48px 32px;
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      border-top: 1px solid var(--border);
+    }
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .stat-val {
+      font-size: 22px;
+      font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: -0.02em;
+    }
+    .stat-label { font-size: 11px; color: var(--muted); letter-spacing: 0.03em; }
+    .stat-val.alex  { color: var(--alex-color); }
+    .stat-val.naomi { color: var(--naomi-color); }
+    .stat-val.conf  { color: var(--conflict); }
+    .stat-val.aft   { color: #a090ff; }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar { height: 4px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-left">
+    <h1>Nalex — Dual-Track River Timeline</h1>
+    <p>16 incidents · Conflict &amp; Aftermath phases · 2026-06-26 → 2026-07-21</p>
+  </div>
+  <div class="legend">
+    <div class="legend-item"><span class="legend-dot conflict"></span> Conflict</div>
+    <div class="legend-item"><span class="legend-dot aftermath"></span> Aftermath</div>
+    <div class="legend-item"><span class="legend-dot alex"></span> Alex</div>
+    <div class="legend-item"><span class="legend-dot naomi"></span> Naomi</div>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="pill-group" id="focus-pills">
+    <button class="pill active" data-focus="both">Both</button>
+    <button class="pill" data-focus="alex">Alex</button>
+    <button class="pill" data-focus="naomi">Naomi</button>
+  </div>
+  <div class="sep"></div>
+  <div class="pill-group" id="phase-pills">
+    <button class="pill active" data-phase="all">All phases</button>
+    <button class="pill" data-phase="Conflict">Conflict only</button>
+    <button class="pill" data-phase="Aftermath">Aftermath only</button>
+  </div>
+</div>
+
+<div class="timeline-wrap">
+  <div class="timeline-inner" id="timeline-inner">
+    <svg class="river" id="river-svg"></svg>
+  </div>
+</div>
+
+<div class="stats-strip" id="stats-strip"></div>
+
+<div id="tooltip">
+  <div class="tooltip-inner" id="tooltip-inner"></div>
+</div>
+
+<script>
+// ── Data ──────────────────────────────────────────────────────────────────────
+
+const INCIDENTS = [
+  { id:"CONF-01", phase:"Conflict", label:"Relational acknowledgement dispute — afternoon Jun 26", start:"2026-06-26T16:04:00", end:"2026-06-26T17:06:00", participants:["naomi","alex"], tags:["acknowledgement-deadlock","directness-loop","first-instance-retrieval-deadlock"], outcome:"Unresolved. Alex left. Naomi's first question sent at 21:57." },
+  { id:"CONF-02", phase:"Conflict", label:"Keyboard warrior trigger and overnight escalation", start:"2026-06-26T21:57:00", end:"2026-06-27T02:33:00", participants:["alex","naomi"], tags:["keyboard-warrior-hinge","5x-escalation","mutual-character-attack","alex-exits-not-held"], outcome:"Cessation without agreement." },
+  { id:"CONF-03", phase:"Conflict", label:"Boundary and flirtation clarification — friendship termination declared", start:"2026-07-04T22:07:00", end:"2026-07-05T00:53:00", participants:["alex","naomi"], tags:["friendship-termination","repair-attempt","boundary-dispute"], outcome:"Both declare friendship over." },
+  { id:"AFT-01",  phase:"Aftermath", label:"First post-silence contact — repair bid and withdrawal", start:"2026-07-11T20:07:12", end:"2026-07-11T22:53:24", participants:["naomi","alex"], tags:["first-contact-post-silence","repair-bid","alex-withdrawal"], outcome:"Alex exits without resolution." },
+  { id:"AFT-02",  phase:"Aftermath", label:"Naomi solo continuation — S-AM-1 post-exit", start:"2026-07-11T23:55:57", end:"2026-07-12T00:04:10", participants:["naomi"], tags:["post-exit-continuation","naomi-solo"], outcome:"Naomi only. No Alex response." },
+  { id:"AFT-03",  phase:"Aftermath", label:"Early-hours voice notes — Naomi alone — S-AM-2", start:"2026-07-12T01:10:23", end:"2026-07-12T01:31:53", participants:["naomi"], tags:["post-exit-continuation","naomi-solo","early-hours"], outcome:"Naomi only. No Alex response." },
+  { id:"AFT-04",  phase:"Aftermath", label:"Longest exchange — S-AM-3 opening and escalation", start:"2026-07-13T19:31:56", end:"2026-07-13T21:49:21", participants:["naomi","alex"], tags:["longest-aftermath-exchange","retrieval-deadlock","alex-withdrawal"], outcome:"Alex withdraws after 2h17m." },
+  { id:"AFT-05",  phase:"Aftermath", label:"Naomi accountability demand mid-S-AM-3", start:"2026-07-13T21:49:21", end:"2026-07-13T22:06:35", participants:["naomi","alex"], tags:["accountability-demand","Nishant-claim","mutual-non-answering"], outcome:"Continued deadlock." },
+  { id:"AFT-06",  phase:"Aftermath", label:"Sole Alex acknowledgement — S-AM-3", start:"2026-07-13T22:06:35", end:"2026-07-13T22:18:56", participants:["naomi","alex"], tags:["alex-acknowledgement","only-instance","repair-turn"], outcome:"Only instance of Alex acknowledging Naomi's account (corpus)." },
+  { id:"AFT-07",  phase:"Aftermath", label:"Post-exit continuation — communication style complaint", start:"2026-07-13T22:18:56", end:"2026-07-13T22:18:56", participants:["naomi","alex"], tags:["post-exit-continuation","communication-style-complaint","session-close"], outcome:"S-AM-3 closes. ~7.8-day gap follows." },
+  { id:"AFT-08",  phase:"Aftermath", label:"Naomi post-exit complaint — backhanded inferences — S-AM-4", start:"2026-07-13T22:18:56", end:"2026-07-13T23:04:44", participants:["naomi","alex"], tags:["post-exit-continuation","communication-style-complaint"], outcome:"S-AM-4 closes. Longest inter-session gap (~7.8 days)." },
+  { id:"AFT-09",  phase:"Aftermath", label:"Final recorded post-exit — S-AM-4 close", start:"2026-07-13T23:04:44", end:"2026-07-13T23:04:44", participants:["naomi","alex"], tags:["post-exit-continuation","session-close"], outcome:"S-AM-4 closes." },
+  { id:"AFT-10",  phase:"Aftermath", label:"S-AM-4 opening exchange", start:"2026-07-13T19:31:56", end:"2026-07-13T19:31:56", participants:["naomi","alex"], tags:["session-open"], outcome:"Leads into S-AM-3 main episode." },
+  { id:"AFT-11",  phase:"Aftermath", label:"Warm reciprocal exchange — S-AM-5 opening — 129 minutes", start:"2026-07-21T19:04:12", end:"2026-07-21T21:13:03", participants:["alex","naomi"], tags:["context-episode","warm-reciprocal-exchange","contrast-before-escalation","naomi-opens-session-5"], outcome:"Transitions to AFT-12 when Naomi raises dinner debt." },
+  { id:"AFT-12",  phase:"Aftermath", label:"Dinner debt trigger — conflict fatigue — Alex's final recorded event", start:"2026-07-21T21:14:31", end:"2026-07-21T21:20:15", participants:["alex","naomi"], tags:["dinner-debt-trigger","alex-final-recorded-event","conflict-fatigue","topic-contingent-withdrawal"], outcome:"Alex's final recorded event at 21:20:15." },
+  { id:"AFT-13",  phase:"Aftermath", label:"Final accountability protest — no closure — corpus end", start:"2026-07-21T21:20:55", end:"2026-07-21T21:48:45", participants:["naomi"], tags:["no-closure-event","post-exit-continuation","corpus-end","naomi-last-word"], outcome:"Corpus ends mid-protest. No Alex response. No agreed close." },
+];
+
+// ── State ─────────────────────────────────────────────────────────────────────
+let focusState = 'both';
+let phaseFilter = 'all';
+
+// ── Layout constants ──────────────────────────────────────────────────────────
+const SVG_H = 240;
+const MARGIN = { top: 20, bottom: 20, left: 80, right: 32 };
+const TRACK_H = 76;
+const TRACK_Y = { alex: MARGIN.top, naomi: MARGIN.top + TRACK_H + 40 };
+const AXIS_Y = MARGIN.top + TRACK_H + 20;
+const BLOCK_H = 36;
+const BLOCK_INSET = (TRACK_H - BLOCK_H) / 2;
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function parseDate(s) { return new Date(s.replace('T',' ')); }
+function fmtDate(d) {
+  return d.toLocaleString('en-AU', { month:'short', day:'numeric', hour:'2-digit', minute:'2-digit', hour12: false });
+}
+function durLabel(start, end) {
+  const ms = parseDate(end) - parseDate(start);
+  if (ms < 60000) return '<1 min';
+  const m = Math.round(ms / 60000);
+  if (m < 60) return `${m}m`;
+  return `${Math.floor(m/60)}h ${m%60}m`;
+}
+
+// ── Rendering ─────────────────────────────────────────────────────────────────
+function render() {
+  const svg = document.getElementById('river-svg');
+  svg.innerHTML = '';
+
+  const filtered = INCIDENTS.filter(inc => {
+    if (phaseFilter !== 'all' && inc.phase !== phaseFilter) return false;
+    if (focusState === 'alex' && !inc.participants.includes('alex')) return false;
+    if (focusState === 'naomi' && !inc.participants.includes('naomi')) return false;
+    return true;
+  });
+
+  // Date extent
+  const allDates = INCIDENTS.flatMap(i => [parseDate(i.start), parseDate(i.end)]);
+  const minDate = new Date(Math.min(...allDates));
+  const maxDate = new Date(Math.max(...allDates));
+  // Padding
+  const span = maxDate - minDate;
+  const tMin = new Date(minDate - span * 0.01);
+  const tMax = new Date(maxDate + span * 0.02);
+
+  // Build SVG
+  const W = Math.max(svg.parentElement.clientWidth || 900, 860);
+  const plotW = W - MARGIN.left - MARGIN.right;
+
+  svg.setAttribute('width', W);
+  svg.setAttribute('height', SVG_H);
+  svg.setAttribute('viewBox', `0 0 ${W} ${SVG_H}`);
+
+  function xScale(date) {
+    return MARGIN.left + ((date - tMin) / (tMax - tMin)) * plotW;
+  }
+
+  const ns = 'http://www.w3.org/2000/svg';
+  function el(tag, attrs = {}, parent = svg) {
+    const e = document.createElementNS(ns, tag);
+    for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+    parent.appendChild(e);
+    return e;
+  }
+  function text(txt, attrs = {}, parent = svg) {
+    const e = el('text', attrs, parent);
+    e.textContent = txt;
+    return e;
+  }
+
+  // ── Phase backdrop bands ──
+  const phases = [
+    { label:'Conflict',  start:'2026-06-26T00:00:00', end:'2026-07-05T23:59:59', color:'rgba(224,90,90,0.06)' },
+    { label:'Silence',   start:'2026-07-06T00:00:00', end:'2026-07-10T23:59:59', color:'rgba(255,255,255,0.025)' },
+    { label:'Aftermath', start:'2026-07-11T00:00:00', end:'2026-07-21T23:59:59', color:'rgba(106,90,205,0.07)' },
+  ];
+  for (const ph of phases) {
+    const x1 = Math.max(MARGIN.left, xScale(parseDate(ph.start)));
+    const x2 = Math.min(MARGIN.left + plotW, xScale(parseDate(ph.end)));
+    if (x2 < x1) continue;
+    el('rect', { x: x1, y: MARGIN.top - 6, width: x2-x1, height: SVG_H - MARGIN.top - MARGIN.bottom + 12,
+                  fill: ph.color, rx: 6 });
+    // Phase label
+    text(ph.label.toUpperCase(), {
+      x: x1 + 8, y: MARGIN.top + 8,
+      fill: ph.label === 'Silence' ? 'rgba(255,255,255,0.15)' : (ph.label==='Conflict' ? 'rgba(224,90,90,0.45)' : 'rgba(130,110,255,0.45)'),
+      'font-family': 'Inter, sans-serif', 'font-size': '9', 'font-weight': '600',
+      'letter-spacing': '0.1em', 'text-transform': 'uppercase'
+    });
+  }
+
+  // ── Track rails ──
+  for (const [person, ty] of Object.entries(TRACK_Y)) {
+    const isAlex = person === 'alex';
+    // Rail background
+    el('rect', { x: MARGIN.left, y: ty + BLOCK_INSET - 4, width: plotW,
+                  height: BLOCK_H + 8, fill: 'rgba(255,255,255,0.025)', rx: 8 });
+    // Person label
+    text(isAlex ? 'Alex' : 'Naomi', {
+      x: MARGIN.left - 10, y: ty + TRACK_H/2 + 4,
+      fill: isAlex ? 'rgba(79,163,224,0.85)' : 'rgba(224,122,79,0.85)',
+      'font-family': 'Inter, sans-serif', 'font-size': '12', 'font-weight': '600',
+      'text-anchor': 'end'
+    });
+  }
+
+  // ── Axis ticks ──
+  const tickCount = Math.min(8, Math.floor(plotW / 100));
+  const axisGroup = el('g');
+  el('line', { x1: MARGIN.left, y1: AXIS_Y + 4, x2: MARGIN.left + plotW, y2: AXIS_Y + 4,
+                stroke:'rgba(255,255,255,0.08)', 'stroke-width':'1' }, axisGroup);
+
+  for (let i = 0; i <= tickCount; i++) {
+    const frac = i / tickCount;
+    const d = new Date(tMin.getTime() + frac * (tMax - tMin));
+    const x = MARGIN.left + frac * plotW;
+    el('line', { x1: x, y1: AXIS_Y, x2: x, y2: AXIS_Y + 8, stroke:'rgba(255,255,255,0.1)', 'stroke-width':'1' }, axisGroup);
+    const label = d.toLocaleString('en-AU', { month:'short', day:'numeric' });
+    text(label, { x, y: AXIS_Y + 20, 'text-anchor':'middle', fill:'rgba(255,255,255,0.2)',
+      'font-family':'Inter, sans-serif', 'font-size':'10' }, axisGroup);
+  }
+
+  // ── Incident blocks ──
+  for (const inc of filtered) {
+    const x1 = xScale(parseDate(inc.start));
+    let x2 = xScale(parseDate(inc.end));
+    // Minimum visible width
+    const minW = 8;
+    if (x2 - x1 < minW) x2 = x1 + minW;
+
+    const isConflict = inc.phase === 'Conflict';
+    const color = isConflict ? '#e05a5a' : '#7c6ae0';
+    const fillAlpha = isConflict ? '0.75' : '0.7';
+    const borderColor = isConflict ? '#f07070' : '#a090ff';
+
+    const hasAlex  = inc.participants.includes('alex');
+    const hasNaomi = inc.participants.includes('naomi');
+
+    // Opacity by focus
+    const dim = (focusState === 'alex' && !hasAlex) || (focusState === 'naomi' && !hasNaomi);
+
+    const drawTrack = (person) => {
+      if (person === 'alex' && !hasAlex) return;
+      if (person === 'naomi' && !hasNaomi) return;
+
+      const ty = TRACK_Y[person];
+      const g = el('g', { class: 'incident-block', style: `opacity:${dim ? 0.2 : 1}` });
+
+      // block
+      const rect = el('rect', {
+        x: x1, y: ty + BLOCK_INSET,
+        width: Math.max(x2-x1, minW), height: BLOCK_H,
+        fill: color, rx: 5, opacity: fillAlpha,
+        stroke: borderColor, 'stroke-width': '0.8', 'stroke-opacity': '0.5'
+      }, g);
+
+      // label (short id)
+      const labelX = x1 + 6;
+      const labelY = ty + BLOCK_INSET + BLOCK_H/2 + 1;
+      if (x2 - x1 > 28) {
+        text(inc.id, {
+          x: labelX, y: labelY + 4,
+          fill: 'rgba(255,255,255,0.8)',
+          'font-family': 'JetBrains Mono, monospace',
+          'font-size': '9', 'font-weight': '500',
+          'dominant-baseline': 'middle',
+          'pointer-events': 'none',
+          class: 'block-label'
+        }, g);
+      }
+
+      // Tooltip interaction
+      g.addEventListener('mouseenter', (e) => showTooltip(e, inc));
+      g.addEventListener('mousemove',  (e) => moveTooltip(e));
+      g.addEventListener('mouseleave', () => hideTooltip());
+    };
+
+    drawTrack('alex');
+    drawTrack('naomi');
+  }
+
+  renderStats(filtered);
+}
+
+// ── Tooltip ───────────────────────────────────────────────────────────────────
+const tooltip = document.getElementById('tooltip');
+const tooltipInner = document.getElementById('tooltip-inner');
+
+function showTooltip(e, inc) {
+  const dur = durLabel(inc.start, inc.end);
+  const hasBoth = inc.participants.includes('alex') && inc.participants.includes('naomi');
+  const who = hasBoth ? 'Alex + Naomi' : inc.participants.map(p => p[0].toUpperCase() + p.slice(1)).join(', ');
+  const tagsHtml = inc.tags.map(t => `<span class="tag">${t}</span>`).join('');
+
+  tooltipInner.innerHTML = `
+    <div class="tooltip-id">${inc.id}</div>
+    <span class="phase-badge ${inc.phase}">${inc.phase}</span>
+    <div class="tooltip-label">${inc.label}</div>
+    <div class="tooltip-meta">
+      <div class="tooltip-row">
+        <span class="tooltip-key">Start</span>
+        <span class="tooltip-val">${fmtDate(parseDate(inc.start))}</span>
+      </div>
+      <div class="tooltip-row">
+        <span class="tooltip-key">End</span>
+        <span class="tooltip-val">${fmtDate(parseDate(inc.end))}</span>
+      </div>
+      <div class="tooltip-row">
+        <span class="tooltip-key">Duration</span>
+        <span class="tooltip-val">${dur}</span>
+      </div>
+      <div class="tooltip-row">
+        <span class="tooltip-key">Participants</span>
+        <span class="tooltip-val">${who}</span>
+      </div>
+      <div class="tooltip-row" style="align-items:flex-start">
+        <span class="tooltip-key">Outcome</span>
+        <span class="tooltip-val" style="text-align:right;white-space:normal;max-width:180px;font-family:Inter,sans-serif;font-size:11px">${inc.outcome}</span>
+      </div>
+    </div>
+    ${tagsHtml ? `<div class="tooltip-tags">${tagsHtml}</div>` : ''}
+  `;
+  moveTooltip(e);
+  tooltip.classList.add('visible');
+}
+function moveTooltip(e) {
+  const vw = window.innerWidth, vh = window.innerHeight;
+  let x = e.clientX + 16, y = e.clientY + 16;
+  const w = 320, h = 240;
+  if (x + w > vw) x = e.clientX - w - 8;
+  if (y + h > vh) y = e.clientY - h - 8;
+  tooltip.style.left = x + 'px';
+  tooltip.style.top  = y + 'px';
+}
+function hideTooltip() { tooltip.classList.remove('visible'); }
+
+// ── Stats ─────────────────────────────────────────────────────────────────────
+function renderStats(filtered) {
+  const strip = document.getElementById('stats-strip');
+  const conf = filtered.filter(i => i.phase === 'Conflict').length;
+  const aft  = filtered.filter(i => i.phase === 'Aftermath').length;
+  const alexOnly  = filtered.filter(i => i.participants.includes('alex') && !i.participants.includes('naomi')).length;
+  const naomiOnly = filtered.filter(i => i.participants.includes('naomi') && !i.participants.includes('alex')).length;
+  const joint     = filtered.filter(i => i.participants.includes('alex') && i.participants.includes('naomi')).length;
+
+  // Total span
+  const allStarts = filtered.map(i => parseDate(i.start));
+  const allEnds   = filtered.map(i => parseDate(i.end));
+  const span = allStarts.length ? Math.round((Math.max(...allEnds) - Math.min(...allStarts)) / 86400000) : 0;
+
+  strip.innerHTML = `
+    <div class="stat"><span class="stat-val">${filtered.length}</span><span class="stat-label">INCIDENTS</span></div>
+    <div class="stat"><span class="stat-val conf">${conf}</span><span class="stat-label">CONFLICT</span></div>
+    <div class="stat"><span class="stat-val aft">${aft}</span><span class="stat-label">AFTERMATH</span></div>
+    <div class="stat"><span class="stat-val">${joint}</span><span class="stat-label">JOINT EPISODES</span></div>
+    <div class="stat"><span class="stat-val alex">${alexOnly}</span><span class="stat-label">ALEX ONLY</span></div>
+    <div class="stat"><span class="stat-val naomi">${naomiOnly}</span><span class="stat-label">NAOMI ONLY</span></div>
+    <div class="stat"><span class="stat-val">${span}</span><span class="stat-label">DAY SPAN</span></div>
+  `;
+}
+
+// ── Controls ──────────────────────────────────────────────────────────────────
+document.getElementById('focus-pills').addEventListener('click', e => {
+  const pill = e.target.closest('[data-focus]');
+  if (!pill) return;
+  focusState = pill.dataset.focus;
+  document.querySelectorAll('#focus-pills .pill').forEach(p => {
+    p.classList.remove('active','alex-active','naomi-active');
+    if (p === pill) {
+      p.classList.add('active');
+      if (focusState==='alex') p.classList.add('alex-active');
+      if (focusState==='naomi') p.classList.add('naomi-active');
+    }
+  });
+  render();
+});
+
+document.getElementById('phase-pills').addEventListener('click', e => {
+  const pill = e.target.closest('[data-phase]');
+  if (!pill) return;
+  phaseFilter = pill.dataset.phase;
+  document.querySelectorAll('#phase-pills .pill').forEach(p => {
+    p.classList.toggle('active', p === pill);
+  });
+  render();
+});
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+render();
+window.addEventListener('resize', render);
+</script>
+</body>
+</html>

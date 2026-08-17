@@ -84,7 +84,7 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 
 ### 7.1 Canonical / active (usable as source data)
 
-*   **Root `.md`**: `CURRENT_STATE_CLEAN.md`, `NALEX_EVIDENCE_BRIEF_headline_patterns.md`, `index.md`, `claude.md`, `AGENTS.md`.
+*   **Root `.md`**: `CLAUDE.md`, `CURRENT_STATE_CLEAN.md`, `NALEX_EVIDENCE_BRIEF_headline_patterns.md`, `index.md`.
 *   **Intervention Playbooks**: `intervention_playbook_alex.md`, `intervention_playbook_naomi.md` (Active prescriptive coaching and constructive feedback protocols).
 *   **Root data**: `events.jsonl` (canonical event stream) and the four derived summaries in §4.
 *   **Root scripts**: `recompute_harness.py` (metric validation) and `refactor_questions_v2.py` (live annotation generator).
@@ -97,7 +97,7 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 
 ### 7.3 Special-purpose (not evidence)
 
-*   `visualisations/`: rendered presentation artifacts (`nalex_playbook_dark_m3.html`, `nalex_patterns_flashcards.html`, `nalex_initiation_closure_m3_expressive.html`) plus the viz-pipeline planning docs that feed them (`nalex_viz_ideation.md`, `nalex_viz_canonical_render_spec.md`, `visualization_input_manifest.txt`). For review and demo only — outputs, not sources.
+*   `visualizations/`: rendered presentation artifacts (`nalex_playbook_dark_m3.html`, `nalex_patterns_flashcards.html`, `nalex_initiation_closure_m3_expressive.html`) plus the viz-pipeline planning docs that feed them (`nalex_viz_ideation.md`, `nalex_viz_canonical_render_spec.md`, `visualization_input_manifest.txt`). For review and demo only — outputs, not sources.
     *   `nalex_initiation_closure_m3_expressive.html` — single-visual-question artifact ("Who opens and who closes sessions, per phase?"), built 2026-08-09 from `_canonical_strong/` (§13). Renders `artifact_3_initiation_closure` only; the 20 records are embedded verbatim and honour `visual_hint` literally (`table` → phase × speaker grid, `overlay` → sign-off badge layer, `strip` → corpus totals). Forward-looking copy comes from each record's `forward_looking_evaluation`.
     *   `nalex_alex_evidence_view_m3.html` ("Alex — How conversations end") + `nalex_naomi_evidence_view_m3.html` ("Naomi — Who reaches out after conflict") — matched per-person pair, built 2026-08-11 from `_canonical_strong/nalex_viz_schema.json` (`artifact_3_initiation_closure`), cross-checked against `phase_profile.json` rev 4 and `baseline_comparison_audit.json`. **One visual question each**, per the §Visualization rule: Alex renders clear sign-offs by phase (0 / 11 / — / 4 against Naomi's 0 throughout, 15 total); Naomi renders who starts each recorded session (5:5 / 5:5 / — / 5:0). Shared six-section structure: main pattern + chart, phase table, timing note, limits, reflection prompt, closing distinction. Silence renders as an explicit "no exchanges were recorded" state, never as zero, and a measured zero draws no mark (`.fill.zero`). Series palette `#3F8AD8` (Alex) / `#CC7F30` (Naomi) is fixed across both files and passes all six dark-mode colour checks (worst adjacent CVD ΔE 23.8, normal ΔE 27.4); the older `#87719d`/`#5f7f96` pair in `generate_charts.py` fails them (deutan ΔE 0.9).
         *   **Copy register (2026-08-11 pass):** plain language, numbers carry the weight. Banned from these two files: *corpus, asymmetry, explicit sign-off turns, initiation, unmeasured, high confidence, visible constraint*. Use *the record shows*, *clearly shown in the record*, *what we can't know from this record*, *total in the record*. Limits are phrased *"the record does not tell us…"*. No motives, diagnoses, intentions, emotional causes, or outcomes as fact; no advice or prescriptions — the forward-looking slot is a **reflection prompt** (a question), not a recommendation.
@@ -113,10 +113,7 @@ These are derived from `events.jsonl` and must be treated as read-only summaries
 ### 8.1 Instruction precedence
 
 1. **Task-specific handoff prompts** override everything else for the current task.
-2. **`claude.md`** governs Nalex project analysis behavior, file routing, and the evidence-first project workflow. This is the default for all work in this repository.
-3. **`AGENTS.md`** governs the broader general coaching / default relationship mode, and applies **only when explicitly invoked**.
-
-Where `claude.md` and `AGENTS.md` conflict, `claude.md` wins for project analysis tasks.
+2. **`CLAUDE.md`** governs Nalex project analysis behavior, file routing, and the evidence-first project workflow. This is the default for all work in this repository.
 
 ### 8.2 Required
 
@@ -173,7 +170,7 @@ Keep `_backup/` for recovery only and `_provenance/` for forensic lineage.
 
 The `_canonical_strong/` directory contains the triaged, canonical source files for visualization builds as of 2026-08-09.
 
-Several visualization-pipeline inputs existed as duplicate copies across the repo (e.g. one in `visualisations/`, another in `research_prompt_modes/` or `research_prompt_modes/analysis_outputs/`). On 2026-08-09 these were triaged and the winning copy of each was placed in `_canonical_strong/` with a provenance note (`CANONICAL TRIAGE NOTE` comment/header/JSON key) recording the original path and why it was kept. Underlying content is unchanged from the source copy — only provenance metadata and, for JSON, unicode-escape normalization were added.
+Several visualization-pipeline inputs existed as duplicate copies across the repo (e.g. one in `visualizations/`, another in `research_prompt_modes/` or `research_prompt_modes/analysis_outputs/`). On 2026-08-09 these were triaged and the winning copy of each was placed in `_canonical_strong/` with a provenance note (`CANONICAL TRIAGE NOTE` comment/header/JSON key) recording the original path and why it was kept. Underlying content is unchanged from the source copy — only provenance metadata and, for JSON, unicode-escape normalization were added.
 
 Selection criteria:
 - Strongest M3 Expressive realization (HTML shell),
@@ -186,4 +183,4 @@ For visualization builds, use files in `_canonical_strong/` as the canonical bas
 - `_canonical_strong/viz_schema_template.md`: the §11 schema contract.
 - `_canonical_strong/nalex_viz_schema.json`: flattened record set with `forward_looking_evaluation` populated on every record — the primary source of ready-to-use, forward-focused coaching text for rendering.
 
-**Rule:** when building or refining a visualization artifact, read the `_canonical_strong/` copy of each file. The duplicate copies formerly in `visualisations/` or `research_prompt_modes/` have been moved to `_archive/superseded/`.
+**Rule:** when building or refining a visualization artifact, read the `_canonical_strong/` copy of each file. The duplicate copies formerly in `visualizations/` or `research_prompt_modes/` have been moved to `_archive/superseded/`.
